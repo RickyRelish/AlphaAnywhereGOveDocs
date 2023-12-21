@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<meta name="apple-mobile-web-app-capable" content="yes" >            
+<head>
+<title></title>
+</head>
+<body><div style="text-align: left;"><font face="Calibri">Location -&nbsp;<%A5 ? Session.Location%></font><br></div><div style="text-align: center;"><font color="#0b0b0b" face="Bodoni MT" size="5">Location / Facility / House</font></div>
+<div style="text-align: center;"><br></div><div style="text-align: center;"><img src="1_Maint.bmp" style="width:px;height:px"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;"><font color="#293745" face="Inter, sans-serif">Change location to view data from other Facilities / Houses.</font></div></body></html>
+</body>
+</html>

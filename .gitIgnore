@@ -1,0 +1,9 @@
+__backup.backup/
+__deleted.deleted/
+__Undo.undo/
+*._a5wcmp*
+componentInfo
+componentTypeCache
+__staging.staging/
+__a5docgen/
+__liveTestSettings.json

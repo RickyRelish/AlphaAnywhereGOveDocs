@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_DASHBOARD_UX_IN
+DIM tmpl_DASHBOARD_UX_IN as P
+tmpl_DASHBOARD_UX_IN = a5w_load_component("DashBoard_UX_Incidents") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:DashBoard_UX_Incidents)
+
+'Override settings start -----------------------------------------
+with tmpl_DASHBOARD_UX_IN
+.alias = "DASHBOARD_UX_IN"
+_dialogFilename = "DashBoard_UX_Incidents"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_DASHBOARD_UX_IN
+dim x_DASHBOARD_UX_IN as p
+x_DASHBOARD_UX_IN = a5w_run_Component(tmpl_DASHBOARD_UX_IN) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:DashBoard_UX_Incidents)
+
+?x_DASHBOARD_UX_IN.Output.Head.JavaScript
+?x_DASHBOARD_UX_IN.Output.Head.CSS_Link
+
+?x_DASHBOARD_UX_IN.Output.Head.Title 
+%>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_UX_I_DASHBOARD8
+DIM tmpl_UX_I_DASHBOARD8 as P
+tmpl_UX_I_DASHBOARD8 = a5w_load_component("UX_I_DashBoard8") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:UX_I_DashBoard8)
+
+'Override settings start -----------------------------------------
+with tmpl_UX_I_DASHBOARD8
+.alias = "UX_I_DASHBOARD8"
+_dialogFilename = "UX_I_DashBoard8"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_UX_I_DASHBOARD8
+dim x_UX_I_DASHBOARD8 as p
+x_UX_I_DASHBOARD8 = a5w_run_Component(tmpl_UX_I_DASHBOARD8) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:UX_I_DashBoard8)
+
+?x_UX_I_DASHBOARD8.Output.Head.JavaScript
+?x_UX_I_DASHBOARD8.Output.Head.CSS_Link
+
+?x_UX_I_DASHBOARD8.Output.Head.Title 
+%>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_UX_CI_DASH1
+DIM tmpl_UX_CI_DASH1 as P
+tmpl_UX_CI_DASH1 = a5w_load_component("UX_CI_Dash1") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:UX_CI_Dash1)
+
+'Override settings start -----------------------------------------
+with tmpl_UX_CI_DASH1
+.alias = "UX_CI_DASH1"
+_dialogFilename = "UX_CI_Dash1"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_UX_CI_DASH1
+dim x_UX_CI_DASH1 as p
+x_UX_CI_DASH1 = a5w_run_Component(tmpl_UX_CI_DASH1) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:UX_CI_Dash1)
+
+?x_UX_CI_DASH1.Output.Head.JavaScript
+?x_UX_CI_DASH1.Output.Head.CSS_Link
+
+?x_UX_CI_DASH1.Output.Head.Title 
+%>
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/Alpha Anywhere/css/MobGray/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/Alpha Anywhere/css/MobGray/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/Alpha Anywhere/css/MobGray/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+<title></title>
+</head>
+
+
+
+<body class="MobGrayPage">
+
+
+<div style="text-align: center;">
+<%A5 ?x_UX_CI_DASH1.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %>
+&nbsp;<br></div>
+</body></html>

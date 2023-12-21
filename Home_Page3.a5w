@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+<title>Home Page</title>
+</head>
+<body><div style="text-align: center;"><br></div><h1 style="text-align: center;">
+<img src="black_textlogo_white_background.jpg" style="width:7.0in;height:0.9in"><br></h1><p style="text-align: center;"><font face="Calibri" size="6">Location -&nbsp;<%A5 ? Session.location%></font></p><div style="text-align: center;"><b><font size="4"><br></font></b></div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.vertical-menu {
+  width:700px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding:10px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #121041;
+  color: white;
+}
+</style>
+
+
+
+<table border="" bordercolor="" bordercolorlight="" bordercolordark="" bgcolor="#121041" cellpadding="10px" cellspacing="" align="Center" background="" style="text-align: center;">
+	<tbody><tr>
+		<td><div class="vertical-menu">
+  <a href="" class="active"><b><font face="Bodoni MT" size="5" style="color:rgb(250,242,242);">Incident / Risk Management Forms</font></b></a><a href="" class="active"><font face="Bodoni MT" size="4" style="color:rgb(218,13,13);">Select heading below</font></a>
+  <a href="Incident_Form.a5w"><font face="Bodoni MT" size="4">Clinical Incident / 24/7 RN (Not Met)</font></a>
+  <a href="Incident_Med.a5w"><font face="Bodoni MT" size="4">Medication Incident</font></a>
+  <a href="Incident_Security.a5w"><font face="Bodoni MT" size="4">Security / Violence / Aggression / Safety</font></a>
+  <a href="Incident_OHS2.a5w"><font face="Bodoni MT" size="4">Staff OHS Incident</font></a>
+  <a href="Incident_Infection.a5w"><font face="Bodoni MT" size="4">Infection Surveillance</font></a>
+  <a href="MortalityForm3.a5w"><font face="Bodoni MT" size="4">Mortality Form / Unexpected Resident Death</font></a>
+  <a href="Incident_Feedback.a5w"><font face="Bodoni MT" size="4">Feedback / Complaints / Compliments / Suggestions</font></a>
+  <a href="Incident_Feedback.a5w"><font face="Bodoni MT" size="4"></font></a>
+</div></td>
+		<td><font size="4" face="Britannic Bold"><b> &nbsp;&nbsp; </b></font></td>
+		<td><div class="vertical-menu">
+  <a href="#" class="active"><font size="5" face="Britannic Bold" style=""><b>Administration</b></font></a>
+  <a href="#"></a>
+
+  <a href="TabbedUI_Incident_Management.a5w"><font face="Bodoni MT" size="5" style="color:rgb(13,5,108);">Incident Management / Analysis</font></a>
+  
+  <a href="TabbedUI_RiskTabbedUI.a5w"><font face="Bodoni MT" size="5" style="color:rgb(13,5,108);">Risk Register</font></a>
+  <a href="TabbedUI_CI_Tab.a5w"><font face="Bodoni MT" size="5" style="color:rgb(13,5,108);">Continuous Improvement Plan</font></a>
+  <a href="TabbedUI_MainMenu_TAB.a5w"><font face="Bodoni MT" size="5" style="color:rgb(13,5,108);">Document Management</font></a>
+  <a href="TabbedUI_Feedback_Tab.a5w"><font face="Bodoni MT" size="5" style="color:rgb(13,5,108);">Consumer / Employee / QR - Engagement Surveys</font></a>
+  <a><font face="Bodoni MT" size="5" style="color:rgb(13,5,108);"></font></a>
+  <a href="TabbedUI_Management.a5w"><font face="Bodoni MT" size="5" style="color:rgb(150,148,148);">Administration</font></a>
+  <a href="#"></a>
+  <a href="LogoutGovs.a5w"><font face="Britannic Bold" size="4" style="color: rgb(218,14,14);"><b>Log Out</b></font></a>
+  
+</div></td>
+	</tr>
+	
+</tbody></table><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;"><font face="Bodoni MT">A clinical incident is defined by Australian Commission on Safety and Quality in Health Care ​​​​(ACSQHC) as "an event or circumstance that resulted, or could have resulted,&nbsp;</font></div><div style="text-align: center;"><font face="Bodoni MT">in unintended and/or unnecessary harm to a person and/or a complaint, loss or damage".</font></div><div style="text-align: center;">
+<a href="https://www.safetyandquality.gov.au/" target="_blank" rel="noopener noreferrer"><font face="Bodoni MT">Australian Commission Website</font></a><br></div></body></html>

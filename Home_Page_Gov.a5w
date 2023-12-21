@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+<title>Home Page</title>
+</head>
+<body><div style="text-align: center;"><br></div><h1 style="text-align: center;">
+<img src="black_textlogo_white_background.jpg" style="width:7.0in;height:0.9in"><br>
+</h1><p style="text-align: center;"><font face="Calibri" size="6">Location -&nbsp; Regional Support Services</font></p><div style="text-align: center;"><b><font size="4"><br></font></b></div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.vertical-menu {
+  width:1000px;
+}
+
+.vertical-menu a {
+  background-color: #dbf0dcd;
+  color: Green;
+  display: block;
+  padding:10px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color:#ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #0b0b0b;
+  color: white;
+}
+</style>
+
+
+
+<table border="" bordercolor="" bordercolorlight="" bordercolordark="" bgcolor="#121041" cellpadding="10px" cellspacing="" align="Center" background="" style="text-align: center;">
+	<tbody><tr>
+		<td><div class="vertical-menu" style="color: rgb(250, 244, 244);">
+ <a href="" class="active"><b><font face="Bodoni MT" size="6" style="color:rgb(250,242,242);">Incident / Governance / Administration</font></b></a><a href="" class="active"><font face="Bodoni MT" size="4" style="color:rgb(218,13,13);">Select heading below</font></a>
+ 
+
+  <a href="TabbedUI_Incident_Management.a5w"><font face="Bodoni MT" size="5" style="color: rgb(255, 255, 255);">Orga<span style="color:rgb(251,250,251);">nisati</span>on - Incident Management / Analysis</font></a><a href="TabbedUI_Incident_Management.a5w"><br></a><font face="Bodoni MT" size="5" style="color: rgb(251, 251, 251);">Organisation - Risk Register / Management</font></div><div class="vertical-menu" style=""><font color="#fbfbfb" face="Bodoni MT" size="5"><br></font>
+  <a href="TabbedUI_CI_Tab.a5w" style="color: rgb(250, 244, 244);"></a><font face="Bodoni MT" size="5" style="color: rgb(244, 243, 247);">Organisation - Continuous Improvement / Meetings Minutes</font></div><div class="vertical-menu" style=""><font color="#f4f3f7" face="Bodoni MT" size="5"><br></font>
+  <a href="TabbedUI_MainMenu_TAB.a5w" style="color: rgb(250, 244, 244);"></a><font face="Bodoni MT" size="5" style="color: rgb(249, 248, 251);">Organisation - Document Management</font></div><div class="vertical-menu" style=""><font color="#f9f8fb" face="Bodoni MT" size="5"><br></font>
+  <a href="TabbedUI_Feedback_Tab.a5w" style="color: rgb(250, 244, 244);"><span style="color: rgb(242, 241, 249); font-family: &quot;Bodoni MT&quot;; font-size: x-large;">Organisation Consumer / Employee / QR - Engagement Surveys</span></a><a href="TabbedUI_Maintenace.a5w" style="color: rgb(250, 244, 244);"></a><div class="vertical-menu" style=""><br></div><span style="color: rgb(242, 241, 249); display: inline !important; font-family: &quot;Bodoni MT&quot;; font-size: x-large;"><a href="http://127.0.0.1/TabbedUI_Feedback_Tab.a5w" style="color: rgb(250, 244, 244); display: inline !important;">Organisation - Complaints / Feedback / Suggestions</a></span><font color="#faf4f4">&nbsp;</font></div><div class="vertical-menu" style=""><font color="#faf4f4"><br></font></div><div class="vertical-menu" style=""><font color="#faf4f4"><br></font><br>
+  <a href="Home_Page.a5w" style="color: rgb(250, 244, 244);"><font face="Bodoni MT" size="5" style="color:rgb(218,14,14);">Return to Incident / Risk Management / Forms</font></a> 
+<a href="LogoutGovs.a5w" style="color: rgb(250, 244, 244); text-align: center;"><font face="Britannic Bold" size="4" style="color: rgb(218,14,14);"><b>Log Out</b></font></a>
+
+<a href="Management.a5w" style="color: rgb(250, 244, 244); text-align: right;"><font face="Britannic Bold" size="4" style="color: rgb(218,14,14);"><b>SYSTEM ADMIN</b></font></a>
+ <br><br> 
+</div></td>
+	</tr>
+	
+</tbody></table><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;"><font face="Bodoni MT">A clinical incident is defined by Australian Commission on Safety and Quality in Health Care (ACSQHC) as "an event or circumstance that resulted, or could have resulted,&nbsp;</font></div><div style="text-align: center;"><font face="Bodoni MT">in unintended and/or unnecessary harm to a person and/or a complaint, loss or damage".</font></div><div style="text-align: center;">
+<a href="https://www.safetyandquality.gov.au/" target="_blank" rel="noopener noreferrer"><font face="Bodoni MT">Australian Commission Website</font></a><br></div></body></html>

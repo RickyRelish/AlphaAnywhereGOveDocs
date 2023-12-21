@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+<%a5
+'The componentAlias MUST be UNIQUE for each component on the page. It must not have spaces in the name. Keep name as short as possible
+dim componentAlias as c 
+componentAlias = "ADD_ORGANISATIO"
+Delete tmpl_ADD_ORGANISATIO
+DIM tmpl_ADD_ORGANISATIO as P
+tmpl_ADD_ORGANISATIO = a5w_load_component("Add_Organisation_Grid") 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Add_Organisation_Grid)
+'Following code allows you to override settings in the saved component. DO NOT REMOVE SYSTEM GENERATED OVERRIDE_SETTINGS
+tmpl_ADD_ORGANISATIO.override_settings = <<%override_settings%
+	componentName = componentAlias
+	_gridFilename = "Add_Organisation_Grid"
+%override_settings%
+'TIP: To refer to local or page variables in the override_settings string, you must first define a local
+'dot variable called 'pageVar' with properties for all of the variables you want to reference. For example:
+'	dim pageVar as p
+'	pageVar.gridRowCount = 10
+'Then, in the override_settings string, you can reference pageVar.gridRowCount. For example:
+'	rows = pageVar.gridRowCount
+'Resolve session and page variables in the override_settings string.
+a5w_resolveVariablesInOverrideSettings(tmpl_ADD_ORGANISATIO,session,local_variables())
+delete x_ADD_ORGANISATIO
+dim x_ADD_ORGANISATIO as p
+x_ADD_ORGANISATIO = a5w_run_Component(tmpl_ADD_ORGANISATIO)  'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl_ADD_ORGANISATIO) (EDIT:Add_Organisation_Grid)
+if x_ADD_ORGANISATIO.RedirectURL <> "" then 
+	response.redirect(x_ADD_ORGANISATIO.redirectURL)
+	end
+end if 
+?x_ADD_ORGANISATIO.Output.Head.JavaScript
+?x_ADD_ORGANISATIO.Output.Head.CSS_Link
+%>
+
+
+<%a5
+Delete tmpl_SECURITYNEWUSER
+DIM tmpl_SECURITYNEWUSER as P
+tmpl_SECURITYNEWUSER = a5w_load_component("SecurityNewUser_UX") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:SecurityNewUser_UX)
+
+'Override settings start -----------------------------------------
+with tmpl_SECURITYNEWUSER
+.alias = "SECURITYNEWUSER"
+_dialogFilename = "SecurityNewUser_UX"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_SECURITYNEWUSER
+dim x_SECURITYNEWUSER as p
+x_SECURITYNEWUSER = a5w_run_Component(tmpl_SECURITYNEWUSER) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:SecurityNewUser_UX)
+
+?x_SECURITYNEWUSER.Output.Head.JavaScript
+?x_SECURITYNEWUSER.Output.Head.CSS_Link
+
+?x_SECURITYNEWUSER.Output.Head.Title 
+%>
+
+<%a5
+'The componentAlias MUST be UNIQUE for each component on the page. It must not have spaces in the name. Keep name as short as possible
+dim componentAlias as c 
+componentAlias = "EXTENDEDUSERINF"
+Delete tmpl_EXTENDEDUSERINF
+DIM tmpl_EXTENDEDUSERINF as P
+tmpl_EXTENDEDUSERINF = a5w_load_component("ExtendedUserInformation_Grid") 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:ExtendedUserInformation_Grid)
+'Following code allows you to override settings in the saved component. DO NOT REMOVE SYSTEM GENERATED OVERRIDE_SETTINGS
+tmpl_EXTENDEDUSERINF.override_settings = <<%override_settings%
+	componentName = componentAlias
+	_gridFilename = "ExtendedUserInformation_Grid"
+%override_settings%
+'TIP: To refer to local or page variables in the override_settings string, you must first define a local
+'dot variable called 'pageVar' with properties for all of the variables you want to reference. For example:
+'	dim pageVar as p
+'	pageVar.gridRowCount = 10
+'Then, in the override_settings string, you can reference pageVar.gridRowCount. For example:
+'	rows = pageVar.gridRowCount
+'Resolve session and page variables in the override_settings string.
+a5w_resolveVariablesInOverrideSettings(tmpl_EXTENDEDUSERINF,session,local_variables())
+delete x_EXTENDEDUSERINF
+dim x_EXTENDEDUSERINF as p
+x_EXTENDEDUSERINF = a5w_run_Component(tmpl_EXTENDEDUSERINF)  'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl_EXTENDEDUSERINF) (EDIT:ExtendedUserInformation_Grid)
+if x_EXTENDEDUSERINF.RedirectURL <> "" then 
+	response.redirect(x_EXTENDEDUSERINF.redirectURL)
+	end
+end if 
+?x_EXTENDEDUSERINF.Output.Head.JavaScript
+?x_EXTENDEDUSERINF.Output.Head.CSS_Link
+%>
+
+
+<%a5
+Delete tmpl_DOCUMENT_BUILDE
+DIM tmpl_DOCUMENT_BUILDE as P
+tmpl_DOCUMENT_BUILDE = a5w_load_component("Document_Builder") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Document_Builder)
+
+'Override settings start -----------------------------------------
+with tmpl_DOCUMENT_BUILDE
+.alias = "DOCUMENT_BUILDE"
+_dialogFilename = "Document_Builder"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_DOCUMENT_BUILDE
+dim x_DOCUMENT_BUILDE as p
+x_DOCUMENT_BUILDE = a5w_run_Component(tmpl_DOCUMENT_BUILDE) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Document_Builder)
+
+?x_DOCUMENT_BUILDE.Output.Head.JavaScript
+?x_DOCUMENT_BUILDE.Output.Head.CSS_Link
+
+?x_DOCUMENT_BUILDE.Output.Head.Title 
+%>
+
+
+<%a5
+Delete tmpl_DEVELOP_DOCUMEN
+DIM tmpl_DEVELOP_DOCUMEN as P
+tmpl_DEVELOP_DOCUMEN = a5w_load_component("Develop_Document_UX") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Develop_Document_UX)
+
+'Override settings start -----------------------------------------
+with tmpl_DEVELOP_DOCUMEN
+.alias = "DEVELOP_DOCUMEN"
+_dialogFilename = "Develop_Document_UX"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_DEVELOP_DOCUMEN
+dim x_DEVELOP_DOCUMEN as p
+x_DEVELOP_DOCUMEN = a5w_run_Component(tmpl_DEVELOP_DOCUMEN) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Develop_Document_UX)
+
+?x_DEVELOP_DOCUMEN.Output.Head.JavaScript
+?x_DEVELOP_DOCUMEN.Output.Head.CSS_Link
+
+?x_DEVELOP_DOCUMEN.Output.Head.Title 
+%>
+
+
+<%a5
+Delete tmpl_DOCUMENT_BUILDE
+DIM tmpl_DOCUMENT_BUILDE as P
+tmpl_DOCUMENT_BUILDE = a5w_load_component("Document_Builder") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Document_Builder)
+
+'Override settings start -----------------------------------------
+with tmpl_DOCUMENT_BUILDE
+.alias = "DOCUMENT_BUILDE"
+_dialogFilename = "Document_Builder"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_DOCUMENT_BUILDE
+dim x_DOCUMENT_BUILDE as p
+x_DOCUMENT_BUILDE = a5w_run_Component(tmpl_DOCUMENT_BUILDE) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Document_Builder)
+
+?x_DOCUMENT_BUILDE.Output.Head.JavaScript
+?x_DOCUMENT_BUILDE.Output.Head.CSS_Link
+
+?x_DOCUMENT_BUILDE.Output.Head.Title 
+%>
+
+<%a5
+'The componentAlias MUST be UNIQUE for each component on the page. It must not have spaces in the name. Keep name as short as possible
+dim componentAlias as c 
+componentAlias = "DOCUMENT_BUILDE"
+Delete tmpl_DOCUMENT_BUILDE1
+DIM tmpl_DOCUMENT_BUILDE1 as P
+tmpl_DOCUMENT_BUILDE1 = a5w_load_component("Document_Builder_Grid") 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Document_Builder_Grid)
+'Following code allows you to override settings in the saved component. DO NOT REMOVE SYSTEM GENERATED OVERRIDE_SETTINGS
+tmpl_DOCUMENT_BUILDE1.override_settings = <<%override_settings%
+	componentName = componentAlias
+	_gridFilename = "Document_Builder_Grid"
+%override_settings%
+'TIP: To refer to local or page variables in the override_settings string, you must first define a local
+'dot variable called 'pageVar' with properties for all of the variables you want to reference. For example:
+'	dim pageVar as p
+'	pageVar.gridRowCount = 10
+'Then, in the override_settings string, you can reference pageVar.gridRowCount. For example:
+'	rows = pageVar.gridRowCount
+'Resolve session and page variables in the override_settings string.
+a5w_resolveVariablesInOverrideSettings(tmpl_DOCUMENT_BUILDE1,session,local_variables())
+delete x_DOCUMENT_BUILDE1
+dim x_DOCUMENT_BUILDE1 as p
+x_DOCUMENT_BUILDE1 = a5w_run_Component(tmpl_DOCUMENT_BUILDE1)  'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl_DOCUMENT_BUILDE1) (EDIT:Document_Builder_Grid)
+if x_DOCUMENT_BUILDE1.RedirectURL <> "" then 
+	response.redirect(x_DOCUMENT_BUILDE1.redirectURL)
+	end
+end if 
+?x_DOCUMENT_BUILDE1.Output.Head.JavaScript
+?x_DOCUMENT_BUILDE1.Output.Head.CSS_Link
+%>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl_DOCUMENT_BUILDE1 -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/MobTan/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/GrOlive/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/MobTan/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/GrOlive/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl_EXTENDEDUSERINF -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/GrOlive/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/iOS7/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl_ADD_ORGANISATIO -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/MobTan/style.css">
+<!--Alpha Five Temporary Code End -->
+
+<title></title>
+</head>
+<body><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;">	<%A5 ?x_DOCUMENT_BUILDE1.Output.Body.Search_HTML %>
+	<%A5 ?x_DOCUMENT_BUILDE1.Output.Body.Grid_HTML %>
+	<%A5 ?x_DOCUMENT_BUILDE1.Output.Body.DetailView_HTML	%>
+	<%A5 ?a5dialogHelper_generateCORSHeaders() %><br></div></body></html>

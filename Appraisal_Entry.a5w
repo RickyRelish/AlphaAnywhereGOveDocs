@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+<title>Incident Form</title>
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_INCIDENT_FORM
+DIM tmpl_INCIDENT_FORM as P
+tmpl_INCIDENT_FORM = a5w_load_component("Incident_Form") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Incident_Form)
+
+'Override settings start -----------------------------------------
+with tmpl_INCIDENT_FORM
+.alias = "INCIDENT_FORM"
+_dialogFilename = "Incident_Form"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_INCIDENT_FORM
+dim x_INCIDENT_FORM as p
+x_INCIDENT_FORM = a5w_run_Component(tmpl_INCIDENT_FORM) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Incident_Form)
+
+?x_INCIDENT_FORM.Output.Head.JavaScript
+?x_INCIDENT_FORM.Output.Head.CSS_Link
+
+?x_INCIDENT_FORM.Output.Head.Title 
+%>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_UX_A_APPRAISAL
+DIM tmpl_UX_A_APPRAISAL as P
+tmpl_UX_A_APPRAISAL = a5w_load_component("UX_A_Appraisal") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:UX_A_Appraisal)
+
+'Override settings start -----------------------------------------
+with tmpl_UX_A_APPRAISAL
+.alias = "UX_A_APPRAISAL"
+_dialogFilename = "UX_A_Appraisal"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_UX_A_APPRAISAL
+dim x_UX_A_APPRAISAL as p
+x_UX_A_APPRAISAL = a5w_run_Component(tmpl_UX_A_APPRAISAL) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:UX_A_Appraisal)
+
+?x_UX_A_APPRAISAL.Output.Head.JavaScript
+?x_UX_A_APPRAISAL.Output.Head.CSS_Link
+
+?x_UX_A_APPRAISAL.Output.Head.Title 
+%>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_UX_A_APP_HOLDER
+DIM tmpl_UX_A_APP_HOLDER as P
+tmpl_UX_A_APP_HOLDER = a5w_load_component("UX_A_App_Holder") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:UX_A_App_Holder)
+
+'Override settings start -----------------------------------------
+with tmpl_UX_A_APP_HOLDER
+.alias = "UX_A_APP_HOLDER"
+_dialogFilename = "UX_A_App_Holder"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_UX_A_APP_HOLDER
+dim x_UX_A_APP_HOLDER as p
+x_UX_A_APP_HOLDER = a5w_run_Component(tmpl_UX_A_APP_HOLDER) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:UX_A_App_Holder)
+
+?x_UX_A_APP_HOLDER.Output.Head.JavaScript
+?x_UX_A_APP_HOLDER.Output.Head.CSS_Link
+
+?x_UX_A_APP_HOLDER.Output.Head.Title 
+%>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/Alpha Anywhere/css/MobGray/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+</head>
+
+
+<%a5 ?x_UX_A_APPRAISAL.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+
+<%a5 ?x_UX_A_APP_HOLDER.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="MobGrayPage">
+<!--Alpha Five Temporary Code End -->	
+
+
+<!--Alpha Five Temporary Code End -->	
+
+<div><div><font face="Calibri"><a href="Home_page.a5w">Incident Forms</a><br></font></div><div><br></div><div><a href="LogoutGovs.a5w" style="font-family: Calibri;">Log Out</a></div></div><div><br></div>
+
+<div style="text-align: center;"><table align="Center"><tbody><tr><td style="text-align: center;"><font face="Calibri" size="4" style="color: rgb(21, 69, 198);"><b style="font-size: 110%;">Appraisal Form<br><img src="1_APP.bmp" style="width:px;height:px"><br></b></font></td></tr><tr><td>
+<%A5 ?x_UX_A_APP_HOLDER.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %>
+</td></tr><tr><td style="text-align: center;"></td></tr></tbody></table></div></body></html>

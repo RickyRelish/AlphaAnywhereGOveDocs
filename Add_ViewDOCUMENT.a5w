@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+<%a5
+'The componentAlias MUST be UNIQUE for each component on the page. It must not have spaces in the name. Keep name as short as possible
+dim componentAlias as c 
+componentAlias = "DOCUMENT_VIEW_G"
+Delete tmpl_DOCUMENT_VIEW_G
+DIM tmpl_DOCUMENT_VIEW_G as P
+tmpl_DOCUMENT_VIEW_G = a5w_load_component("Document_View_Grid") 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Document_View_Grid)
+'Following code allows you to override settings in the saved component. DO NOT REMOVE SYSTEM GENERATED OVERRIDE_SETTINGS
+tmpl_DOCUMENT_VIEW_G.override_settings = <<%override_settings%
+	componentName = componentAlias
+	_gridFilename = "Document_View_Grid"
+%override_settings%
+'TIP: To refer to local or page variables in the override_settings string, you must first define a local
+'dot variable called 'pageVar' with properties for all of the variables you want to reference. For example:
+'	dim pageVar as p
+'	pageVar.gridRowCount = 10
+'Then, in the override_settings string, you can reference pageVar.gridRowCount. For example:
+'	rows = pageVar.gridRowCount
+'Resolve session and page variables in the override_settings string.
+a5w_resolveVariablesInOverrideSettings(tmpl_DOCUMENT_VIEW_G,session,local_variables())
+delete x_DOCUMENT_VIEW_G
+dim x_DOCUMENT_VIEW_G as p
+x_DOCUMENT_VIEW_G = a5w_run_Component(tmpl_DOCUMENT_VIEW_G)  'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl_DOCUMENT_VIEW_G) (EDIT:Document_View_Grid)
+if x_DOCUMENT_VIEW_G.RedirectURL <> "" then 
+	response.redirect(x_DOCUMENT_VIEW_G.redirectURL)
+	end
+end if 
+?x_DOCUMENT_VIEW_G.Output.Head.JavaScript
+?x_DOCUMENT_VIEW_G.Output.Head.CSS_Link
+%>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl_DOCUMENT_VIEW_G -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/MobTan/style.css">
+<!--Alpha Five Temporary Code End -->
+
+<title></title>
+</head>
+<body><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;">	<%A5 ?x_DOCUMENT_VIEW_G.Output.Body.Search_HTML %>
+	<%A5 ?x_DOCUMENT_VIEW_G.Output.Body.Grid_HTML %>
+	<%A5 ?x_DOCUMENT_VIEW_G.Output.Body.DetailView_HTML	%>
+	<%A5 ?a5dialogHelper_generateCORSHeaders() %><br></div></body></html>

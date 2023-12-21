@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_UX_MAINTENANCE
+DIM tmpl_UX_MAINTENANCE as P
+tmpl_UX_MAINTENANCE = a5w_load_component("UX_Maintenance") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:UX_Maintenance)
+
+'Override settings start -----------------------------------------
+with tmpl_UX_MAINTENANCE
+.alias = "UX_MAINTENANCE"
+_dialogFilename = "UX_Maintenance"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_UX_MAINTENANCE
+dim x_UX_MAINTENANCE as p
+x_UX_MAINTENANCE = a5w_run_Component(tmpl_UX_MAINTENANCE) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:UX_Maintenance)
+
+?x_UX_MAINTENANCE.Output.Head.JavaScript
+?x_UX_MAINTENANCE.Output.Head.CSS_Link
+
+?x_UX_MAINTENANCE.Output.Head.Title 
+%>
+
+
+
+
+
+<title></title>
+</head>
+
+<%a5 ?x_UX_MAINTENANCE.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+
+<!--Alpha Five Temporary Code End -->	
+<body class="MobGrayPage"><div><div><font face="Calibri"><a href="Home_page.a5w">Incident Forms</a><br></font></div><div><br></div><div><a href="LogoutGovs.a5w" style="font-family: Calibri;">Log Out</a></div></div><div><br></div>
+
+<div><br></div><table align="Center"><tbody><tr><td style="text-align: center;"><b style="color: rgb(21, 69, 198); font-family: Calibri; font-size: 19.8px;">Add a Maintenance Request<br><img src="1_Maint2.bmp" style="width:px;height:px"><br></b></td></tr><tr><td>
+<%A5 ?x_UX_MAINTENANCE.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %>
+</td></tr><tr><td></td></tr></tbody></table></body></html>

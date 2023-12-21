@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<meta name="apple-mobile-web-app-capable" content="yes" >            
+<head>
+<title></title>
+</head>
+<body><div style="text-align: left;">Location -&nbsp;<%A5 ? session.location%>&nbsp;</div><div style="text-align: center;"><b><font size="6" face="Bodoni MT"><br></font></b></div><div style="text-align: center;"><font face="Bodoni MT" size="5">MAINTENANCE MANAGEMENT SYSTEM</font></div><div style="text-align: center;"><font face="Bodoni MT" size="5"><br></font></div><div style="text-align: center;"><font face="Bodoni MT" size="6"><b><img src="1_Maint2.bmp" style="width:px;height:px"><br></b></font></div><div style="text-align: center;"><font face="Bodoni MT" size="6"><b><br></b></font></div>
+<div style="text-align: center;"><br></div><div style="text-align: center;"><h1 style="text-align: center; box-sizing: border-box; margin: 0px 0px 15px; line-height: 1.2em; text-rendering: optimizelegibility; text-transform: uppercase; color: rgb(88, 89, 91); font-family: proxima-nova, sans-serif;"><span style="font-size: 16px; font-weight: normal;">Maintenance management is a system of processes designed to protect and properly maintain the physical assets and resources of a company.&nbsp;</span></h1><p style="text-align: center; box-sizing: border-box; margin: 0px 0px 1em; color: rgb(88, 89, 91); font-family: proxima-nova, sans-serif; font-size: 16px;">By keeping track of equipment, workers, contractors and all the costs associated with those assets, maintenance management systems&nbsp;</p><p style="text-align: center; box-sizing: border-box; margin: 0px 0px 1em; color: rgb(88, 89, 91); font-family: proxima-nova, sans-serif; font-size: 16px;">not only save companies money on repairs and inspections, but ensure that both employees and complex machinery alike stay safe, efficient, and productive.</p></div>
+
+
+
+</body>
+</html>

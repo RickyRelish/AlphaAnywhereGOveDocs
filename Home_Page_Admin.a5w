@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_FORMSADMIN
+DIM tmpl_FORMSADMIN as P
+tmpl_FORMSADMIN = a5w_load_component("FormsAdmin") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:FormsAdmin)
+
+'Override settings start -----------------------------------------
+with tmpl_FORMSADMIN
+.alias = "FORMSADMIN"
+_dialogFilename = "FormsAdmin"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_FORMSADMIN
+dim x_FORMSADMIN as p
+x_FORMSADMIN = a5w_run_Component(tmpl_FORMSADMIN) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:FormsAdmin)
+
+?x_FORMSADMIN.Output.Head.JavaScript
+?x_FORMSADMIN.Output.Head.CSS_Link
+
+?x_FORMSADMIN.Output.Head.Title 
+%>
+
+
+
+
+
+<title>Home Page</title>
+</head>
+
+<%a5 ?x_FORMSADMIN.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="MobGrayPage">
+<!--Alpha Five Temporary Code End -->	
+
+<div style="text-align: left;"><div style="text-align: center;"><div style="text-align: left;"><font style="font-family: Calibri; font-size: large; color: rgb(218, 14, 14);"><a href="FrontPage.a5w">Home Page</a></font><span style="font-family: Calibri; font-size: large;"></span></div><div style="text-align: left;"><br></div><div style="text-align: left;"><a href="LogoutGovs.a5w" style="font-family: Calibri; font-size: large;">Log Out</a></div><div><br></div></div></div><h1 style="text-align: center;">
+<img src="black_textlogo_white_background.jpg" style="width:7.0in;height:0.9in"><br>
+</h1><p style="text-align: center;"><font face="Calibri" size="6">Location -&nbsp;&nbsp;<%A5 ? Session.location%></font></p><div style="text-align: center;"><p class="MsoNormal"><span style="line-height: 106%;"><font face="Calibri" style="" size="5"><b style="">Management Page:</b> - Action, review,
+and Update IMS / Governance documents.</font><span style="font-size: 36pt;"><o:p></o:p></span></span></p></div><div style="text-align: center;"><b><font size="4"><br></font></b></div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.vertical-menu {
+  width:1000px;
+}
+
+.vertical-menu a {
+  background-color: #dbf0dc;
+  color: Green;
+  display: block;
+  padding:10px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color:#ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #0b0b0b;
+  color: white;
+}
+</style>
+
+
+
+<div style="text-align: center;">
+<%A5 ?x_FORMSADMIN.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %>
+<br></div><div style="text-align: center;"><br></div><div style="text-align: center;"><font face="Bodoni MT">A clinical incident is defined by Australian Commission on Safety and Quality in Health Care (ACSQHC) as "an event or circumstance that resulted, or could have resulted,&nbsp;</font></div><div style="text-align: center;"><font face="Bodoni MT">in unintended and/or unnecessary harm to a person and/or a complaint, loss or damage".</font></div><div style="text-align: center;">
+<a href="https://www.safetyandquality.gov.au/" target="_blank" rel="noopener noreferrer"><font face="Bodoni MT">Australian Commission Website</font></a><br></div></body></html>

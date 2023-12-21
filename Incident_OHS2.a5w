@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_INCIDENTOHS_FOR
+DIM tmpl_INCIDENTOHS_FOR as P
+tmpl_INCIDENTOHS_FOR = a5w_load_component("IncidentOHS_Form") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:IncidentOHS_Form)
+
+'Override settings start -----------------------------------------
+with tmpl_INCIDENTOHS_FOR
+.alias = "INCIDENTOHS_FOR"
+_dialogFilename = "IncidentOHS_Form"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_INCIDENTOHS_FOR
+dim x_INCIDENTOHS_FOR as p
+x_INCIDENTOHS_FOR = a5w_run_Component(tmpl_INCIDENTOHS_FOR) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:IncidentOHS_Form)
+
+?x_INCIDENTOHS_FOR.Output.Head.JavaScript
+?x_INCIDENTOHS_FOR.Output.Head.CSS_Link
+
+?x_INCIDENTOHS_FOR.Output.Head.Title 
+%>
+
+
+
+
+
+<title>OHS - Form</title>
+</head>
+
+<%a5 ?x_INCIDENTOHS_FOR.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="MobGrayPage">
+<!--Alpha Five Temporary Code End -->	
+
+
+<div style="text-align: center;"><div style="text-align: start;"><font face="Calibri"><a href="Home_page.a5w">Incident Forms</a><br></font></div><div style="text-align: start;"><br></div><div style="text-align: start;"><a href="LogoutGovs.a5w" style="font-family: Calibri;">Log Out</a></div><div><br></div><table align="Center"><tbody><tr><td style="text-align: center;"><font face="Calibri" size="4" style="color: rgb(21, 69, 198);"><b style="font-size: 110%;">Staff&nbsp; - OHS Incident &amp; Accident<br><img src="1_Forms.bmp" style="width:px;height:px"><br></b></font></td></tr><tr><td style="text-align: center;">
+<%A5 ?x_INCIDENTOHS_FOR.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %>
+</td></tr><tr><td style="text-align: center;"></td></tr></tbody></table></div></body></html>

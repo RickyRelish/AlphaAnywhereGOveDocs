@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+<meta name="apple-mobile-web-app-capable" content="yes" >            
+<head>
+<title></title>
+</head>
+<body><div style="text-align: left;"><font face="Calibri">Location -&nbsp;<%A5 ? Session.location%></font></div><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;"><font face="Bodoni MT" size="6"><span style="color: rgb(11, 11, 11);">DOCUMENT MANAGEMENT SYSTEM</span></font></div><div style="text-align: center;"><font face="Bodoni MT" size="6"><span style="color: rgb(11, 11, 11);"><br></span></font></div>
+<div style="text-align: center;"><img src="1_DMS.bmp" style="width:px;height:px"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;"><span style="font-family: Calibri; background-color: rgb(255, 255, 255); color: rgb(20, 20, 21); text-align: start;">Document management System - is a software used to capture, store, manage, and easily retrieve digital documents within an organization.&nbsp;</span></div><div style="text-align: center;"><span style="box-sizing: inherit; color: rgb(8, 8, 8); text-align: start; background-color: rgb(255, 255, 255);"><font face="Calibri">It provides the needed functionalities for businesses to digitize documents and automate their business processes.</font></span></div>
+
+
+
+</body>
+</html>

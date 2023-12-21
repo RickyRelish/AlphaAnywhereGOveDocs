@@ -1,0 +1,1629 @@
+{
+    "$schema": "GRID",
+    "$definition": {
+        "SecurityModel": "Group Based",
+        "GUID": "8df0dd1f-5848-49e4-a044-d38acd3398ad",
+        "DateFormatOnClient": "DD/MM/YY",
+        "clientSideDateFormat": "dd/MM/yyyy",
+        "flagTreeViewGrid": true,
+        "flagTreeViewDV": true,
+        "componentType": "Grid",
+        "Xbasic": "dim tmpl as p\ntmpl.ComponentName = \"Add_Organisation_Grid\"\ntmpl.ComponentType = \"Grid\"\ntmpl.AjaxOn = .t.\ntmpl.LayoutColumns = 1\ntmpl.useCompactTheme = .t.\ntmpl.showPulseEffect = .t.\ntmpl.queryEcho = .f.\ntmpl.connectToWebSocketServer = .f.\ntmpl.flagAddPKToORDER = .t.\ntmpl.makeJSONdataAvailableInServerSideEvents = .f.\ntmpl.saveFileType = \"Formatted JSON\"\ntmpl.captureJSErrorStackTrace = .f.\ntmpl.pusherApp = .f.\ntmpl.pusherConfigJSON = \"\"\ntmpl.SecurityModel = \"Group Based\"\ntmpl.SecurityMode = \"\"\ntmpl.PreCalcMode = \"Standard\"\ntmpl.clientSideDateFormat = \"dd/MM/yyyy\"\ntmpl.publishedServerVariables = \"\"\ntmpl.datePicker.dayNames = \"Sun,Mon,Tue,Wed,Thu,Fri,Sat\"\ntmpl.datePicker.firstDayOfWeek = 1\ntmpl.datePicker.monthNames = \"January,February,March,April,May,June,July,August,September,October,November,December\"\ntmpl.datePicker.todayButtonText = \"Today\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.friendlydatesCustomizationJSON = \"\"\ntmpl.customizationString.javascriptDialogs = \"\"\ntmpl.iconMapOverrides = \"\"\ntmpl.DataSourceType = \"CS\"\ntmpl.CS.database_type = \"CS\"\ntmpl.CS.type = \"connectionstring\"\ntmpl.cs.ConnectionString  = \"::name::CONN\"\ntmpl.CS.SQL = \"SELECT [Name], [ID], [Image] FROM [1_Companies] ORDER BY Name\"\nDIM tmpl.Arguments[1] AS P\nwith tmpl.Arguments[1]\n\t.Name = \"\"\n\t.DataType = \"\"\n\t.Source = \"\"\n\t.SourceDisplay = \"\"\n\t.VariableScope = \"\"\n\t.VariableName = \"\"\n\t.VariableWithScope = \"\"\n\t.DefaultValue = \"\"\n\t.Prompt = .f.\n\t.PromptText = \"\"\n\t.PromptControlType = \"\"\n\t.PromptChoices = \"\"\n\t.PromptDlgTitle = \"\"\n\t.PromptTextAbove = \"\"\n\t.PreviewValue = \"\"\nend with\nDIM tmpl.ArgumentsPage AS P\nwith tmpl.ArgumentsPage\n\t.PromptTextAbove = \"\"\nend with\ntmpl.CS.PrimaryKeyColumns = \"ID\"\ntmpl.CS.IdentitySequenceName  = \"\"\ntmpl.CS.primaryKeyTopAliasIsAutoIncrement  = .t.\ntmpl.grid_is_editable = .t.\ntmpl.edit.allow_update = .t.\ntmpl.edit.allow_insert = .t.\ntmpl.edit.number_of_insert_rows = 1\ntmpl.edit.allow_delete = .t.\ntmpl.edit.validateFieldsSetting = \"Dirty Fields Only\"\ntmpl.ShowNewRecordsOnLastPageOnly = .f.\ntmpl.AddNewRecordRowsPosition = \"Bottom\"\ntmpl.SecurityMode = \"\"\ntmpl.edit.delete_checkbox_label = \"Delete\"\ntmpl.edit.delete_checkbox_allowDeleteAll = .f.\ntmpl.edit.delete_checkbox_label_position = \"Left\"\ntmpl.edit.has_Cancel_button = .f.\ntmpl.edit.cancel_button_text = \"Cancel\"\ntmpl.edit.submit_button_text = \"Submit\"\ntmpl.edit.cancel_button_inlinestyle = \"\"\ntmpl.edit.submit_button_inlinestyle = \"\"\ntmpl.edit.confirm_before_submit = .f.\ntmpl.edit.confirm_before_submit_message = \"Submit changes?\"\ntmpl.edit.check_for_write_conflicts = .t.\ntmpl.edit.write_conflict_check_type = 2\ntmpl.edit.save_original_values  = .t.\ntmpl.edit.Show_Update_Commands = .f.\ntmpl.edit.Execute_Update_Commands = .t.\ntmpl.edit.TargetPage = \"<Self>\"\ntmpl.autoNumberColumnLabel = \"Auto\"\ntmpl.edit.RowEditStyle = \"AllRows\"\ntmpl.edit.NewRecordsEditStyle = \"AlwaysShown\"\ntmpl.edit.HideNewRecordsAfterInsert = .f.\ntmpl.edit.NewRecordsButtonLabel = \"New Records\"\ntmpl.edit.DeleteRecordControl = \"Checkbox\"\ntmpl.edit.HasRowStatusColumn = .t.\ntmpl.edit.OneEditableRowAtATime = .t.\ntmpl.edit.field_error_style.type = \"Icon\"\ntmpl.edit.field_error_style.icon = \"images/$$generic.error.png.a5image\"\ntmpl.edit.field_error_style.control_classname = \"\"\ntmpl.edit.field_error_style.error_classname = \"\"\ntmpl.edit.field_error_style.control_hover_classname = \"\"\ntmpl.edit.field_error_style.error_hover_classname = \"\"\ntmpl.edit.show_row_errors_in_popup = .f.\ntmpl.edit.row_errors_window_title = \"Errors\"\ntmpl.edit.row_errors_window_style = \"color: red; width: 6in; height: 2in;\"\ntmpl.edit.RefreshRowMethod = \"AutoSelect\"\ntmpl.edit.Editable_GridRow_Options_Style = \"Icons\"\ntmpl.edit.RefreshRowOnDirty = .t.\ntmpl.edit.LazyEdit = .t.\ntmpl.edit.abortGridUpdateIfAnyRowHasError = .f.\nDIM tmpl.update.tables[1] as p\nWith tmpl.update.tables[1]\n\t.Name = \"1_Companies\"\n\t.Table_Alias = \"_1_Companies\"\n\t.PrimaryKey = \"ID\"\nEnd With\ntmpl.search.has_search_component = .t.\ntmpl.search.title = \"<br>Organisation - Management Grid<br><br>\"\ntmpl.search.show_title = .t.\ntmpl.search.search_button_label = \"Search\"\ntmpl.search.include_sorting_listbox = .f.\ntmpl.search.sort.prompt = \"Sort&nbsp;by\"\ntmpl.search.sorting_listbox_Label_position = \"Left\"\ntmpl.search.sort.promptInLineStyle = \"\"\ntmpl.search.sort.listbox.fieldname_prompt = \"Select Field\"\ntmpl.search.sort.listbox.use_column_headings = .f.\ntmpl.search.customSortDefinition = \"\"\ntmpl.search.search_button.useIcon = .f.\ntmpl.search.clear_link.useIcon = .f.\ntmpl.search.sort.listbox.order_prompt = \"Select Order\"\ntmpl.search.sort.listbox.order_choices = \"Ascending,Descending\"\ntmpl.search.include_records_per_page_listbox = .f.\ntmpl.search.records_per_page.prompt = \"Records&nbsp;per&nbsp;page\"\ntmpl.search.records_per_page_Label_position = \"Left\"\ntmpl.search.records_per_page.promptInLineStyle = \"\"\ntmpl.search.records_per_page.listbox.value_prompt = \"Select Value\"\ntmpl.search.records_per_page.listbox.choices = \"1,2,5,10,25,50,75,100\"\ntmpl.search.orientation = \"Horizontal\"\ntmpl.search.combine_criteria_using = 1\ntmpl.search.style = 2\ntmpl.search.allow_qbf_style = .t.\ntmpl.search.show_single_search_field = .f.\ntmpl.search.keyword_label = \"Search for?\"\ntmpl.search.has_Clear_link = .t.\ntmpl.search.Clear_link_Label = \"Clear Search Criteria\"\ntmpl.search.Clear_link_BubbleHelp = \"Clear Search\"\ntmpl.search.EnableShowHide  = .f.\ntmpl.search.InitialState = \"Open\"\ntmpl.search.title_when_hidden = \"Click here to search...\"\ntmpl.search.qbe_exclusions = \"\"\ntmpl.search.toolbarPosition = \"Below\"\ntmpl.search.disableAutoComplete = .f.\ntmpl.search.HideGridWhenNoActiveSearch = .f.\ntmpl.search.GridHTMLWhenHidden  = \"\"\ntmpl.EditRegion.Search.Top = \"\"\ntmpl.EditRegion.Search.Bottom = \"\"\ntmpl.EditRegion.Search.Left = \"\"\ntmpl.EditRegion.Search.Right = \"\"\ntmpl.search.allowSearchCriteriaSave = .f.\ntmpl.search.allowSearchCriteriaLoad = .f.\ntmpl.SearchFields = 1\nDIM tmpl.SearchField_Info[tmpl.SearchFields] as P \nwith tmpl.searchfield_info[1]\n\t.Fieldname = \"Name\"\n\t.SearchExpression = \"Name\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 3\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"VaryingCharacter\"\n\t.nativeType = \"varchar\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.encrypted = .f.\n\t.Varname = \"NAME\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 40\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 200\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .t.\n\t.Watermark.text = \"Startswith..\"\n\t.Watermark.class = \"\"\n\t.Watermark.style = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Name\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Name\"\nend with\ntmpl.grid_layout_style = 1\ntmpl.add_records_only = .f.\ntmpl.rows = 100\ntmpl.maxRowsPerPage = 200\ntmpl.rowsWhenSearchActive = -1\ntmpl.suppress_empty_rows = .t.\ntmpl.has_row_separator = .t.\ntmpl.alternate_bands = .t.\ntmpl.even_band_size = 1\ntmpl.odd_band_size = 1\ntmpl.alternate_column_bands = .f.\ntmpl.even_column_band_size = 1\ntmpl.odd_column_band_size = 1\ntmpl.conditionalStyle = \"\"\ntmpl.clientSideConditionalStyle = \"\"\ntmpl.show_title = .t.\ntmpl.title = \"<br>Organisation - Add a New Organisation to the Grid<br><br>\"\ntmpl.FontSize = \"Medium\"\ntmpl.No_records_message = \"No records in query\"\ntmpl.total_records_row_position = 1\ntmpl.total_records_row = \"Records:&nbsp; {Total_Records}&nbsp;\"\ntmpl.show_column_titles = 1\ntmpl.suppress_titles_if_no_records = .f.\ntmpl.show_row_labels = .t.\ntmpl.snakingLayout_suppressRepeatedLabels = .f.\ntmpl.sort_style = 3\ntmpl.reset_page_number_when_sorting = .t.\ntmpl.allowGridBodyScrolling = .f.\ntmpl.scrollableRegionHeight = \"2in\"\ntmpl.scrollableRegionWidth = \"100%\"\ntmpl.fixedWidthColumns = .f.\ntmpl.defaultColumnWidth = \"1in\"\ntmpl.columnWidthSettings = \"\"\ntmpl.EditRegion.Grid.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Right = <<%editregion%\n%editregion%\ntmpl.HasNewRecordsTitle = .f.\ntmpl.NewRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >New Records</td></tr>\"\ntmpl.HasExistingRecordsTitle = .f.\ntmpl.ExistingRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >Existing Records</td></tr>\"\ntmpl.Highlight_row_onHover =  .t.\ntmpl.Highlight_row_onSelect =  .t.\ntmpl.HasRecordsPerPageSelector = .t.\ntmpl.RecordsPerPageChoices =   \"1,2,5,10,25,50,75,100\"\ntmpl.RecordsPerPageSelectorTemplate = \"&nbsp;&nbsp;{Grid.RecordsPerPageSelector} Records per page\"\ntmpl.has_qbe_row = .f.\ntmpl.qbe.initial_display = \"Hidden\"\ntmpl.qbe.toggleQBERowHyperlinkText = \"Show/Hide QBE Row\"\ntmpl.has_advancedSearch = .f.\ntmpl.hasLinkedContent = .f.\ntmpl.hasExternalNavigators = .f.\ntmpl.hasRowExpandColumn = .f.\ntmpl.hasSelectedRowColumn = .t.\ntmpl.hasCheckboxSelectColumn = .f.\ntmpl.AdditionalGridStyles = \"\"\ntmpl.LocalCss = \"\"\ntmpl.CSSLinkedFiles = \"\"\ntmpl.localsvg = \"\"\ntmpl.SVGLinkedFiles = \"\"\ntmpl.CSSIcons = \"\"\ntmpl.JavaScriptLinkedFiles = \"\"\ntmpl.useMasterTemplate = .f.\ntmpl.MasterTemplateStyle = \"Table - Vertical Layout\"\ntmpl.MasterLayoutTemplate = \"\"\ntmpl.MasterLayoutTemplateJavascript = \"\"\ntmpl.MasterLayout.PaneLabel.Search = \"Search\"\ntmpl.MasterLayout.PaneLabel.Grid = \"Grid\"\ntmpl.MasterLayout.PaneLabel.DetailView = \"Detail\"\ntmpl.MasterLayout.AccordionStyle = \"Multiple\"\ntmpl.MasterLayout.InitialOpenPanes = \"Search,Grid,DetailView\"\ntmpl.verticalAlignDataInColumns = \"Middle\"\ntmpl.CanCollapseGrid = .f.\ntmpl.CollapseBar.Title = \"Collapse Grid\"\ntmpl.CollapseBar.OpenIcon = \"\"\ntmpl.CollapseBar.ClosedIcon = \"\"\ntmpl.CollapseBar.Style = \"\"\ntmpl.Collapsebar.Class = \"\"\ntmpl.Collapsebar.ContainerStyle = \"\"\ntmpl.Collapsebar.ContainerClass = \"\"\ntmpl.Collapsebar.InitialState = \"open\"\ntmpl.languageTags_RemoveUnConsumedTags = .t.\ntmpl.activeLanguage = \"<Default>\"\ntmpl.search.highlightSearchStrings = .f.\ntmpl.autoRefreshGrid = .f.\ntmpl.autoRefreshInterval = 60\ntmpl.helpTableType = \"DBF\"\ntmpl.helpTableName = \"\"\ntmpl.helpConnectionString = \"\"\ntmpl.helpIDfield = \"\"\ntmpl.helpContentsField = \"\"\ntmpl.fieldHelpWindowStyle = \"modal-resizeable\"\ntmpl.fields = 4\nDIM tmpl.field_info[tmpl.fields] as P \nwith tmpl.field_info[1]\n\t.Fieldname = \"Name\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"VaryingCharacter\"\n\t.nativeType = \"varchar\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.encrypted = .f.\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"_1_Companies\"\n\t.FieldToUpdate = \"Name\"\n\t.Varname = \"NAME\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 30\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 100\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Name\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Name\"\n\t.Column.Sort = \"Name\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[2]\n\t.Fieldname = \"ID\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .t.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.encrypted = .f.\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"_1_Companies\"\n\t.FieldToUpdate = \"ID\"\n\t.Varname = \"ID\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 11\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 11\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"ID\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"ID\"\nend with\nwith tmpl.field_info[3]\n\t.Controltype = \"Unbound_Button\"\n\t.Fieldname = \"_Unbound_Button_1\"\n\t.Varname = \"_Unbound_Button_1\"\n\t.ButtonText = \"Image\"\n\t.Button.class = \"\"\n\t.Button.style = \"\"\n\t.clientSideConditionalStyle = \"\"\n\t.clientSideConditionalStyleLevel = \"control\"\n\t.Column.CanSort = .t.\n\t.Column.Sort = \"\"\n\t.Column.Heading = \"\"\n\t.Column.InLineStyle = \"\"\n\t.Column.LabelInLineStyle = \"\"\n\t.Column.heading_left = \"\"\n\t.Column.Hide = .f.\n\t.BreakType = \"None\"\n\t.Column.LabelPosition = \"Left\"\n\t.nCols = 1\n\t.javascript.onclick = <<%txt%\n/* actionJavascript:cacfd575-58fb-46ae-b989-0d0eda7dd102 */\nImageUpload_61f670f29b584b5c91b4022e43180c00({grid.rownumber},'{grid.rowId}',this);%txt%\n\t.xbasicFunctionDeclarations = <<%txt%\nfunction ImageUpload_d21c9c1cb32a4d84b93c101b54b4029b as p()\nDIM p as P\nDIM p.uploadProperties as P\nDIM p.uploadProperties.target as C = \"Server\"\nDIM p.uploadProperties.cloudStorage as P\nDIM p.uploadProperties.cloudStorage.specifyCredentials as C = \"Named Storage Connection String\"\nDIM p.uploadProperties.cloudStorage.connectionString as C\nDIM p.uploadProperties.cloudStorage.credentials as P\nDIM p.uploadProperties.cloudStorage.credentials.access_key as C\nDIM p.uploadProperties.cloudStorage.credentials.secret as C\nDIM p.uploadProperties.cloudStorage.bucketName as C\nDIM p.uploadProperties.cloudStorage.region as C\nDIM p.uploadProperties.cloudStorage.allowMultipleFiles as L\nDIM p.uploadProperties.cloudStorage.maxFileSize as N = -1\nDIM p.uploadProperties.cloudStorage.maxFileSizeTotal as N = -1\nDIM p.uploadProperties.cloudStorage.allowedFileTypes as C\nDIM p.uploadProperties.cloudStorage.authenticatedRead as L\nDIM p.uploadProperties.cloudStorage.displayProgress as L\nDIM p.uploadProperties.cloudStorage.allowCancel as L = .T.\nDIM p.uploadProperties.cloudStorage.progressStyle as C = \"Bar\"\nDIM p.uploadProperties.cloudStorage.progressBarColor as C = \"#9fa1e8\"\nDIM p.uploadProperties.cloudStorage.progressBarWidth as C = \"1.5in\"\nDIM p.uploadProperties.cloudStorage.progressDisplayPlaceholder as C\nDIM p.uploadProperties.cloudStorage.javascript as P\nDIM p.uploadProperties.cloudStorage.javascript.onAfterFilesSelect as C\nDIM p.uploadProperties.cloudStorage.javascript.onCompleteIndividualFile as C\nDIM p.uploadProperties.cloudStorage.javascript.onCompleteAllFiles as C\nDIM p.uploadProperties.cloudStorage.javascript.onBeforeFileSelect as C\nDIM p.uploadProperties.cloudStorage.javascript.onValidationError as C\nDIM p.uploadProperties.cloudStorage.javascript.onError as C\nDIM p.uploadProperties.cloudStorage.javascript.onProgress as C\nDIM p.uploadProperties.cloudStorage.javascript.targetName as C\nDIM p.uploadProperties.cloudStorage.customization as P\nDIM p.uploadProperties.cloudStorage.customization.maxFileSize as C = \"Selected file [filename] (size [filesize]) exceeds the maximum allowed file size of [maxfilesize].\"\nDIM p.uploadProperties.cloudStorage.customization.totalFileSize as C = \"Selected files ([filecount] files, total size [totalfilesize]) exceed the maximum allowed total file size of [maxtotalfilesize].\"\nDIM p.uploadProperties.cloudStorage.customization.fileType as C = \"Selected file ([filename]) is not an allowed file type.\"\nDIM p.uploadProperties.storeThumbnails as L\nDIM p.uploadProperties.thumbNailDefinition as C\nDIM p.uploadProperties.uploadFolder as C\nDIM p.uploadProperties.fileExistAction as C = \"Overwrite\"\nDIM p.uploadProperties.storedValueExpression as C\nDIM p.uploadProperties.maxFileSize as C = \"1000000\"\nDIM p.uploadProperties.maxFileSizeExceededMessage as C = \"You have selected a file that exceeds the maximum allowed file size of {filesize} bytes.\"\nDIM p.uploadProperties.allowedImageExtensions as C = \".bmp,.jpg,.jpeg,.png\"\nDIM p.uploadProperties.invalidExtensionErrorText as C = \"The file you selected is not an allowed file type.\"\nDIM p.uploadProperties.sqlEmbeddedImageFormat as C = \"JPG\"\nDIM p.uploadProperties.title as C = \"Select Image\"\nDIM p.uploadProperties.uploadButtonText as C = \"Upload\"\nDIM p.uploadProperties.fileBoxWaterMark as C = \"Click button to select file...\"\nDIM p.uploadProperties.selectFileButtonImage as C = \"images/$$folder.open.png.a5image\"\nDIM p.uploadProperties.prompt as C = \"File:\"\nDIM p.uploadProperties.height as C = \"3in\"\nDIM p.uploadProperties.width as C = \"5in\"\nDIM p.uploadProperties.fileUploadWaitMessage as C = \"<img src=\\\"css/A5System/Images/wait.gif\\\" /> Uploading files...\"\nDIM p.uploadProperties.windowSubtheme as C\nDIM p.uploadProperties.scaleImage as C = \"method=proportional,units=inches,maxSize=1.5,appliesTo=width\"\nDIM p.uploadProperties.closeAfterUpload as L = .T.\nDIM p.uploadProperties.confirmationMessage as C = \"Image was uploaded. Click OK to save change, or Cancel to abandon change.\"\nDIM p.uploadProperties.confirmationWindowHasFreeformLayout as L\nDIM p.uploadProperties.confirmationWindowTemplate as C\nDIM p.uploadProperties.imageInlineStyle as C = \"height: 1in;\"\nDIM p.uploadProperties.autoUpload as L\nDIM p.uploadProperties.targetFileNameAfterComputeXbasic as C\nDIM p.uploadProperties.errorText_TableNotUpdateable as C = \"Table is not updateable, or you do not have permission to update this table.\"\nDIM p.uploadProperties.errorText_FieldNotUpdateable as C = \"Image field is not updateable, or you do not have permission to update this field.\"\nDIM p.uploadProperties.errorText_SessionExpired as C = \"Session has expired, or some other error has occurred, and the uploaded image cannot be found. Please upload the image again.\"\nDIM p.uploadProperties.errorText_NewRecordRow as C = \"You cannot upload an image to a new record row. You must first save this record, then upload the image.\"\nDIM p.uploadProperties.events as P\nDIM p.uploadProperties.events.serverside as P\nDIM p.uploadProperties.events.serverside.beforeSave as C\nDIM p.uploadProperties.events.serverside.onSave as C\nDIM p.uploadProperties.events.clientSide as P\nDIM p.uploadProperties.events.clientSide.afterUpload as C\nDIM p.uploadProperties.events.clientSide.beforeUpload as C\nDIM p.uploadProperties.fileSelectWindowName as C = \"56fe6011c75f4a358a46715f433e5c6d\"\nDIM p.uploadProperties.showProgress as L = .T.\nDIM p.uploadProperties.uploadAbortMsg as C = \"Abort file upload\"\nDIM p.uploadProperties.abortButtonLabel as C = \"Abort\"\nDIM p.uploadProperties.progressBarType as C = \"A5\"\nDIM p.uploadProperties.targetField as C = \"Image\"\nDIM p.uploadProperties.targetFieldIsBlob as L = .T.\nImageUpload_d21c9c1cb32a4d84b93c101b54b4029b= p\nend function%txt%\n\t.javascriptDeclarationsGlobal.onclick = <<%txt%\nwindow['ImageUpload_61f670f29b584b5c91b4022e43180c00'] = function(rowNum,rowId,objEle) {\nif({grid.object}._embeddedMode) {\n\talert('File upload is not supported when the Component is running on the Desktop.');\n\treturn false;\n}\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'] = {grid.object}.createWindow('{grid.componentName}_WINDOW__UNBOUND_BUTTON_1_xngly','modal-url',\n{\theight: '3in',\n\twidth: '5in',\n\ttitle: {html: 'Select Image<span id=\"56fe6011c75f4a358a46715f433e5c6d\"></span>' },\n\ttheme: '{grid.style}',\n\tbody: {content: {type: 'url',\n\turl: 'about:blank'}},\n\tbuttons: {\n\t\titems: [\n\t\t\t{html: '<div style=\"width:1in;cursor:default;\">Upload</div>', width: '', name: 'UPLOAD', action: function() {$(this.getWindowId('body')).contentWindow.A5.fileUpload.upload(); }},\n\t\t\t{html: '<div style=\"width:1in;cursor:default;\">OK</div>', width: '', name: 'OK', action: function() {$(this.getWindowId('body')).contentWindow.okToSave(); }},\n\t\t\t{html: 'Cancel',width: '', name: 'Cancel', action: function() { this.hide(); } }\n\t\t]\n\t},\n\tonHide: function() { var ele = $('{grid.componentname}.V.R'+this.rowNumber+'.IMAGE');\nvar oldImg = $ga(ele,'oldImage');\nif(oldImg) $svs(ele,oldImg);\n  ; this.refresh(); }\n}\n);\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].clearTools();\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].setButtonDisplay('OK',false);\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].setButtonDisplay('UPLOAD',true);\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].getButton('Cancel').refresh();\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].show('center');\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].rowNumber = rowNum;\nvar data = {grid.object}._getRowKey(rowNum);\nvar targetUrl = '';\ntargetUrl = targetUrl + '__a5FileUploadMasterPage.a5w?fileUploadUrl=' + urlencode({grid.object}.ajaxURL);\ntargetUrl = targetUrl + '&rowNumber=' + rowNum ;\ntargetUrl = targetUrl + '&part=G';\ntargetUrl = targetUrl + '&fileUploadAutoUpload=N';\n//targetUrl = targetUrl + '&uploadButtonLabel=Upload';\ntargetUrl = targetUrl + '&fileBoxWaterMark=Click%20button%20to%20select%20file%2e%2e%2e';\ntargetUrl = targetUrl + '&fileUploadWaitMessage=<img src=\"css/A5System/Images/wait.gif\" /> Uploading files...';\ntargetUrl = targetUrl + '&fileSelectImg=images/$$folder.open.png.a5image';\ntargetUrl = targetUrl + '&selectFileButtonImage=images/$$folder.open.png.a5image';\ntargetUrl = targetUrl + '&stylesheetName={grid.style}';\ntargetUrl = targetUrl + '&filePromptSingular=File%3a';\ntargetUrl = targetUrl + '&maxfilesize=1000000';\ntargetUrl = targetUrl + '&maxsizemsg=You%20have%20selected%20a%20file%20that%20exceeds%20the%20maximum%20allowed%20file%20size%20of%20%7bfilesize%7d%20bytes%2e';\ntargetUrl = targetUrl + '&__formAction=UploadImage&gridFieldName=Image';\ntargetUrl = targetUrl + '&uploadAbortMsg=Abort%20file%20upload';\ntargetUrl = targetUrl + '&abortButtonLabel=Abort';\ntargetUrl = targetUrl + '&progressBarType=A5';\ntargetUrl = targetUrl + '&fswindowname=56fe6011c75f4a358a46715f433e5c6d';\ntargetUrl = targetUrl + '&__showProgress=yes';\ntargetUrl = targetUrl + '&__xbfunction=ImageUpload_d21c9c1cb32a4d84b93c101b54b4029b';\ntargetUrl = targetUrl + '&' + data ;\ntargetUrl = targetUrl + '&_allowedFileTypes=bmp%2cjpg%2cjpeg%2cpng';\ntargetUrl = targetUrl + '&_invalidTypeMsg=The%20file%20you%20selected%20is%20not%20an%20allowed%20file%20type%2e';\ntargetUrl = targetUrl + '&__componentType=grid&__componentAlias='+{grid.object}.gridId;\n//targetUrl = targetUrl + '&' + $gvs('{grid.componentname}.STATEINFO') ;\nwindow._tempUploadVariables = $gvs('{grid.componentname}.STATEINFO')  ;\n$(window['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].getWindowId('body')).src = targetUrl;\n}%txt%\nend with\nwith tmpl.field_info[4]\n\t.Fieldname = \"Image\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"<BMP Field>\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .f.\n\t.autoincrement = .f.\n\t.portableType = \"VaryingBinary\"\n\t.nativeType = \"varbinary\"\n\t.Type = \"B\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.encrypted = .f.\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"_1_Companies\"\n\t.FieldToUpdate = \"Image\"\n\t.Varname = \"IMAGE\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Image\"\n\t.Image.Imagename = \"\"\n\t.Image.InLineStyle = \"\"\n\t.Image.Alt = \"\"\n\t.Image.IsHyperLink = .f.\n\t.Image.hyperlinkTarget = \"\"\n\t.Image.hyperlinkTargetFrame = \"\"\n\t.Image.base64Encode = .f.\n\t.Image.scale = \"\"\n\t.Image.noImageFoundImage = \"<None>\"\n\t.Image.newRecordImage = \"<None>\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Image\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Image\"\n\t.Column.Sort = \"<No sort>\"\n\t.Column.FirstClickDirection = \"A\"\nend with\ntmpl.RecordNavigationStyle = \"NavigationButtons\"\ntmpl.fetchMoreRecordsButton.text = \"More Records\"\ntmpl.fetchMoreRecordsButton.style = \"\"\ntmpl.RecNav.SuppressIfOnlyOnePage = .t.\ntmpl.RecNav.First_Label = \"First\"\ntmpl.RecNav.Has_First_Button = .t.\ntmpl.RecNav.Has_Last_Button = .t.\ntmpl.RecNav.Has_Next_Button = .t.\ntmpl.RecNav.Has_Prev_Button = .t.\ntmpl.RecNav.HTML_Template_source = \"Computed\"\ntmpl.RecNav.Justify = \"Left\"\ntmpl.RecNav.Last_Label = \"Last\"\ntmpl.RecNav.Next_Label = \"Next\"\ntmpl.RecNav.Number_of_page_links = 10\ntmpl.RecNav.Page_Numbering_Style = 3\ntmpl.RecNav.PagesTemplate_w_PageCount = \"{PageNumber} of {PageCount}\"\ntmpl.RecNav.PagesTemplate_wout_PageCount = \"{PageNumber}\"\ntmpl.RecNav.Position = 1\ntmpl.RecNav.suppress_recNavBar_if_no_records = .f.\ntmpl.RecNav.Prev_Label = \"Prev\"\ntmpl.RecNav.Show_disabled_controls = .t.\ntmpl.RecNav.Show_Page_Count = .t.\ntmpl.RecNav.Use_Images = .f.\ntmpl.gridToolbarTemplate = <<%html%\n%html%\ntmpl.gridToolbarTemplateEditable = <<%html%\n%html%\ntmpl.style_name = \"<ProjectStyle>\"\ntmpl.resolveAbstractClassNames = .t.\ntmpl.style_type = \"Alpha Five\"\ntmpl.UseSimpleStyles = .f.\ntmpl.overrideStylesForJavascriptObjects = .f.\ntmpl.searchBehavior = \"\"\ntmpl.GUID = \"8df0dd1f-5848-49e4-a044-d38acd3398ad\"\ntmpl.onlyIncludeSelectedFieldsInQuery = .t.\ntmpl.hasGroupBreaks = .f.\ntmpl.groupBreaks.expression1 = \"\"\ntmpl.groupBreaks.direction1 = \"\"\ntmpl.groupBreaks.header1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.footer1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.collapseAllGroupsOnInitialDisplay = .f.\ntmpl.timestamp = \"2022-12-14:12-28-29.352\"\ntmpl.resolveAbstractClassNamesAtDesignTime  = .f.\ntmpl.resolveAbstractIconNamesAtDesignTime = .f. \ntmpl.svgiconsdefaultsize  = \"\"\ntmpl.useLegacyDatePicker = .f.\ntmpl.javascriptUnboundActionDefinitions = <<%javascriptActions%\n%javascriptActions%\n\ntmpl.precalc.sessionVarsInShowHideExpns = <<%sessionvars%\n%sessionvars%\ntmpl.precalc.unboundActionsXbasicFunctions = \"\"\ntmpl.precalc.includeS3Javascript = .f.",
+        "datasourceType": 3,
+        "componentName": "Add_Organisation_Grid",
+        "query_ado": {
+            "mdb_or_cs": 1,
+            "connection_type": 1,
+            "base_on": 1,
+            "Arguments": [
+                {}
+            ]
+        },
+        "query_cs": {
+            "connection_type": 1,
+            "connection_name": "CONN",
+            "base_on": 1,
+            "table_name": "1_Companies",
+            "table_alias": "_1_Companies",
+            "order": "Name",
+            "database_type": "CS",
+            "surrogate_primary_key": "ID",
+            "FieldInfo": "<a_expn<[1]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"int\">\n<portable_type=\"Integer32\">\n<autoincrement=.T.>\n<identity=.T.>\n<identitySequenceName=\"\">\n<definedsize=11>\n<name=\"ID\">\n<basecolumn=\"ID\">\n<varname=\"ID\">\n<basetable=\"1_Companies\">\n<alias_to_update=\"_1_Companies\">\n<Precision=11>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"ID\">\n<searchExpression=\"ID\">\n>\n<[2]<a5_type=\"Character\">\n<a5_shorttype=\"C\">\n<CS_type=\"varchar\">\n<portable_type=\"VaryingCharacter\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=100>\n<name=\"Name\">\n<basecolumn=\"Name\">\n<varname=\"Name\">\n<basetable=\"1_Companies\">\n<alias_to_update=\"_1_Companies\">\n<Precision=100>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"Name\">\n<searchExpression=\"Name\">\n>\n<[3]<a5_type=\"Blob\">\n<a5_shorttype=\"B\">\n<CS_type=\"varbinary\">\n<portable_type=\"VaryingBinary\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=10>\n<name=\"Image\">\n<basecolumn=\"Image\">\n<varname=\"Image\">\n<basetable=\"1_Companies\">\n<alias_to_update=\"_1_Companies\">\n<Precision=10>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.F.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"Image\">\n<searchExpression=\"Image\">\n>\n>\n",
+            "SurrogatePrimaryKeyData": "<arrTables<[1]<Primary_Key=\"ID\">\n<Name=\"1_Companies\">\n<Alias=\"_1_Companies\">\n>\n>\n",
+            "SQLBuilder": {
+                "ColumnAliases": "ID|||||||ID\nName|||||||Name\nImage|||||||Image\n",
+                "ColumnTypes": "ID=N\nName=C\nImage=B\n",
+                "ColumnNativeTypes": "ID=int\nName=varchar\nImage=varbinary\n",
+                "ColumnPortableTypes": "ID=Integer32\nName=VaryingCharacter\nImage=VaryingBinary\n",
+                "AutoIncrementFields": "ID\n",
+                "CanBeUsedInWhereClauseFields": "ID\nName\n"
+            },
+            "Arguments": [
+                {}
+            ],
+            "table_type": "Table",
+            "primaryKeyTopAliasIsAutoIncrement_AsDefinedInTableInfo": true,
+            "primaryKeyTopAliasIsAutoIncrement": true
+        },
+        "query_dbf": {
+            "type": "Table",
+            "Direction": "Ascending",
+            "JoinInfo": {
+                "a_tables": [
+                    {}
+                ],
+                "lastbutton": "cancel"
+            },
+            "Arguments": [
+                {}
+            ]
+        },
+        "grid": {
+            "editable": true
+        },
+        "fields": {
+            "a_fields": [
+                {
+                    "fieldname": "Name",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1
+                    },
+                    "controltype": "TextBox",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "Size": 30,
+                        "MaxLength": 100,
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "Lookup": {
+                        "Type": "Grid Component"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
+                            "toolbaricons": "",
+                            "toolbardefinition": ""
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "AlphaDAO",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
+                    },
+                    "column": {
+                        "heading": "Name",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "Name",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "Name",
+                    "type": "C",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "_1_Companies",
+                    "canBeUsedInWhereClause": true,
+                    "nativeType": "varchar",
+                    "table": "1_Companies",
+                    "FieldToUpdate": "Name",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "PortableType": "VaryingCharacter",
+                    "width": 100,
+                    "varname": "Name",
+                    "Display": "Name",
+                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=Name}Name",
+                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=Name}Name",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Name\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"VaryingCharacter\"\n\t.nativeType = \"varchar\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.encrypted = .f.\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"_1_Companies\"\n\t.FieldToUpdate = \"Name\"\n\t.Varname = \"NAME\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 30\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 100\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Name\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Name\"\n\t.Column.Sort = \"Name\"\n\t.Column.FirstClickDirection = \"A\"\n\nend with\n\n\n\n\n\n",
+                    "columnQBEOptionsJSON": "",
+                    "encrypted": false,
+                    "encryptionKey": ""
+                },
+                {
+                    "fieldname": "ID",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1
+                    },
+                    "controltype": "TextBox",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "InLineStyle": "text-align: right;",
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "InLineStyle": "text-align: right;",
+                        "Size": 11,
+                        "MaxLength": 11,
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "Lookup": {
+                        "Type": "Grid Component"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
+                            "toolbaricons": "",
+                            "toolbardefinition": ""
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "AlphaDAO",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
+                    },
+                    "column": {
+                        "Hide": true,
+                        "heading": "ID",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "ID",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "ID",
+                    "type": "N",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "_1_Companies",
+                    "canBeUsedInWhereClause": true,
+                    "nativeType": "int",
+                    "autoincrement": true,
+                    "table": "1_Companies",
+                    "FieldToUpdate": "ID",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "PortableType": "Integer32",
+                    "width": 11,
+                    "varname": "ID",
+                    "Display": "ID",
+                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=#130,130,130}{DATA=ID}ID",
+                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=#130,130,130}{DATA=ID}ID",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"ID\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .t.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.encrypted = .f.\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"_1_Companies\"\n\t.FieldToUpdate = \"ID\"\n\t.Varname = \"ID\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 11\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 11\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"ID\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"ID\"\n\nend with\n\n\n\n\n\n",
+                    "columnQBEOptionsJSON": "",
+                    "encrypted": false,
+                    "encryptionKey": ""
+                },
+                {
+                    "fieldname": "[Button].1",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Image",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1,
+                        "ControlID": "1"
+                    },
+                    "javascript": {
+                        "onclick": "/* actionJavascript:cacfd575-58fb-46ae-b989-0d0eda7dd102 */\nImageUpload_61f670f29b584b5c91b4022e43180c00({grid.rownumber},'{grid.rowId}',this);"
+                    },
+                    "javascriptDeclarationsGlobal": {
+                        "onclick": "window['ImageUpload_61f670f29b584b5c91b4022e43180c00'] = function(rowNum,rowId,objEle) {\n\n\nif({grid.object}._embeddedMode) {\n\talert('File upload is not supported when the Component is running on the Desktop.');\n\treturn false;\n}\n\n\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'] = {grid.object}.createWindow('{grid.componentName}_WINDOW__UNBOUND_BUTTON_1_xngly','modal-url',\n{\theight: '3in',\n\twidth: '5in',\n\ttitle: {html: 'Select Image<span id=\"56fe6011c75f4a358a46715f433e5c6d\"></span>' },\n\ttheme: '{grid.style}',\n\tbody: {content: {type: 'url',\n\turl: 'about:blank'}},\n\tbuttons: {\n\t\titems: [\n\t\t\t{html: '<div style=\"width:1in;cursor:default;\">Upload</div>', width: '', name: 'UPLOAD', action: function() {$(this.getWindowId('body')).contentWindow.A5.fileUpload.upload(); }},\n\n\t\t\t{html: '<div style=\"width:1in;cursor:default;\">OK</div>', width: '', name: 'OK', action: function() {$(this.getWindowId('body')).contentWindow.okToSave(); }},\n\t\t\t{html: 'Cancel',width: '', name: 'Cancel', action: function() { this.hide(); } }\n\t\t]\n\t},\n\tonHide: function() { var ele = $('{grid.componentname}.V.R'+this.rowNumber+'.IMAGE');\nvar oldImg = $ga(ele,'oldImage');\nif(oldImg) $svs(ele,oldImg);\n  ; this.refresh(); }\n}\n);\n\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].clearTools();\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].setButtonDisplay('OK',false);\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].setButtonDisplay('UPLOAD',true);\n\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].getButton('Cancel').refresh();\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].show('center');\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].rowNumber = rowNum;\n\nvar data = {grid.object}._getRowKey(rowNum);\n\nvar targetUrl = '';\ntargetUrl = targetUrl + '__a5FileUploadMasterPage.a5w?fileUploadUrl=' + urlencode({grid.object}.ajaxURL);\ntargetUrl = targetUrl + '&rowNumber=' + rowNum ;\ntargetUrl = targetUrl + '&part=G';\ntargetUrl = targetUrl + '&fileUploadAutoUpload=N';\n//targetUrl = targetUrl + '&uploadButtonLabel=Upload';\ntargetUrl = targetUrl + '&fileBoxWaterMark=Click%20button%20to%20select%20file%2e%2e%2e';\ntargetUrl = targetUrl + '&fileUploadWaitMessage=<img src=\"css/A5System/Images/wait.gif\" /> Uploading files...';\ntargetUrl = targetUrl + '&fileSelectImg=images/$$folder.open.png.a5image';\ntargetUrl = targetUrl + '&selectFileButtonImage=images/$$folder.open.png.a5image';\ntargetUrl = targetUrl + '&stylesheetName={grid.style}';\ntargetUrl = targetUrl + '&filePromptSingular=File%3a';\ntargetUrl = targetUrl + '&maxfilesize=1000000';\ntargetUrl = targetUrl + '&maxsizemsg=You%20have%20selected%20a%20file%20that%20exceeds%20the%20maximum%20allowed%20file%20size%20of%20%7bfilesize%7d%20bytes%2e';\ntargetUrl = targetUrl + '&__formAction=UploadImage&gridFieldName=Image';\ntargetUrl = targetUrl + '&uploadAbortMsg=Abort%20file%20upload';\ntargetUrl = targetUrl + '&abortButtonLabel=Abort';\ntargetUrl = targetUrl + '&progressBarType=A5';\ntargetUrl = targetUrl + '&fswindowname=56fe6011c75f4a358a46715f433e5c6d';\ntargetUrl = targetUrl + '&__showProgress=yes';\ntargetUrl = targetUrl + '&__xbfunction=ImageUpload_d21c9c1cb32a4d84b93c101b54b4029b';\ntargetUrl = targetUrl + '&' + data ;\ntargetUrl = targetUrl + '&_allowedFileTypes=bmp%2cjpg%2cjpeg%2cpng';\ntargetUrl = targetUrl + '&_invalidTypeMsg=The%20file%20you%20selected%20is%20not%20an%20allowed%20file%20type%2e';\ntargetUrl = targetUrl + '&__componentType=grid&__componentAlias='+{grid.object}.gridId;\n//targetUrl = targetUrl + '&' + $gvs('{grid.componentname}.STATEINFO') ;\n\n\n\nwindow._tempUploadVariables = $gvs('{grid.componentname}.STATEINFO')  ;\n$(window['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].getWindowId('body')).src = targetUrl;\n\n\n}"
+                    },
+                    "controltype": "layout_directive_button",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "Size": 20,
+                        "MaxLength": 20,
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
+                            "toolbaricons": "",
+                            "toolbardefinition": ""
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "AlphaDAO",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<Default>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
+                    },
+                    "column": {
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "canBeUsedInWhereClause": true,
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "PortableType": "Integer32",
+                    "width": 11,
+                    "varname": "_Unbound_Button_1",
+                    "Display": "[Button].1",
+                    "displayOD": "{F=Tahoma,8}{I:'$$control.button'}{T=.2}{C=}{DATA=[Button].1}[Button].1",
+                    "displayODFlat": "{F=Tahoma,8}{I:'$$control.button'}{T=.2}{C=}{DATA=[Button].1}[Button].1",
+                    "scope": "Local",
+                    "xbasicFunctions": {
+                        "onclick": "function ImageUpload_d21c9c1cb32a4d84b93c101b54b4029b as p()\nDIM p as P\nDIM p.uploadProperties as P\nDIM p.uploadProperties.target as C = \"Server\"\nDIM p.uploadProperties.cloudStorage as P\nDIM p.uploadProperties.cloudStorage.specifyCredentials as C = \"Named Storage Connection String\"\nDIM p.uploadProperties.cloudStorage.connectionString as C\nDIM p.uploadProperties.cloudStorage.credentials as P\nDIM p.uploadProperties.cloudStorage.credentials.access_key as C\nDIM p.uploadProperties.cloudStorage.credentials.secret as C\nDIM p.uploadProperties.cloudStorage.bucketName as C\nDIM p.uploadProperties.cloudStorage.region as C\nDIM p.uploadProperties.cloudStorage.allowMultipleFiles as L\nDIM p.uploadProperties.cloudStorage.maxFileSize as N = -1\nDIM p.uploadProperties.cloudStorage.maxFileSizeTotal as N = -1\nDIM p.uploadProperties.cloudStorage.allowedFileTypes as C\nDIM p.uploadProperties.cloudStorage.authenticatedRead as L\nDIM p.uploadProperties.cloudStorage.displayProgress as L\nDIM p.uploadProperties.cloudStorage.allowCancel as L = .T.\nDIM p.uploadProperties.cloudStorage.progressStyle as C = \"Bar\"\nDIM p.uploadProperties.cloudStorage.progressBarColor as C = \"#9fa1e8\"\nDIM p.uploadProperties.cloudStorage.progressBarWidth as C = \"1.5in\"\nDIM p.uploadProperties.cloudStorage.progressDisplayPlaceholder as C\nDIM p.uploadProperties.cloudStorage.javascript as P\nDIM p.uploadProperties.cloudStorage.javascript.onAfterFilesSelect as C\nDIM p.uploadProperties.cloudStorage.javascript.onCompleteIndividualFile as C\nDIM p.uploadProperties.cloudStorage.javascript.onCompleteAllFiles as C\nDIM p.uploadProperties.cloudStorage.javascript.onBeforeFileSelect as C\nDIM p.uploadProperties.cloudStorage.javascript.onValidationError as C\nDIM p.uploadProperties.cloudStorage.javascript.onError as C\nDIM p.uploadProperties.cloudStorage.javascript.onProgress as C\nDIM p.uploadProperties.cloudStorage.javascript.targetName as C\nDIM p.uploadProperties.cloudStorage.customization as P\nDIM p.uploadProperties.cloudStorage.customization.maxFileSize as C = \"Selected file [filename] (size [filesize]) exceeds the maximum allowed file size of [maxfilesize].\"\nDIM p.uploadProperties.cloudStorage.customization.totalFileSize as C = \"Selected files ([filecount] files, total size [totalfilesize]) exceed the maximum allowed total file size of [maxtotalfilesize].\"\nDIM p.uploadProperties.cloudStorage.customization.fileType as C = \"Selected file ([filename]) is not an allowed file type.\"\nDIM p.uploadProperties.storeThumbnails as L\nDIM p.uploadProperties.thumbNailDefinition as C\nDIM p.uploadProperties.uploadFolder as C\nDIM p.uploadProperties.fileExistAction as C = \"Overwrite\"\nDIM p.uploadProperties.storedValueExpression as C\nDIM p.uploadProperties.maxFileSize as C = \"1000000\"\nDIM p.uploadProperties.maxFileSizeExceededMessage as C = \"You have selected a file that exceeds the maximum allowed file size of {filesize} bytes.\"\nDIM p.uploadProperties.allowedImageExtensions as C = \".bmp,.jpg,.jpeg,.png\"\nDIM p.uploadProperties.invalidExtensionErrorText as C = \"The file you selected is not an allowed file type.\"\nDIM p.uploadProperties.sqlEmbeddedImageFormat as C = \"JPG\"\nDIM p.uploadProperties.title as C = \"Select Image\"\nDIM p.uploadProperties.uploadButtonText as C = \"Upload\"\nDIM p.uploadProperties.fileBoxWaterMark as C = \"Click button to select file...\"\nDIM p.uploadProperties.selectFileButtonImage as C = \"images/$$folder.open.png.a5image\"\nDIM p.uploadProperties.prompt as C = \"File:\"\nDIM p.uploadProperties.height as C = \"3in\"\nDIM p.uploadProperties.width as C = \"5in\"\nDIM p.uploadProperties.fileUploadWaitMessage as C = \"<img src=\\\"css/A5System/Images/wait.gif\\\" /> Uploading files...\"\nDIM p.uploadProperties.windowSubtheme as C\nDIM p.uploadProperties.scaleImage as C = \"method=proportional,units=inches,maxSize=1.5,appliesTo=width\"\nDIM p.uploadProperties.closeAfterUpload as L = .T.\nDIM p.uploadProperties.confirmationMessage as C = \"Image was uploaded. Click OK to save change, or Cancel to abandon change.\"\nDIM p.uploadProperties.confirmationWindowHasFreeformLayout as L\nDIM p.uploadProperties.confirmationWindowTemplate as C\nDIM p.uploadProperties.imageInlineStyle as C = \"height: 1in;\"\nDIM p.uploadProperties.autoUpload as L\nDIM p.uploadProperties.targetFileNameAfterComputeXbasic as C\nDIM p.uploadProperties.errorText_TableNotUpdateable as C = \"Table is not updateable, or you do not have permission to update this table.\"\nDIM p.uploadProperties.errorText_FieldNotUpdateable as C = \"Image field is not updateable, or you do not have permission to update this field.\"\nDIM p.uploadProperties.errorText_SessionExpired as C = \"Session has expired, or some other error has occurred, and the uploaded image cannot be found. Please upload the image again.\"\nDIM p.uploadProperties.errorText_NewRecordRow as C = \"You cannot upload an image to a new record row. You must first save this record, then upload the image.\"\nDIM p.uploadProperties.events as P\nDIM p.uploadProperties.events.serverside as P\nDIM p.uploadProperties.events.serverside.beforeSave as C\nDIM p.uploadProperties.events.serverside.onSave as C\nDIM p.uploadProperties.events.clientSide as P\nDIM p.uploadProperties.events.clientSide.afterUpload as C\nDIM p.uploadProperties.events.clientSide.beforeUpload as C\nDIM p.uploadProperties.fileSelectWindowName as C = \"56fe6011c75f4a358a46715f433e5c6d\"\nDIM p.uploadProperties.showProgress as L = .T.\nDIM p.uploadProperties.uploadAbortMsg as C = \"Abort file upload\"\nDIM p.uploadProperties.abortButtonLabel as C = \"Abort\"\nDIM p.uploadProperties.progressBarType as C = \"A5\"\nDIM p.uploadProperties.targetField as C = \"Image\"\nDIM p.uploadProperties.targetFieldIsBlob as L = .T.\n\nImageUpload_d21c9c1cb32a4d84b93c101b54b4029b= p\nend function"
+                    },
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Controltype = \"Unbound_Button\"\n\t.Fieldname = \"_Unbound_Button_1\"\n\t.Varname = \"_Unbound_Button_1\"\n\t.ButtonText = \"Image\"\n\t.Button.class = \"\"\n\t.Button.style = \"\"\n\t.clientSideConditionalStyle = \"\"\n\t.clientSideConditionalStyleLevel = \"control\"\n\t.Column.CanSort = .t.\n\t.Column.Sort = \"\"\n\t.Column.Heading = \"\"\n\t.Column.InLineStyle = \"\"\n\t.Column.LabelInLineStyle = \"\"\n\t.Column.heading_left = \"\"\n\t.Column.Hide = .f.\n\t.BreakType = \"None\"\n\t.Column.LabelPosition = \"Left\"\n\t.nCols = 1\n\t.javascript.onclick = <<%txt%\n/* actionJavascript:cacfd575-58fb-46ae-b989-0d0eda7dd102 */\nImageUpload_61f670f29b584b5c91b4022e43180c00({grid.rownumber},'{grid.rowId}',this);%txt%\n\t.xbasicFunctionDeclarations = <<%txt%\nfunction ImageUpload_d21c9c1cb32a4d84b93c101b54b4029b as p()\nDIM p as P\nDIM p.uploadProperties as P\nDIM p.uploadProperties.target as C = \"Server\"\nDIM p.uploadProperties.cloudStorage as P\nDIM p.uploadProperties.cloudStorage.specifyCredentials as C = \"Named Storage Connection String\"\nDIM p.uploadProperties.cloudStorage.connectionString as C\nDIM p.uploadProperties.cloudStorage.credentials as P\nDIM p.uploadProperties.cloudStorage.credentials.access_key as C\nDIM p.uploadProperties.cloudStorage.credentials.secret as C\nDIM p.uploadProperties.cloudStorage.bucketName as C\nDIM p.uploadProperties.cloudStorage.region as C\nDIM p.uploadProperties.cloudStorage.allowMultipleFiles as L\nDIM p.uploadProperties.cloudStorage.maxFileSize as N = -1\nDIM p.uploadProperties.cloudStorage.maxFileSizeTotal as N = -1\nDIM p.uploadProperties.cloudStorage.allowedFileTypes as C\nDIM p.uploadProperties.cloudStorage.authenticatedRead as L\nDIM p.uploadProperties.cloudStorage.displayProgress as L\nDIM p.uploadProperties.cloudStorage.allowCancel as L = .T.\nDIM p.uploadProperties.cloudStorage.progressStyle as C = \"Bar\"\nDIM p.uploadProperties.cloudStorage.progressBarColor as C = \"#9fa1e8\"\nDIM p.uploadProperties.cloudStorage.progressBarWidth as C = \"1.5in\"\nDIM p.uploadProperties.cloudStorage.progressDisplayPlaceholder as C\nDIM p.uploadProperties.cloudStorage.javascript as P\nDIM p.uploadProperties.cloudStorage.javascript.onAfterFilesSelect as C\nDIM p.uploadProperties.cloudStorage.javascript.onCompleteIndividualFile as C\nDIM p.uploadProperties.cloudStorage.javascript.onCompleteAllFiles as C\nDIM p.uploadProperties.cloudStorage.javascript.onBeforeFileSelect as C\nDIM p.uploadProperties.cloudStorage.javascript.onValidationError as C\nDIM p.uploadProperties.cloudStorage.javascript.onError as C\nDIM p.uploadProperties.cloudStorage.javascript.onProgress as C\nDIM p.uploadProperties.cloudStorage.javascript.targetName as C\nDIM p.uploadProperties.cloudStorage.customization as P\nDIM p.uploadProperties.cloudStorage.customization.maxFileSize as C = \"Selected file [filename] (size [filesize]) exceeds the maximum allowed file size of [maxfilesize].\"\nDIM p.uploadProperties.cloudStorage.customization.totalFileSize as C = \"Selected files ([filecount] files, total size [totalfilesize]) exceed the maximum allowed total file size of [maxtotalfilesize].\"\nDIM p.uploadProperties.cloudStorage.customization.fileType as C = \"Selected file ([filename]) is not an allowed file type.\"\nDIM p.uploadProperties.storeThumbnails as L\nDIM p.uploadProperties.thumbNailDefinition as C\nDIM p.uploadProperties.uploadFolder as C\nDIM p.uploadProperties.fileExistAction as C = \"Overwrite\"\nDIM p.uploadProperties.storedValueExpression as C\nDIM p.uploadProperties.maxFileSize as C = \"1000000\"\nDIM p.uploadProperties.maxFileSizeExceededMessage as C = \"You have selected a file that exceeds the maximum allowed file size of {filesize} bytes.\"\nDIM p.uploadProperties.allowedImageExtensions as C = \".bmp,.jpg,.jpeg,.png\"\nDIM p.uploadProperties.invalidExtensionErrorText as C = \"The file you selected is not an allowed file type.\"\nDIM p.uploadProperties.sqlEmbeddedImageFormat as C = \"JPG\"\nDIM p.uploadProperties.title as C = \"Select Image\"\nDIM p.uploadProperties.uploadButtonText as C = \"Upload\"\nDIM p.uploadProperties.fileBoxWaterMark as C = \"Click button to select file...\"\nDIM p.uploadProperties.selectFileButtonImage as C = \"images/$$folder.open.png.a5image\"\nDIM p.uploadProperties.prompt as C = \"File:\"\nDIM p.uploadProperties.height as C = \"3in\"\nDIM p.uploadProperties.width as C = \"5in\"\nDIM p.uploadProperties.fileUploadWaitMessage as C = \"<img src=\\\"css/A5System/Images/wait.gif\\\" /> Uploading files...\"\nDIM p.uploadProperties.windowSubtheme as C\nDIM p.uploadProperties.scaleImage as C = \"method=proportional,units=inches,maxSize=1.5,appliesTo=width\"\nDIM p.uploadProperties.closeAfterUpload as L = .T.\nDIM p.uploadProperties.confirmationMessage as C = \"Image was uploaded. Click OK to save change, or Cancel to abandon change.\"\nDIM p.uploadProperties.confirmationWindowHasFreeformLayout as L\nDIM p.uploadProperties.confirmationWindowTemplate as C\nDIM p.uploadProperties.imageInlineStyle as C = \"height: 1in;\"\nDIM p.uploadProperties.autoUpload as L\nDIM p.uploadProperties.targetFileNameAfterComputeXbasic as C\nDIM p.uploadProperties.errorText_TableNotUpdateable as C = \"Table is not updateable, or you do not have permission to update this table.\"\nDIM p.uploadProperties.errorText_FieldNotUpdateable as C = \"Image field is not updateable, or you do not have permission to update this field.\"\nDIM p.uploadProperties.errorText_SessionExpired as C = \"Session has expired, or some other error has occurred, and the uploaded image cannot be found. Please upload the image again.\"\nDIM p.uploadProperties.errorText_NewRecordRow as C = \"You cannot upload an image to a new record row. You must first save this record, then upload the image.\"\nDIM p.uploadProperties.events as P\nDIM p.uploadProperties.events.serverside as P\nDIM p.uploadProperties.events.serverside.beforeSave as C\nDIM p.uploadProperties.events.serverside.onSave as C\nDIM p.uploadProperties.events.clientSide as P\nDIM p.uploadProperties.events.clientSide.afterUpload as C\nDIM p.uploadProperties.events.clientSide.beforeUpload as C\nDIM p.uploadProperties.fileSelectWindowName as C = \"56fe6011c75f4a358a46715f433e5c6d\"\nDIM p.uploadProperties.showProgress as L = .T.\nDIM p.uploadProperties.uploadAbortMsg as C = \"Abort file upload\"\nDIM p.uploadProperties.abortButtonLabel as C = \"Abort\"\nDIM p.uploadProperties.progressBarType as C = \"A5\"\nDIM p.uploadProperties.targetField as C = \"Image\"\nDIM p.uploadProperties.targetFieldIsBlob as L = .T.\nImageUpload_d21c9c1cb32a4d84b93c101b54b4029b= p\nend function%txt%\n\t.javascriptDeclarationsGlobal.onclick = <<%txt%\nwindow['ImageUpload_61f670f29b584b5c91b4022e43180c00'] = function(rowNum,rowId,objEle) {\nif({grid.object}._embeddedMode) {\n\talert('File upload is not supported when the Component is running on the Desktop.');\n\treturn false;\n}\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'] = {grid.object}.createWindow('{grid.componentName}_WINDOW__UNBOUND_BUTTON_1_xngly','modal-url',\n{\theight: '3in',\n\twidth: '5in',\n\ttitle: {html: 'Select Image<span id=\"56fe6011c75f4a358a46715f433e5c6d\"></span>' },\n\ttheme: '{grid.style}',\n\tbody: {content: {type: 'url',\n\turl: 'about:blank'}},\n\tbuttons: {\n\t\titems: [\n\t\t\t{html: '<div style=\"width:1in;cursor:default;\">Upload</div>', width: '', name: 'UPLOAD', action: function() {$(this.getWindowId('body')).contentWindow.A5.fileUpload.upload(); }},\n\t\t\t{html: '<div style=\"width:1in;cursor:default;\">OK</div>', width: '', name: 'OK', action: function() {$(this.getWindowId('body')).contentWindow.okToSave(); }},\n\t\t\t{html: 'Cancel',width: '', name: 'Cancel', action: function() { this.hide(); } }\n\t\t]\n\t},\n\tonHide: function() { var ele = $('{grid.componentname}.V.R'+this.rowNumber+'.IMAGE');\nvar oldImg = $ga(ele,'oldImage');\nif(oldImg) $svs(ele,oldImg);\n  ; this.refresh(); }\n}\n);\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].clearTools();\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].setButtonDisplay('OK',false);\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].setButtonDisplay('UPLOAD',true);\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].getButton('Cancel').refresh();\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].show('center');\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].rowNumber = rowNum;\nvar data = {grid.object}._getRowKey(rowNum);\nvar targetUrl = '';\ntargetUrl = targetUrl + '__a5FileUploadMasterPage.a5w?fileUploadUrl=' + urlencode({grid.object}.ajaxURL);\ntargetUrl = targetUrl + '&rowNumber=' + rowNum ;\ntargetUrl = targetUrl + '&part=G';\ntargetUrl = targetUrl + '&fileUploadAutoUpload=N';\n//targetUrl = targetUrl + '&uploadButtonLabel=Upload';\ntargetUrl = targetUrl + '&fileBoxWaterMark=Click%20button%20to%20select%20file%2e%2e%2e';\ntargetUrl = targetUrl + '&fileUploadWaitMessage=<img src=\"css/A5System/Images/wait.gif\" /> Uploading files...';\ntargetUrl = targetUrl + '&fileSelectImg=images/$$folder.open.png.a5image';\ntargetUrl = targetUrl + '&selectFileButtonImage=images/$$folder.open.png.a5image';\ntargetUrl = targetUrl + '&stylesheetName={grid.style}';\ntargetUrl = targetUrl + '&filePromptSingular=File%3a';\ntargetUrl = targetUrl + '&maxfilesize=1000000';\ntargetUrl = targetUrl + '&maxsizemsg=You%20have%20selected%20a%20file%20that%20exceeds%20the%20maximum%20allowed%20file%20size%20of%20%7bfilesize%7d%20bytes%2e';\ntargetUrl = targetUrl + '&__formAction=UploadImage&gridFieldName=Image';\ntargetUrl = targetUrl + '&uploadAbortMsg=Abort%20file%20upload';\ntargetUrl = targetUrl + '&abortButtonLabel=Abort';\ntargetUrl = targetUrl + '&progressBarType=A5';\ntargetUrl = targetUrl + '&fswindowname=56fe6011c75f4a358a46715f433e5c6d';\ntargetUrl = targetUrl + '&__showProgress=yes';\ntargetUrl = targetUrl + '&__xbfunction=ImageUpload_d21c9c1cb32a4d84b93c101b54b4029b';\ntargetUrl = targetUrl + '&' + data ;\ntargetUrl = targetUrl + '&_allowedFileTypes=bmp%2cjpg%2cjpeg%2cpng';\ntargetUrl = targetUrl + '&_invalidTypeMsg=The%20file%20you%20selected%20is%20not%20an%20allowed%20file%20type%2e';\ntargetUrl = targetUrl + '&__componentType=grid&__componentAlias='+{grid.object}.gridId;\n//targetUrl = targetUrl + '&' + $gvs('{grid.componentname}.STATEINFO') ;\nwindow._tempUploadVariables = $gvs('{grid.componentname}.STATEINFO')  ;\n$(window['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].getWindowId('body')).src = targetUrl;\n}%txt%\nend with\n\n\n\n\n\n",
+                    "columnQBEOptionsJSON": "",
+                    "encrypted": false,
+                    "encryptionKey": ""
+                },
+                {
+                    "fieldname": "Image",
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1,
+                        "ControlID": "1"
+                    },
+                    "controltype": "Image",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "Size": 20,
+                        "MaxLength": 20,
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
+                            "toolbaricons": "",
+                            "toolbardefinition": ""
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "AlphaDAO",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
+                    },
+                    "column": {
+                        "heading": "Image",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "<No sort>",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "Image",
+                    "type": "B",
+                    "DisplayFormat": "<BMP Field>",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "_1_Companies",
+                    "nativeType": "varbinary",
+                    "table": "1_Companies",
+                    "FieldToUpdate": "Image",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "PortableType": "VaryingBinary",
+                    "width": 10,
+                    "varname": "Image",
+                    "Display": "Image",
+                    "displayOD": "{F=Tahoma,8}{I:'a5_htmled_picture'}{T=.2}{C=}{DATA=Image}Image",
+                    "displayODFlat": "{F=Tahoma,8}{I:'a5_htmled_picture'}{T=.2}{C=}{DATA=Image}Image",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Image\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"<BMP Field>\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .f.\n\t.autoincrement = .f.\n\t.portableType = \"VaryingBinary\"\n\t.nativeType = \"varbinary\"\n\t.Type = \"B\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.encrypted = .f.\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"_1_Companies\"\n\t.FieldToUpdate = \"Image\"\n\t.Varname = \"IMAGE\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Image\"\n\t.Image.Imagename = \"\"\n\t.Image.InLineStyle = \"\"\n\t.Image.Alt = \"\"\n\t.Image.IsHyperLink = .f.\n\t.Image.hyperlinkTarget = \"\"\n\t.Image.hyperlinkTargetFrame = \"\"\n\t.Image.base64Encode = .f.\n\t.Image.scale = \"\"\n\t.Image.noImageFoundImage = \"<None>\"\n\t.Image.newRecordImage = \"<None>\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Image\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Image\"\n\t.Column.Sort = \"<No sort>\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n\n\n\n",
+                    "columnQBEOptionsJSON": "",
+                    "encrypted": false,
+                    "encryptionKey": ""
+                }
+            ]
+        },
+        "field_index": 1,
+        "DetailView": {
+            "LayoutColumns": 1,
+            "AddNewLinkLabel": "New Record",
+            "SaveRecordButtonLabel": "Save",
+            "DeleteRecordButtonLabel": "Delete",
+            "AddRecordButtonLabel": "Add",
+            "HasTitle": true,
+            "Title": "Detail View ",
+            "show_row_labels": true,
+            "edit": {
+                "Execute_Update_Commands": true,
+                "allow_update": true,
+                "allow_insert": true,
+                "allow_delete": true,
+                "validateFieldsSetting": "Dirty Fields Only",
+                "updateWhichFields": "Dirty Fields Only",
+                "Number_Of_Insert_Rows": 1,
+                "cancel_button_text": "Cancel",
+                "close_button_text": "Close",
+                "save_confirm_before_submit_message": "Update record?",
+                "delete_confirm_before_submit_message": "Delete record?",
+                "add_confirm_before_submit_message": "Add record?",
+                "check_for_write_conflicts": true,
+                "write_conflict_check_type": 2,
+                "save_original_values": true,
+                "Delete_TargetPage": "<Self>",
+                "Save_TargetPage": "<Self>",
+                "Add_TargetPage": "<Self>",
+                "field_error_style": {
+                    "type": "Icon",
+                    "icon": "images/$$generic.error.png.a5image"
+                },
+                "RefreshRowMethod": "AutoSelect",
+                "row_errors_window_title": "Errors",
+                "row_errors_window_style": "color: red; width: 6in; height: 2in;",
+                "FocusAfterFullPageRefreshForInsert": "First record",
+                "FocusAfterFullPageRefreshForUpdate": "Current page",
+                "FocusAfterFullPageRefreshForDelete": "Current page",
+                "Editable_GridRow_Options_Style": "Icons",
+                "RefreshRowOnDirty": true,
+                "RowEditStyle": "InitiallyEditable",
+                "LazyEdit": true
+            },
+            "HasCloseLink": true,
+            "CloseDetailViewLinkLabel": "Close",
+            "CanClose": true,
+            "Toolbar": {
+                "Position": "Below",
+                "showRecordNavigatorLinks": true
+            },
+            "SimpleStyleMode": "LayoutOnly",
+            "displayStyle": "OnPage",
+            "windowDragOpacity": 75,
+            "PopupWindowTitle": "Detail View",
+            "PopupWindowDirection": "ltr",
+            "OpenMethod": "Click a hyperlink field",
+            "window": {
+                "animation": {
+                    "show": {
+                        "method": "Fade",
+                        "speed": "Slow"
+                    },
+                    "hide": {
+                        "method": "None",
+                        "speed": "Fast"
+                    }
+                }
+            }
+        },
+        "detailfields": {
+            "a_fields": [
+                {}
+            ]
+        },
+        "detailViewToolbar": {
+            "helpButtonIcon": "images/$$generic.help.png.a5image",
+            "helpButtonBubbleHelp": "Open help window."
+        },
+        "HasSearchPart": true,
+        "search": {
+            "HTML_Template_source": "Computed",
+            "title": "<br>Organisation - Management Grid<br><br>",
+            "title_when_hidden": "Click here to search...",
+            "show_title": true,
+            "search_button_label": "Search",
+            "form_method": "Get",
+            "sorting_listbox_label_position": "Left",
+            "sort": {
+                "prompt": "Sort&nbsp;by",
+                "listbox": {
+                    "fieldname_prompt": "Select Field",
+                    "order_prompt": "Select Order",
+                    "order_choices": "Ascending,Descending"
+                }
+            },
+            "records_per_page_label_position": "Left",
+            "records_per_page": {
+                "prompt": "Records&nbsp;per&nbsp;page",
+                "listbox": {
+                    "value_prompt": "Select Value",
+                    "choices": "1,2,5,10,25,50,75,100"
+                }
+            },
+            "orientation": "Horizontal",
+            "combine_criteria_using": 1,
+            "style": 2,
+            "allow_qbf_style": true,
+            "keyword_label": "Search for?",
+            "has_Clear_link": true,
+            "Clear_link_Label": "Clear Search Criteria",
+            "Clear_link_BubbleHelp": "Clear Search",
+            "TargetPage": "<Self>",
+            "InitialState": "Open",
+            "embedInGridPosition": "Above Titles",
+            "embedded": {
+                "hasFreeformLayout": true,
+                "showHideEmbeddedSearchIcon": "images/$$filter.png.a5image",
+                "showHideEmbeddedSearchBubbleHelp": "Show/hide the Search Part",
+                "showSearchIconsInRowSelector": true,
+                "searchIconBubbleHelp": "Search for records",
+                "clearSearchIconBubbleHelp": "Clear search criteria",
+                "searchIcon": "images/$$filter.records.png.a5image",
+                "clearSearchIcon": "images/$$filter.clear.png.a5image"
+            },
+            "embeddedStyle": "Free-form region for each column",
+            "toolbarPosition": "Below",
+            "savedSearches": {
+                "loadSearchPrompt": "Saved search to load:",
+                "saveSearchPrompt": "Name:",
+                "listboxHeading": "Existing Saved Searches",
+                "promptToLoadChoices": "Click to load choices...",
+                "loadButtonLabel": "Load",
+                "saveButtonLabel": "Save",
+                "cancelButtonLabel": "Cancel",
+                "listBoxHeight": "1in",
+                "dialogWidth": "2in",
+                "executeSearchOnLoad": true,
+                "saveSearchBubbleHelp": "Save search criteria",
+                "loadSearchBubbleHelp": "Load search criteria",
+                "warningBlankName": "You have not specifed a name.",
+                "warningDuplicateName": "Search not saved. Please specify a unique name."
+            }
+        },
+        "searchToolbar": {
+            "helpButtonIcon": "images/$$generic.help.png.a5image",
+            "helpButtonBubbleHelp": "Open help window."
+        },
+        "searchFields": {
+            "a_fields": [
+                {
+                    "controltype": "TextBox",
+                    "Label": {
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "TextBox": {
+                        "Size": 40,
+                        "MaxLength": 200,
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
+                            "css": "",
+                            "toolbaricons": "",
+                            "toolbardefinition": ""
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "AlphaDAO",
+                        "NotInListRule": "Add To List if Not Null",
+                        "orientation": "Horizontal",
+                        "stylefieldiferror": true,
+                        "type": "Static",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add To List if Not Null",
+                        "orientation": "Horizontal",
+                        "initial_value": "False",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "AlphaDAO",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add To List if Not Null",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "OpenMethod": "ClickIcon",
+                        "showDaysOfWeek": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": "",
+                        "showTodayButton": true
+                    },
+                    "column": {
+                        "heading": "Name",
+                        "sort": "Name",
+                        "LabelPosition": "Left",
+                        "canSort": true,
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "type": "C",
+                    "display": "Name",
+                    "TableAlias": "_1_Companies",
+                    "updateable": true,
+                    "table": "1_Companies",
+                    "FieldToUpdate": "Name",
+                    "varname": "Name",
+                    "fieldname": "Name",
+                    "BreakType": "None",
+                    "DisplayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=Name}Name",
+                    "DisplayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=Name}Name",
+                    "displayODtree": "{F=Tahoma,8}{I:'$a5_control_field'} {C=}{DATA=Name}Name",
+                    "Search": {
+                        "Search_Style": 3,
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "scope": "Local",
+                    "conditionalStyleLevel": "Cell",
+                    "clientSideconditionalStyleLevel": "Cell",
+                    "hasWatermark": true,
+                    "Watermark": {
+                        "text": "Startswith.."
+                    },
+                    "lookup": {
+                        "type": "Edit-Combo List"
+                    },
+                    "nCols": 1,
+                    "BaseFieldExpression": "Name",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.searchfield_info[_fieldNumber_]\n\t.Fieldname = \"Name\"\n\t.SearchExpression = \"Name\"\n\t.Initial_Value = \"NULL\"\n\t.Search_Style = 3\n\t.KeywordSearch = .f.\n\t.Scope = \"Local\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"VaryingCharacter\"\n\t.nativeType = \"varchar\"\n\t.Type = \"C\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.encrypted = .f.\n\t.Varname = \"NAME\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.Textbox.Size = 40\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 200\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .t.\n\t.Watermark.text = \"Startswith..\"\n\t.Watermark.class = \"\"\n\t.Watermark.style = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Name\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Name\"\nend with\n\n\n\n\n\n\n\n\n\n",
+                    "canBeUsedInWhereClause": true,
+                    "NativeType": "varchar",
+                    "PortableType": "VaryingCharacter",
+                    "onChange_ValidationOption": "None",
+                    "repeatingSectionParentId": -1,
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "SearchExpression": "Name",
+                    "columnQBEOptionsJSON": "",
+                    "encrypted": false,
+                    "encryptionKey": ""
+                }
+            ]
+        },
+        "searchField_index": 1,
+        "events": {
+            "canAjaxCallback": "",
+            "afterAjaxCallback": ""
+        },
+        "eventIndex": 1,
+        "activeLanguage": "<Default>",
+        "LayoutColumns": 1,
+        "DetailLayoutColumns": 1,
+        "style_name": "<ProjectStyle>",
+        "PreCalcMode": "Standard",
+        "FontSize": "Medium",
+        "show_title": true,
+        "title": "<br>Organisation - Add a New Organisation to the Grid<br><br>",
+        "style_type": "Alpha Five",
+        "overrideStyleName": "Default",
+        "resolveAbstractClassNames": true,
+        "alternate_bands": true,
+        "odd_band_size": 1,
+        "even_band_size": 1,
+        "odd_column_band_size": 1,
+        "even_column_band_size": 1,
+        "rows": 100,
+        "maxRowsPerPage": 200,
+        "rowsWhenSearchActive": -1,
+        "suppress_empty_rows": true,
+        "has_row_separator": true,
+        "show_column_titles": 1,
+        "show_row_labels": true,
+        "sort_style": 3,
+        "reset_page_number_when_sorting": true,
+        "RepeatingColumns": 1,
+        "snaking": "TBLR",
+        "total_records_row_position": 1,
+        "total_records_row": "Records:&nbsp; {Total_Records}&nbsp;",
+        "grid_layout_style": 1,
+        "grid_layout_template_computation_method": "Automatic",
+        "No_records_message": "No records in query",
+        "Show_Add_Records_Confirmation_Message": true,
+        "summary": {
+            "total": {
+                "label": "Total",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "count": {
+                "label": "Count",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "average": {
+                "label": "Average",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "min": {
+                "label": "Minimum",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "max": {
+                "label": "Maximum",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "StdDev": {
+                "label": "Std. Dev.",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "Var": {
+                "label": "Variance",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "First": {
+                "label": "First",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "Last": {
+                "label": "Last",
+                "LblInlineStyle": "text-align: right;"
+            },
+            "RowOrder": "Total,Count,Average,Min,Max,StdDev,Var,First,Last",
+            "ShowOnLastPageOnly": true,
+            "repeatColumnHeadingAboveSummaryValues": false
+        },
+        "NewRecordsTitle": "<tr><td class=\"[class.gridData]\" colspan=\"{a5_colspan}\" style=\"padding: 0px;\" >New Records</td></tr>",
+        "ExistingRecordsTitle": "<tr><td class=\"[class.gridData]\" colspan=\"{a5_colspan}\" style=\"padding: 0px;\" >Existing Records</td></tr>",
+        "row_separator": "<tr><td class=\"{a5_style}SeparatorTD\" colspan=\"{a5_colspan}\" style=\"padding: 0px;\" ></td></tr>",
+        "highlight_row_onHover": true,
+        "highlight_row_onSelect": true,
+        "hasRecordsPerPageSelector": true,
+        "RecordsPerPageChoices": "1,2,5,10,25,50,75,100",
+        "RecordsPerPageSelectorTemplate": "&nbsp;&nbsp;{Grid.RecordsPerPageSelector} Records per page",
+        "alphabet_button": {
+            "style": "Hyperlink",
+            "has_ALL_option": true,
+            "ALL_Label": "All",
+            "alignment": "Left",
+            "SearchBarType": "Alphabet Buttons",
+            "buttonMode": "Single",
+            "buttonOperator": "OR"
+        },
+        "qbe": {
+            "menu_internationalization": "None",
+            "initial_display": "Hidden",
+            "toggleQBERowHyperlinkText": "Show/Hide QBE Row"
+        },
+        "SimpleStyleMode": "FieldsOnly",
+        "RowExpand": {
+            "ExpandMethod": "Click icon",
+            "Type": "LinkedContent",
+            "WorkingMessage": "<div style=\"width: 4in; height: .5in\">\n\t<img src=\"CSS/A5System/images/wait.gif\" /> Working...\n</div> \n",
+            "Mode": "Multiple"
+        },
+        "linkedContent": {
+            "lockWindowText": "<div style=\"padding: 5pt;\"><img style=\"vertical-align:middle;\" src=\"css/A5System/Images/wait.gif\" /> Please wait...</div>",
+            "lockWindowClassName": "A5WindowLock"
+        },
+        "hasSelectedRowColumn": true,
+        "CheckboxSelectType": "SinglePage",
+        "MasterTemplateStyle": "Table - Vertical Layout",
+        "MasterLayout": {
+            "PaneLabel": {
+                "Search": "Search",
+                "Grid": "Grid",
+                "DetailView": "Detail"
+            },
+            "AccordionStyle": "Multiple",
+            "InitialOpenPanes": "Search,Grid,DetailView"
+        },
+        "verticalAlignDataInColumns": "Middle",
+        "CollapseBar": {
+            "Title": "Collapse Grid",
+            "InitialState": "open"
+        },
+        "honorDBFFieldRules": true,
+        "languageTags_RemoveUnConsumedTags": true,
+        "onlyIncludeSelectedFieldsInQuery": true,
+        "flagAddPKToORDER": true,
+        "datePicker": {
+            "dayNames": "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+            "monthNames": "January,February,March,April,May,June,July,August,September,October,November,December",
+            "firstDayOfWeek": 1,
+            "todayButtonText": "Today",
+            "closeButtonText": "Close"
+        },
+        "gridToolbar": {
+            "ExportButtonIcon": "images/$$application.ms.excel.png.a5image",
+            "ExportButtonHelp": "Export data in Grid to Excel",
+            "ExportButtonFormat": "Excel-XLSX",
+            "ExportButtonMaxRows": "10000",
+            "exportHiddenColumns": true,
+            "exportUseColumnHeadings": true,
+            "helpButtonIcon": "images/$$generic.help.png.a5image",
+            "helpButtonBubbleHelp": "Open help window."
+        },
+        "helpTableType": "DBF",
+        "fieldHelpWindowStyle": "modal-resizeable",
+        "autoRefreshInterval": 60,
+        "genericDataStoreTableType": "DBF",
+        "RecordNavigationStyle": "NavigationButtons",
+        "fetchMoreRecordsButton": {
+            "text": "More Records"
+        },
+        "namedLayout": {
+            "selectorPosition": "AboveGrid"
+        },
+        "scrollableRegionHeight": "2in",
+        "scrollableRegionWidth": "100%",
+        "defaultColumnWidth": "1in",
+        "RecNav": {
+            "HTML_Template_source": "Computed",
+            "Position": 1,
+            "Show_disabled_controls": true,
+            "Show_Page_Count": true,
+            "Page_Numbering_Style": 3,
+            "PagesTemplate_w_PageCount": "{PageNumber} of {PageCount}",
+            "PagesTemplate_wout_PageCount": "{PageNumber}",
+            "Has_First_Button": true,
+            "Has_Prev_Button": true,
+            "Has_Next_Button": true,
+            "Has_Last_Button": true,
+            "Number_of_page_links": 10,
+            "First_Label": "First",
+            "Prev_Label": "Prev",
+            "Next_Label": "Next",
+            "Last_Label": "Last",
+            "Justify": "Left",
+            "SuppressIfOnlyOnePage": true,
+            "First_on_Image_name": "{css_path_reference}/{a5_style}/FirstOn.png",
+            "First_off_Image_name": "{css_path_reference}/{a5_style}/FirstOff.png",
+            "Prev_on_Image_name": "{css_path_reference}/{a5_style}/PrevOn.png",
+            "Prev_off_Image_name": "{css_path_reference}/{a5_style}/PrevOff.png",
+            "Next_on_Image_name": "{css_path_reference}/{a5_style}/NextOn.png",
+            "Next_off_Image_name": "{css_path_reference}/{a5_style}/NextOff.png",
+            "Last_on_Image_name": "{css_path_reference}/{a5_style}/LastOn.png",
+            "Last_off_Image_name": "{css_path_reference}/{a5_style}/LastOff.png"
+        },
+        "edit": {
+            "Execute_Update_Commands": true,
+            "allow_update": true,
+            "allow_insert": true,
+            "number_of_insert_rows": 1,
+            "allow_delete": true,
+            "validateFieldsSetting": "Dirty Fields Only",
+            "delete_checkbox_label": "Delete",
+            "delete_checkbox_label_position": "Left",
+            "cancel_button_text": "Cancel",
+            "submit_button_text": "Submit",
+            "confirm_before_submit_message": "Submit changes?",
+            "check_for_write_conflicts": true,
+            "write_conflict_check_type": 2,
+            "save_original_values": true,
+            "TargetPage": "<Self>",
+            "field_error_style": {
+                "type": "Icon",
+                "icon": "images/$$generic.error.png.a5image"
+            },
+            "RefreshRowMethod": "AutoSelect",
+            "Editable_GridRow_Options_Style": "Icons",
+            "RefreshRowOnFocus": true,
+            "RefreshRowOnDirty": true,
+            "row_errors_window_title": "Errors",
+            "row_errors_window_style": "color: red; width: 6in; height: 2in;",
+            "RowEditStyle": "AllRows",
+            "NewRecordsEditStyle": "AlwaysShown",
+            "NewRecordsButtonLabel": "New Records",
+            "DeleteRecordControl": "Checkbox",
+            "HasRowStatusColumn": true,
+            "OneEditableRowAtATime": true,
+            "LazyEdit": true,
+            "delete_checkbox_allowDeleteAll": false
+        },
+        "ValidationSettingsErrorTemplate": "Field '{Fieldlabel}', Value '{Value}' : {Error}",
+        "ValidationSettingsMessage": "Click the 'Back' button and correct the errors.",
+        "ValidationErrorsRowColumnTitle": "Row",
+        "ValidationErrorsErrorColumnTitle": "Error",
+        "OnlyValidateEditedFields": true,
+        "AddNewRecordRowsPosition": "Bottom",
+        "autoNumberColumnLabel": "Auto",
+        "QuickSearch": {
+            "QuickSearchPosition": "In Grid",
+            "QuickSearchAlign": "Left",
+            "ControlType": "Textbox",
+            "AutoSubmit": true,
+            "Label": "Search for:",
+            "SearchButtonLabel": "Search",
+            "AllowQBFStyleSearch": true,
+            "SearchStyle": "Wildcard",
+            "Height": 1,
+            "SelectStyle": "Single",
+            "Size": 20,
+            "MaxLength": -1,
+            "Orientation": "Horizontal",
+            "choices": {
+                "type": "Static",
+                "datasource": "DBF-Table"
+            },
+            "connection_type": "Access Database",
+            "HasShowAllButton": true,
+            "ShowAllButtonLabel": "All"
+        },
+        "info": {
+            "createdBy": "Ricky",
+            "LastUpdatedBy": "Ricky",
+            "DateUpdated": "14/12/2022 12:40:20 27 pm"
+        },
+        "BuilderVersion": 2,
+        "current_pane_tree": "Grid.Properties",
+        "AjaxOn": true,
+        "fpInstalled": "j69LL/gPoDgF2qd93S/eCVgrxTGhvcKj/V5MMHDA1hqVKOVa43Fk1dNCl0aI3lr4l4kwvVzf76VBW8VAv5J2irAf3GvyfuvXg5hXdNdBG+NhdroIWmfaeGFeQqmYxvDzdDkxmIzwCgSDvG25Og9NWfYedJjH+QSHAQT+HNlcl2jhNKuXZqENLY9KcBRjJu46Zvclv7OxTs/XhJEscbumAmccdagp5hzP2OzF6TkDLd1F5M1kmFd2bsMWHfrozSG0jYlbpn+8PFOCbyRQXC8Dl11jGtYr3D2vZ3+0XqhE151UUF8qsVe0X1RiQUGnrwj2v3g6OQYpjHvOjeWmV1jolLoxDO6iHqvOgb+vh3qfIuvVZWTeerjKaw3j67uBDh0hMnVCCAzITG7v+Rui0mIoO+OjsFW96vmgCbSDphWxbvN/UqDW0f2v+OUc8T9Q+z+vAAv7xM34rgpwS+H5XWjT5tvNUTOkdcLdf09MlMVYLgO8TIuaJOVN2cRQx46sYi452VbPGDqq/ZoSaRpc7W3+1P6Eu5vymfDHwxqAybLJVfoUiH4SVnZCggGVe+lzGlK+jYbMQo+3o5CBczyjsbYYOnz2sxLHwyfD0N6SRZtq9TH6w9HXIcS9eqhFx32gTi3k3J/p5PFe1rVY4vTrozj2EJ6ebuPxAmKQeeg2fSz8YoEBnBEBO/9IO+POq4AVKH+I67uiXXQ7RgVddM2/BKo4S3ozVwoxgJPkU8zS9ylwl6QX8NXpAMJOH9A/M+JgqErPU+4QkSobWXOh9PzaoJOmdmfdZVEyw4rTUhxWnPB+FYzPFhw+Q63UMIAxJ9qeoyVPjc6Wr1Z3VpvRYcV8z6MQcO1zlPcJKkKTpsUw5Loa9ii9xvimEfeVbGxqxBdoszKAYLBdcRYHDzzwbzpAVQzAqtzkBgw8plg86XkCAfAGpjMKOcEvjKByuqgdOSEc6Oh/wIQ9UqH76/ifqxoZALyRHUBiUxpLHtkIeTRVZz1H/ePiDQ6iVxgzSP04c9Vog7BjmnFLA+3agh4wXstB5safo32pQSgc7aeiQTbT6Gn6CJiE7xb12zVFQGQGyoO1mMHrZYNDzQ+s4sSEqZvbk2DJMbNxKGuncFRHAxApnyvrUF4ehFrnRoSpb/GHpWl2T8CTuCMvGKURPCL9dCGy1UdgPv2Ykl+KPW+MYjLsEwgwihShosSkCi6GIqYRyw9PteDBr5/ddAtdqpG+EfgLyOp185XuR/f7ES/GJhtweEkkswpKKzEtRdXrHx32LWjLOblAn9XAXsO07mb5KuJT1zXnzGVo2zlfuYjyb/I1fWe83BNjQ0B3Wfw7yCXE3vIpZGDCoRulX34rOjEnNFWvKj7qmnT0d2hAr5n4QCTRXRvTN6Xbbj63cvvExS5AXsxtfpVGB4y+jZzITkLLqiCC0c+SO6OIPO7xXNnfiiTZO0jCKIbdiBre6tzs4YkNZplLN4XDRa8hK5IxP5NDfYJhUjNMnM3PS/7+lqWZAbkBohIJ0roP7qwqOijWsyafgC1fJusaERHLHhiyXYuM6wtrLhTWtodN1F5wMJv9EXmxS75ObOgkiJsRNvmu3gGBlmYF2X75MsPRKcnh0rAgNCt+PlxEMR5kbgnzJdXKuNn+Hk9l52Vm0d9CYIHmhuagNlv3tbRbNd+jRhDBnsXCbqqNdwDuyJv7Bxb4M2UkNjTNtewXcOwMw44gUTk8pU5xk4WIqCC5hnENbymmLW17lRyEF4hX0zlWiRc/92vtHL1mHU9Jx6ps3HvysImQZC97jdjqnPVLs5tpRjnOzIer2f3WzYdTBY7bQZQDmQS0Go/LD1VhcO/NSq6Go88dgaw8TzFo2AaRa2ovSv1FidjhfGTKfHLa5RGej3dWk81Jtwaoe9si99f+CZRbqtdyLOSHgpv3zm07wayieW31nwIDD5yHkWas73knV0i6zYZOid2n/XRF1yPI0IPsVAoveh7Nzz1/Dmp1bxveIo0m7L85XluXLyZt7GApvXdpjwq7/MywH7kAWfAVlraSc3J9vJpf0VGHyyjCb+8CuG1exDX4igmHDG8QGTu/TMmwzj8DSUX0PtXkNLkRYwSZ8o8NGzyO2HRtduqKha36+MArkNaPPAgRS8SEuNMZXgnWXkQn6afzEObLlY6FoVKYjA2X0ZibYQwJiezSsQu3gyLwVZ6g29fBBLkDjIUhB2nxGaBEBPP6AjgFed272IVlrv4qG1N9BQafN7WYfCDNxB2tel7dKqYVKPvK00YYaidZZT2e99Xh+Ks7aU6hMpQiGGEQW8SnKwXU4ODDPLgVZealA6dFuifG11wWZQEMyXC31WetZcbeODPb6DpwZlHbV1THuifF5khe/QZ2MxEsWqDUYEfZQbbXqD7ErXqvWOe+UgA8Ly9nnX4yKOkVVrBqIO2q2saWqK9qAJiKQ/S23EqVdY/Ey8NwqCDtjwF2zMA8DPFLR849Rrd3madKFlMzM6mG2P6JpM/ZiiFPbnhReteBHV8prnjVNJZcB2GupdJ8jdbaSz67Riao6ckdYmC4bQED2eAb9ZlJO3aw2msOHF5H0wTvbk/2ti/QkPv+yqH2+oVyBH65HSSq5QtWs4aJsdwOHOyx/3iAa0RVkApGedFPsy0AzOR8vvWIFuHjjUuWjHl+FEyRTwlDwV0XOvXFMzyyXv5Me3S4TSKnYsDOHUCm+HoZ8PEDowGIHZRGy53IoS2m/ok/1GEp1ztWOEdAcC7YDUXnjUkj36WCNCv5prAFix3pcC8Fup3FHcKZTWf4cNkWPAXDdsURpoyURoSfXt/Jh0jjw+FkaIdXFTFg+ysUdO7pccFtnVk2mCciIC5D4nBAzoniWXPfKPcQ5gr7sibz/sIqB8WCOzX+uVbdhxc5gfvz9pvp2FfPh11HQKPHfOM0trCgFQzWJXsRdUAwe1WiPX4wFr0TEo3cjCDAYOlXEuK1CzeydowPe/sYT6JMGgChf+qFhp8kALfHzc6h0e9UEm6ZdzfArtyc+XgKPohQxAt1D4+sSHfxWq3Lpd2hgfEl260HScKumhnXVx51K3GpgAjednbXHv7WwJCjRnDgtv1qxFstTygyJ3X1My+QKlc1YaLFmU3K36Hb3PNIGxx+P6YQoP+EmYUuwPmt6A7Yb1TnQ35MBvcQH527N+l7YBEJmET/Ra5W/Esn+vNtc3PMB31c3Dkmnm0w4diBeh4M09RUPCibFTUZ9NlTp6Zaddf3fQnviq+5+LSjFAfwJfoWPfKnftqK51ghvbFCZjuzUnTMzxTq6oCEr2K9t9VZxtftxlJ+6X++livu0Hc0FEhaw6FljIJhkyxicgRbdGZ8IfZKn4zlsypQ45O5aghnFOdA/AUKFybGAzJl3fBXtFg5xz/7WpzsI4j4KvvBuWio+w2SImtU+FwO6s41hRBC8T02Tt7T5oUCRz+/sqjUnBC/YoFuiJVzecIYMHMy16MsnO90akWqCKaWxrS8Lrdw7OMfCbmySWf6LNiPYU/DmxOselmtq8hACZANqiyFXZDTtOQEDXm8jlrAxlXP/O53y3JSHXERBWWkyfQB2995Ep6MbZOgloAEKtWHppLp2Xwp+/e9HY2GWBPyRZh418ks/XoIrqcpILQ5So9yUJnasq5YVwC7JziHHDpdd39sIPeNGy5z59oHyjmazdzxXDzic32SC85Z9VsMj1yP3o427tG1kqNJZNs6pQIRZJU8XA9CtPybn3gJBksk/VUz6aWHVTCNIzCM1/Kss6/eZTc4kvkl7lJ1MkG3VSkO1sO8Y2XgD+CucwhH/gplEck/73BFsqwr5ChBc3DszwIf1RE3+8joJGAr22/Qd6mETDvwFe3x3CIjgCE8x8b04NGm3mVCRC6FbnDsNaFDXhqgHPqMddT7eUqmVpJP5jBrs+6gWtMCccB3SGOYFcuulHiT91FBXQV7PFDA7sDV3YlZKyhhCppYhTlGwG3LimqnKPw4GmJXRZ5ghb6XmsYpnLLEBrW2W91WgLrIX0RF7jiLUan0eLbYoasU5hcQlFsJ0wJavyfcM3EXWxseIEg3Fovii/aqkhAGZEs+Cqkv4nlEU2xoej1DPsorV9DfLLiUdLuOb/XrlNnwb4raKgfChq7gojzL21dirz/fwvBe+iy0UmyavPLprZbjZ/DYM+glXzdYXw/V3CT8fUDqzmqDDkogbJWFvaF85311vY1LgMBXi9pDH0juTJPrPCbnFRjXsC8Yp1MNUGxPRQ4EGpnBW1CUHYe17f+354Jjh7g5FjPejNZbMXcgLi0uAjFLfUnlwnmkwPm5VgbxS8KBlR73KIMNVUUXGdI1czI/hp/pjqWezl0ClLX2eNNnr71I3uU8TkpXBYNb2WUt5Clfz9UT67TXpovYky9j/NmDFpwhp8zNJXAFklpwJFaO5tFPyQFSMRzc1G+PzgxMHaMpXVi2VFEroUbk5o/D+D3xMw8qYR8ondNVSqztFYGLvL7nduYRbddpKd2wS/R2XsgXFu69fawCHA7j7MhWZdtSCUWw2U1ITSsYa8NiEQVyE34sRmQe2M7Uqeem3g4BaOrLZ/s6I9EIyqYXaDRreM5e1fwlws3/Cj7jCR41yJ9/Ae4kkrhDqDWiWbl4370FAzzc9vddFEUo6r/1MnQF0EnHs1GSzzngGVRs1CzjEiEUoRV05oz1s+czoCGOMUqmorx37NTZvZtUBMfFuwOy94nJg/SqgjZzm9Gt01iKnkZ5Nf5j9zXF1g+6oLZyj6UYS0mT2FeOlg==",
+        "componentFilename": "C:\\Users\\Ricky\\OneDrive\\Documents\\AlphaAnywhere\\GOVDOCS\\GOVDOCS.WebProjects\\default.WebProject\\Add_Organisation_Grid.a5wcmp",
+        "PAliases": {
+            "alias": "[PathAlias.ADB_Path]\n",
+            "alias_expanded": "C:\\Users\\Ricky\\OneDrive\\Documents\\AlphaAnywhere\\GOVDOCS\n",
+            "alias_aliasExpanded": "[PathAlias.ADB_Path]|C:\\Users\\Ricky\\OneDrive\\Documents\\AlphaAnywhere\\GOVDOCS"
+        },
+        "_row_onHover": true,
+        "ADB_PATH": "C:\\Users\\Ricky\\OneDrive\\Documents\\AlphaAnywhere\\GOVDOCS",
+        "EXE_PATH": "C:\\Program Files (x86)\\Alpha Anywhere",
+        "VersionNumber": 4,
+        "saveFileType": "Formatted JSON",
+        "__wphostname": "Chrome",
+        "a_actionJavascript": [
+            {
+                "actionGuid": "cacfd575-58fb-46ae-b989-0d0eda7dd102",
+                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'$$file.import'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Image Upload{T=4}{I:'a5_vertical_line'}\">\n<action=\"Image Upload\">\n<icon=\"$$file.import\">\n<isCommentedOut=.F.>\n<comment=\"\">\n<builder=\"a5ajs_imageFieldUpload(v,wf,pv,dlg_mode)\">\n<metaData=<<%str%\n<ajaxWindowPositionAttribute=\"'center'\">\n<ajaxWindowPositionAttributeEnglish=\"Centered\">\n<applicationType=\"Desktop\">\n<uploadProperties<target=\"Server\">\n<cloudStorage<specifyCredentials=\"Named Storage Connection String\">\n<connectionString=\"\">\n<credentials<access_key=\"\">\n<secret=\"\">\n>\n<bucketName=\"\">\n<region=\"\">\n<allowMultipleFiles=.F.>\n<maxFileSize=-1>\n<maxFileSizeTotal=-1>\n<allowedFileTypes=\"\">\n<authenticatedRead=.F.>\n<displayProgress=.F.>\n<allowCancel=.T.>\n<progressStyle=\"Bar\">\n<progressBarColor=\"#9fa1e8\">\n<progressBarWidth=\"1.5in\">\n<progressDisplayPlaceholder=\"\">\n<javascript<onAfterFilesSelect=\"\">\n<onCompleteIndividualFile=\"\">\n<onCompleteAllFiles=\"\">\n<onBeforeFileSelect=\"\">\n<onValidationError=\"\">\n<onError=\"\">\n<onProgress=\"\">\n<targetName=\"\">\n>\n<customization<maxFileSize=\"Selected file [filename] (size [filesize]) exceeds the maximum allowed file size of [maxfilesize].\">\n<totalFileSize=\"Selected files ([filecount] files, total size [totalfilesize]) exceed the maximum allowed total file size of [maxtotalfilesize].\">\n<fileType=\"Selected file ([filename]) is not an allowed file type.\">\n>\n>\n<storeThumbnails=.F.>\n<thumbNailDefinition=\"\">\n<uploadFolder=\"\">\n<fileExistAction=\"Overwrite\">\n<storedValueExpression=\"\">\n<maxFileSize=\"1000000\">\n<maxFileSizeExceededMessage=\"You have selected a file that exceeds the maximum allowed file size of {filesize} bytes.\">\n<allowedImageExtensions=\".bmp,.jpg,.jpeg,.png\">\n<invalidExtensionErrorText=\"The file you selected is not an allowed file type.\">\n<sqlEmbeddedImageFormat=\"JPG\">\n<title=\"Select Image\">\n<uploadButtonText=\"Upload\">\n<fileBoxWaterMark=\"Click button to select file...\">\n<selectFileButtonImage=\"images/$$folder.open.png.a5image\">\n<prompt=\"File:\">\n<height=\"3in\">\n<width=\"5in\">\n<fileUploadWaitMessage=\"<img src=\\\"css/A5System/Images/wait.gif\\\" /> Uploading files...\">\n<windowSubtheme=\"\">\n<scaleImage=\"method=proportional,units=inches,maxSize=1.5,appliesTo=width\">\n<closeAfterUpload=.T.>\n<confirmationMessage=\"Image was uploaded. Click OK to save change, or Cancel to abandon change.\">\n<confirmationWindowHasFreeformLayout=.F.>\n<confirmationWindowTemplate=\"\">\n<imageInlineStyle=\"height: 1in;\">\n<autoUpload=.F.>\n<targetFileNameAfterComputeXbasic=\"\">\n<errorText_TableNotUpdateable=\"Table is not updateable, or you do not have permission to update this table.\">\n<errorText_FieldNotUpdateable=\"Image field is not updateable, or you do not have permission to update this field.\">\n<errorText_SessionExpired=\"Session has expired, or some other error has occurred, and the uploaded image cannot be found. Please upload the image again.\">\n<errorText_NewRecordRow=\"You cannot upload an image to a new record row. You must first save this record, then upload the image.\">\n<events<serverside<beforeSave=\"\">\n<onSave=\"\">\n>\n<clientSide<afterUpload=\"\">\n<beforeUpload=\"\">\n>\n>\n<fileSelectWindowName=\"56fe6011c75f4a358a46715f433e5c6d\">\n<showProgress=.T.>\n<uploadAbortMsg=\"Abort file upload\">\n<abortButtonLabel=\"Abort\">\n<progressBarType=\"A5\">\n<targetField=\"Image\">\n<targetFieldIsBlob=.T.>\n>\n<mobileType=\"HTML5\">\n<html5<resizeAndCompress=.T.>\n<compressionFactor=\"0.5\">\n<maxWidth=\"1024\">\n<maxHeight=\"1024\">\n>\n<cordova<usingPhoneGapBuild=.T.>\n<pictureSource=\"Camera\">\n<imageQuality=\"50\">\n<allowEdit=.F.>\n<targetWidth=\"1024\">\n<targetHeight=\"1024\">\n<saveToPhotoAlbum=.T.>\n<iPad<eleId=\"\">\n>\n>\n<gridImageField=\"Image (B)\">\n<cancelButtonLabel=\"Cancel\">\n<okButtonLabel=\"<div style=\\\"width:1in;cursor:default;\\\">OK</div>\">\n%str%>\n<javascriptAttribute=\"ImageUpload_61f670f29b584b5c91b4022e43180c00({grid.rownumber},'{grid.rowId}',this);\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=<<%str%\nwindow['ImageUpload_61f670f29b584b5c91b4022e43180c00'] = function(rowNum,rowId,objEle) {\n\n\nif({grid.object}._embeddedMode) {\n\talert('File upload is not supported when the Component is running on the Desktop.');\n\treturn false;\n}\n\n\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'] = {grid.object}.createWindow('{grid.componentName}_WINDOW__UNBOUND_BUTTON_1_xngly','modal-url',\n{\theight: '3in',\n\twidth: '5in',\n\ttitle: {html: 'Select Image<span id=\"56fe6011c75f4a358a46715f433e5c6d\"></span>' },\n\ttheme: '{grid.style}',\n\tbody: {content: {type: 'url',\n\turl: 'about:blank'}},\n\tbuttons: {\n\t\titems: [\n\t\t\t{html: '<div style=\"width:1in;cursor:default;\">Upload</div>', width: '', name: 'UPLOAD', action: function() {$(this.getWindowId('body')).contentWindow.A5.fileUpload.upload(); }},\n\n\t\t\t{html: '<div style=\"width:1in;cursor:default;\">OK</div>', width: '', name: 'OK', action: function() {$(this.getWindowId('body')).contentWindow.okToSave(); }},\n\t\t\t{html: 'Cancel',width: '', name: 'Cancel', action: function() { this.hide(); } }\n\t\t]\n\t},\n\tonHide: function() { var ele = $('{grid.componentname}.V.R'+this.rowNumber+'.IMAGE');\nvar oldImg = $ga(ele,'oldImage');\nif(oldImg) $svs(ele,oldImg);\n  ; this.refresh(); }\n}\n);\n\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].clearTools();\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].setButtonDisplay('OK',false);\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].setButtonDisplay('UPLOAD',true);\n\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].getButton('Cancel').refresh();\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].show('center');\nwindow['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].rowNumber = rowNum;\n\nvar data = {grid.object}._getRowKey(rowNum);\n\nvar targetUrl = '';\ntargetUrl = targetUrl + '__a5FileUploadMasterPage.a5w?fileUploadUrl=' + urlencode({grid.object}.ajaxURL);\ntargetUrl = targetUrl + '&rowNumber=' + rowNum ;\ntargetUrl = targetUrl + '&part=G';\ntargetUrl = targetUrl + '&fileUploadAutoUpload=N';\n//targetUrl = targetUrl + '&uploadButtonLabel=Upload';\ntargetUrl = targetUrl + '&fileBoxWaterMark=Click%20button%20to%20select%20file%2e%2e%2e';\ntargetUrl = targetUrl + '&fileUploadWaitMessage=<img src=\"css/A5System/Images/wait.gif\" /> Uploading files...';\ntargetUrl = targetUrl + '&fileSelectImg=images/$$folder.open.png.a5image';\ntargetUrl = targetUrl + '&selectFileButtonImage=images/$$folder.open.png.a5image';\ntargetUrl = targetUrl + '&stylesheetName={grid.style}';\ntargetUrl = targetUrl + '&filePromptSingular=File%3a';\ntargetUrl = targetUrl + '&maxfilesize=1000000';\ntargetUrl = targetUrl + '&maxsizemsg=You%20have%20selected%20a%20file%20that%20exceeds%20the%20maximum%20allowed%20file%20size%20of%20%7bfilesize%7d%20bytes%2e';\ntargetUrl = targetUrl + '&__formAction=UploadImage&gridFieldName=Image';\ntargetUrl = targetUrl + '&uploadAbortMsg=Abort%20file%20upload';\ntargetUrl = targetUrl + '&abortButtonLabel=Abort';\ntargetUrl = targetUrl + '&progressBarType=A5';\ntargetUrl = targetUrl + '&fswindowname=56fe6011c75f4a358a46715f433e5c6d';\ntargetUrl = targetUrl + '&__showProgress=yes';\ntargetUrl = targetUrl + '&__xbfunction=ImageUpload_d21c9c1cb32a4d84b93c101b54b4029b';\ntargetUrl = targetUrl + '&' + data ;\ntargetUrl = targetUrl + '&_allowedFileTypes=bmp%2cjpg%2cjpeg%2cpng';\ntargetUrl = targetUrl + '&_invalidTypeMsg=The%20file%20you%20selected%20is%20not%20an%20allowed%20file%20type%2e';\ntargetUrl = targetUrl + '&__componentType=grid&__componentAlias='+{grid.object}.gridId;\n//targetUrl = targetUrl + '&' + $gvs('{grid.componentname}.STATEINFO') ;\n\n\n\nwindow._tempUploadVariables = $gvs('{grid.componentname}.STATEINFO')  ;\n$(window['{Grid.ComponentName}__UNBOUND_BUTTON_1_xngly'].getWindowId('body')).src = targetUrl;\n\n\n}\n%str%>\n<xbasicFunctions=<<%str%\nfunction ImageUpload_d21c9c1cb32a4d84b93c101b54b4029b as p()\nDIM p as P\nDIM p.uploadProperties as P\nDIM p.uploadProperties.target as C = \"Server\"\nDIM p.uploadProperties.cloudStorage as P\nDIM p.uploadProperties.cloudStorage.specifyCredentials as C = \"Named Storage Connection String\"\nDIM p.uploadProperties.cloudStorage.connectionString as C\nDIM p.uploadProperties.cloudStorage.credentials as P\nDIM p.uploadProperties.cloudStorage.credentials.access_key as C\nDIM p.uploadProperties.cloudStorage.credentials.secret as C\nDIM p.uploadProperties.cloudStorage.bucketName as C\nDIM p.uploadProperties.cloudStorage.region as C\nDIM p.uploadProperties.cloudStorage.allowMultipleFiles as L\nDIM p.uploadProperties.cloudStorage.maxFileSize as N = -1\nDIM p.uploadProperties.cloudStorage.maxFileSizeTotal as N = -1\nDIM p.uploadProperties.cloudStorage.allowedFileTypes as C\nDIM p.uploadProperties.cloudStorage.authenticatedRead as L\nDIM p.uploadProperties.cloudStorage.displayProgress as L\nDIM p.uploadProperties.cloudStorage.allowCancel as L = .T.\nDIM p.uploadProperties.cloudStorage.progressStyle as C = \"Bar\"\nDIM p.uploadProperties.cloudStorage.progressBarColor as C = \"#9fa1e8\"\nDIM p.uploadProperties.cloudStorage.progressBarWidth as C = \"1.5in\"\nDIM p.uploadProperties.cloudStorage.progressDisplayPlaceholder as C\nDIM p.uploadProperties.cloudStorage.javascript as P\nDIM p.uploadProperties.cloudStorage.javascript.onAfterFilesSelect as C\nDIM p.uploadProperties.cloudStorage.javascript.onCompleteIndividualFile as C\nDIM p.uploadProperties.cloudStorage.javascript.onCompleteAllFiles as C\nDIM p.uploadProperties.cloudStorage.javascript.onBeforeFileSelect as C\nDIM p.uploadProperties.cloudStorage.javascript.onValidationError as C\nDIM p.uploadProperties.cloudStorage.javascript.onError as C\nDIM p.uploadProperties.cloudStorage.javascript.onProgress as C\nDIM p.uploadProperties.cloudStorage.javascript.targetName as C\nDIM p.uploadProperties.cloudStorage.customization as P\nDIM p.uploadProperties.cloudStorage.customization.maxFileSize as C = \"Selected file [filename] (size [filesize]) exceeds the maximum allowed file size of [maxfilesize].\"\nDIM p.uploadProperties.cloudStorage.customization.totalFileSize as C = \"Selected files ([filecount] files, total size [totalfilesize]) exceed the maximum allowed total file size of [maxtotalfilesize].\"\nDIM p.uploadProperties.cloudStorage.customization.fileType as C = \"Selected file ([filename]) is not an allowed file type.\"\nDIM p.uploadProperties.storeThumbnails as L\nDIM p.uploadProperties.thumbNailDefinition as C\nDIM p.uploadProperties.uploadFolder as C\nDIM p.uploadProperties.fileExistAction as C = \"Overwrite\"\nDIM p.uploadProperties.storedValueExpression as C\nDIM p.uploadProperties.maxFileSize as C = \"1000000\"\nDIM p.uploadProperties.maxFileSizeExceededMessage as C = \"You have selected a file that exceeds the maximum allowed file size of {filesize} bytes.\"\nDIM p.uploadProperties.allowedImageExtensions as C = \".bmp,.jpg,.jpeg,.png\"\nDIM p.uploadProperties.invalidExtensionErrorText as C = \"The file you selected is not an allowed file type.\"\nDIM p.uploadProperties.sqlEmbeddedImageFormat as C = \"JPG\"\nDIM p.uploadProperties.title as C = \"Select Image\"\nDIM p.uploadProperties.uploadButtonText as C = \"Upload\"\nDIM p.uploadProperties.fileBoxWaterMark as C = \"Click button to select file...\"\nDIM p.uploadProperties.selectFileButtonImage as C = \"images/$$folder.open.png.a5image\"\nDIM p.uploadProperties.prompt as C = \"File:\"\nDIM p.uploadProperties.height as C = \"3in\"\nDIM p.uploadProperties.width as C = \"5in\"\nDIM p.uploadProperties.fileUploadWaitMessage as C = \"<img src=\\\"css/A5System/Images/wait.gif\\\" /> Uploading files...\"\nDIM p.uploadProperties.windowSubtheme as C\nDIM p.uploadProperties.scaleImage as C = \"method=proportional,units=inches,maxSize=1.5,appliesTo=width\"\nDIM p.uploadProperties.closeAfterUpload as L = .T.\nDIM p.uploadProperties.confirmationMessage as C = \"Image was uploaded. Click OK to save change, or Cancel to abandon change.\"\nDIM p.uploadProperties.confirmationWindowHasFreeformLayout as L\nDIM p.uploadProperties.confirmationWindowTemplate as C\nDIM p.uploadProperties.imageInlineStyle as C = \"height: 1in;\"\nDIM p.uploadProperties.autoUpload as L\nDIM p.uploadProperties.targetFileNameAfterComputeXbasic as C\nDIM p.uploadProperties.errorText_TableNotUpdateable as C = \"Table is not updateable, or you do not have permission to update this table.\"\nDIM p.uploadProperties.errorText_FieldNotUpdateable as C = \"Image field is not updateable, or you do not have permission to update this field.\"\nDIM p.uploadProperties.errorText_SessionExpired as C = \"Session has expired, or some other error has occurred, and the uploaded image cannot be found. Please upload the image again.\"\nDIM p.uploadProperties.errorText_NewRecordRow as C = \"You cannot upload an image to a new record row. You must first save this record, then upload the image.\"\nDIM p.uploadProperties.events as P\nDIM p.uploadProperties.events.serverside as P\nDIM p.uploadProperties.events.serverside.beforeSave as C\nDIM p.uploadProperties.events.serverside.onSave as C\nDIM p.uploadProperties.events.clientSide as P\nDIM p.uploadProperties.events.clientSide.afterUpload as C\nDIM p.uploadProperties.events.clientSide.beforeUpload as C\nDIM p.uploadProperties.fileSelectWindowName as C = \"56fe6011c75f4a358a46715f433e5c6d\"\nDIM p.uploadProperties.showProgress as L = .T.\nDIM p.uploadProperties.uploadAbortMsg as C = \"Abort file upload\"\nDIM p.uploadProperties.abortButtonLabel as C = \"Abort\"\nDIM p.uploadProperties.progressBarType as C = \"A5\"\nDIM p.uploadProperties.targetField as C = \"Image\"\nDIM p.uploadProperties.targetFieldIsBlob as L = .T.\n\nImageUpload_d21c9c1cb32a4d84b93c101b54b4029b= p\nend function\n%str%>\n>\n>\n<flagRunSynchronously=.F.>\n<flagWrapInTryCatch=.F.>\n<tryCatchJavascript=\"\">\n"
+            }
+        ],
+        "forceChromeControl": true,
+        "_style_hasSassOverrides": false,
+        "useCompactTheme": true,
+        "showPulseEffect": true,
+        "has_advancedSearch": false,
+        "advancedSearch_jsondefinition": "",
+        "svgiconsdefaultsize": "",
+        "makeJSONdataAvailableInServerSideEvents": false,
+        "captureJSErrorStackTrace": false,
+        "friendlydatesCustomizationJSON": "",
+        "pusherConfigJSON": "",
+        "pusherApp": false,
+        "embeddedMode": false,
+        "_style_versionNumber": 2,
+        "A5SaveTimeStamp": "20221214122829848",
+        "_style_isInherited": false
+    }
+}

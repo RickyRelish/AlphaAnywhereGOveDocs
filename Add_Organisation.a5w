@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+<%a5
+'The componentAlias MUST be UNIQUE for each component on the page. It must not have spaces in the name. Keep name as short as possible
+dim componentAlias as c 
+componentAlias = "ADD_ORGANISATIO"
+Delete tmpl_ADD_ORGANISATIO
+DIM tmpl_ADD_ORGANISATIO as P
+tmpl_ADD_ORGANISATIO = a5w_load_component("Add_Organisation_Grid") 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Add_Organisation_Grid)
+'Following code allows you to override settings in the saved component. DO NOT REMOVE SYSTEM GENERATED OVERRIDE_SETTINGS
+tmpl_ADD_ORGANISATIO.override_settings = <<%override_settings%
+	componentName = componentAlias
+	_gridFilename = "Add_Organisation_Grid"
+%override_settings%
+'TIP: To refer to local or page variables in the override_settings string, you must first define a local
+'dot variable called 'pageVar' with properties for all of the variables you want to reference. For example:
+'	dim pageVar as p
+'	pageVar.gridRowCount = 10
+'Then, in the override_settings string, you can reference pageVar.gridRowCount. For example:
+'	rows = pageVar.gridRowCount
+'Resolve session and page variables in the override_settings string.
+a5w_resolveVariablesInOverrideSettings(tmpl_ADD_ORGANISATIO,session,local_variables())
+delete x_ADD_ORGANISATIO
+dim x_ADD_ORGANISATIO as p
+x_ADD_ORGANISATIO = a5w_run_Component(tmpl_ADD_ORGANISATIO)  'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl_ADD_ORGANISATIO) (EDIT:Add_Organisation_Grid)
+if x_ADD_ORGANISATIO.RedirectURL <> "" then 
+	response.redirect(x_ADD_ORGANISATIO.redirectURL)
+	end
+end if 
+?x_ADD_ORGANISATIO.Output.Head.JavaScript
+?x_ADD_ORGANISATIO.Output.Head.CSS_Link
+%>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl_ADD_ORGANISATIO -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/MobTan/style.css">
+<!--Alpha Five Temporary Code End -->
+
+<title></title>
+</head>
+<body><table width="50%" align="Center" border="0" bordercolor="" bordercolorlight="" bordercolordark="" bgcolor="" cellpadding="0" cellspacing="0" background=""><tbody><tr><td><div style="text-align: left;">&nbsp; &nbsp; &nbsp;<%A5 ?x_ADD_ORGANISATIO.Output.Body.Search_HTML %>
+	<%A5 ?x_ADD_ORGANISATIO.Output.Body.Grid_HTML %>
+	<%A5 ?x_ADD_ORGANISATIO.Output.Body.DetailView_HTML	%>
+	<%A5 ?a5dialogHelper_generateCORSHeaders() %></div><div style="text-align: left;"><br></div>	</td></tr></tbody></table></body></html>

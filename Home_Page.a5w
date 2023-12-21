@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_FORMS_PAGE
+DIM tmpl_FORMS_PAGE as P
+tmpl_FORMS_PAGE = a5w_load_component("Forms_Page") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Forms_Page)
+
+'Override settings start -----------------------------------------
+with tmpl_FORMS_PAGE
+.alias = "FORMS_PAGE"
+_dialogFilename = "Forms_Page"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_FORMS_PAGE
+dim x_FORMS_PAGE as p
+x_FORMS_PAGE = a5w_run_Component(tmpl_FORMS_PAGE) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Forms_Page)
+
+?x_FORMS_PAGE.Output.Head.JavaScript
+?x_FORMS_PAGE.Output.Head.CSS_Link
+
+?x_FORMS_PAGE.Output.Head.Title 
+%>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_FORMS_PAGE
+DIM tmpl_FORMS_PAGE as P
+tmpl_FORMS_PAGE = a5w_load_component("Forms_Page") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Forms_Page)
+
+'Override settings start -----------------------------------------
+with tmpl_FORMS_PAGE
+.alias = "FORMS_PAGE"
+_dialogFilename = "Forms_Page"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_FORMS_PAGE
+dim x_FORMS_PAGE as p
+x_FORMS_PAGE = a5w_run_Component(tmpl_FORMS_PAGE) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Forms_Page)
+
+?x_FORMS_PAGE.Output.Head.JavaScript
+?x_FORMS_PAGE.Output.Head.CSS_Link
+
+?x_FORMS_PAGE.Output.Head.Title 
+%>
+
+
+
+
+
+
+
+
+
+
+<title>Home Page</title>
+</head>
+
+
+<%a5 ?x_FORMS_PAGE.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="MobGrayPage">
+<!--Alpha Five Temporary Code End -->	
+
+<div style="text-align: center;"><div style="text-align: left;"><font style="font-family: Calibri; font-size: large; color: rgb(218, 14, 14);"><a href="FrontPage.a5w">Home Page</a></font><span style="font-family: Calibri; font-size: large;"></span></div><div style="text-align: left;"><br></div><div style="text-align: left;"><a href="LogoutGovs.a5w" style="font-family: Calibri; font-size: large;">Log Out</a></div></div><h1 style="text-align: center;">
+<img src="black_textlogo_white_background.jpg" style="width:7.0in;height:0.9in"><br></h1><p style="text-align: center;"><font face="Calibri" size="6">Location -&nbsp;<%A5 ? Session.location%></font></p><p style="text-align: center;"><font face="Calibri"><b style="text-align: right;"><span style="font-size: 18pt; line-height: 25.44px;">Home Page:</span></b><span style="text-align: right; font-size: 18pt; line-height: 25.44px;">&nbsp;- IMS Forms / Governance / Administration.</span></font></p><p style="text-align: center;"><font face="Calibri" size="4">Select Icon below to access the electronic forms</font></p><p style="text-align: center;"><font face="Calibri" size="6">
+<%A5 ?x_FORMS_PAGE.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %>
+<br></font></p><div style="text-align: center;"><b><font size="4">&nbsp;<br></font></b></div>
+<br><br><font face="Calibri" size="4"><div style="text-align: center;"><br></div>
+
+ </font><div style="text-align: center; color: rgb(12, 12, 12);"><br></div>
+</body></html>

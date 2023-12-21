@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+<title>Home Page</title>
+</head><body class="MobGrayPage"><a href="Logout.a5w" style="font-family: Calibri; font-size: large;">Log Out</a><div><br></div><div><div style="text-align: center;"><img src="black_logo_transparent_background.png" style="width:6.0in;height:4in"><br></div>.<table width=" %" align="Center"><tbody><tr><td><font face="Calibri" size="8"><%A5 ? Session.Location%></font></td></tr></tbody></table><div><div style="text-align: center;"><br><br></div><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;">
+<%A5 Delete tmpl_FRONT_PAGE
+DIM tmpl_FRONT_PAGE as P
+tmpl_FRONT_PAGE = a5w_load_component("Front_Page") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Front_Page)
+
+'Override settings start -----------------------------------------
+with tmpl_FRONT_PAGE
+.alias = "FRONT_PAGE"
+_dialogFilename = "Front_Page"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_FRONT_PAGE
+dim x_FRONT_PAGE as p
+x_FRONT_PAGE = a5w_run_Component(tmpl_FRONT_PAGE) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Front_Page)
+
+?x_FRONT_PAGE.Output.Head.JavaScript
+?x_FRONT_PAGE.Output.Head.CSS_Link
+
+?x_FRONT_PAGE.Output.Head.Title 
+%>&nbsp;<%A5 ?x_FRONT_PAGE.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %></div><div style="text-align: center;"><br></div>
+<div style="text-align: center;"><br></div><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div></div></div></body></html>
+
+
+
+
+
+
+
