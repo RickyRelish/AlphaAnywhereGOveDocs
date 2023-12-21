@@ -1,0 +1,7 @@
+<svg width="26" height="26" viewBox="0 0 26 26" xmlns="https://www.w3.org/2000/svg">
+<circle cx="21" cy="17" r="1.75" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: none; stroke-opacity: 1;" />
+<circle cx="11" cy="17" r="1.75" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: none; stroke-opacity: 1;" />
+<circle cx="6" cy="17" r="1.75" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: none; stroke-opacity: 1;" />
+<path d="m 3,8.5 v 6 c 2e-5,0.1326 0.0527,0.25976 0.14648,0.353516 l 0.0606,0.06055 C 3.84935,14.06093 4.86612,13.5 6,13.5 c 0.97328,0 1.86141,0.412315 2.5,1.068359 C 9.13859,13.912315 10.02672,13.5 11,13.5 c 1.91226,0 3.5,1.587741 3.5,3.5 0,0.170173 -0.0168,0.335857 -0.041,0.5 h 3.08203 c -0.0243,-0.164143 -0.041,-0.329827 -0.041,-0.5 0,-1.912259 1.58774,-3.5 3.5,-3.5 1.17083,0 2.2163,0.599167 2.85352,1.5 H 24 v -4 h -6 v 2 H 17 V 10 H 16 L 15.36719,11.265625 15,12 14.5,13 h -7 l -1,-1.5 -2,-3 z" style="fill: #000000; stroke: none; stroke-linejoin: round;" />
+<path d="m 10.5,11.5 3,-6 m -6,4.5 3,-6 m -6.00001,1.5 1,-2 h 5 l 3,1.5 2,2.5 -2,4 h -3 l -3,-1.5 z M 22,7.5 23.5,11 m -5,2 V 7.5 h 5" style="fill: none; stroke: #000000; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />
+</svg>
