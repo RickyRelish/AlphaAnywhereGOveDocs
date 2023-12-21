@@ -1,0 +1,6 @@
+<%a5
+dim key as c = default ""
+dim data as b
+session.getData(key,data)
+?data
+%>

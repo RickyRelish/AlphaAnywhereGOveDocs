@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 1856-4237">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title>Show Session Variables</title>
+</head>
+<body>
+<p align="left"><%A5 ?  Session.Username%></p><p align="left"><%A5 ? session.Location %><br></p><p align="left"><%A5 ? Session.Company%><br></p><p align="left"><%A5 ? Session.test%><br></p>
+</body></html>

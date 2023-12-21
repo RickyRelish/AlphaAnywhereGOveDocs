@@ -1,0 +1,15 @@
+<%a5
+'This page is auto-generated every time files are published. It is used to print
+'reports using Ajax callbacks.
+'DO NOT MODIFY THE CODE IN THIS PAGE------------------------------------------------
+dim reportevents as p
+dim reportevents.beforePrint as p
+dim reportevents.beforePrint.hasEvent as l = .f.
+dim reportevents.afterPrint as p
+dim reportevents.afterPrint.hasEvent as l = .f.
+
+dim js_cmd as c = a5w_runReport(request,local_variables(),reportevents)
+if js_cmd <> "" then
+	? js_cmd
+end if
+%>

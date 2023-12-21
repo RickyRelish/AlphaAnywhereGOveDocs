@@ -1,0 +1,208 @@
+<%a5
+'THIS IS A SYSTEM GENERATED PAGE - DO NOT MODIFY OR REMOVE.
+
+
+
+'standard 
+
+if eval_valid("Context.Request.HttpMethod") then 
+	if Context.Request.HttpMethod = "OPTIONS" then
+		Context.Response.AppendHeader("Access-Control-Allow-Headers", "X-Requested-With,X-A5-Cors-Requested,X-A5WSessionId")
+		Context.Response.AppendHeader("Access-Control-Allow-Origin", "*")
+		Context.Response.AppendHeader("Access-Control-Allow-Private-Network", "true")
+		Context.Response.StatusCode = "200"
+		Context.Response.StatusDescription = "OK"
+		Context.Response.End()
+		end 
+	end if
+end if 
+
+
+'This page is used to handle Ajax callbacks from a Dialog Component.
+dim flagOpenLocal as l  = .f.
+'Check to see if user is doing a live preview of an unsaved component
+dim __unsaved as c = default ""
+if __unsaved = "yes" then 
+'if atc("_colon_",__dialogFilename) > 0 then 
+	flagOpenLocal = .t.
+	__dialogFilename = stritran(__dialogFilename,"/",chr(92))
+	__dialogFilename = stritran(__dialogFilename,"_colon_",":")
+	'if file.exists(__dialogFilename) = .f. then 
+	if filefind.get(__dialogFilename,FILE_FIND_NOT_DIRECTORY,"pn") = "" then 
+		'this is a fatal error
+		?"alert('Fatal Error - Dialog file not found. You may have been using an unsaved version of the component and the session has expired.');"
+		end 
+	end if 
+end if 
+
+if flagOpenLocal  then 
+	dim b as b 
+	b = file.to_blob(__dialogFilename)
+	dim tmpl as p
+	property_from_blob(tmpl,b)
+	
+	tmpl.gridCache.filename = __dialogFilename
+	tmpl.gridCache.timestamp = File.Update_Time(__dialogFilename)
+	
+else
+	xbasic_write_timing_data("UX COMPONENT:a5w_load_component (START)") 
+	tmpl = a5w_load_component(__dialogFilename)
+	xbasic_write_timing_data("UX COMPONENT:a5w_load_component (END)") 
+end if 
+tmpl.componentName = __alias
+tmpl.alias = __alias
+
+
+
+
+
+
+
+dim __placeholderValues as c = default ""
+dim __argumentBinding as c = default ""
+
+tmpl.__placeholderValues = __placeholderValues
+tmpl.__argumentBinding = __argumentBinding
+
+dim __parentComponentAlias as c = default ""
+tmpl.__parentComponentAlias = __parentComponentAlias
+
+dim onLoadCompleteJavascript as c = ""
+if eval_valid("request.variables.__onLoadCompleteJavascript") then 
+	onLoadCompleteJavascript = request.variables.__onLoadCompleteJavascript
+end if 
+tmpl.__onLoadCompleteJavascript = onLoadCompleteJavascript
+
+
+dim __parentComponentHasPanels as c = default "false"
+tmpl.__parentComponentHasPanels = __parentComponentHasPanels
+
+dim __dialogDiv as c = default ""
+tmpl.__dialogDiv = __dialogDiv
+
+
+dim __dialogSpecialMode as c = default ""
+if atc("editGridRow",__dialogSpecialMode) = 1 then 
+	dim pkToEdit as c 
+	pkToEdit = word(__dialogSpecialMode,2,":",99999)
+	tmpl.__loadRecord = .t.
+	tmpl.__pkToEdit = pkToEdit
+	dim __parentGridAlias as c = default ""
+	dim __parentRow as c = default ""
+	dim __closeDialogAfterSubmit as c = default "false"
+	dim __windowName as c = default "____none____"
+	tmpl.__parentGridAlias = __parentGridAlias
+	tmpl.__parentGridRowNumber = __parentRow
+	tmpl.__closeDialogAfterSubmit = __closeDialogAfterSubmit
+	tmpl.__windowName = __windowName
+else if atc("editListRow",__dialogSpecialMode) = 1 .or. atc("newListRow",__dialogSpecialMode) = 1 then 
+	dim pkToEdit as c 
+	pkToEdit = word(__dialogSpecialMode,2,":",99999)
+	pkToEdit = word(pkToEdit,1,"::::")
+	dim ListId as c 
+	
+	dim ListId as c 
+	if pkToEdit = "" then 
+		ListId = word(__dialogSpecialMode,2,":::::",99999)
+	else
+		ListId = word(__dialogSpecialMode,2,"::::",99999)
+	end if 
+	tmpl.__loadRecord = .t.
+	tmpl.__pkToEdit = pkToEdit
+	dim __parentGridAlias as c = default ""
+	dim __parentRow as c = default ""
+	dim __closeDialogAfterSubmit as c = default "false"
+	dim __windowName as c = default "____none____"
+	tmpl.__parentGridAlias = __parentGridAlias
+	tmpl.__parentGridRowNumber = __parentRow
+	tmpl.__closeDialogAfterSubmit = __closeDialogAfterSubmit
+	tmpl.__windowName = __windowName	
+	tmpl.__listIdToRefresh = listId
+	
+	
+	
+else if atc("newGridRow",__dialogSpecialMode) = 1 then 
+	tmpl.__newRecord = .t.
+	tmpl.__loadRecord = .f.
+	dim __parentGridAlias as c = default ""
+	dim __closeDialogAfterSubmit as c = default "false"
+	dim __windowName as c = default "____none____"
+	tmpl.__parentGridAlias = __parentGridAlias
+	tmpl.__closeDialogAfterSubmit = __closeDialogAfterSubmit
+	tmpl.__windowName = __windowName
+else if atc("openDialogShowMappedControls",__dialogSpecialMode) = 1 then 
+	dim __parentRow as c = default ""
+	tmpl.__parentGridRowNumber = __parentRow
+	tmpl.__showMappedControls  = .t.
+	tmpl.__controlMap = __controlMap
+	tmpl.__controlSourceData = __controlSourceData
+	tmpl.__parentComponentType = __parentComponentType
+	dim __parentGridAlias as c = default ""
+	dim __closeDialogAfterSubmit as c = default "false"
+	dim __windowName as c = default "____none____"
+	if __parentComponentType = "O" then 
+		tmpl.__parentDialogAlias = __parentDialogId
+	else
+		tmpl.__parentGridAlias = __parentGridAlias
+	end if
+	tmpl.__closeDialogAfterSubmit = __closeDialogAfterSubmit
+	tmpl.__windowName = __windowName
+	tmpl.__commitParent = __commitParent
+
+else if atc("populateDialog",__dialogSpecialMode) = 1 then 	
+	tmpl.__populateDialog = .t.
+	tmpl.__getPKFrom = __getPKFrom
+	tmpl.__PKValue = __PKValue
+	tmpl.__parentGridAlias = ""
+	tmpl.__windowName = __windowName
+
+end if 	
+
+
+
+dim __overrideSettings as c = default ""
+dim __arguments as c = default ""
+dim __localArguments as c = default ""
+dim __parameterBucket as c = default ""
+
+
+tmpl.__overrideSettings = __overrideSettings
+tmpl.__arguments = __arguments
+tmpl.__localArguments  = __localArguments
+tmpl.__parameterBucket = __parameterBucket
+
+dim __argumentValueBucket as c = default ""
+tmpl.__argumentValueBucket = __argumentValueBucket
+
+
+
+tmpl.request = Request
+tmpl.session = Session
+tmpl.response = Response
+tmpl.serversetting = ServerSetting
+
+'need to know if we must create an aliased Dialog object that follows the pattern parentAlias_ChildAlias_DlgObj
+dim flagOpenInWindow as c  = "no"
+if eval_valid("__openInWindow") then 
+	flagOpenInWindow = __openInWindow
+end if 
+tmpl.__flagOpenInWindow = flagOpenInWindow
+
+
+
+
+
+
+delete x_out
+dim x_out as p
+xbasic_write_timing_data("UX COMPONENT:a5_ajax_dialog2 (START)") 
+x_out = a5_ajax_dialog2(tmpl)
+xbasic_write_timing_data("UX COMPONENT:a5_ajax_dialog2 (END)") 
+if variable_exists("x_out.Ajaxresponse") then
+	?x_out.Ajaxresponse
+end if 
+
+
+'Context.Response.Headers.Add("Access-Control-Allow-Origin", "*")
+
+%>

@@ -1,0 +1,20 @@
+<%a5 
+'_isMobile : string = true, false, _text : string to convert to speech
+if _isMobile = "true" then
+  Context.Response.ContentType = "audio/mp3"
+else
+	Context.Response.ContentType = "audio/wav"
+end if
+dim Sv as DotNet::Services
+dim assy as DotNet::AssemblyReference
+assy.filename = DotNetPath()+"WPF\System.Speech.dll"
+Sv.RegisterClass("Speech","Synth","System.Speech.Synthesis.SpeechSynthesizer",assy)
+dim myTalker as Speech::Synth
+dim Stream as System::IO::MemoryStream
+myTalker.SetOutputToWaveStream(Stream)
+myTalker.Speak(_text)
+Stream.Position = 0
+Stream.CopyTo(Context.Response.OutputStream)
+myTalker.SetOutputToNull()
+myTalker.Dispose()
+%>

@@ -1,0 +1,21 @@
+<%a5
+
+'THIS IS A SYSTEM GENERATED PAGE - DO NOT MODIFY OR REMOVE.
+dim flagHandled as l
+if eval_valid("request.variables.__action") then
+	if request.variables.__action = "TestAJAX" then
+		if eval_valid("request.variables.__id") then
+			dim id as c
+			id = request.variables.__id
+			dim response as c = "var ele = $('"+id+"'); ele.innerHTML = '<span style=\"font-size: 15pt; color: #169c3e;\">Server address is valid.</span>';"
+			flagHandled = .t.
+			?response
+		end if
+	end if
+end if
+
+if flagHandled = .f. then
+	?"alert('Response from server: " +js_escape("" +  now()) + "');"
+end if
+
+%>

@@ -1,0 +1,173 @@
+<%a5
+' saveImageFile for HTML5 and Cordova/PhoneGap image uploads
+'
+' params may include:
+' 		base64DecodeRequired: if "1" file.data is base64 endoded and requires decoding. 
+'		willStoreBinaryDataToTable: if "1" no need for computedFileName processing.
+' 		uploadFolder: may be a relative, absolute path. May also contain and alias.
+'		filenameXform: may contain placehoders (<filename>,<shortfilename>), xbasic expression or alias.
+'
+' JSON object is returned
+'
+' By: R.E. Moore Jr.
+' Date last revised: 3/29/2013
+'--------------------------------------------------------------------------------------------
+
+dim v as p
+
+dim v.fileName as c
+dim v.hiddenFileName as c
+dim v.sessionFileKey as c
+dim v.webRoot as c
+dim v.base64DecodeRequired as L
+dim v.uploadFolder as c
+dim v.transform as c
+dim v.willStoreBinaryDataToTable as L
+dim v.resolvedFileName as c
+dim v.resolvedUploadFolder as c
+dim v.error as L = .f.
+
+v.webRoot = a5_default_path
+v.fileName = remspecial(api_uuidcreate())
+v.sessionFileKey = "SessionFileKey_"+v.fileName
+
+v.fileName = v.fileName+".jpg"
+
+if eval_valid("request.variables.imageType") then
+	if request.variables.imageType = "jpg" then
+		v.fileName = file.filename_parse(v.fileName,"N")+".jpg"
+		v.imageType = "jpg"
+	else
+		v.fileName = file.filename_parse(v.fileName,"N")+".png"
+		v.imageType = "png"
+	end if
+end if
+
+'assign v.hiddenFileName
+if eval_valid("request.variables.hiddenFileName") then
+	v.hiddenFileName = request.variables.hiddenFileName
+else if eval_valid("hiddenFileName") then
+	v.hiddenFileName = hiddenFileName
+else
+	v.hiddenFileName = ""
+end if
+
+v.hiddenFileName = ut(v.hiddenFileName)
+
+
+'assign v.uploadFolder
+if eval_valid("request.variables.uploadFolder") then
+	v.uploadFolder = request.variables.uploadFolder
+else if eval_valid("uploadFolder") then
+	v.uploadFolder = uploadFolder
+else
+	v.uploadFolder = ""
+end if
+
+'assign v.transform
+if eval_valid("request.variables.transform") then
+	v.transform = request.variables.transform
+else if eval_valid("transform") then
+	v.transform = transform
+else
+	v.transform = "" 
+end if
+
+'assign v.base64DecodeRequired
+if eval_valid("base64DecodeRequired") then
+	v.base64DecodeRequired = base64DecodeRequired
+else if eval_valid("request.variables.base64DecodeRequired") then
+	v.base64DecodeRequired = request.variables.base64DecodeRequired
+else
+	v.base64DecodeRequired = .F.
+end if
+
+'assign v.willStoreBinaryDataToTable
+if eval_valid("willStoreBinaryDataToTable") then
+	v.willStoreBinaryDataToTable = willStoreBinaryDataToTable
+else if eval_valid("request.variables.willStoreBinaryDataToTable") then
+	v.willStoreBinaryDataToTable = request.variables.willStoreBinaryDataToTable
+else
+	v.willStoreBinaryDataToTable = .F.
+end if
+
+'assign v.thumbnailDefinition
+if eval_valid("thumbnailDefinition") then
+	v.thumbnailDefinition = thumbnailDefinition
+else if eval_valid("request.variables.thumbnailDefinition") then
+	v.thumbnailDefinition = request.variables.thumbnailDefinition
+else
+	v.thumbnailDefinition = ""
+end if
+
+'assign v.instanceNumber
+if eval_valid("instanceNumber") then
+	v.instanceNumber = instanceNumber
+else if eval_valid("request.variables.instanceNumber") then
+	v.instanceNumber = request.variables.instanceNumber
+else
+	v.instanceNumber = ""
+end if
+
+'resolve uploadFolder
+if (atc("[",v.uploadFolder) > 0) then
+
+	'alias detected
+	dim thisStr as c = v.uploadFolder
+	dim strLen as n = len(thisStr)
+	dim locBr1 as n = atc("[",thisStr) 
+	dim locBr2 as n = atc("]",thisStr)
+	dim alias as c = subStr(thisStr,locBr1,locBr2)
+	v.resolvedUploadFolder = filename_from_alias(alias)
+
+ 	if (atc("[",v.resolvedUploadFolder) > 0) then
+		v.resolvedUploadFolder = "Error: "+alias+" is not defined."
+		v.error = .t. 
+	end if
+
+	if (strLen >	locBr2) then
+		v.resolvedUploadFolder =  v.resolvedUploadFolder + chr(92) + subStr(thisStr,locBr2+1,strLen)
+	end if
+
+else if ((atc(":"+chr(92),v.uploadFolder) > 0) .or. (atc(chr(92)+chr(92),v.uploadFolder) > 0)) then 
+	'uploadFolder is absolute 
+	v.resolvedUploadFolder = v.uploadFolder
+else
+	'uploadFolder is relative
+	v.resolvedUploadFolder = v.webRoot + chr(92) + v.uploadFolder
+end if
+
+'resolve fileName, apply transformation if required
+v.resolvedFileName = v.resolvedUploadFolder +chr(92)+ v.fileName
+
+if (v.transform  <> "") then
+	dim transformExpr as c
+	transformExpr = v.transform
+	transformExpr = stritran(transformExpr,"<filename>",v.resolvedFileName)
+	transformExpr = stritran(transformExpr,"<shortfilename>",file.filename_parse(v.resolvedFileName,"NE"))
+	if eval_valid(transformExpr) then
+		v.resolvedFileName = eval(transformExpr)
+		v.resolvedFileName = stritran(v.resolvedFileName,chr(92)+chr(92),chr(92))
+	else
+		v.resolvedFileName = transformExpr
+	end if
+end if
+
+'Session.SavedataAsFile : base64Decode?
+if (v.base64DecodeRequired) then
+	Session.SaveDataAsFile(v.sessionFileKey,base64decode(request.variables.file.data))
+else
+	dim ext as c 
+	ext = file.filename_parse(request.variables.file.filename,"e")
+	dim tempfn as c = a5_GetTempFilename(ext)
+	request.variables.file.savetofile(tempfn)
+
+	'Session.SaveDataAsFile(v.sessionFileKey,request.variables.file.data) 'selwyn 10/23/2022 don't reference file.data as it could be quite large and it results in a warning in the xbasic error log
+	'session.SaveFileToSessionFile(v.sessionFileKey,tempfn)
+	session.SaveFileToSessionFile(tempfn,v.sessionFileKey)
+end if
+
+dim js as c
+js = varToJsonStandard(v)
+? js
+%>

@@ -1,0 +1,99 @@
+<%a5
+'This page is used for external authentication methods to get credentials, add a user, or login from an AJAX call
+dim __ajax as c
+dim code as c
+
+
+
+
+dim oauthOptions as c = "{}"
+if eval_valid("request.variables.__oauthoptions") then 
+	oauthOptions = request.variables.__oauthoptions
+end if 
+
+ 
+dim ext as webSecurity::ExtAuthentication
+if ext.AllowExtAuthentication = .F.
+	if eval_valid("request.variables.error") then 
+		if request.variables.error = "access_denied" then 
+			'user canceled
+			'would be nice to have an onOAuthDeny client side event (defined in a5wcb_dialog2Specific() ).
+			'here is how we would call it after window.close(); :window.opener.{dialog.object}._executeEvent('onOAuthDeny',{})
+			'reason we don't is we do not know what {dialog.object} is
+			
+			dim html_cancel as c = <<%html%
+<!DOCTYPE html><html><head><title>Redirect</title>
+</head><body>
+<script type="text/javascript">
+if(window.opener != null && !window.opener.closed) {
+   window.close();
+};
+</script>
+</body></html>
+			%html%
+			?html_cancel
+			end 
+		end if 
+	end if 
+
+
+	goto redirect
+end if
+ext.GetAuthenticationTokens(oauthOptions)
+dim isAuthenticated as l
+isAuthenticated = ext.IsAuthenticated()
+
+
+if isAuthenticated = .t. 
+	dim txt as c 
+	txt = json_generate(request.variables)
+else
+end if 
+
+if isAuthenticated = .F. 
+	if code = "" ' need JavaScript code to open login form
+		if ext.javascript = "" then 
+			dim errorText as c  = "no redirect Javascript returned by ext.javascript"
+			errorText = ext.callresult.text
+			errorText = "alert('" + js_escape(errorText) + "');"
+			?errorText
+			end 
+		
+		end if 
+		if ext.Javascript <> ""
+			?ext.Javascript  
+			end
+		else
+			goto redirect 
+		end if 
+	else  
+		goto redirect  '-- request should have authentication code
+	end if
+end if 
+if isAuthenticated
+	dim _token as c 
+	_token = ext.ProcessAuthenticationRequest()
+
+end if 
+
+redirect: 
+
+if __ajax = "true"
+	
+	?ext.Javascript  
+else
+	dim pt as p
+	dim _token as c = default ""
+	if _token <> "" then 
+		pt = json_parse(_token)
+	end if 
+	dim pt.accessToken as c = default ""
+	dim	pt.refreshToken as c = default ""
+	dim pt.tokenExpires as c = default ""
+	dim pt.resourceURL as c = default ""
+	dim html as c = ext.html 
+	html = replace_variables_in_string(html,pt,"pt")
+	?html
+end if 
+
+%>

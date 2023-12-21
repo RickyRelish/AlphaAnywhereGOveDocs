@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<%a5
+dim uploadbuttonimage as c 
+
+
+'request.variables.selectFileButtonImage := "svgIcon=#alpha-icon-calendar:icon,24{ fill: #5fe346; stroke: #e72727;}"
+
+
+
+
+dim xbautoclose as c = "no"
+dim xbafterUpload as c = ""
+if eval_valid("request.variables.__autoclose") then 
+	xbautoclose = if( convert_type(request.variables.__autoclose,"L"),"true","false")
+end if 
+
+if eval_valid("request.variables.__afterUpload") then 
+	xbafterUpload = request.variables.__afterUpload
+end if 
+
+
+'request.variables.__autoclose := "Yes"
+
+
+if eval_valid("request.variables.selectFileButtonImage") = .f. 	 then 
+	uploadbuttonimage = ""
+else
+	uploadbuttonimage = request.variables.selectFileButtonImage
+end if
+
+dim flagSVGIcon as l = .f.
+if atc("svgIcon",uploadbuttonimage) > 0 then 
+	flagSVGIcon = .t.
+end if 
+
+
+	dim loadsvg as c = ""
+if flagSVGIcon then 
+	dim svgIconName as c
+	svgIconName = word(uploadbuttonimage,2,"svgIcon=#")
+	svgIconName = word(svgIconName,1,":")
+
+	dim tmplSVG as p
+	dim tmplSVG.style_name as c = ""
+	dim rtcSVG as p
+	dim loadsvg as c 
+	'dim image_name as c = "alpha-icon-calendar"
+	loadSVG = a5dialogHelper_makeJSToLoadSVG(tmplSVG,rtcSVG,.t.,svgIconName)
+	
+	loadSVG = "<script>" + loadSVG + "</script>"
+
+end if 
+
+dim flagHTMLEdtor as l = .f.
+if eval_valid("request.variables.fileUploadUrl") then 
+	if request.variables.fileUploadUrl = "__a5HTMLEditorFileInsertPage.a5w" then 
+		flagHTMLEdtor = .t.
+	end if 
+end if 
+
+
+
+dim _class as c 
+dim _spanedits as c = "GrBluInput GrBlueEdit"
+dim _watermarkColor as c = "black"
+if eval_valid("request.variables.stylesheetName") then
+	_class = a5DialogHelper_ResolveTHEME_CSS("[class.dialogInput]",request.variables.stylesheetName)
+	dim _styleName as c = request.variables.stylesheetName
+	if atc("dark",_styleName) > 0 then 
+		_watermarkColor = "white"
+	end if 
+	dim ps as p
+	ps = a5wcb_getStyleInfo(_styleName)
+	if ps.version >=4 then 
+		_spanedits = "input editPrimary"
+	else
+		_spanedits = _styleName + "Input" + " " + _styleName + "Edit"
+	end if 
+	
+end if 
+
+
+
+
+
+dim imageSizeHTML as c  = ""
+if flagHTMLEdtor then 
+	imageSizeHTML = <<%html2%
+Width: <input __class__ style="width: .3in;" id="__width" name="__width" /> Height: <input __class__ style="width: .3in;" id="__height" name="__height" /> Margin: <input __class__ style="width: .3in;" id="__margin" name="__margin" /> <br><br>
+%html2%
+	imageSizeHTML = stritran(imageSizeHTML,"__class__"," class=" + quote(_class))
+end if 
+dim __accept as c
+__accept = ""
+if eval_valid("request.variables._allowedFileTypes") then 
+	__accept = request.variables._allowedFileTypes
+	__accept = stritran(__accept,"*.",".")
+end if 
+
+function generateHiddenHTML as c (qsc as p )
+dim html as c 
+dim name as c 
+dim val as c 
+dim html_i as c 
+for each qp in qsc
+	name = qp.value
+	if name <> "" then 
+		delete values
+		values = qsc.GetValues(name)
+		for each entry in values
+			'sr 4/29/14 - do not urldecode. user had Keys.R1[]="a+b" and this broke the update
+			'val = urldecode(entry.value)
+			val = entry.value
+			val = *html_escape(val)
+			html_i = "<input type=\"hidden\" name=\"" + name + "\" value=\"" + val + "\" />" 
+			html = html + html_i + crlf()
+		next val
+	end if 
+	
+next qp
+generateHiddenHTML = html
+end function 
+ 
+
+dim __componentType as c = default ""
+dim __componentAlias as c = default ""
+dim harvestScript as c = ""
+if __componentType = "dialog2" .or. __componentType = "odialog2" then 
+	harvestScript = <<%txt%
+
+var otherData = window.parent.{__alias__}_DlgObj.harvest();
+$('OTHERVARIABLEVALUES').value = otherData;
+var stateInfo = JSON.stringify(window.parent.{__alias__}_DlgObj.stateInfo);
+$('STATEINFOVALUES').value = stateInfo;
+
+
+
+
+%txt%
+	
+	harvestScript = stritran(harvestScript,"{__alias__}",ut(__componentAlias))
+end if 
+
+
+dim progressBarType as c = default "A5"
+
+'testing
+
+
+
+'maxfilesize
+dim maxFileSize as c = default "1000000"
+if convert_type(maxFileSize,"N") = 0 then 
+	maxFileSize = 99999999999
+end if 
+
+
+dim maxsizemsg as c = default "Max allowed files size exceeded"
+maxsizemsg = stritran(maxsizemsg,"{filesize}", alltrim(str(maxFileSize,30,0,",")))
+maxsizemsg = js_escape(maxsizemsg)
+dim fswindowname as c = default ""   'file select window name
+
+
+dim sizeBig as c = "4.5in;"  'progress bar
+dim sizeSmall as c = "3.5in;" 
+if fswindowname = "htmleditor" then 
+	dim sizeBig as c = "3.5in;"  'progress bar
+dim sizeSmall as c = "2.5in;" 
+else
+
+end if 
+
+
+'fswindowname
+'__FILESELECTWINDOW_ACTIONBUTTON   --- ux
+'__FILESELECTWINDOW__UNBOUND_BUTTON_1  -- grid
+
+dim __showProgress as c = default "yes"
+__showProgress = lower(__showProgress)
+
+
+
+dim _allowedFileTypes as c = default ""  'jpg,png
+dim _invalidTypeMsg as c = default "Invalid file type"
+dim uploadAbortMsg as c = default "Abort file upload"
+dim abortButtonLabel as c = default "Abort"
+
+dim fileUploadURL as c = default ""
+dim fileUploadAutoUpload as c = default "false"
+dim fileUploadAllowMultiple as c = default "false"  'change back to false
+dim fileUploadText as c = default ""
+dim stylesheetName as c = default ""
+dim uploadButtonLabel as c = default "Upload"
+dim filePromptSingular as c = default "File:"
+
+
+
+dim __buttonClass as c 
+dim __pageClass as c 
+dim __labelClass as c 
+dim __sliderClass as c
+dim __sliderClass2 as c
+dim __sliderClass3 as c
+
+__buttonClass = a5DialogHelper_ResolveTHEME_CSS("[theme:button.base.className]",stylesheetName)
+__pageClass =  a5DialogHelper_ResolveTHEME_CSS("[theme:general.pageClassName]",stylesheetName)
+__labelClass = a5DialogHelper_ResolveTHEME_CSS("[theme:ux.base.labelClassName]",stylesheetName)
+__sliderClass = a5DialogHelper_ResolveTHEME_CSS("[theme:slider.base.className]",stylesheetName)
+__sliderClass2 = a5DialogHelper_ResolveTHEME_CSS("[theme:slider.base.innerClassName]",stylesheetName) + " " + styleSheetName + "SliderHInner"
+__sliderClass3 = a5DialogHelper_ResolveTHEME_CSS("[theme:slider.base.range.className]",stylesheetName) + " " + styleSheetName + "SliderHInner"
+
+
+
+dim filePromptPlural as c = default "Files:"
+dim removeButton as c = default "Remove"
+dim fileUploadWaitMessage as c = default "<img src=\"css/A5System/Images/wait.gif\" /> Uploading files..."
+
+dim fileSelectImg as c = default "images/$$folder.open.png.a5image"
+dim fileBoxWaterMark as c = default "Click button to select file..."
+dim computedFileUploadButton as c = ""
+if .not. convert_type(fileUploadAutoUpload,"L") then
+	computedFileUploadButton = <<%txt%
+	<button type=\"button\" style=\"display:none;\" class="__buttonClass" onclick="A5.fileUpload.upload();">{uploadButtonLabel}</button>
+%txt%
+	computedFileUploadButton = stritran(computedFileUploadButton,"{stylesheetName}",stylesheetName)
+	computedFileUploadButton = stritran(computedFileUploadButton,"{uploadButtonLabel}",uploadButtonLabel)
+	computedFileUploadButton = stritran(computedFileUploadButton,"__buttonClass",__buttonClass)
+end if
+'the upload button is in the toolbar now
+computedFileUploadButton = ""
+dim hiddenFields as c 
+
+
+
+if eval_valid("Context.Request.QueryString") then
+	hiddenFields = generateHiddenHTML(Context.Request.QueryString)
+end if 
+
+dim flagAllowMultiple as l = .f.
+if fileUploadText = "" then
+	if convert_type(fileUploadAllowMultiple,"L") then
+		flagAllowMultiple = .t.
+		fileUploadText =  filePromptPlural+"<br/>"
+	else
+		fileUploadText = filePromptSingular+"<br/>"
+	end if
+else
+	fileUploadText = fileUploadText+"<br/>"
+end if
+
+if flagAllowMultiple then 
+	dim maxFileSizeCombined as c = default "1000000"
+	dim maxFileSizeCombinedMsg as c = default "Combined file size of selected files too big."
+	maxFileSize = maxFileSizeCombined
+	maxsizemsg = maxFileSizeCombinedMsg
+	maxsizemsg = stritran(maxsizemsg,"{filesize}", alltrim(str(maxFileSize,30,0,",")))
+	maxsizemsg = js_escape(maxsizemsg)
+
+end if 
+'queryString = queryString + '&maxFileSizeCombined={uploadProperties.maxFileSizeCombined}';
+'queryString = queryString + '&maxFileSizeCombinedMsg={uploadProperties.maxFileSizeCombinedExceededMessage}';
+
+
+
+
+%>
+<html>
+<head>
+<meta name="generator" content="Alpha Five HTML Editor Version 12 Build 8867-5691">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<style type="text/css">
+.icon {
+  vertical-align: middle;
+  fill: #333;
+  stroke: #333; }
+.iconSizeable {
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+  fill: #333;
+  stroke: #333; }
+.iconDisabled {
+  opacity: .25; }
+</style>
+
+
+<script type="text/javascript" src="javascript/core.js"></script>
+<script type="text/javascript">
+
+if(typeof A5 == 'undefined') A5 = new Object();
+
+function urlencode(text){
+	// removed to stop UTF8 characters from being converted to ASCI
+	//text = escape(text.toString());
+	text = text.replace(/%/g, "%25");
+	text = text.replace(/\+/g, "%2B");
+	text = text.replace(/\=/g, "%3D");
+	text = text.replace(/\\/g, "%5C");
+	text = text.replace(/&/g, "%26");
+	text = text.replace(/\n/g, "%0D%0A");
+	text = text.replace(/"/g, "%22");
+	// remove \r - \r causing problems w/ data saving
+	text = text.replace(/\r/g, "");
+	return text
+}	
+	
+A5.ajax = new Object();
+A5.ajax.buildURLParam = function(eleName,eleValue){
+	if(typeof eleValue != 'undefined'){
+		if(eleValue == null) eleValue = '';
+		if(eleValue.constructor == Array){
+			var valArr = new Array();
+			if(eleValue.length==0) {
+				return urlencode(eleName) + '=';
+			} else
+			{
+				for (var j=0;j<eleValue.length;j++){
+					valArr[valArr.length] = urlencode(eleName)+'='+urlencode(eleValue[j]);
+				}
+				return valArr.join('&');
+			}
+		} else return urlencode(eleName)+'='+urlencode(''+eleValue);
+	}
+}
+
+A5.ajax.callback = function(url,data) {
+	if(data != '') data = data + '&__Ajax=true&'+A5.ajax.buildURLParam('__AjaxURL',url.split('?')[0]);
+	else data = '__Ajax=true&'+A5.ajax.buildURLParam('__AjaxURL',url.split('?')[0]);
+	var s1 = typeof arguments[2] != 'undefined' ? arguments[2] : {};
+	var s2 = {handleGeneric: true, method: 'post'};
+	$u.o.assign(s2,s1);
+	s2.data = A5.ajax.addParamRequiredData(data);
+	new $a.simple(url,s2);
+}
+
+
+
+A5.ajax.urlEncode = urlencode;
+if(!A5.ajax.addURLRequiredData) A5.ajax.addURLRequiredData = function(url){return url;};
+if(!A5.ajax.addParamRequiredData) A5.ajax.addParamRequiredData = function(data){return data;};
+
+delete A5.fileUpload;
+
+A5.fileUpload = {
+	fileInc: 0,
+	autoUpload: <%a5 ? iif(convert_type(fileUploadAutoUpload,"L"),"true","false") %>,
+	allowMultiple: <%a5 ? iif(convert_type(fileUploadAllowMultiple,"L"),"true","false") %>,
+	xclassName: '<%a5 ?stylesheetName %>Input <%a5 ?stylesheetName %>Edit',
+	className: '<%a5 ?_spanedits%>',
+	waterMarkColor: '<%a5 ?_watermarkColor%>',
+	blankText: '<%a5  ?js_escape(*html_unescape(fileBoxWaterMark,"U"),"U") %>',
+	removeText: '<%a5 ?js_escape(*html_unescape(removeButton,"U"),"U")  %>',
+	buttonImage: '<%a5 ?fileSelectImg %>',
+	add: function(){
+		this.fileInc++;
+		var fEle = $('FileUpload');
+		var dEle = document.createElement('div');
+		dEle.id = 'File'+this.fileInc+'.CONTAINER';
+		dEle.style.marginBottom = '2px';
+		var sEle = document.createElement('span');
+		sEle.style.display = 'inline-block';
+		sEle.style.position = 'relative';
+		sEle.style.textAlign = 'right';
+		sEle.style.width = '3.5in';
+		
+		sEle.style.padding = '10px';
+
+		sEle.className = this.className;
+		
+		dEle.appendChild(sEle);
+
+		var fiEle = document.createElement('input');
+		fiEle.id = 'File'+this.fileInc+'.TEXT';
+		
+		//$ss(fiEle,'position: absolute; left: 2px; width: 100%; border: none; background: transparent; opacity: .5; filter: alpha(opacity=50); color:' + this.waterMarkColor + ';');
+		$ss(fiEle,'position: absolute; left: 2px; right:2px; bottom: 0px; top: 0px; border: none; background: transparent; opacity: .5; filter: alpha(opacity=50); color:' + this.waterMarkColor + ';');
+		
+		fiEle.value = this.blankText;
+		
+		//fiEle.style = fiEle.style + ' color:red;'
+		sEle.appendChild(fiEle);
+
+		if(this.buttonImage != ''){
+			var bEle = document.createElement('div');
+			$ss(bEle,'position: absolute; right: 0px; top: 0px; padding: 3px;');
+			//$ss(bEle,'position: absolute; right: 0px; padding: 3px;');
+			//bEle.innerHTML = '<img src="'+this.buttonImage+'" />';
+			bEle.innerHTML = window.parent.A5.u.icon.html(this.buttonImage);
+			sEle.appendChild(bEle);
+		}
+
+		var iEle = document.createElement('input');
+		iEle.type = 'file';
+		iEle.id = 'File'+this.fileInc;
+		iEle.name = 'File'+this.fileInc;
+		//iEle.style.position = 'relative';
+		iEle.style.position = 'absolute';
+		iEle.style.top = '0px';
+		iEle.style.bottom = '0px';
+		iEle.style.left = '0px';
+		iEle.style.width = '100%';
+		iEle.style.cursor = 'pointer';
+		iEle.style.opacity = '0';
+		
+		
+		
+		
+		var _accept = '<%a5 ?__accept %>';
+	
+		$sa(iEle,'accept',_accept);
+		
+		iEle.style.filter = 'alpha(opacity=0)';
+		$e.add(iEle,'change',this._change,this);
+		sEle.appendChild(iEle);
+
+		if(this.allowMultiple){
+			dEle.appendChild(document.createTextNode(' '));
+			var rfEle = document.createElement('a');
+			rfEle.href = '#';
+			rfEle.innerHTML = this.removeText;
+			rfEle.style.visibility = 'hidden';
+			rfEle.className = '<%a5 ?stylesheetName %>Link';
+			$sa(rfEle,'FileIndex',''+this.fileInc);
+			
+			$e.add(rfEle,'click',this._remove,this);
+			dEle.appendChild(rfEle);
+		}
+		fEle.appendChild(dEle);
+	},
+	remove: function(indx){
+		var fEle = $('FileUpload');
+		if($('File'+indx+'.CONTAINER') != fEle.lastChild){
+			fEle.removeChild($('File'+indx+'.CONTAINER'));
+			if(fEle.childNodes.length == 1) this.add();
+		}
+	},
+	_remove: function(e,classInst){
+		$e.stopEvent(e);
+		var indx = Number($ga(this,'FileIndex'));
+		if(indx > 0) classInst.remove(indx);
+		return false;
+	},
+	_change: function(e,classInst){
+		//reenable the upload button for the next time the window is opened. it was disabled when the user started an upload
+		var wObj = window.parent.A5.windows.getFromElement('<%a5 ?fswindowname%>');
+		if(wObj) wObj.setButtonDisabled('UPLOAD',false);
+		var fEle = $('FileUpload');
+		if(classInst.allowMultiple){
+			this.parentNode.parentNode.lastChild.style.visibility = '';
+			if(fEle.lastChild.firstChild.lastChild.value != '') classInst.add();
+		}
+		var fiEle = $(this.id+'.TEXT');
+		if(this.value != ''){
+			var tVal = this.value;
+			fiEle.value = tVal.split('\\').pop();
+			fiEle.style.opacity = '';
+			fiEle.style.filter = '';
+			if(classInst.autoUpload) classInst.upload();
+		} else{
+			fiEle.value = classInst.blankText;
+			fiEle.style.opacity = '.5';
+			fiEle.style.filter = 'alpha(opacity=50)';
+		}  
+		
+		
+
+	},
+	upload: function() {
+		var wObj = window.parent.A5.windows.getFromElement('<%a5 ?fswindowname%>');
+		if(wObj) wObj.setButtonDisabled('UPLOAD',true);
+		
+		
+		
+		
+		var allowedTypes = '<%a5 ?_allowedFileTypes %>';
+		if(allowedTypes != '') {
+			allowedTypes = allowedTypes.toLowerCase().split(',');
+		} else { 
+			allowedTypes = [];
+		}
+		var ftuEle = $('filesToUpload');
+		var ftuArr = new Array();
+		var fn = '';
+		
+		
+		for(var i=1;i<=this.fileInc;i++){
+			if($('File'+i)){
+				fn = $gvs('File'+i);
+				if(fn != '') {
+					ftuArr.push(i);
+					
+					fn = fn.split('.').pop().toLowerCase();
+					if($u.a.find(allowedTypes,fn) == -1 && $u.a.find(allowedTypes,'.' + fn) == -1 && allowedTypes.length != 0) { 
+						var invalidTypeMsg = '<%a5 ?_invalidTypeMsg %>';
+						invalidTypeMsg = invalidTypeMsg.replace(/\{filename\}/gi,fn);
+						showError(invalidTypeMsg);
+						return false;
+					}
+				}
+			}
+		}
+		
+		
+		
+		
+		ftuEle.value = ftuArr.join(',');
+		
+		
+
+		if(ftuArr.length > 0) {
+
+			$('UPLOADMESSAGE').style.display = '';
+			$('UPLOADFORM').style.display = 'none';
+			
+			
+			if('<%a5 ?__showProgress %>' == 'yes') {
+				if(typeof XMLHttpRequest != 'undefined') {
+					var xhr = new XMLHttpRequest();
+					if(typeof xhr.onprogress != 'undefined') {
+						uploadNew();
+						return false;
+					}
+				}
+			}
+			
+			setTimeout(function() { $('FileUpload').submit(); } ,1);
+		}
+	}
+
+}
+</script>
+<link rel="stylesheet" type="text/css" href="css/<%a5 ?stylesheetName %>/style.css">
+</head>
+<body onload="A5.fileUpload.add();" class="<%a5 ?__pageClass%>" style="text-shadow:none;">
+<div id="UPLOADFORM">
+<%a5  ?fileUploadText %>
+<form id="FileUpload" action="<%a5 ?fileUploadURL %>" method="post" enctype="multipart/form-data">
+
+<input type="hidden" id="filesToUpload" class="<%a5 ?__buttonClass%>" name="filesToUpload"/>
+
+<input type="hidden" id="OTHERVARIABLEVALUES" name="__otherFormData" />
+<input type="hidden" id="STATEINFOVALUES" name="__stateInfo" />
+
+
+
+
+<%a5 ?hiddenFields %>
+<br>
+<%a5 ?imageSizeHTML %>
+</form>
+
+<%a5 ?loadSVG %>
+
+
+
+<script>
+function addHiddenField(name,value) { 
+	var ele = document.createElement('input');
+	ele.type = 'hidden';
+	ele.name = name ;
+	ele.value = value;
+	var fEle = document.getElementById('FileUpload');
+	fEle.appendChild(ele);
+}
+if(typeof window.parent._tempUploadVariables != 'undefined') {
+	
+	var arr = [];
+	try {
+		arr = window.parent._tempUploadVariables.split('&');
+	} catch(err) { 
+		
+	}
+	var txt = '';
+	var arr2 = [];
+	for(var i = 0; i < arr.length; i++) { 
+		txt = arr[i];
+		arr2 = txt.split('=');
+		if(arr2.length >=2) {
+			addHiddenField(arr2[0],arr2[1]);
+		}
+	}
+	delete window.parent._tempUploadVariables;
+}
+</script>
+
+<script>
+function uploadNew() { 
+	 
+  
+	var form = $('FileUpload');
+	
+	var formData = new FormData(form);
+	var xhr = new XMLHttpRequest();
+	
+	window._xhr = xhr;
+	var delim = '&';
+	if(form.action.indexOf('?') == -1) delim = '?';
+	form.action = form.action + delim + 'returnDataType=javascript'
+	//can't do this in working preview
+	xhr.open('POST', form.action, true);
+	
+	xhr.onload = function(e) { };
+	// Listen to the upload progress.
+	var progressBar = document.querySelector('progress');
+	xhr.upload.onprogress = function(e) {
+		if (e.lengthComputable) {
+			var maxSize = Number(<%a5 ?maxFileSize %>);
+			var maxSizeMessage = '<%a5 ?maxsizemsg %>';
+			
+			
+			fn = $gvs('File'+1);
+			fn = fn.split('\\').pop();
+			maxSizeMessage = maxSizeMessage.replace(/\{filename\}/gi,fn);
+			
+			
+			if(maxSize == 0) maxSize = 999999999999;
+			if(e.total > maxSize    ) {
+				xhr.abort();
+				$('UPLOADMESSAGE').style.display = 'none';
+				$('ERRORS').innerHTML = maxSizeMessage;
+				$('ERRORS').style.display = '';
+				var wObj = window.parent.A5.windows.getFromElement('<%a5 ?fswindowname%>');
+				if(wObj) {
+						wObj.setButtonDisplay('OK',false);
+						wObj.setButtonDisplay('UPLOAD',false);
+						wObj.setButtonDisabled('UPLOAD',false);
+				}
+				return false;
+			}
+			var pct = (e.loaded / e.total) * 100;
+			setProgress(pct);
+			progressBar.value = pct;
+			progressBar.textContent = progressBar.value; // Fallback for unsupported browsers.
+		}
+	};
+
+	xhr.onprogress = function(e) {
+		if (e.lengthComputable) {
+			//progressBar.value = (e.loaded / e.total) * 100;
+			//progressBar.textContent = progressBar.value; // Fallback for unsupported browsers.
+			
+			var pct = (e.loaded / e.total) * 100;
+			setProgress(pct);
+			progressBar.value = pct;
+		}
+	};
+
+	xhr.onload = function(e) {
+		//alert('status:' + this.status);
+		if(this.status == 200) {
+			eval(this.responseText);
+		} else { 
+			//var msg = '<%a5 ?maxsizemsg %>';
+			var msg = '';
+			if(this.status == 413) {
+				msg = 'File exceeds size allowed by the server.';
+			} else { 
+				msg = 'Server returned an error.';
+			
+			}
+			showError('Upload status: ' + this.status + ' -- ' + msg);
+		}
+	}
+
+	xhr.onerror = function(e) { alert('Upload error'); }
+	xhr.upload.onerror = function(e) { alert('Upload error.'); }
+	xhr.send(formData);
+	$('XHR2UPLOAD').style.display =  '';
+		
+}
+
+function uploadAborted() { 
+	var wObj = window.parent.A5.windows.getFromElement('<%a5 ?fswindowname%>');
+	if(wObj) {
+			wObj.setButtonDisplay('OK',false);
+			wObj.setButtonDisplay('UPLOAD',false);
+			wObj.setButtonDisabled('UPLOAD',false);
+	}
+	window._xhr.abort(); 
+	$('UPLOADMESSAGE').style.display = 'None'; 
+	$('UPLOADABORTED').style.display = ''; 
+}
+
+function refreshList(list,componentName) { 
+	var _dlgObj = window.parent[componentName + '_DlgObj'];
+	//used when importing into a List control
+	var lObj = _dlgObj.getControl(list);
+	if(lObj) { 
+		if(lObj.listIsDirty()) { 
+			alert('Cannot refresh List because it has unsynchronized edits.');
+		} else { 
+			var options = {
+				keepFocusOnCurrentSelection: true,
+				setFocusToValue: '',
+				refreshDependentLists: true,
+				onlyRefreshDependentLists: false
+			};
+			_dlgObj.refreshListData(list,options);
+		}
+	}
+
+}
+
+function showError(msg) { 
+	var wObj = window.parent.A5.windows.getFromElement('<%a5 ?fswindowname%>');
+	if(wObj) {
+			wObj.setButtonDisplay('OK',false);
+			wObj.setButtonDisplay('UPLOAD',false);
+			wObj.setButtonDisabled('UPLOAD',false);
+	}	
+	$('UPLOADMESSAGE').style.display = 'None'; 
+	$('UPLOADFORM').style.display = 'None'; 
+	$('ERRORS').style.display = ''; 
+	$('ERRORS').innerHTML = msg;
+}
+
+
+function showResult(msg,closeHtml, flagError, rowsImported,errorText) { 
+	var wObj = window.parent.A5.windows.getFromElement('<%a5 ?fswindowname%>');
+	if(wObj) {
+			wObj.setButtonDisplay('OK',false);
+			wObj.setButtonDisplay('UPLOAD',false);
+			wObj.setButtonDisabled('UPLOAD',false);
+			
+			var btnObj = wObj.getButton('Cancel');
+			btnObj.html = closeHtml;;
+			btnObj.refresh();
+	}	
+	$('UPLOADMESSAGE').style.display = 'None'; 
+	$('UPLOADFORM').style.display = 'None'; 
+	$('ERRORS').style.display = ''; 
+	$('ERRORS').innerHTML = msg;
+	
+	var flagAutoCloseWindow = <%a5 ?xbautoclose %>;
+	var afterUploadFunction = '<%a5 ?xbafterUpload %>';
+	
+	
+	
+	if(flagAutoCloseWindow) { 
+		if(wObj) wObj.hide();
+	}
+	
+	
+	
+	if(afterUploadFunction != '') { 
+		var e = {
+			error: flagError,
+			records: rowsImported,
+			message: msg,
+			errorText: errorText
+		
+		}
+		
+		window.parent[afterUploadFunction].call(this,e);
+		
+	}
+}
+
+
+
+
+function setProgress(pct) { 
+	$('OLDMESSAGE').style.display = 'none';
+	$('PROGRESSCONTROL3').style.width = pct + '%';
+	$('PROGRESSCONTROL3').style.display = '';
+	
+	var progressBarType = '<%a5 ?progressBarType %>';
+	if(progressBarType == 'A5') { 
+		$('DEFAULTPROGRESS').style.display = 'none';
+		$('A5PROGRESS').style.display = '';
+	} else { 
+		$('DEFAULTPROGRESS').style.display = '';
+		$('A5PROGRESS').style.display = 'none';
+	}
+	
+	
+}
+
+
+</script>
+
+
+
+
+<script>
+<%a5 ?harvestScript   %>
+</script>
+<br/>
+<%a5 ?computedFileUploadButton %>
+</div>
+<div style="display:none; text-shadow:none;" id="UPLOADMESSAGE"><span id="OLDMESSAGE"><%a5 ?fileUploadWaitMessage %></span>
+	<div style="display:none;" id="XHR2UPLOAD">
+		
+		
+		
+		<div style="width: <%a5 ?sizeBig %>">
+			<button style="float:right;" onclick="uploadAborted();" class="<%a5 ?__buttonClass %>"><%a5 ?abortButtonLabel %></button>
+			
+			<progress id="DEFAULTPROGRESS" style="width:<%a5 ?sizeSmall %>; display: none;" min="0" max="100" value="0">0% complete</progress>
+			<div id="A5PROGRESS" style="display:none; width: <%a5 ?sizeSmall %> box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" class="<%a5 ?__sliderClass %>" >
+				<div id="PROGRESSCONTROL2" class="<%a5 ?__sliderClass2 %>" style="position: relative;" >
+					<div id="PROGRESSCONTROL3" class="<%a5 ?__sliderClass3 %>" style="display: none; position: absolute; width: 0%;">
+					</div>
+				</div>
+			</div>	
+			
+		</div>
+		
+		
+		
+		
+	</div>
+</div>
+
+<div id="ERRORS" style="display:none; color: red; text-shadow:none;"></div>
+<div id="UPLOADABORTED" style="display:none; color: red; text-shadow:none;"><%a5 ?uploadAbortMsg %></div>
+
+
+</body></html>

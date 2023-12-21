@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<%a5
+dim componentName as c 
+componentName = request.variables.componentName
+
+
+dim style as c = ""
+if eval_valid("request.variables.style") then 
+	style = request.variables.style
+end if 
+
+dim componentType as c 
+if eval_valid("request.variables.componentType") then 
+	componentType = request.variables.componentType
+end if 
+
+dim componentAlias as c 
+if eval_valid("request.variables.componentAlias") then 
+	componentAlias = request.variables.componentAlias
+end if 
+
+
+
+dim overrides as c 
+if eval_valid("request.variables.overrideSettings") then 
+	overrides = request.variables.overrideSettings
+end if 
+
+
+
+
+Delete tmpl
+DIM tmpl as P
+tmpl = a5w_load_component(componentname)
+
+dim p as p
+
+if componentAlias = "" then 
+	componentAlias = ut(componentName)
+else
+	componentAlias = ut(componentAlias)
+end if 
+
+if componentType = "tabbedUI" then 
+	componentAlias = "tbi"
+end if 
+
+
+
+
+'p.alias = ut(componentName)
+p._dialogFilename = componentname
+p._gridFilename = componentName
+if style <> "" then 
+	p.style_name = style 
+end if 
+
+dim txt as c 
+txt = *variable_to_script(p)
+tmpl.override_settings =  *variable_to_script(p)
+tmpl.override_settings = tmpl.override_settings + crlf() + overrides
+
+
+
+tmpl.alias = componentAlias
+if componentType = "tabbedUI" then 
+	
+end if 
+
+a5w_resolveVariablesInOverrideSettings(tmpl,session,local_variables())
+
+delete x_out
+dim x_out as p
+x_out = a5w_run_Component(tmpl) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:john)
+if x_out.RedirectURL <> "" then 
+	response.redirect(x_out.redirectURL)
+	end
+end if 
+?x_out.Output.Head.JavaScript
+?x_out.Output.Head.CSS_Link
+if eval_valid("x_out.output.head.title") then
+	?x_out.Output.Head.Title 
+else
+	?"<title>Component</title>"
+end if 
+%>
+
+</head>
+
+
+<%a5 ?x_out.Output.Body.Body_tag %>
+
+<%a5 
+
+dim componentType as c 
+if eval_valid("x_out.output.body.dialog2_html") then 
+	componentType = "UX"
+else if eval_valid("x_out.Output.Body.TabbedUI_HTML") then 
+	componentType = "TabbedUI"
+else if eval_valid("x_out.Output.Body.PageLayout_HTML") then 
+	componentType = "PageLayout"
+else if eval_valid("x_out.Output.Body.Grid_HTML") then 
+	componentType = "Grid"
+end if 
+
+if componentType = "UX" then
+	?x_out.Output.Body.Dialog2_HTML 
+else if componentType = "TabbedUI" then 
+	?x_out.Output.Body.TabbedUI_HTML
+else if componentType = "PageLayout" then 
+	?x_out.Output.Body.PageLayout_HTML
+else if componentType = "Grid" then 
+	?x_out.Output.Body.Search_HTML
+	?x_out.Output.Body.Grid_HTML 
+	?x_out.Output.Body.DetailView_HTML	
+end if 
+
+%>
+
+
+</body>
+</html>
+

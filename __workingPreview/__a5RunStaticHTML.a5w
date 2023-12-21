@@ -1,0 +1,71 @@
+<%a5
+'THIS IS A SYSTEM GENERATED PAGE - DO NOT MODIFY OR REMOVE.
+dim componentName as c = ""
+if eval_valid("request.variables.__AAComponentName") then 
+	componentName = request.variables.__AAComponentName
+end if 
+
+dim alias as c = ""
+if eval_valid("request.variables.__AAAlias") then 
+	alias = request.variables.__AAAlias
+end if 
+
+if componentName = "" then 
+	dim html as c = <<%html%
+<html>
+	<head>
+	</head>
+	<body>
+		<span style="color:red;">Static HTML File not specified.</span>
+	</body>
+</html>
+	%html%
+	?html 
+	end 
+end if 
+
+dim fn as c = a5_default_path + chr(92) + file.filename_parse(componentname,"N") + ".html"
+if file.exists(fn) = .f. then 
+	dim html as c = <<%html%
+<html>
+	<head>
+	</head>
+	<body>
+		<span style="color:red;">Static HTML File not found: '__componentName__'.</span>
+	</body>
+</html>
+	%html%
+	html = stritran(html,"__componentName__",componentname)
+	?html
+	end 
+end if 
+
+
+dim html as c = file.to_string(fn)
+dim parentAlias as c = ""
+if eval_valid("request.variables.__AAparentAlias") then 
+	parentAlias = request.variables.__AAparentAlias
+end if 
+
+if atc("<",alias) > 0 then 
+	alias = ""
+end if 
+html = a5DialogHelper_injectJSIntoStaticHTML(componentname,html,alias)
+
+if alias <> "" then 
+	html = strtran(html,"DLG1",ut(alias))
+	
+	if parentAlias <> "" then 
+		html = stritran(html,"__parentAliasNotDefined",parentAlias)
+	end if 
+	?html
+	end 
+else
+	?html
+	end 
+end if 
+
+'-----------------
+
+
+%>

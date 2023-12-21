@@ -1,0 +1,33 @@
+<%a5
+'THIS IS A SYSTEM GENERATED PAGE - DO NOT MODIFY OR REMOVE.
+
+'if type=image and name is JSON {cs: 'connection string', object: 'object name in storage with extension', source: 'disk'}
+if eval_valid("request.variables.type") then 
+	if request.variables.type= "image" then 
+		dim name as c 
+		if eval_valid("request.variables.name") then 
+			name = request.variables.name
+			'"{cs: 'filesystem1', object: 'storageFile1.jpg', source: 'disk'}"
+			dim p as p
+			p = json_parse(name)
+			dim cs as c
+			if eval_valid("p.cs") then 
+				cs = p.cs 
+				dim p2 as p
+				p2 = a5DialogHelper_parseStorageConnectinString(cs)
+				dim folder as c
+				if eval_valid("p2.container") then 
+					dim fn as c 
+					fn = a5_removetrailingbackslash(p2.container) + chr(92) + p.object 
+					if file.exists(fn) then 
+						response.sendfile(fn)
+					end if 
+				end if 
+			end if 
+		end if 
+	end if
+end if 
+
+%>
+
+

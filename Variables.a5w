@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 1856-4237">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title>Show Session Variables</title>
+</head>
+<body>
+<p align="left"><br></p>
+
+<p align="center" style="color: rgb(8, 8, 168);"><table border="2" cellpadding="10" cellspacing="10" align="Center" background="" bordercolor="#000" bordercolorlight="#000" bordercolordark="#000" bgcolor="">
+	<tbody><tr><td align="Default" height="" nowrap="false" valign="Default" width="" width_increment="Pixels" height_increment="Pixels" bgcolor="" background="" bordercolor="" bordercolorlight="" bordercolordark=""><font size="5"><div style="text-align: center;"><b style="font-family: Calibri; white-space: normal; color: rgb(137, 15, 15);">Session Variables</b></div></font></td></tr><tr><td align="Default" height="" nowrap="false" valign="Default" width="" width_increment="Pixels" height_increment="Pixels" bgcolor="" background="" bordercolor="" bordercolorlight="" bordercolordark="" style="text-align: center;"><font size="5">&nbsp; &nbsp; &nbsp;<%A5 ? "version: " + version("b")  + "-" + a5_system_addin_version()
+%>&nbsp; &nbsp;&nbsp;<%A5 'get a list of all of the session variables
+
+'!f flag indicates that no functions should be returned
+dim vars as c
+vars = properties_enum(session.variables,"!f")
+
+dim html as c
+html = ""
+
+'loop over each session variable and get its value
+for each vn in vars
+    html = html+"session."+vn.value+"="+eval("session.variables."+vn.value)+"<br>"
+next
+'print out the contents of 'html'
+?html
+%>&nbsp; &nbsp;&nbsp;</font></td></tr>
+</tbody></table></p>
+</body></html>

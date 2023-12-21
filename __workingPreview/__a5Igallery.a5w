@@ -1,0 +1,190 @@
+<%a5 
+'Alpha Five Image Gallery Component Support Files
+'These are system generated files.
+'Do not modify or remove.
+'Date Created: 29-Aug-2011 04:36:09 PM
+'Last Updated: 06-Mar-2012 03:57:27 PM
+'Created By  : remoorejr
+'Updated By  : remoorejr
+'
+'10-17-2011 : Added lookup for png files in getThumbs. Now returns all jpg and png files.
+'10-27-2011 : Added _filter argument to getThumbs
+'03-06-2012 : Added _sortOrder argument to getThumbs
+
+dim _action as c
+dim _debug as l = .f.
+
+if _action = "getThumbs" then
+	
+	' _directory and optional _filter passed as arguments
+	dim _maxImageCount as c
+	dim _directory as c
+	dim _filter as c 
+	dim _sortOrder as c
+	dim tDirectory as c
+	dim thumbs as c
+	dim jpg_thumbs as c
+	dim png_thumbs as c
+	dim jpgCount as n
+	dim pngCount as n
+	dim thumbCount as n
+	dim _html as c = ""
+	dim maxImageCount as n
+	
+    tDirectory = _directory + chr(92)+"thumbs"+chr(92)
+	maxImageCount = val(_maxImageCount)
+	
+	'jpg_thumbs = filefind.get(tDirectory+"*.jpg")
+	'png_thumbs = filefind.get(tDirectory+"*.png")
+	
+	'/* 03-06-2012 revisions */
+	jpg_thumbs = filefind.get(tDirectory+"*.jpg",0,"N|T")
+	png_thumbs = filefind.get(tDirectory+"*.png",0,"N|T")
+	'/* end 03-06-2012 revisions */
+	
+	jpgCount = line_count(jpg_thumbs)
+	pngCount = line_count(png_thumbs)
+	
+	thumbCount = jpgCount + pngCount
+	if thumbCount = 0 then
+		_html="Error:1103 .. File(s) not found. "+tDirectory
+		?_html
+		return
+	end if
+
+	if jpgCount > 0 .and. pngCount > 0 then
+	    thumbs = jpg_thumbs + crlf() + png_thumbs
+	else if jpgCount > 0 .and. pngCount = 0 then
+	    thumbs = jpg_thumbs
+	else if jpgCount = 0 .and. pngCount > 0 then
+	    thumbs = png_thumbs
+	end if
+	
+	'/* 03-06-2012 revisions */
+	dim tCount as n
+	tCount = line_count(thumbs)
+	dim aa[tCount] as p
+	aa.initialize_properties("fname|ftime:t",thumbs)
+	dim key as c
+	dim sortType as c
+	select case
+		case _sortOrder = "ALPHA_A"
+			key = "fname"
+			sortType = "A"
+		case _sortOrder = "ALPHA_D"
+			key = "fname"
+			sortType = "D"
+		case _sortOrder = "DATE_A"
+			key = "time(\"yyyyMMdd\",ftime) + fname"
+			sortType = "A"
+		case _sortOrder = "DATE_D"
+			key = "time(\"yyyyMMdd\",ftime) + invert(fname)"
+			sortType = "D"
+		case _sortOrder = "DATETIME_A"
+			key = "time(\"yyyyMMdd0h0ms\",ftime) + fname"
+			sortType = "A"
+		case _sortOrder = "DATETIME_D"
+			key = "time(\"yyyyMMdd0h0ms\",ftime) + invert(fname)"
+			sortType = "D"
+	end select			
+	aa.sort(sortType,key)
+	thumbs = aa.dump_properties("fname")
+	'/* end 03-06-2012 revisions */
+	
+	' _filter must be at least 5 chars, ie: *.png
+	if len(_filter) > 4 then
+		thumbs = a5ImageGallery_filterImages(thumbs,_filter)		
+	end if  
+	
+	if maxImageCount > 0 .and. thumbCount > maxImageCount then
+		thumbs = word(thumbs,1,chr(10),maxImageCount)
+	end if
+	
+	_html = *for_each(fn,"<li class=\"pic\"><img src=\""+tDirectory + fn + "\" alt=\"" +_directory+ "/" + fn + "\" title=\"" + fn + "\"/></li>",thumbs)	
+	_html = rtrim(_html,chr(10)+chr(13))
+	
+    if _debug = .t. then
+		file.from_string("c:\_data.txt",thumbs)
+		file.from_string("c:\_html.txt",_html)
+	end if
+	
+	? _html
+end if
+
+if _action = "getImageInfo" then
+
+	dim _imageDir as c
+	dim _imageName as c
+	dim _tableType as c
+	dim _connectionString as c
+	dim _tableName as c
+	dim _fieldMap as c
+	dim _getExifData as c
+	dim _getLatLon as c
+	
+	dim pDef as p
+	dim pDef.tableType as c = urldecode(_tableType)
+	dim pDef.connectionString as c = urldecode(_connectionString)
+	dim pDef.tableName as c = urldecode(_tableName)
+	
+	dim pDef.table[0] as p
+	dim pDef.fieldMap as c = urldecode(_fieldMap)
+	
+	pDef.table[].name = "DirectoryName"
+	pDef.table[..].type = "c"
+	pDef.table[..].primaryKey = .t.
+	pDef.table[..].autoIncrement = .f.
+	
+	pDef.table[].name = "FileName"
+	pDef.table[..].type = "c"
+	pDef.table[..].primaryKey = .t.
+	pDef.table[..].autoIncrement = .f.
+	
+	pDef.table[].name = "Description"
+	pDef.table[..].type = "m"
+	pDef.table[..].primaryKey = .f.
+	pDef.table[..].autoIncrement = .f.
+	
+	dim pAction as p
+	dim pResult as p
+	
+	dim p as p
+	dim p.description as c = ""
+	dim p.exifData as c = ""
+	dim p.lat as c = ""
+	dim p.lon as c = ""
+
+	_imageDir = urldecode(_imageDir)
+	_imageName = urldecode(_imageName)
+	
+	dim _fname as c = Request.ApplicationRoot+chr(92)+_imageDir+chr(92)+_imageName
+	
+	pAction.type = "Read"
+	dim pAction.key[0] as c
+	pAction.key[] = _imageDir
+	pAction.key[] = _imageName
+	
+	a5_GenericTableCRUDAction(pDef,pAction,pResult)
+	if pResult.hasError = .F. then
+    	p.description = pResult.data.description
+ 	end if
+
+	if trim(upper(_getExifData)) = "TRUE" then
+		pResult = a5_exif_getIphoneFormattedData(_fname)
+		if ((pResult.hasError = .F.) .and. (pResult.hasExifInfo = .T.)) then
+			p.exifData = pResult.html
+        end if
+		if trim(upper(_getLatLon)) = "TRUE" then
+			delete pResult 
+			pResult = a5_exif_getLatLon(_fname)
+			if pResult.hasError = .F. then
+				p.lat = pResult.lat;
+				p.lon = pResult.lon;
+			end if
+		end if
+	end if
+	? varToJsonStandard(p)
+end if
+
+%>
+

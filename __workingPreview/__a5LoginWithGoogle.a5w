@@ -1,0 +1,90 @@
+
+<%A5
+dim email as c = "nothing"
+dim errors as c = ""
+dim cf_1 as extension::CurlFile
+dim flag_1 as l
+dim ce as extension::Curl
+ce = extension::Curl.Init()
+ce.setOpt("BUFFERSIZE",102400)
+ce.setOpt("URL","https://oauth2.googleapis.com/token")
+dim posted_fields as c
+dim clientId as c
+dim secret as c
+
+if eval_valid("session.__GoogleLoginClientId") then
+	clientId =  session.__GoogleLoginClientId
+	secret = session.__GoogleLoginSecret
+else
+	?"Could not complete authentication because session variable was not found. Check the SameSite setting. (If using IIS see 'Cookie SameSite' value in 'ProjectProperties'. If using classic server see 'Sessions, Same Site mode' in 'Server Control Panel'."
+	end
+end if
+
+dim pageName as c = word(request.script_name,-1,"/")
+
+posted_fields = "code="+request.variables.code+"&client_id="+clientid+"&client_secret="+secret+"&redirect_uri="+rtrim(session.hostNameCallback,"/") +"/"+pageName+"&grant_type=authorization_code"
+ce.setOpt("POSTFIELDS",posted_fields)
+ce.setOpt("POSTFIELDSIZE_LARGE", len(posted_fields) )
+ce.setOpt("USERAGENT","curl/7.55.1")
+ce.setOpt("MAXREDIRS",50)
+ce.setOpt("CAINFO",a5http_CARootsFile())
+ce.setOpt("TCP_KEEPALIVE",1)
+ce.SetOpt("FILE",cf_1)
+flag_1 = ce.Exec()
+if flag_1 then
+    dim headers as c
+	dim contents as c
+	headers = cf_1.GetHeaders()
+	contents = cf_1.GetContent()
+    dim access_token as c = unquote(json_extract(contents,"access_token"))
+	dim msg as c
+	msg = "Headers: " + crlf() + headers + crlf() + "Content: " + contents
+    if access_token != "" then
+        dim cf_2 as extension::CurlFile
+        dim flag_1 as l
+        dim atoken[1] as c
+        atoken[1] = "Authorization: Bearer " + access_token
+        dim ce2 as extension::Curl
+        ce2 = extension::Curl.Init()
+        ce2.setOpt("BUFFERSIZE",102400)
+        ce2.setOpt("URL","https://www.googleapis.com/oauth2/v1/userinfo?alt=json")
+        ce2.setOpt("USERAGENT","curl/7.55.1")
+        ce2.setOpt("HTTPHEADER",atoken)
+        ce2.setOpt("MAXREDIRS",50)
+        ce2.setOpt("CAINFO",a5http_CARootsFile())
+        ce2.setOpt("CUSTOMREQUEST","GET")
+        ce2.setOpt("TCP_KEEPALIVE",1)
+        ce2.SetOpt("FILE",cf_2)
+        flag_1 = ce2.Exec()
+        if flag_1 then
+
+            dim headers as c
+            dim contents as c
+            headers = cf_2.GetHeaders()
+            contents = cf_2.GetContent()
+            dim msg as c
+            delete session.___loginwithgoogle
+            session.___loginwithgoogle = contents
+        else
+            dim errors as c
+            errors = ce2.error()
+			dim email as c = ""
+            ? "error: " + errors
+        end if
+        ce2.close()
+    else
+    	errors = "no access token in " + contents
+    end if
+else
+	errors = ce.error()
+	? "error: " + errors
+end if
+ce.close()
+%>
+<script>
+function redirectafterlogin() {
+	window.location = '<%a5 ?session.__origin %>'
+}
+</script>
+<body onload="redirectafterlogin();">
+</body>

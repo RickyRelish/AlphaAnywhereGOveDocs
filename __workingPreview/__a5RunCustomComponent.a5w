@@ -1,0 +1,86 @@
+<%a5
+'THIS IS A SYSTEM GENERATED PAGE - DO NOT MODIFY OR REMOVE.
+
+if eval_valid("__browserFlags") then 
+	if eval_valid("session.__browserFlags") then 
+		__browserFlags = session.__browserFlags
+	end if 
+end if 
+
+'This page is used to handle Ajax callbacks from a CustomComponent.
+dim flagOpenLocal as l  = .f.
+'Check to see if user is doing a live preview of an unsaved component
+dim __unsaved as c = default ""
+if __unsaved = "yes" then 
+'if atc("_colon_",__customComponentFilename) > 0 then 
+	flagOpenLocal = .t.
+	__customComponentFilename = stritran(__customComponentFilename,"/",chr(92))
+	__customComponentFilename = stritran(__customComponentFilename,"_colon_",":")
+	if file.exists(__customComponentFilename) = .f. then 
+		'this is a fatal error
+		?"alert('Fatal Error - Custom Component file not found');"
+		end 
+	end if 
+end if 
+
+if flagOpenLocal  then 
+	dim b as b 
+	b = file.to_blob(__customComponentFilename)
+	dim tmpl as p
+	property_from_blob(tmpl,b)
+	
+	tmpl.gridCache.filename = __customComponentFilename
+	tmpl.gridCache.timestamp = File.Update_Time(__customComponentFilename)
+	
+	
+else
+	tmpl = a5w_load_component(__customComponentFilename)
+end if 
+tmpl.componentName = __alias
+tmpl.alias = __alias
+
+dim __placeholderValues as c = default ""
+dim __argumentBinding as c = default ""
+tmpl.__placeholderValues = __placeholderValues
+tmpl.__argumentBinding = __argumentBinding
+
+dim __overrideSettings as c = default ""
+dim __arguments as c = default ""
+dim __localArguments as c = default ""
+dim __parameterBucket as c = default ""
+
+
+tmpl.__overrideSettings = __overrideSettings
+tmpl.__arguments = __arguments
+tmpl.__localArguments  = __localArguments
+tmpl.__parameterBucket = __parameterBucket
+
+dim __argumentValueBucket as c = default ""
+tmpl.__argumentValueBucket = __argumentValueBucket
+
+dim __componentType as c = default "CustomComponent"
+
+tmpl.request = Request
+tmpl.session = Session
+tmpl.response = Response
+tmpl.serversetting = ServerSetting
+delete x_out
+dim x_out as p
+
+
+if __componentType = "CustomComponent" then 
+	x_out = a5_ajax_CustomComponent(tmpl)
+else if __componentType = "PageLayout" then 
+	x_out = a5_ajax_PageLayout(tmpl)
+else if __componentType = "TabbedUI" then 
+	x_out = a5_ajax_TabbedUI(tmpl)
+end if 
+
+
+
+if variable_exists("x_out.Ajaxresponse") then
+	?x_out.Ajaxresponse
+end if 
+
+
+%>

@@ -1,0 +1,70 @@
+<%a5
+'THIS IS A SYSTEM GENERATED PAGE - DO NOT MODIFY OR REMOVE.
+
+
+
+dim flagInternal as l = .f.
+if eval_valid("request.variables.__preprocessInternal") then 
+	if request.variables.__preprocessInternal = "true" then 
+		flagInternal = .t.
+	end if 
+end if 
+	
+
+if flagInternal = .t. then 
+	dim ajax_source as p
+	dim params as c 
+	params = ""
+	dim result as a
+	result = a5_ajax_internal(ajax_source, request,session,serversetting,response,params)
+	?ajax_source.body
+	end
+end if 
+
+
+
+'This page is used to handle Ajax callbacks from a Grid Component.
+dim flagOpenLocal as l  = .f.
+'Check to see if user is doing a live preview of an unsaved component
+dim __unsaved as c = default ""
+if __unsaved = "yes" then 
+'if atc("_colon_",__gridFilename) > 0 then 
+	flagOpenLocal = .t.
+	__gridFileName = stritran(__gridFileName,"/",chr(92))
+	__gridFileName = stritran(__gridFileName,"_colon_",":")
+	if file.exists(__gridFileName) = .f. then 
+		'this is a fatal error
+		?"alert('Fatal Error - Grid file not found');"
+		end 
+	end if 
+end if 
+
+if flagOpenLocal  then 
+	dim b as b 
+	b = file.to_blob(__gridFileName)
+	dim tmpl as p
+	property_from_blob(tmpl,b)
+	
+
+	tmpl.gridCache.filename = __gridFileName
+	tmpl.gridCache.timestamp = File.Update_Time(__gridFileName)	
+	
+else
+	tmpl = a5w_load_component(__gridFileName)
+end if 
+tmpl.componentName = __alias
+
+tmpl.request = Request
+tmpl.session = Session
+tmpl.response = Response
+tmpl.serversetting = ServerSetting
+delete x_out
+dim x_out as p
+x_out = a5_ajax_grid(tmpl)
+
+if variable_exists("x_out.Ajaxresponse") then
+	?x_out.Ajaxresponse
+end if 
+
+
+%>
