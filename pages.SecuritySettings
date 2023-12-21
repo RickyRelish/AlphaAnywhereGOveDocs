@@ -1,0 +1,3208 @@
+{
+	"page": [
+	{
+		"page": "*.js",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.css",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.jpeg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.gif",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.ico",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.png",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.a5image",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.woff",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.ttf",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.svg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "NoAccess.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Index.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Login.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "MainMenu_TAB.a5wcmp",
+		"action": "login",
+		"groups": "5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "TabbedUI_MainMenu_TAB.a5w",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "ExtendedUserInformation_Grid.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "ExtendedUserInformation_ux.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "SecurityNewUser_UX.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "SecurityChangeUser_UX.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Add_Document_Details.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Loginprocessing.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Variables.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "PageTopAdmin.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Add_Organisation_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Add_Locations_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "doc2.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Docs.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_View_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Select_Location_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Select_Company_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Builder.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Document_Builder_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DOcument.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "NCLOGO.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "CIMDOC.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Docments_Live.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Category_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Sub_Catefory_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Heading.png",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "MainMenu.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Add_Organisation.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Add_Locations.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Add_Categories.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Add_New_User.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Add_User_Lists.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Add_Document_BUilder.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Add_Document_Details.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Add_Departments_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Add_Staff_Cats.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Add_ViewDOCUMENT.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Header_Html.htm",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Test.htm",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "login.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "TabbedUI_MainMenu_TABOLD.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Logout.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Builder2_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DocumentLocations_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Edit_Document_Locations_UX.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Reviewer_Comments_UX.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_ReView_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Extended_User_Grid.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_P_Document_View.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Builder_GRID.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Add_ORG.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Add_LOC.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Add_Categories.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Add_SubCategories.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_DocumentReviews.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Variables2.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Select_Documents.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Allocate_User_Documents_UX.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Attestation_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Attestation.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_P_Document_Attestation.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "My_Documents_Grid.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_P_MY_Docuemnts.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_P_Document_Policy.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_View_Documents.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_View_Processes.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_View_Resources.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Policies.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Processes.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Resoures.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Attestation_Report.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_List.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_ListByCat.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_List_By_Name.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Managment_List.a5rpt",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Document_Managment_List_House.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Managment_List_landa5rpt.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_View_Grid_Admin.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_View_Admin_Docs.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Admin_Locations_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Date_Link_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_ListByCatAdmin.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,31a3b286ef394725a3c4a38171848772,Admin_Staff"
+	},
+	{
+		"page": "Document_ListAdmin.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,31a3b286ef394725a3c4a38171848772,Admin_Staff"
+	},
+	{
+		"page": "Document_List_By_NameAdmin.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,31a3b286ef394725a3c4a38171848772,Admin_Staff"
+	},
+	{
+		"page": "UX_P_View_OnlyDocs.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DocumentsOnly_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "link_Comments_Grid.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,3AFBFB288D5A49F4AE1BAECAD0A82367,Reviewer,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Approved_UX.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,3AFBFB288D5A49F4AE1BAECAD0A82367,Reviewer,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Approval_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_View_Grid2.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Forms_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Locations_Docs_Summary.a5rpt",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Locations_Docs.a5rpt",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_P_Document_Recent.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Recent_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Edit_Locations2.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Docments_Live3.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Admin_Email_Updates_UX.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "UX_P_Updates.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Document_Recent_Email_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Latest.a5rpt",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Viewer.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Viewer_LIKED.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "link_Docuemts_Relevant.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "HomeTab.htm",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "logo02[23459].png",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "NC_Logo_HP.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Documents_Expiry_Grid.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "UX_P_Doc_Expiry.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Document_Expired_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Builder.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Enter_News_UX.a5wcmp",
+		"action": "login",
+		"groups": "09153641CE1A424E917D6E319B6F9EF5,Add_News"
+	},
+	{
+		"page": "UX_P_Add_News.a5wcmp",
+		"action": "login",
+		"groups": "09153641CE1A424E917D6E319B6F9EF5,Add_News"
+	},
+	{
+		"page": "UX_P_View_News.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "View_News_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_EditNews_UX.a5wcmp",
+		"action": "login",
+		"groups": "09153641CE1A424E917D6E319B6F9EF5,Add_News"
+	},
+	{
+		"page": "Edit_News_Grid.a5wcmp",
+		"action": "login",
+		"groups": "09153641CE1A424E917D6E319B6F9EF5,Add_News"
+	},
+	{
+		"page": "New_Locations_Select_Grid.a5wcmp",
+		"action": "login",
+		"groups": "09153641CE1A424E917D6E319B6F9EF5,Add_News"
+	},
+	{
+		"page": "Edit_News_Admin_UX.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Edit_News_Admin_Grid.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "UX_P_Doc_Draft.a5wcmp",
+		"action": "login",
+		"groups": "31A3B286EF394725A3C4A38171848772,Admin_Staff,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Doc_dRAFT_gRID.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Admin_Viewer.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Add_Document_Det_Admin.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "RV_Document_Viewer.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,3AFBFB288D5A49F4AE1BAECAD0A82367,Reviewer,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Doc_Grid_Draft_Publish_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Edit_Document_Details.a5wcmp",
+		"action": "login",
+		"groups": "BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator"
+	},
+	{
+		"page": "Reviewer_Comments_UXRight.a5wcmp",
+		"action": "login",
+		"groups": "09153641CE1A424E917D6E319B6F9EF5,Add_News,31A3B286EF394725A3C4A38171848772,Admin_Staff,BBA6D50A826847A99CF2D158F59C8E03,Administrators,5BA02BFFE6E7480B88335CF9A00FD6AE,Document_Manager,FE468545B63F4F70A6E401DDD6E0C6ED,Print,3AFBFB288D5A49F4AE1BAECAD0A82367,Reviewer,AAF709D22B84457B9BFBB113B56D97EB,System_Administrator,993B775034F140D193DFBA83B11405D9,Users"
+	},
+	{
+		"page": "Document_View_Grid_Groups.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Document_View_Group.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Doc_Reviewer_L.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "ReviewerComments.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_P_P_Comments.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_ReViewComments_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_DocumentReviewsP.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "ReviewerApproved.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Document_archived.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Add_Document_DetailsTEST.a5wcmp",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Docments_Live1.a5rpt",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Docments_Live2.a5rpt",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Docments_LiveOLD.a5rpt",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "DocumentsLive_Html.a5rpt",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Document_Builder_Backup.a5wcmp",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Document_ViewerBackup.a5wcmp",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Document_ViewerDownload.a5wcmp",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Edit_News_UX.a5wcmp",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "My_Documents_Grid_Backup.a5wcmp",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": " User Manual V1.pdf",
+		"action": "login",
+		"groups": "09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Add_Departments_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Add_Locations_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Add_Organisation_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "__projectGUID.guid",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Admin_Locations_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Approval_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Attestation_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Category_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Date_Link_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Doc_dRAFT_gRID._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Doc_Grid_Draft_Publish_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Builder2_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Builder_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Expired_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Forms_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Policies._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Processes._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Recent_Email_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Recent_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_Resoures._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_ReView_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_ReViewComments_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_View_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "DocumentLocations_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Documents_Expiry_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "DocumentsOnly_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Edit_News_Admin_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Edit_News_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "ExtendedUserInformation_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "HeaderText.htm",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "link_Comments_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "link_Docuemts_Relevant._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "My_Documents_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "New_Locations_Select_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Select_Company_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Select_Documents._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Select_Location_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Sub_Catefory_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Test_Editor.htm",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "View_News_Grid._a5wcmp_metadata",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "CIM - Governance Documents - User Manual V1.pdf",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_View_Finance_Docs.a5wcmp",
+		"action": "login",
+		"groups": "5248c586e68849559db59a7847d3da6e,Finance"
+	},
+	{
+		"page": "UX_P_View_HR_Docs.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "CIM - Governance Documents - Document Review V1.pdf",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Doc_Reviewer_L2.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Test.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "119.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Test2OLD.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Test_admin.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_Manuals.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_View_Manuals.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DeepDive.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_DeepDive.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_P_View_Board_Docs.a5wcmp",
+		"action": "login",
+		"groups": "5f1c541f3c0b4dfeab7073ca57e5b621,Board"
+	},
+	{
+		"page": "Document_View_GridR.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_DocumentReviewsA.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Document_View_GridHR.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_View_GridFinance.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Docuemtn_View_Grid_Baord.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_View_GridBOard.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_ReView_GridG.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_DocumentReviewsG.a5wcmp",
+		"action": "login",
+		"groups": "3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Add_Document_Details2.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Docments_Live_Related.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Document_Section_Related.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Related.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "ReviewerComments2.a5rpt",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "TabbedUI_MainMenu_TAB_2.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "TabbedUI_MainMenu_TAB_OLD.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Document_ReView_GridA.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Add_Document_DetailsC.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_P_BuilderD.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_BuilderD_Grid.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Add_Document_DetailsCB.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_ReView_GridG2.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Document_GARM.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_Form.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "ISR_Treatment.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_Page.a5w",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_Form.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incident_Management.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "TabbedUI_Incident_Management.a5w",
+		"action": "login",
+		"groups": "a3e92a7ec8004ee48636fec24f56bb68,Incident2,bba6d50a826847a99cf2d158f59c8e03,Administrators,31a3b286ef394725a3c4a38171848772,Admin_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "Incident_Location_Email.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Email_Escualtion.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Query_Editor.a5wcmp",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Incidents_Total.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_I_Total_Incidents.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incident_Form_Review.a5wcmp",
+		"action": "login",
+		"groups": "a3e92a7ec8004ee48636fec24f56bb68,Incident2,839924749d9e43319cc8613f62415050,CIP,a6560a6f1e13498b9264d8d0c777a48f,Incident4"
+	},
+	{
+		"page": "Incidents_TotalOpen.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incidents_TotalCLosed.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incidents_TotalREview.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_I_Total_Closed.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Total_Open.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Total_UnderReview.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "IncidentOHS_Form.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incident_Fedback.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_Medication.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_Infection.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_Med.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incident_Infection.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incident_Feedback.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incident_Security.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_Security.a5w",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_OHS2.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Database_Query.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "ISR_Level_Care.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "ISR_Degree.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incident_Form_Records.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DashBoard_UX_Incidents.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_DashBoard1.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_DashBoard2.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DashBoard_UX_Incidents2.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incdent_MGT22.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incdent_MGT2.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incdent_MGT.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DashBoard_UX_Incidents3.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_DashBoard3.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DashBoard_UX_Incidents4.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_DashBoard4.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_DashBoard5.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DashBoard_UX_Incidents5.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "FeedbackOpen.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_I_Feed_Open.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Feed_Closed.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Feed_Total.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "FeedbackClosed.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "FeedbackTotal.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "IncidnetFeedbackReview.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_OHS_Open.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_OHS_Closed.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_OHS_Total.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "IncidentOHSlTotal.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "LogoutGovs.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "IncidentOHS_REview.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "IncidnetOHSOpen.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "IncidentOHSCLosed.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "IncidentOHSReview.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_OHS_REview.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Feed_Review.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "FeedbackReview.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "DashBoard_UX_Incidents6.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_DashBoard6.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Infection_Type.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Infecetion_review.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Infection_Open.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_I_Infections_Total.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Infections_Review.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Infections_Closed.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Infections_Open.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Infection_Closed.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Infection_Review.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Infection_Total.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DashBoard_UX_Incidents7.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_DashBoard7.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_Incident.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_DashBoard8.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DashBoard_UX_Incidents8.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Total_OpenM.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incidents_TotalOpenM.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Total_ClosedM.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incidents_TotalCLosedM.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_I_Total_IncidentsM.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incidents_TotalM.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_I_Total_UnderReviewM.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incidents_TotalREviewM.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Test.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_MORT_Open.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_MORT_Under_Review.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_MORT_Total.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_MORT_CLosed.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "MGrrid_mort_T.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mortality_Incident.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Mortality_Incident_Review.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Mortality_IncidentO.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Mortality_IncidentC.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Mortality_IncidentUR.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_I_MORT_UnderReview.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DashBoard_UX_Incidents9.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_DashBoard9.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "CI_Tab.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "TabbedUI_CI_Tab.a5w",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_CI_1.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_CI.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_CI_Dash1.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "lookup_Areas.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "CI_PLAN.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Standards_Select.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "CI_PLAN_Review.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_C_Open.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_C_Underreview.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_C_Closed.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_C_Total.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Grid_CI_Open.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Grid_CI_Closed.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Grid_CI_Underreview.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Grid_CI_Total.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DashBoard_UX_CI.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_DashBoard10.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_CI_Dash.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mortality_Form2.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "MortalityForm3.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_SE_O.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_SE_CLO.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_SE_UR.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_SE_Tot.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_Dashboard11.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "DashBoard_UX_Incidents11.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Test2.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_IMS.htm",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1Policies_Procedures.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "IC-PDCA_0.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_CI.htm",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "black_logo_white_background.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "black_textlogo_white_background.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "black_icon_transparent_background.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "black_icon_white_background.png",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_CI2.htm",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_DOCS2.htm",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_IMS2.htm",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "black_logo_RPT.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_SQL_Incidnetform.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "About.html",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incidents_Total.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_Securityform.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_SecurityStaff.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_Infection.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_Mortality.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_Feedback.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Med_Review.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "PanelCared_UX.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "PanelNavigator_UX.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_Resident_Experience.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_Test.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_FBT.htm",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Panel_Nav_Feedack.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Feedback_tab.a5wcmp",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "TabbedUI_Feedback_Tab.a5w",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_F_STAR.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_Resident_QCE_ACC.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_F_QCE_ACC.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_Resident_Quality.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_F_QCE_Quality.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_F_QCE_KPIQuality.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Survey_All.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Add_Risk_UX.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "5x5-Risk-Matrix-Sample-1024x585.png",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "5x5-Risk-Matrix.png",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-verylow1.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-verylow2.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-low3.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-low4.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-medium4.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Medium5.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-Medium6.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-Medium8.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-Medium9.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-high10.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-high12.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-veryhihg15.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-veryhihg16.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-extrme20.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1-extreme25.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_R_ADD.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "TabbedUI_RiskTabbedUI.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "RiskTabbedUI.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "Home_Risk.htm",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Review_Risk_UX.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Grid_R_ALL.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Risk_Total_Grid.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_R_Review_UX.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_Risks.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_Risks_Summary2.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_Risks_Summary_Severity.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_S_Residents.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_S_Re_Holder.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_S_Qual_Survey.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_S_QUaL_Holder.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_S_KPI_Survey.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_S_ACC_Holder.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_SEt_QRCode.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_QR_Holder.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_IncidnetOHsReview.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Mobile_UX_Template.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mobile_UX_Complaint.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mobile_UX_Compliment.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mobile_UX_Suggestion.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mobile_Survey.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mobile_Thanks_Page.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mobile_Thx_WebPAge.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incident_Aggres_Open.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_Aggres_Total.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_Aggres_Under.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_Aggres_Closed.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_Security_Review.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Incident_FedbackBackup.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Risk_Total_GridC.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Home_Risk2.htm",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Management.a5wcmp",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "1_SQL_Clinincal_Incidents.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_P_Extended_User_GridACCES.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "ExtendedUserInformation_GridAccess.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Loginprocessing2.a5w",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Home_IMS2.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_FBT.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_IMS3.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_Risk2.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "HomeCI2.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UZ_Add_New_New.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,09153641ce1a424e917d6e319b6f9ef5,Add_News"
+	},
+	{
+		"page": "Incident_InfectionReview.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_Infection_Stats.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Grid_Mobile_Feedback.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_I_Mobile.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_Meeting.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_M_Meeting_Add.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "U_M_Grid.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Grid_Meetings.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_MeetingReview.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Home_Page_Admin.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,31a3b286ef394725a3c4a38171848772,Admin_Staff,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "1_SQL_Meeting.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_Security_Stats.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_OHS_Stats.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "IncidentOHS_FormRev.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,31a3b286ef394725a3c4a38171848772,Admin_Staff,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "1_Feedback_Stats.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_Mortality_Stats.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Risk_Total_GridClosed.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Home_Maint.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "TabbedUI_Maintenace.a5w",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Management.a5w",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_Maintenance.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,31a3b286ef394725a3c4a38171848772,Admin_Staff,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Add_Maintenance.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_SQL_CI_Headings.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_CI_ACTION.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Maintenance_Grid.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_M_Maintenance_Grid_O.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Mainteance_Grid_CLosed.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Maintenace_Review_open.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_Maintenance_Incident.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_Dash_Maintenace.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_Maintenace_Graphs.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "SQL_Maint_Totals.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_Dashboard12.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Panel_Maintenance_Navigator.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mobile_UX_Maintenace.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mobile_Staff_Feedback.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Mobile_Staff_Compliment.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Mobile_Staff_Suggestions.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Panel_Feedback_Navgator.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Panel_Fedback_for_External.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_SQL_Meeting_Agendas.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Incident_Location_Email2.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "DashBoard_Risks.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,a6560a6f1e13498b9264d8d0c777a48f,Incident4,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Grid_Meeting_Headings.a5wcmp",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_Meeting_Headings.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_Page_Gov.a5w",
+		"action": "login",
+		"groups": "e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Incident_Details_Link.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "OHS_Details_Link.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Security_Details_Link.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Infection_Details_Link.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Feedback_Details_Link.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Appraisal_Entry.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_A_App_Holder.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_A_Appraisal.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Appriasal_Grid.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "UX_A_Appraisal_REview.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Appraisal.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "TabbedUI_Appraisal.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,31a3b286ef394725a3c4a38171848772,Admin_Staff,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "UX_A_AppGrid_Holder.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Appriasal_Grid_Comp.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_A_Appraisal_Web.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "UX_Dashboard13.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "DashBoard_Appraisals.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_SQL_Appraisal.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_Admin.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Facility.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Forms.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Mgt.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Front_Page.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "FrontPage.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Forms_Page.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "1_Maint.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_APP.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Comp.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "FormsAdmin.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,31a3b286ef394725a3c4a38171848772,Admin_Staff,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "1_Risk.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_CIP.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_CWS.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_1.png",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Meet.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_app.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Mort.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Maint2.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Test23.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "TabbedUI_Location.a5w",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Ims4.a5w",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Select_Location.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Maintenance_GridOnHold.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,2dddabbf5f3842f89229e45fe4466d11,Maintenance"
+	},
+	{
+		"page": "1_CIPs.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_DMS.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_CONS.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Risk2.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Maint3.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_Maint2.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Maint_Details_Link.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "black_logo_transparent_background.png",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Staff_Add_Compliance.a5wcmp",
+		"action": "login",
+		"groups": "a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,bba6d50a826847a99cf2d158f59c8e03,Administrators,31a3b286ef394725a3c4a38171848772,Admin_Staff"
+	},
+	{
+		"page": "TabbedUI_Compliance.a5w",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "1871550-200.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_Com.a5w",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Staff_Complaince_Grid.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Staff_View_Compliance.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Staff_Compliance_Grid_Holder.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Staff_Grid_Comp_Select.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Staff_Comp_Select_Hold.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Staff_Comp_GRID_Hold.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Staff_Grid_Compe_Expiry.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,31a3b286ef394725a3c4a38171848772,Admin_Staff,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Staff_Grid_Comp_Select2.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Resident_View_Compliance.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Resident_Add_Compliance.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Resident_Comp_GRID_Hold.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Resident_Comp_Select_Hold.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Resident_Complaince_Grid.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Resident_Compliance_Grid_Holder.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Resident_Grid_Compe_Expiry.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Resident_Grid_Comp_Select.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "UX_GARM_RPT.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "TabbedUI_GARM.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "GARM.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "1_GOC_P.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Home_Maint3.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_low.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_Med.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_High.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "GARM_REview.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,31a3b286ef394725a3c4a38171848772,Admin_Staff,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "GARM_Grid_Holder.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_Grid_Comp.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_Grid_Open.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_Facility_Rpt.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_Report.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_RPT_Layout.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_Sub.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_9_Other.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_8_INfec.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_7_RiskReg.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_6_KPI.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_5_OHS_ACC_Layout.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_4_Comp.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_3_Non.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_2_UNN.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "GARM_1_ACC_Layout.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "001.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "002.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "003.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_ISS.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Risk_Garm.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "_1_Select_CI.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Add_Reg.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Grid_Regulatory.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Review_Reg.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Regulatory.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,31a3b286ef394725a3c4a38171848772,Admin_Staff,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "TabbedUI_Regulatory.a5w",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "Home_Maint4.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Reg_Grid_hold.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Regulatory.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Reg_Link.a5wcmp",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Mainteance_Tab2.a5wcmp",
+		"action": "login",
+		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,a3e92a7ec8004ee48636fec24f56bb68,Incident2,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Maintenace.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,a3e92a7ec8004ee48636fec24f56bb68,Incident2,e0e08ba834bc4a52b433593517bc884d,Quality"
+	},
+	{
+		"page": "RegulatorySummary.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Maintenance_Test.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Admin_MaintainUsersAndGroups.a5wcmp",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "SecurityMaintenancePage.a5w",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,bba6d50a826847a99cf2d158f59c8e03,Administrators"
+	},
+	{
+		"page": "Compliance.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Compliance_Res.a5rpt",
+		"action": "login",
+		"groups": "d96a06ca551e484db6c089e40f480b45,Add New Admin,09153641ce1a424e917d6e319b6f9ef5,Add_News,31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,839924749d9e43319cc8613f62415050,CIP,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5ba02bffe6e7480b88335cf9a00fd6ae,Document_Manager,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,0aac01047b994dc0ace764a1d5105223,HumanResource,b3f39bd376b545fc964966a7815a2cfb,Incident1,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,3afbfb288d5a49f4ae1baecad0a82367,Reviewer,e3549b03e9a54350918182ec6ea88ba9,Senior_Staff,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
+	},
+	{
+		"page": "Compliance.a5wcmp",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "TabbedUI_Management.a5w",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "TabbedUI_Incident_Management2.a5w",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "TabbedUI_IncidnetTabbedUI.a5w",
+		"action": "login",
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "robots.txt",
+		"action": "allow",
+		"groups": ""
+	}]
+}

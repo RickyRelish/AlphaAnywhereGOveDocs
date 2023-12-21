@@ -1,0 +1,1663 @@
+/*
+ * Web2Cal.css
+ * $DateTime: 2008/12/14 00:24:25 $
+ */ 
+.moreEvents a:hover 
+{
+    color: #cc0000;
+}
+td.datepickerNotInMonth a, div.datepicker a, .agendaDateEvents, td.datepickerDisabled a, td.datepickerDisabled.datepickerNotInMonth a
+, div.datepicker td.datepickerNotInMonth a:hover,   td.datepickerDisabled a:hover, .calTimeSlot .timetxt, .calTimeSlot
+{
+    color: #333333;
+} 
+.navBarLink, .leftNavGroupsList .header, .viewNavBar, .leftNavGroupsList .header, .timeTxtover, .timeTxt:hover
+, tbody.datepickerDays td.datepickerSelected a, tbody.datepickerDays td.datepickerSelected, tbody.datepickerDays td.datepickerSelected a:hover
+, .plotterContent, .datepickerDays a:hover, .weekrow th a span, .weekrow th, .navHeader th
+, div.datepickerDays a:hover, .notInMonth
+{
+    color: #efefef !important;
+} 
+div.calHeader, .calHeader a, #calNavData li.current a, #calNavData li a
+{
+    color: #002E7F !important;
+} 
+#calNavData li.current a
+{
+	font-weight:bold;
+}
+.moreEvents a, .calendarTemplate .header, .currTime, .topnavContainer, .leftNavGroupsList .grpName
+, .monthAllEventsContainer a, .monthAllEventsContainer, .mcell .dateCont,  .agendaViewEvent a, .plotterlink
+{
+    color: #002E7F;
+} 
+.calStatus .calStatusHeader
+{
+    background: url(../images/load-square.gif) 4px 0px no-repeat;
+} 
+.leftNavGroupsList .leftNavContent, .weekrow th, .navHeader th, .navHeaderRow th
+{
+    background: url("../images/bluecalheader.png") repeat-x;
+} 
+#ssbrowserTitleBar
+{
+    background: url("../images/wintitle.gif") repeat-x;
+} 
+div#ssutilBrowserAlertWin 
+{
+	height:80px;
+	
+}
+div#ssutilBrowserAlertWin .ssutilMsg
+{
+	text-align:center;
+	font-weight:bold;
+	color:#666;
+	padding:5px 7px; 
+	margin:0px 0px 16px 0px;
+}
+div#ssutilBrowserAlertWin .alertOKBtn
+{ 
+	width:120px;
+	margin:0px auto;
+	text-align:center;
+}
+div#ssutilBrowserAlertWin .alertOKBtn a
+{
+	padding:4px 18px;
+	background:#333;text-decoration:none;
+	color:#fff;
+}
+div#ssutilBrowserAlertWin .alertOKBtn a:hover
+, div#ssutilBrowserAlertWin .alertOKBtn:focus
+{ 
+	background:#777;
+}
+div.calStatus .calStatusHeader, .timeTxt:hover, .timeTxtover, .minicalContainer, .plotterContent, #calNavData li.current a div
+, div.leftNavGroupsList, .monthAllEventsContainer .header
+{
+    background-color: #86BBEF;
+} 
+div.calInfoMsg .body
+{
+    background-color: #FFE573;
+} 
+div.ssoverlay
+{
+    background-color: #393939;
+} 
+
+.datepickerDays a:hover, .datepickerDays a:hover span, .miniCalNavBody a:hover span, .miniCalNavBody a:hover
+{
+    background-color: #CC0000;
+}
+
+div.notInMonth, td.datepickerNotInMonth a
+{
+    background-color: #efefef;
+} 
+div.dateCont, .calStatus .calStatusBody, .leftNavGroupsList .leftNavContent, .allDayGridContainer, tbody.datepickerDays td.datepickerNotInMonth.datepickerSelected, tbody.datepickerDays td.datepickerSelected a:hover, tbody.datepickerDays td.datepickerSelected, tbody.datepickerYears td.datepickerSelected, tbody.datepickerMonths td.datepickerSelected, .calendarTemplate .actions a, .pageNextBtn, .pagePrevBtn, .calTimeSlot, #calNavData li a div 
+, .closebtnx:hover, .highLightAgendaEvent, .agendaEventDetail
+{
+    background-color: #E8EEF7;
+}
+ 
+.ssbrowser
+{
+    margin: 2px;
+    display: none;
+    border: 1px solid #f5f5f5;
+    z-index: 115;
+    background-color: #fff;
+} 
+#ssbrowserTitleBar
+{
+    height: 22px;
+    padding-top: 4px;
+    font-size: 11px;
+    position: relative;
+} 
+.ssBrowserContent
+{
+    overflow: auto;
+} 
+.titleText
+{
+    padding-left: 12px;
+    font-weight: bold;
+	cursor:move;
+    color: #355468;
+}  
+.datePickerIcon, .arrowCollapse, .arrowExpand, .moreToSeeRight, .moreToSeeLeft, .calclosebtn, .smallcalclosebtn, .prevButton, .nextButton, .resizericon, .vertResizerIcon, .alldayevent, .alleventsclose, .closebtnx,
+.bottomClipIcon, .calOptionsIcon, div#topQuickAddContainer .quickAddIcon, .aPointer, .miniCalControl, .iconMoreCalendars, .filterIcon
+, .leftClip, .rightClip
+{
+    background-image: url(../images/calIcons.gif);
+} 
+.alleventsclose
+{
+    width: 17px;
+    height:12px;
+     position: absolute; 
+	background-color: #fff;
+    background-position: -11px -123px;
+    background-repeat: no-repeat;
+    right: 2px; 
+	 top: 2px;
+    cursor: pointer;
+} 
+.closebtnx
+{
+	width:30px;
+    height:16px;
+    position: absolute;  
+    background-position: -10px -421px; 
+    right: 2px; 
+	top: 2px;
+    cursor: pointer;
+}
+
+.closebtnx:hover{ 
+background-color:transparent;
+    background-position: -10px -405px;
+    background-repeat: no-repeat;
+}
+#loadingBlock
+{
+    z-index: 999;
+	position:absolute;
+    background-color: #fff;
+} 
+#loadingBlock .loadingMsg
+{
+    width: 180px;
+    height: 45px;
+    padding-left: 30px;
+    margin: 0px auto;
+    font-weight: bold;
+    text-align: left;
+    font-size: 12px;
+    background: url("../images/load-square.gif") no-repeat;
+} 
+div.calInfoMsg
+{
+    height: 3px;
+    overflow: hidden;
+} 
+div.calInfoMsg .body
+{
+    display: none;
+    font-weight: bold;
+    height: 100%;
+    padding: 5px;
+    width: 100%;
+} 
+div.dummyWindow
+{
+    z-index: 999;
+    position: absolute;
+    background-color: #A3B9C8;
+    filter: alpha( opacity = 60);
+	cursor:move;
+	opacity:  0.6;
+}
+
+/*
+ * Web2cal Structure
+ */
+div.web2cal
+{ 
+    -moz-user-select: none;
+    cursor: default;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    zoom: 1;
+    clear: both;
+    min-width: 680px;
+    position: relative;
+}
+
+div.calNavigation
+{
+    float: right;
+}
+
+div.web2cal a, .monthAllEventsContainer a
+{
+    text-decoration: none;
+}
+
+div.web2cal a:hover, .monthAllEventsContainer a:hover
+{
+    text-decoration: underline;
+} 
+.gridYContainer
+{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+div.web2cal .content
+{
+    padding-left: 180px;
+    margin: 0px auto;
+} 
+div.calheaderContainer
+{
+    height: 20px;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+} 
+
+div.web2CalWeek div.calheaderContainer, div.web2CalW2C div.calheaderContainer
+{
+	margin:0px 15px 0px 40px; 
+} 
+.web2CalMonth .calheaderContainer,
+.web2CalWS .calheaderContainer,
+ .web2CalAgenda .calheaderContainer,
+ .web2CalMonth .calheaderContainer,
+ .web2CalW2C .calheaderContainer 
+{
+	margin: 0px;   
+} 
+
+div.web2CalWS div.calheaderContainer
+{
+	margin:0px 15px 0px 100px; 
+} 
+
+div.btborder
+{
+    height: 4px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+} 
+div.calHeader
+{
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    padding: 1px 0px 1px 0px;
+    font-size: 12px;
+}
+div.plotterContent
+{
+    padding: 6px 1px 6px 6px;
+    z-index: 2;
+    margin: 0px;
+    clear: both;
+}
+div.weekviewgrid
+{
+}
+div.web2cal .leftNav
+{
+    width: 180px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    padding-top: 30px;
+} 
+div.calfooter
+{
+    border-top: 1px solid #ccc;
+    display: none;
+    height: 30px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+/*
+ * End web2cal Structure
+ */
+/**
+ * Grid Stuff
+ */
+div.vrule
+{
+    border-left: 3px double #ddd !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+div.vdottedrule
+{
+    border-left: 1px dotted #ddd !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+} 
+div.dottedrule
+{
+    border-top: 1px dotted #ddd !important;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+}
+
+div.hrule
+{
+    border-top: 1px solid #ccc;
+    left: 0;
+    position: absolute;
+    width: 100%;
+} 
+div.calbodyContainer
+{
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #1A478F;
+    overflow-x: hidden;
+    padding: 0px;
+    overflow-y: auto;
+    zoom: 1;
+    z-index: 1;
+    position: relative;
+} 
+.gridYContainerTD
+{
+    width: 40px;
+}
+div.allDayEventContainer
+{
+    position: relative;
+    zoom: 1;
+    z-index: 2;
+} 
+div.allDayContainer
+{
+    display: none;
+    padding: 0px 16px 0px 40px;
+    paddi ng: 0px;
+}
+
+/*be good to ie6*/ 
+* html div.allDayContainer
+{
+	padding: 0px 0px 0px 40px;    
+}
+ 
+* html div.calheaderContainer
+{
+	margin:0px 0px 0px 40px; 
+}
+* html  div.plotterContent
+{
+    padding: 6px 1px 3px 6px;
+} 
+*:first-child+html .web2CalWeek .gridContainer,
+.web2CalWS .gridContainer,
+*:first-child+html .web2CalWS .gridContainer
+{
+	margin: 0px 16px 0px 0px;   
+}
+*:first-child+html .web2CalWS .gridContainer,
+*:first-child+html .web2CalAgenda .gridContainer,
+*:first-child+html .web2CalMonth .gridContainer,
+*:first-child+html .web2CalW2C .gridContainer 
+{
+	margin: 0px;   
+}
+
+
+div.grid
+{
+} 
+div.gridContainer
+{
+    padding: 0px; 
+    height: 100%;
+
+    position: relative;
+} 
+div.allDayGridContainer
+{
+    
+    border-top: 1px solid #1A478F;
+
+    cursor: default;
+    height: 100%;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+} 
+div.gridCanvas
+{
+    width: 100%;
+    overflow: visible;
+} 
+div.grid
+{
+    cursor: default;
+    height: 100%;
+    padding: 0px;
+    top: 0px;
+    width: 100%;
+} 
+
+/**
+ * End Grid Stuff
+ */
+/**
+ * Top Nav
+ * tabs and icons
+ */ 
+ div.miniCalControl
+{
+    background-position: -125px -92px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    margin-left: 12px;
+    margin-top: 3px;
+    vertical-align: middle;
+    width: 18px;
+    display: none;
+} 
+div.calTitle
+{
+	float:left;
+    font-size: 12px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 4px;
+    text-align: center;
+    width: 145px;
+} 
+ul#calNavData
+{
+    list-style: none;
+    margin: 0;
+    background: #fff; /* declare background color for container to avoid distorted fonts in IE while fading */
+} 
+ul#calNavData li
+{
+    float: left;
+    margin: 0;
+    min-width: 54px; /* be nice to Opera */
+    text-align: center;  
+} 
+* html ul#calNavData li .roundtl /*IE ....*/
+{
+	float:left;width:inherit;
+
+}
+* html ul#calNavData li .roundtr
+{
+float:left;width:inherit;
+
+}
+ul#calNavData li a
+{
+    font-size: 12px;
+    margin-left: 2px; 
+display:block;di
+text-decoration:none;
+} 
+ul#calNavData li a div.content
+{
+    white-space: nowrap;
+    padding: 3px 5px;
+} 
+.plotterlink
+{
+    text-decoration: none;
+    padding: 2px;
+    font-size: 11px;
+} 
+.plotterlink:hover
+{
+    text-decoration: underline;
+} 
+.calTimeSlot
+{
+    border-top: 1px solid #ccc;
+    font-size: 10px;
+    height: 42px;
+    left: 0;
+    padding-right: 0px;
+    position: absolute;
+    width: 100%;
+} 
+.calTimeSlot span.timetxt
+{
+    padding: 3px 0px 0px 3px;
+    font-size: 11px;
+    font-weight: bold;
+} 
+.slotTemplate
+{
+    height: 26px;
+}
+
+div.calOptions, .filterContainer
+{
+    float: left;
+    margin: 2px 8px;
+} 
+div.calOptionsIcon
+{
+    height: 16px;
+    width: 16px;
+    float: left;
+    background-position: -42px -92px;
+    background-repeat: no-repeat;
+}
+ 
+.todayBtn{float:left; display:none;margin:0 30px;}
+div#topQuickAddContainer
+{
+    float: left;
+    margin: 2px 1px 1px 4px;
+}
+
+div#topQuickAddContainer .quickAddIcon
+{
+    height: 16px;
+    width: 16px;
+    float: left;
+    background-position: -68px -124px;
+    background-repeat: no-repeat;
+}
+
+div.topHideShowLink
+{
+    float: left;
+    margin: 1px 3px;
+} 
+div.filterlink
+{
+    padding: 2px 2px;
+} 
+div.iconMoreCalendars
+{
+    float: left;
+    cursor: pointer;
+    height: 17px;
+    margin-right: 2px;
+    width: 14px;
+    background-position: -164px -5px;
+    background-repeat: repeat-x;
+}
+ div.filterIcon
+{
+    height: 16px;
+    width: 16px;
+    float: left;
+    background-position: -175px -64px;
+    background-repeat: no-repeat;
+} 
+div.quickAddLink
+{
+    float: left;
+    zoom: 1;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+/**
+ * End Top Nav
+ */
+/**
+ * Info MSG
+ */ 
+ div.calStatus
+{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    bottom: 0px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 260px;
+    z-index: 101;
+} 
+div.calStatus .calStatusHeader
+{
+    border-bottom: 1px solid #999;
+    font-weight: bold;
+    height: 20px;
+    padding-left: 45px;
+} 
+div.calStatus .calStatusBody
+{
+    height: 60px;
+    width: 100%;
+}
+
+/**
+ * End Info MSG
+ */
+/**
+ * Time Control
+ */ 
+ div.sstimeselectContainer
+{
+    background-color: #fff;
+    border: 1px solid #5f5f5f;
+    cursor: pointer;
+    display: none;
+    height: 150px;
+    overflow-X: hidden;
+    overflow-Y: auto;
+    position: absolute;
+    width: 112px;
+    width: 160px;
+    z-index: 250;
+}
+
+a.timeTxt
+{
+    display: block;
+    height: 19px;
+    padding-left: 3px;
+} 
+.currTime
+{
+    font-weight: bold;
+} 
+.diffTime
+{
+    font-style: italic;
+}
+
+/*
+ * End Time Control
+ */
+/**
+ * left nav
+ */ 
+ div.web2cal .leftNav .quickAddLink
+{
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+} 
+div.quickAddLink a
+{
+    font-weight: normal;
+    text-decoration: none;
+} 
+div.quickAddLink a:hover
+{
+    text-decoration: underline;
+} 
+div.minicalContainer
+{
+    clear: both;
+    padding: 2px 0px 2px 2px;
+    height: auto;
+    margin: 10px 0px;
+} 
+div.calpop, .popupminical, .popupMinCalContainer
+{
+    padding: 3px;
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    border: 1px solid #555;
+    top: 0px;
+    z-index: 105;
+} 
+div.leftNavGroupsList .header
+{
+    font-size: 11px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-align: left;
+    height: 22px;
+    padding: 7px 0px 0px 7px;
+    background-color: transparent;
+} 
+div.leftNavGroupsList .createnewGroupLink 
+{
+	color:#efefef;
+	float:right; 
+	display:block;
+	float:right;
+	padding:0 3px;
+	display:none;
+}
+div.leftNavGroupsList .leftNavContent
+{
+    border: 1px solid #fff;
+    border-color: #18458C #fff #fff #18458C;
+} 
+div.leftNavGroupsList
+{
+    clear: both;
+    margin: 0px;
+    padding: 4px 0px 4px 4px;
+}
+
+/*.leftNavGroupsList .grpColr,*/ 
+div.leftNavGroupsList .filterBoxColor
+{
+    padding: 2px 3px 2px;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    font-size: 10px;
+    margin-top: 1px;
+    text-align: center;
+    width: 16px;
+} 
+div.leftNavGroupsList .data
+{
+    overflow: auto;
+} 
+div.leftNavGroupsList .grp
+{
+    padding: 0px 1px 0px 0px;
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    position: relative;
+    height: 24px;
+} 
+div.leftNavGroupsList .grpName
+{
+    float: left;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+/**
+ * End Left Nav
+ */   
+.calHeader a
+{
+    text-decoration: none;
+} 
+.calHeader a:hover
+{
+    text-decoration: underline;
+} 
+
+/**
+ * Event related.
+ */ 
+ .alldayevent
+{
+    background-position: -174px -119px;
+    background-repeat: no-repeat;
+    float: left;
+    height: 16px;
+    text-align: center;
+    width: 16px;
+    font-size: 12px;
+} 
+.bottomClipIcon
+{
+    background-position: -165px -5px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 2px;
+    right: 3px;
+    height: 13px;
+    width: 14px;
+} 
+.leftClip
+{
+	background-position: -8px -221px;   
+	position:absolute;background-repeat: no-repeat;
+	left:2px;
+	height:14px;
+	width:15px;
+	top:2px; 
+}
+.rightClip
+{
+	background-position: -22px -221px;   
+	position:absolute;background-repeat: no-repeat;
+	right:2px;
+	height:14px;
+	width:15px;
+	top:2px; 
+}
+.dayEvent .recurringIcon
+{
+    background: url(../images/recurring.gif) no-repeat;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 3px left: 2px;
+} .dayviewAlldayEvent
+{
+    font-size: 11px;
+    overflow: hidden;
+    margin-bottom: 1px;
+    z-index: 4;
+    position: absolute;
+    text-align: center;
+} 
+.mcell
+{
+    background-color: #FFF;
+    border: 1px solid #ccc; 
+    position: absolute;
+} 
+.mcell .dateCont
+{
+    height: 12px;
+    font-size: 9px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+    overflow: hidden;
+    padding-right: 2px;
+    z-index: 35;
+} 
+.datepicker .today  a {border:1px solid #cc0000}
+.mToday .dateCont, .dwToday{background-color: #FFD363;}
+.mToday{background-color:#FFF7D6;}
+
+.moreEvents
+{
+    font-size: 9px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    text-align: center;
+    text-align: -moz-center;
+    z-index: 30;
+} 
+.monthAllEventsContainer .onerow
+{
+    overflow: hidden;
+    font-size: 10px;
+    margin-bottom: 6px;
+} 
+.monthDataContainer
+{
+    height: 80%;
+    overflow: hidden !important;
+    position: relative;
+} 
+.monthAllEventsContainer
+{
+    background-color: #fff;
+    width: auto;
+    border-bottom: 1px solid #7f7f7f;
+    border-left: 1px solid #7f7f7f;
+    border-right: 1px solid #7f7f7f;
+    position: absolute;
+    z-index: 20;
+    width: 230px;
+} 
+.monthAllEventsContainer .data
+{
+    padding: 3px;
+    overflow: auto;
+} 
+.monthAllEventsContainer .header
+{
+    color: #ffffff;
+    padding: 2px;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    text-align: -moz-center;
+} 
+.vertResizerIcon
+{
+    cursor: col-resize;
+    background-position: -107px -199px;
+    background-repeat: no-repeat;
+    width: 4px;
+    position: absolute;
+    height: 11px;
+} 
+.evresizer
+{
+    bottom: 0px;
+    height: 5px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+} 
+.resizericon
+{
+    cursor: row-resize;
+    background-position: -86px -199px;
+    background-repeat: no-repeat;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 17px;
+} 
+.monthEvent .data
+{
+    float: left;
+    padding-left: 0px;
+    font-size: 10px;
+} 
+.dayEvent, .newEvent, .monthNewEvent, .monthEvent, .dragHandle, .dayviewAlldayEvent 
+{
+    display: block; 
+	overflow: hidden;
+    position: absolute;
+    z-index: 30;
+    padding: 0px;
+    font-size: 12px;
+} 
+
+ .dragHandle
+ {
+    position: absolute;
+    z-index: 30; color:#f7f7f7;
+	border:1px solid #222;
+	padding:2px 4px 2px 19px;
+	background:#637D8C url("../images/tick.gif") 0px 1px no-repeat;
+ }
+ .dragValid
+ {
+ 	background:#637D8C url("../images/calIcons.gif") -9px -285px no-repeat;
+ }
+
+.dragInValid
+{
+	background:#637D8C url("../images/calIcons.gif") -9px -314px no-repeat;
+}
+.newEvent, .monthNewEvent, .dragEvent 
+{
+    filter: alpha( opacity = 50);
+opacity:   0.5;
+z-index:    90;
+color:    #fff;
+} 
+.monthEvent
+{
+    white-space: nowrap;
+} 
+.dayEvent .header, .newEvent .header
+{
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    height: 14px;
+    color: #fff;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+} 
+.calTimeSlot .eventBody{color:#fff}
+.dayEvent .body,.dayEvent  .eventBody
+{
+    font-size: 10px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+div.highlightEvent
+{
+    background-color: #F8D549;
+}
+
+/*EVENT COLORS*/ 
+.filterBoxColor{color:#fff;}
+div.greenTemplate .eventBody, .greenTemplate .filterBoxColor
+, div.greenTemplate .eventbottomleft, .greenTemplate .eventbottomright
+, div.greenTemplate .eventtopleftm, .greenTemplate .eventtoprightm
+{
+    background-color: #92D5CD;
+} 
+div.greenTemplate .header, .greenTemplate .eventtopright, .greenTemplate .eventtopleft
+{
+    background-color: #69B0A7;
+} 
+div.blueTemplate .eventBody, .blueTemplate .filterBoxColor
+, .blueTemplate .eventbottomleft, .blueTemplate .eventbottomright
+, .blueTemplate .eventtopleftm
+, .blueTemplate .eventtoprightm
+{
+    background-color: #668CD9;
+} 
+div.blueTemplate .header, .blueTemplate .eventtopright, .blueTemplate .eventtopleft
+{
+    background-color: #2952A3;
+} 
+div.grayTemplate .eventBody, .grayTemplate .filterBoxColor, .grayTemplate .eventbottomleft, .grayTemplate .eventbottomright, .grayTemplate .eventtopleftm, .grayTemplate .eventtoprightm
+{
+    background-color: #8997A5;
+} 
+div.grayTemplate .header, .grayTemplate .eventtopright, .grayTemplate .eventtopleft
+{
+    background-color: #4E5D6C;
+} 
+div.tealTemplate .eventBody, .tealTemplate .filterBoxColor, .tealTemplate .eventbottomleft, .tealTemplate .eventbottomright, .tealTemplate .eventtopleftm, .tealTemplate .eventtoprightm
+{
+    background-color: #668CB3;
+} 
+div.tealTemplate .header, .tealTemplate .eventtopright, .tealTemplate .eventtopleft
+{
+    background-color: #29527A;
+} 
+div.brownTemplate .eventBody, .brownTemplate .filterBoxColor, .brownTemplate .eventbottomleft, .brownTemplate .eventbottomright, .brownTemplate .eventtopleftm, .brownTemplate .eventtoprightm
+{
+    background-color: #C4A883;
+} 
+div.brownTemplate .header, .brownTemplate .eventtopright, .brownTemplate .eventtopleft
+{
+    background-color: #8D6F47;
+} 
+div.lightGreenTemplate .eventBody, .lightGreenTemplate .filterBoxColor, .lightGreenTemplate .eventbottomleft, .lightGreenTemplate .eventbottomright, .lightGreenTemplate .eventtopleftm, .lightGreenTemplate .eventtoprightm
+{
+    background-color: #85AAA5;
+} 
+div.lightGreenTemplate .header, .lightGreenTemplate .eventtopright, .lightGreenTemplate .eventtopleft
+{
+    background-color: #4A716C;
+} 
+div.dirtyPinkTemplate .eventBody, .dirtyPinkTemplate .filterBoxColor, .dirtyPinkTemplate .eventbottomleft, .dirtyPinkTemplate .eventbottomright, .dirtyPinkTemplate .eventtopleftm, .dirtyPinkTemplate .eventtoprightm
+{
+    background-color: #D96666;
+} 
+div.dirtyPinkTemplate .header, .dirtyPinkTemplate .eventtopright, .dirtyPinkTemplate .eventtopleft
+{
+    background-color: #A32929;
+} 
+div.purpleTemplate .eventBody, .purpleTemplate .filterBoxColor, .purpleTemplate .eventbottomleft, .purpleTemplate .eventbottomright, .purpleTemplate .eventtopleftm, .purpleTemplate .eventtoprightm
+{
+    background-color: #B373B3;
+} 
+div.purpleTemplate .header, .purpleTemplate .eventtopright, .purpleTemplate .eventtopleft
+{
+    background-color: #7A367A;
+} 
+div.cyanTemplate .eventBody, .cyanTemplate .filterBoxColor, .cyanTemplate .eventbottomleft, .cyanTemplate .eventbottomright, .cyanTemplate .eventtopleftm, .cyanTemplate .eventtoprightm
+{
+    background-color: #59BFB3;
+    
+} 
+div.cyanTemplate .header, .cyanTemplate .eventtopright, .cyanTemplate .eventtopleft
+{
+    background-color: #1B887A;
+} 
+div.brickTemplate .eventBody, .brickTemplate .filterBoxColor, .brickTemplate .eventbottomleft, .brickTemplate .eventbottomright, .brickTemplate .eventtopleftm, .brickTemplate .eventtoprightm
+{
+    background-color: #E6804D;
+} 
+div.brickTemplate .header, .brickTemplate .eventtopright, .brickTemplate .eventtopleft
+{
+    background-color: #B1440E;
+} 
+div.lightPurpleTemplate .eventBody, .lightPurpleTemplate .filterBoxColor, .lightPurpleTemplate .eventbottomleft, .lightPurpleTemplate .eventbottomright, .lightPurpleTemplate .eventtopleftm, .lightPurpleTemplate .eventtoprightm
+{
+    background-color: #94A2BE;
+} 
+div.lightPurpleTemplate .header, .lightPurpleTemplate .eventtopright, .lightPurpleTemplate .eventtopleft
+{
+    background-color: #5A6986;
+} 
+div.brightGreenTemplate .eventBody, .brightGreenTemplate .filterBoxColor, .brightGreenTemplate .eventbottomleft, .brightGreenTemplate .eventbottomright, .brightGreenTemplate .eventtopleftm, .brightGreenTemplate .eventtoprightm
+{
+    background-color: #8CBF40; 
+} 
+div.brightGreenTemplate .header, .brightGreenTemplate .eventtopright, .brightGreenTemplate .eventtopleft
+{
+    background-color: #528800;
+} 
+div.dirtyYellowTemplate .eventBody, .dirtyYellowTemplate .filterBoxColor, .dirtyYellowTemplate .eventbottomleft, .dirtyYellowTemplate .eventbottomright, .dirtyYellowTemplate .eventtopleftm, .dirtyYellowTemplate .eventtoprightm
+{
+    background-color: #E0C240; 
+} 
+div.dirtyYellowTemplate .header, .dirtyYellowTemplate .eventtopright, .dirtyYellowTemplate .eventtopleft
+{
+    background-color: #AB8B00;
+} 
+div.brighBlueTemplate .eventBody, .brighBlueTemplate .filterBoxColor, .brighBlueTemplate .eventbottomleft, .brighBlueTemplate .eventbottomright, .brighBlueTemplate .eventtopleftm, .brighBlueTemplate .eventtoprightm
+{
+    background-color: #668CD9;
+} 
+div.brighBlueTemplate .header, .brighBlueTemplate .eventtopright, .brighBlueTemplate .eventtopleft
+{
+    background-color: #2952A3;
+} 
+div.pinkTemplate .eventBody, .pinkTemplate .filterBoxColor, .pinkTemplate .eventbottomleft, .pinkTemplate .eventbottomright, .pinkTemplate .eventtopleftm, .pinkTemplate .eventtoprightm
+{
+    background-color: #E67399;
+} 
+div.pinkTemplate .header, .pinkTemplate .eventtopright, .pinkTemplate .eventtopleft
+{
+    background-color: #B1365F;
+}
+
+/*
+ * End Event Colors
+ *
+ */ 
+.moreToSeeRight
+{
+    width: 6px;
+    position:absolute;
+	right:1px;
+	top:3px;
+    margin-right: 2px;
+    height: 10px;
+    background-position: -30px -199px;
+    background-repeat: no-repeat;
+} 
+.moreToSeeLeft
+{
+    width: 6px;
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: 2px;
+    left: 1px;
+    top: 2px;
+    height: 10px;
+    background-position: -8px -199px;
+    background-repeat: no-repeat;
+} 
+.monthEvent .recurringIcon
+{
+    width: 9px;
+    display: block;
+    float: left;
+    position: relative;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    height: 9px;
+    background: url("../images/recurring.gif") no-repeat;
+}
+
+/**
+ * End Event Stuff
+ */
+/**
+ * MISC stuff
+ */ 
+.fleft{    float: left;} 
+.fright{    float: right;} 
+a.prevButton, a.nextButton
+{
+	display:block;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 1px;
+	width:13px; 
+    height: 15px;
+	float:left;
+} 
+a.nextButton{background-position: -44px -260px; background-repeat: no-repeat;} 
+a.prevButton{background-position: -6px -260px;background-repeat: no-repeat;}
+
+/*Mozilla*/ 
+div.ssoverlay
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+}
+
+/*IE*/ 
+div.ssoverlay
+{
+    position: absolute;
+    height: expression( document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight + 'px':document.body.offsetHeight + 'px');
+} 
+.ssoverlay
+{
+    filter: alpha( opacity = 50);
+	opacity:   0.5;
+} 
+div.popfooter
+{
+    border-top: 1px solid #aaa;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}   
+
+/*Date Picker Styles*/ 
+.dateTitle
+{
+    font-size: 11px;
+    font-weight: bold;
+} 
+.datePickerIcon
+{
+    background-position: -125px -92px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+} 
+.agendaEventsForDate
+{
+    padding: 12px;
+    margin-left: 35px;
+    font-size: 12px;
+} .agendaEventsForDate td
+{
+    font-size: 12px;
+} .agendaEventsForDate td ul
+{
+    list-style-type: none;
+} .agendaViewEvent
+{
+    padding: 1px;
+    width: 500px;
+    margin-top: 1px;
+}
+
+div.viewNavBar td
+{
+    font-size: 12px;
+} .agendaDateEvents
+{
+    clear: both;
+    margin: 3px;
+    border-bottom: 1px solid #ccc;
+} .agendaEventDetail
+{
+    width: 500px;
+} .viewNavBar
+{
+    height: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    display: block;
+} .navBarLink
+{
+    text-decoration: none;
+} .navBarLink:hover
+{
+    text-decoration: underline;
+} 
+.arrowCollapse
+{
+    background-position: -12px -242px;
+    background-repeat: no-repeat;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.arrowExpand
+{
+    background-position: -30px -242px;
+    background-repeat: no-repeat;
+    float: left;
+    width: 20px;
+    height: 20px;
+}   
+.ssminical
+{
+    width: 174px;
+    overflow: hidden;
+    margin: 2px 0px 2px 2px;
+    border-left: 1px solid #1A478F;
+    border-top: 1px solid #1A478F;
+    background-color: #fff;
+    border-right: 1px solid #fff;
+}
+
+div.datepicker
+{
+    display: none;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+div.datepicker td, th
+{
+    font-size: 10px;
+} 
+.popupCal
+{
+    margin: 0px;
+    z-index: 205;
+    padding: 0px;
+    width: 168px;
+    border: 1px solid #5475B5;
+    position: absolute;
+} 
+.datepickerContainer
+{
+    font-size: 11px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+} 
+.datepickerBorderT, .datepickerBorderB, .datepickerBorderL, .datepickerBorderR, .datepickerBorderTL, .datepickerBorderTR, .datepickerBorderBL, .datepickerBorderBR, .datepickerHidden
+{
+    display: none;
+}
+
+div.datepicker table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div.datepicker a
+{
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    outline: none;
+}
+
+div.datepicker table td
+{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    height: 19px;
+    width: 18px;
+}
+
+div.datepicker tbody a
+{
+    display: block;
+} .datepickerDays, .datepickerMonths, .datepickerYears
+{
+    background-color: #fff;
+} .datepickerDays a
+{
+} .datepickerYears a, .datepickerMonths a
+{
+    text-align: center;
+    padding: 6px;
+} 
+.datepickerYears table, .datepickerMonths table
+{
+    width: 100%;
+    height: 100%;
+}
+
+tbody.datepickerDays td.datepickerSelected, tbody.datepickerDays td.datepickerNotInMonth.datepickerSelected, tbody.datepickerYears td.datepickerSelected, tbody.datepickerMonths td.datepickerSelected
+{
+    font-weight: bold;
+}
+
+div.datepicker tbody th
+{
+    text-align: center;
+} 
+.datepickerSpace div
+{
+    width: 20px;
+} 
+
+table.datepickerViewDays tbody.datepickerMonths, table.datepickerViewDays tbody.datepickerYears
+{
+    display: none;
+}
+
+table.datepickerViewMonths tbody.datepickerDays, table.datepickerViewMonths tbody.datepickerYears, table.datepickerViewMonths tr.datepickerDoW
+{
+    display: none;
+}
+
+table.datepickerViewYears tbody.datepickerDays, table.datepickerViewYears tbody.datepickerMonths, table.datepickerViewYears tr.datepickerDoW
+{
+    display: none;
+} .weekrow th, .navHeader th
+{
+    height: 18px;
+} .navSelectedDay
+{
+    background-color: #E0E1EF;
+} .navHeaderRow th
+{
+    font-size: 10px;
+    background-color: #6396CE;
+    color: #fff;
+    cursor: pointer;
+    height: 22px;
+} .datepickerDoW th
+{
+    background-color: #ddd;
+    height: 14px;
+}
+
+td.today
+{
+    border-collapse: separate;
+    background-color: transparent;
+    border: 1px solid #9DABCE;
+    border-width: 0px 1px 0px 1px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+tr.evenRow
+{
+    background-color: #EFF2FF;
+}
+
+tr.oddRow
+{
+    background-color: #FFFFFF;
+}
+
+tr.rowsNoLine td.rowsNoLine
+{
+    border-bottom: 0px solid #C3D9FF;
+} 
+ /**
+ * buttons, shadow and pointer
+ */
+a.websbutton, a.websbutton:visited
+{
+    display: block;
+    background: url("../images/sswebbg.png");
+    color: #ffffff !important;
+    border: 1px solid #555;
+    text-decoration: none;
+    height: 16px;
+    padding: 0 9px;
+    font-size: 11px;
+    width: 100px;
+    text-align: center;
+}
+
+a.websbutton:hover
+{
+    display: block;
+    background: url("../images/sswebbg.png") 0px -16px;
+    text-decoration: none;
+    color: #ffffff;
+} 
+.button
+{
+    background: url(../images/button_bg_0.jpg) repeat-x;
+    margin-left: 0px;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #69672b;
+    text-transform: uppercase;
+    font-size: 10px;
+} .button:hover
+{
+    background: url(../images/buttonBgHover.gif) repeat-x;
+    border: 1px solid #7F4747;
+    color: #ffffff;
+} .fullPreview
+{
+    background-color: #ffffff;
+    border: 1px solid #9f9f9f;
+    display: none;
+    height: auto;
+    padding: 0px;
+    position: absolute;
+    width: 300px;
+    z-index: 750;
+} 
+.smallcalclosebtn
+{
+    background-position: -151px -199px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 19px;
+    position: absolute;
+    right: -10px;
+    top: -7px;
+    width: 19px;
+} 
+.fullPreviewTemplate
+{
+    background-color: #ffffff;
+    border: 1px solid #5A595A;
+    display: none;
+    padding: 1px;
+    width: 250px;
+} .fullPreview .header, .calendarTemplate .header, .newEventTemplate .header
+{
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    padding: 4px;
+    text-align: center;
+}
+
+ul.actions
+{
+    clear: both;
+    margin: 0px auto;
+    display: block;
+    height: 20px;
+    list-style-type: none;
+    padding: 0px;
+    padding-top: 4px;
+    text-align: left;
+}
+
+ul.actions li
+{
+    float: left;
+    margin-left: 6px;
+} .calendarTemplate
+{
+    background-color: #fff;
+    border: 1px solid #585858;
+    display: none;
+    padding: 0px;
+    font-size: 10px;
+    position: absolute;
+    width: 320px;
+    z-index: 100;
+} .calendarTemplate div.label
+{
+    padding: 2px 0px;
+    font-size: 11px;
+} .aPointer
+{
+    height: 27px;
+    position: absolute;
+    top: 45px;
+    width: 14px;
+    display: block;
+    z-index: 2;
+} .p-left
+{
+    background-position: -69px -16px;
+    left: -13px;
+    top: 45px;
+} .p-bottom
+{
+    background-position: -35px -21px;
+    bottom: -14px;
+    left: 50%;
+    width: 29px;
+} .p-top
+{
+    background-position: -8px -21px;
+    left: 50%;
+    top: -14px;
+    width: 29px;
+} 
+.p-right
+{
+    background-position: -92px -14px;
+    right: -13px;
+    top: 45px;
+} 
+.dshadow
+{
+    background-color: #000;
+    opacity: 0.4;
+    filter: alpha( opacity = 40);
+	position:absolute;
+	z-index:-1;
+} 
+.ds-right
+{
+    height: 98%;
+    right: -5px;
+    top: 2%;
+    width: 5px;
+    zoom: 1.0;
+} 
+.ds-bottom
+{
+    bottom: -5px;
+    height: 5px;
+    left: 2%;
+    width: 98%;
+} 
+.ds-corner
+{
+    bottom: -5px;
+    height: 5px;
+    right: -5px;
+    width: 5px;
+} 
+div#editRecurEventOptions
+{
+    text-align: center;
+    margin: 0px auto;
+    display: none;
+    width: 600px;
+} 
+div.agendaEventsForDate td
+{
+    font-size: 10px;
+}
+
+/*Event Style*/
+.eventtopleft{margin:0 2px; height:1px; font-size:1px; line-height:1px;}
+.eventtopright{margin:0 1px; height:1px; font-size:1px; line-height:1px;}
+.eventbottomleft{margin:0 1px; height:1px; font-size:1px; line-height:1px;}
+.eventbottomright{margin:0 2px; height:1px; font-size:1px; line-height:1px;} 
+.eventtopleftm{margin:0 2px; height:1px; font-size:1px; line-height:1px;}
+.eventtoprightm{margin:0 1px; height:1px; font-size:1px; line-height:1px;}
+/**/
+ 
+/*Event Style*/
+.roundtl{margin:0 2px; height:1px; font-size:1px; line-height:1px;}
+.roundtr{margin:0 1px; height:1px; font-size:1px; line-height:1px;}
+.roundbl{margin:0 1px; height:1px; font-size:1px; line-height:1px;}
+.roundbr{margin:0 2px; height:1px; font-size:1px; line-height:1px;} 
+/**/
+.centermsg{color:#444; text-align:center; padding:25px;} 
+
+.formRow{clear:both;margin:6px 0;}
+.formRow label, .prevRow label{ text-shadow: rgba(255, 255, 255, 0.1) 0 1px 0;  }
+.prevRow label{display:block;	width:77px;	text-align:right;	padding:0px 4px;float:left;}
+.prevRow{padding:5px 0px;clear:both;position:relative;}

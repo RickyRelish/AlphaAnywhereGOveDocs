@@ -1,0 +1,404 @@
+<SelectStatement="select * from websecuritygroups">
+<TableName="websecuritygroups">
+<TableOwner="">
+<CountQuery="SELECT  count(*)  FROM websecuritygroups">
+<DBF<RowDef=<<%str%
+GROUP_GUID,C,36,0,"notnullable,updateable,initialize"
+GROUP_NAME,C,60,0,"notnullable,updateable,initialize"
+UPDWEB,T,17,0,"nullable,updateable,setnull,shownull"
+UPDLOCAL,T,17,0,"nullable,updateable,setnull,shownull"
+%str%>
+>
+<UpdateWhereCriteria=1>
+<InsertStatement=<<%str%
+INSERT INTO websecuritygroups (
+Group_Guid, 
+Group_Name, 
+Updweb, 
+Updlocal) VALUES (
+:new.GROUP_GUID, 
+:new.GROUP_NAME, 
+:new.UPDWEB, 
+:new.UPDLOCAL)%str%>
+<RefreshRowQuery=<<%str%
+SELECT 
+Group_Guid, 
+Group_Name, 
+Updweb, 
+Updlocal FROM websecuritygroups
+WHERE 	Group_Guid = :GROUP_GUID%str%>
+<RowQualifiers="GROUP_GUID	GROUP_GUID">
+<DeleteStatement="DELETE FROM websecuritygroups WHERE Group_Guid = :old.GROUP_GUID">
+<UpdateStatement="WHERE Group_Guid = :old.GROUP_GUID">
+<LocalTableFile="C:\Users\Ricky\OneDrive\Documents\AlphaAnywhere\GOVDOCS\GOVDOCS.WebProjects\Default.WebProject\websecurity_groups.dbf">
+<Type="SQL">
+<API="SQLServer">
+<ConnectionString="::Name::CONN">
+<SequenceName="">
+<Arguments="">
+<PromptLevel="None">
+<BlockSize=50>
+<FetchLimit=1000>
+<ShowBlankForNull=.F.>
+<MaxRowsToFetchBeforeGotoEnter=5000>
+<enableBulkRead=.F.>
+<AllowUpdate=.T.>
+<AllowInsert=.T.>
+<AllowDelete=.T.>
+<TableInfoXML=<<%str%
+<SQLTableInfo Type="SQL::TableInfo">
+	<TableType>Table</TableType>
+	<Catalog Type="C"></Catalog>
+	<Schema Type="C"></Schema>
+	<Owner Type="C"></Owner>
+	<TableName Type="C">websecuritygroups</TableName>
+	<Name Type="C">websecuritygroups</Name>
+	<NativeAPI Type="C">SQLServer</NativeAPI>
+	<NativeSyntax Type="C">SQLServer</NativeSyntax>
+	<Comment Type="C"></Comment>
+	<Alias Type="C"></Alias>
+	<Updateable Type="L">1</Updateable>
+	<CanUpdateInTransaction Type="L">1</CanUpdateInTransaction>
+	<SizeToFit Type="L">0</SizeToFit>
+	<SelectRowLimit Type="N">-1</SelectRowLimit>
+	<SelectRowStartingOffset Type="N">0</SelectRowStartingOffset>
+	<LastKnownRowCount Type="N">-1</LastKnownRowCount>
+	<Column Type="SQL::DataTypeInfo">
+	<SQLDataTypeInfo Type="SQL::DataTypeInfo">
+		<Name Type="C">Group_Guid</Name>
+		<NativeAPI Type="C">SQLServer</NativeAPI>
+		<NativeSyntax Type="C">SQLServer</NativeSyntax>
+		<Comment Type="C"></Comment>
+		<AlphaType Type="C">C</AlphaType>
+		<NativeType Type="N">167</NativeType>
+		<NativeTypeName Type="C">varchar</NativeTypeName>
+		<IntermediateType>VaryingCharacter</IntermediateType>
+		<DecimalDigits Type="N">0</DecimalDigits>
+		<DisplayFormat Type="C"></DisplayFormat>
+		<ExternalFileNameExpression Type="C"></ExternalFileNameExpression>
+		<DataTransformExpression Type="C"></DataTransformExpression>
+		<Length Type="N">36</Length>
+		<Nullable Type="L">0</Nullable>
+		<ZeroFill Type="L">0</ZeroFill>
+		<AutoIncrement Type="L">0</AutoIncrement>
+		<EmptyStringIsNull Type="L">0</EmptyStringIsNull>
+		<Updateable Type="L">1</Updateable>
+		<HTMLEscapeFormattedData Type="L">0</HTMLEscapeFormattedData>
+		<Identity Type="L">0</Identity>
+		<IdentitySeed Type="N">0</IdentitySeed>
+		<IdentityIncrement Type="N">0</IdentityIncrement>
+		<IdentityReplicate Type="L">1</IdentityReplicate>
+		<IdentityMinimum Type="N">-1</IdentityMinimum>
+		<IdentityMaximum Type="N">-1</IdentityMaximum>
+		<IdentitySequenceName Type="C"></IdentitySequenceName>
+		<NamedFormatExpressions Type="C"></NamedFormatExpressions>
+		<DefaultValue Type="C"></DefaultValue>
+		<DefaultValueName Type="C"></DefaultValueName>
+		<OnUpdateValue Type="C"></OnUpdateValue>
+		<SourceTableCatalog Type="C"></SourceTableCatalog>
+		<SourceTableSchema Type="C"></SourceTableSchema>
+		<SourceTableOwner Type="C"></SourceTableOwner>
+		<SourceTableName Type="C">websecuritygroups</SourceTableName>
+		<SourceColumnName Type="C">Group_Guid</SourceColumnName>
+		<SourceTableAlias Type="C"></SourceTableAlias>
+		<FixedLength Type="L">0</FixedLength>
+		<ValidationText Type="C"></ValidationText>
+		<NativeValidationRule Type="C"></NativeValidationRule>
+		<NativeValidationRuleName Type="C"></NativeValidationRuleName>
+		<NativeCharacterSetName Type="C"></NativeCharacterSetName>
+		<AutoGenerate Type="L">0</AutoGenerate>
+		<ISAMNotLastColumn Type="L">0</ISAMNotLastColumn>
+		<OneBlobPerPage Type="L">0</OneBlobPerPage>
+		<CompressedUnicode Type="L">0</CompressedUnicode>
+		<HyperLink Type="L">0</HyperLink>
+		<CanBeUsedInWhereClause Type="L">1</CanBeUsedInWhereClause>
+		<SQLExpression Type="C"></SQLExpression>
+		<SizeToFit Type="L">0</SizeToFit>
+		<MaximumActualLength Type="N">-1</MaximumActualLength>
+		<Computed Type="L">0</Computed>
+		<RowUUID Type="L">0</RowUUID>
+	</SQLDataTypeInfo>
+	<SQLDataTypeInfo Type="SQL::DataTypeInfo">
+		<Name Type="C">Group_Name</Name>
+		<NativeAPI Type="C">SQLServer</NativeAPI>
+		<NativeSyntax Type="C">SQLServer</NativeSyntax>
+		<Comment Type="C"></Comment>
+		<AlphaType Type="C">C</AlphaType>
+		<NativeType Type="N">167</NativeType>
+		<NativeTypeName Type="C">varchar</NativeTypeName>
+		<IntermediateType>VaryingCharacter</IntermediateType>
+		<DecimalDigits Type="N">0</DecimalDigits>
+		<DisplayFormat Type="C"></DisplayFormat>
+		<ExternalFileNameExpression Type="C"></ExternalFileNameExpression>
+		<DataTransformExpression Type="C"></DataTransformExpression>
+		<Length Type="N">60</Length>
+		<Nullable Type="L">0</Nullable>
+		<ZeroFill Type="L">0</ZeroFill>
+		<AutoIncrement Type="L">0</AutoIncrement>
+		<EmptyStringIsNull Type="L">0</EmptyStringIsNull>
+		<Updateable Type="L">1</Updateable>
+		<HTMLEscapeFormattedData Type="L">0</HTMLEscapeFormattedData>
+		<Identity Type="L">0</Identity>
+		<IdentitySeed Type="N">0</IdentitySeed>
+		<IdentityIncrement Type="N">0</IdentityIncrement>
+		<IdentityReplicate Type="L">1</IdentityReplicate>
+		<IdentityMinimum Type="N">-1</IdentityMinimum>
+		<IdentityMaximum Type="N">-1</IdentityMaximum>
+		<IdentitySequenceName Type="C"></IdentitySequenceName>
+		<NamedFormatExpressions Type="C"></NamedFormatExpressions>
+		<DefaultValue Type="C"></DefaultValue>
+		<DefaultValueName Type="C"></DefaultValueName>
+		<OnUpdateValue Type="C"></OnUpdateValue>
+		<SourceTableCatalog Type="C"></SourceTableCatalog>
+		<SourceTableSchema Type="C"></SourceTableSchema>
+		<SourceTableOwner Type="C"></SourceTableOwner>
+		<SourceTableName Type="C">websecuritygroups</SourceTableName>
+		<SourceColumnName Type="C">Group_Name</SourceColumnName>
+		<SourceTableAlias Type="C"></SourceTableAlias>
+		<FixedLength Type="L">0</FixedLength>
+		<ValidationText Type="C"></ValidationText>
+		<NativeValidationRule Type="C"></NativeValidationRule>
+		<NativeValidationRuleName Type="C"></NativeValidationRuleName>
+		<NativeCharacterSetName Type="C"></NativeCharacterSetName>
+		<AutoGenerate Type="L">0</AutoGenerate>
+		<ISAMNotLastColumn Type="L">0</ISAMNotLastColumn>
+		<OneBlobPerPage Type="L">0</OneBlobPerPage>
+		<CompressedUnicode Type="L">0</CompressedUnicode>
+		<HyperLink Type="L">0</HyperLink>
+		<CanBeUsedInWhereClause Type="L">1</CanBeUsedInWhereClause>
+		<SQLExpression Type="C"></SQLExpression>
+		<SizeToFit Type="L">0</SizeToFit>
+		<MaximumActualLength Type="N">-1</MaximumActualLength>
+		<Computed Type="L">0</Computed>
+		<RowUUID Type="L">0</RowUUID>
+	</SQLDataTypeInfo>
+	<SQLDataTypeInfo Type="SQL::DataTypeInfo">
+		<Name Type="C">Updweb</Name>
+		<NativeAPI Type="C">SQLServer</NativeAPI>
+		<NativeSyntax Type="C">SQLServer</NativeSyntax>
+		<Comment Type="C"></Comment>
+		<AlphaType Type="C">T</AlphaType>
+		<NativeType Type="N">61</NativeType>
+		<NativeTypeName Type="C">datetime</NativeTypeName>
+		<IntermediateType>DateTime</IntermediateType>
+		<DecimalDigits Type="N">3</DecimalDigits>
+		<DisplayFormat Type="C"></DisplayFormat>
+		<ExternalFileNameExpression Type="C"></ExternalFileNameExpression>
+		<DataTransformExpression Type="C"></DataTransformExpression>
+		<Length Type="N">23</Length>
+		<Nullable Type="L">1</Nullable>
+		<ZeroFill Type="L">0</ZeroFill>
+		<AutoIncrement Type="L">0</AutoIncrement>
+		<EmptyStringIsNull Type="L">0</EmptyStringIsNull>
+		<Updateable Type="L">1</Updateable>
+		<HTMLEscapeFormattedData Type="L">0</HTMLEscapeFormattedData>
+		<Identity Type="L">0</Identity>
+		<IdentitySeed Type="N">0</IdentitySeed>
+		<IdentityIncrement Type="N">0</IdentityIncrement>
+		<IdentityReplicate Type="L">1</IdentityReplicate>
+		<IdentityMinimum Type="N">-1</IdentityMinimum>
+		<IdentityMaximum Type="N">-1</IdentityMaximum>
+		<IdentitySequenceName Type="C"></IdentitySequenceName>
+		<NamedFormatExpressions Type="C"></NamedFormatExpressions>
+		<DefaultValue Type="C"></DefaultValue>
+		<DefaultValueName Type="C"></DefaultValueName>
+		<OnUpdateValue Type="C"></OnUpdateValue>
+		<SourceTableCatalog Type="C"></SourceTableCatalog>
+		<SourceTableSchema Type="C"></SourceTableSchema>
+		<SourceTableOwner Type="C"></SourceTableOwner>
+		<SourceTableName Type="C">websecuritygroups</SourceTableName>
+		<SourceColumnName Type="C">Updweb</SourceColumnName>
+		<SourceTableAlias Type="C"></SourceTableAlias>
+		<FixedLength Type="L">0</FixedLength>
+		<ValidationText Type="C"></ValidationText>
+		<NativeValidationRule Type="C"></NativeValidationRule>
+		<NativeValidationRuleName Type="C"></NativeValidationRuleName>
+		<NativeCharacterSetName Type="C"></NativeCharacterSetName>
+		<AutoGenerate Type="L">0</AutoGenerate>
+		<ISAMNotLastColumn Type="L">0</ISAMNotLastColumn>
+		<OneBlobPerPage Type="L">0</OneBlobPerPage>
+		<CompressedUnicode Type="L">0</CompressedUnicode>
+		<HyperLink Type="L">0</HyperLink>
+		<CanBeUsedInWhereClause Type="L">1</CanBeUsedInWhereClause>
+		<SQLExpression Type="C"></SQLExpression>
+		<SizeToFit Type="L">0</SizeToFit>
+		<MaximumActualLength Type="N">-1</MaximumActualLength>
+		<Computed Type="L">0</Computed>
+		<RowUUID Type="L">0</RowUUID>
+	</SQLDataTypeInfo>
+	<SQLDataTypeInfo Type="SQL::DataTypeInfo">
+		<Name Type="C">Updlocal</Name>
+		<NativeAPI Type="C">SQLServer</NativeAPI>
+		<NativeSyntax Type="C">SQLServer</NativeSyntax>
+		<Comment Type="C"></Comment>
+		<AlphaType Type="C">T</AlphaType>
+		<NativeType Type="N">61</NativeType>
+		<NativeTypeName Type="C">datetime</NativeTypeName>
+		<IntermediateType>DateTime</IntermediateType>
+		<DecimalDigits Type="N">3</DecimalDigits>
+		<DisplayFormat Type="C"></DisplayFormat>
+		<ExternalFileNameExpression Type="C"></ExternalFileNameExpression>
+		<DataTransformExpression Type="C"></DataTransformExpression>
+		<Length Type="N">23</Length>
+		<Nullable Type="L">1</Nullable>
+		<ZeroFill Type="L">0</ZeroFill>
+		<AutoIncrement Type="L">0</AutoIncrement>
+		<EmptyStringIsNull Type="L">0</EmptyStringIsNull>
+		<Updateable Type="L">1</Updateable>
+		<HTMLEscapeFormattedData Type="L">0</HTMLEscapeFormattedData>
+		<Identity Type="L">0</Identity>
+		<IdentitySeed Type="N">0</IdentitySeed>
+		<IdentityIncrement Type="N">0</IdentityIncrement>
+		<IdentityReplicate Type="L">1</IdentityReplicate>
+		<IdentityMinimum Type="N">-1</IdentityMinimum>
+		<IdentityMaximum Type="N">-1</IdentityMaximum>
+		<IdentitySequenceName Type="C"></IdentitySequenceName>
+		<NamedFormatExpressions Type="C"></NamedFormatExpressions>
+		<DefaultValue Type="C"></DefaultValue>
+		<DefaultValueName Type="C"></DefaultValueName>
+		<OnUpdateValue Type="C"></OnUpdateValue>
+		<SourceTableCatalog Type="C"></SourceTableCatalog>
+		<SourceTableSchema Type="C"></SourceTableSchema>
+		<SourceTableOwner Type="C"></SourceTableOwner>
+		<SourceTableName Type="C">websecuritygroups</SourceTableName>
+		<SourceColumnName Type="C">Updlocal</SourceColumnName>
+		<SourceTableAlias Type="C"></SourceTableAlias>
+		<FixedLength Type="L">0</FixedLength>
+		<ValidationText Type="C"></ValidationText>
+		<NativeValidationRule Type="C"></NativeValidationRule>
+		<NativeValidationRuleName Type="C"></NativeValidationRuleName>
+		<NativeCharacterSetName Type="C"></NativeCharacterSetName>
+		<AutoGenerate Type="L">0</AutoGenerate>
+		<ISAMNotLastColumn Type="L">0</ISAMNotLastColumn>
+		<OneBlobPerPage Type="L">0</OneBlobPerPage>
+		<CompressedUnicode Type="L">0</CompressedUnicode>
+		<HyperLink Type="L">0</HyperLink>
+		<CanBeUsedInWhereClause Type="L">1</CanBeUsedInWhereClause>
+		<SQLExpression Type="C"></SQLExpression>
+		<SizeToFit Type="L">0</SizeToFit>
+		<MaximumActualLength Type="N">-1</MaximumActualLength>
+		<Computed Type="L">0</Computed>
+		<RowUUID Type="L">0</RowUUID>
+	</SQLDataTypeInfo>
+	</Column>
+	<Index Type="SQL::IndexInfo">
+	<SQLIndexInfo Type="SQL::IndexInfo">
+		<Name Type="C">PK__websecur__80BB9E447205FB06</Name>
+		<Comment Type="C"></Comment>
+		<Unique Type="L">1</Unique>
+		<PrimaryKey Type="L">1</PrimaryKey>
+		<Reference Type="L">0</Reference>
+		<GroupingReference Type="L">0</GroupingReference>
+		<Clustered Type="L">0</Clustered>
+		<ReferenceTable Type="C"></ReferenceTable>
+		<ReferenceTableCatalog Type="C"></ReferenceTableCatalog>
+		<ReferenceTableSchema Type="C"></ReferenceTableSchema>
+		<ReferenceTableOwner Type="C"></ReferenceTableOwner>
+		<IndexMethod Type="C"></IndexMethod>
+		<Column Type="SQL::IndexColumnInfo">
+		<SQLIndexColumnInfo Type="SQL::IndexColumnInfo">
+			<Name Type="C">Group_Guid</Name>
+			<ReferenceName Type="C"></ReferenceName>
+			<Ascending Type="L">1</Ascending>
+			<NullAllowed Type="L">1</NullAllowed>
+		</SQLIndexColumnInfo>
+		</Column>
+		<DeleteRule>Restrict</DeleteRule>
+		<UpdateRule>Restrict</UpdateRule>
+	</SQLIndexInfo>
+	<SQLIndexInfo Type="SQL::IndexInfo">
+		<Name Type="C">PrimaryKeyIndex</Name>
+		<Comment Type="C"></Comment>
+		<Unique Type="L">1</Unique>
+		<PrimaryKey Type="L">1</PrimaryKey>
+		<Reference Type="L">0</Reference>
+		<GroupingReference Type="L">0</GroupingReference>
+		<Clustered Type="L">0</Clustered>
+		<ReferenceTable Type="C"></ReferenceTable>
+		<ReferenceTableCatalog Type="C"></ReferenceTableCatalog>
+		<ReferenceTableSchema Type="C"></ReferenceTableSchema>
+		<ReferenceTableOwner Type="C"></ReferenceTableOwner>
+		<IndexMethod Type="C"></IndexMethod>
+		<Column Type="SQL::IndexColumnInfo">
+		<SQLIndexColumnInfo Type="SQL::IndexColumnInfo">
+			<Name Type="C">Group_Guid</Name>
+			<ReferenceName Type="C"></ReferenceName>
+			<Ascending Type="L">1</Ascending>
+			<NullAllowed Type="L">1</NullAllowed>
+		</SQLIndexColumnInfo>
+		</Column>
+		<DeleteRule>Restrict</DeleteRule>
+		<UpdateRule>Restrict</UpdateRule>
+	</SQLIndexInfo>
+	</Index>
+</SQLTableInfo>
+%str%>
+<Updateable=.T.>
+<preferences<queryLocation<prompt=.T.>
+<location="Server-side">
+<allowUserToChange=.T.>
+>
+>
+<SelectSQLStatementIsPortable=.T.>
+<InsertSQLStatementIsPortable=.T.>
+<UpdateSQLStatementIsPortable=.T.>
+<DeleteSQLStatementIsPortable=.T.>
+<CountSQLStatementIsPortable=.T.>
+<RefreshRowSQLStatementIsPortable=.T.>
+<Refreshable=.T.>
+<RowRefreshable=.T.>
+<xmlDummyArgs=<<%str%
+<SQLArguments>
+</SQLArguments>
+%str%>
+<designInfo<BasicType="SQL">
+<ConnectionString="::Name::CONN">
+<selectstatement="select * from websecuritygroups">
+<BaseUpdateStatementOn="Primary Key Only">
+<allowUpdate=.T.>
+<allowInsert=.T.>
+<allowDelete=.T.>
+<sequenceName="">
+<UseExplicitConnectionString=.F.>
+<ArgumentDefinitionString="">
+<PromptLevel="None">
+<BlockSize=50>
+<FetchLimit=1000>
+<ShowBlankForNull=.F.>
+<MaxRowsToFetchBeforeGotoEnter=5000>
+<enableBulkRead=.F.>
+<TableName="">
+<TableOwner="">
+<ColumnList="">
+<SurrogatePrimaryKeyColumns="">
+<LocalTableFilename="">
+<TableDefinitionOverrides="">
+<TableWhereClause="">
+<TableOrderByClause="">
+<readOnlyColumns="">
+<CountStatement="<auto generated>">
+<UpdateStatement="<auto generated>">
+<DeleteStatement="<auto generated>">
+<InsertStatement="<auto generated>">
+<RefreshRowQuery="<auto generated>">
+<SelectSQLStatementIsPortable=.T.>
+<InsertSQLStatementIsPortable=.T.>
+<UpdateSQLStatementIsPortable=.T.>
+<DeleteSQLStatementIsPortable=.T.>
+<CountSQLStatementIsPortable=.T.>
+<RefreshRowSQLStatementIsPortable=.T.>
+<Refreshable=.T.>
+<RowRefreshable=.T.>
+<preferences<queryLocation<prompt=.T.>
+<location="Server-side">
+<allowUserToChange=.T.>
+>
+>
+>
+<cachedInfo<fieldMap=<<%str%
+GROUP_GUID|Group_Guid|C
+GROUP_NAME|Group_Name|C
+UPDWEB|Updweb|T
+UPDLOCAL|Updlocal|T
+%str%>
+>
