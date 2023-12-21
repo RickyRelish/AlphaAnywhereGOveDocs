@@ -1,0 +1,5 @@
+<svg width="26" height="26" viewBox="0 0 26 26" xmlns="https://www.w3.org/2000/svg">
+<path d="m 3,18 v 4 h 4 m 12,0 h 4 V 18 M 3,8 V 4 h 4 m 12,0 h 4 v 4" style="fill: none; stroke: #000000; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; stroke-dasharray: none; stroke-opacity: 1;" />
+<circle cx="16.5" cy="10.5" r="5.5" style="fill: #000000; fill-opacity: 1; stroke: none; stroke-width: 0.999996; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />
+<path d="m 5.5,10 c -0.276131,2.8e-5 -0.499972,0.223869 -0.5,0.5 v 9 c 2.8e-5,0.276131 0.223869,0.499972 0.5,0.5 h 11 c 0.276131,-2.8e-5 0.499972,-0.223869 0.5,-0.5 V 16.964844 A 6.5,6.5 0 0 1 16.5,17 6.5,6.5 0 0 1 10,10.5 6.5,6.5 0 0 1 10.035156,10 Z" style="fill: #000000; stroke: none; stroke-linejoin: round;" />
+</svg>
