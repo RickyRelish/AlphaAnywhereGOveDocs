@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+      .bg {
+        background-image: Documentmanagementillustration.jpg;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+  </body>
+</html>

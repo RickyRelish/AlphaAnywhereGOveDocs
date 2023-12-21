@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_PANELNAVIGATOR_
+DIM tmpl_PANELNAVIGATOR_ as P
+tmpl_PANELNAVIGATOR_ = a5w_load_component("PanelNavigator_UX") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:PanelNavigator_UX)
+
+'Override settings start -----------------------------------------
+with tmpl_PANELNAVIGATOR_
+.alias = "PANELNAVIGATOR_"
+_dialogFilename = "PanelNavigator_UX"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_PANELNAVIGATOR_
+dim x_PANELNAVIGATOR_ as p
+x_PANELNAVIGATOR_ = a5w_run_Component(tmpl_PANELNAVIGATOR_) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:PanelNavigator_UX)
+
+?x_PANELNAVIGATOR_.Output.Head.JavaScript
+?x_PANELNAVIGATOR_.Output.Head.CSS_Link
+
+?x_PANELNAVIGATOR_.Output.Head.Title 
+%>
+
+
+
+
+
+<title></title>
+</head>
+
+<body class="page">
+<div style="text-align: center;"><%A5 ?x_PANELNAVIGATOR_.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %></div>
+</body></html>

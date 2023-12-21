@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_MOBILE_THANKS_P
+DIM tmpl_MOBILE_THANKS_P as P
+tmpl_MOBILE_THANKS_P = a5w_load_component("Mobile_Thanks_Page") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Mobile_Thanks_Page)
+
+'Override settings start -----------------------------------------
+with tmpl_MOBILE_THANKS_P
+.alias = "MOBILE_THANKS_P"
+_dialogFilename = "Mobile_Thanks_Page"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_MOBILE_THANKS_P
+dim x_MOBILE_THANKS_P as p
+x_MOBILE_THANKS_P = a5w_run_Component(tmpl_MOBILE_THANKS_P) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Mobile_Thanks_Page)
+
+?x_MOBILE_THANKS_P.Output.Head.JavaScript
+?x_MOBILE_THANKS_P.Output.Head.CSS_Link
+
+?x_MOBILE_THANKS_P.Output.Head.Title 
+%>
+
+
+
+
+
+<title></title>
+</head>
+
+<%a5 ?x_MOBILE_THANKS_P.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="MobGrayPage">
+<!--Alpha Five Temporary Code End -->	
+
+<div style="text-align: center;"><%A5 ?x_MOBILE_THANKS_P.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %></div>
+</body></html>

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_PANEL_FEEDBACK_
+DIM tmpl_PANEL_FEEDBACK_ as P
+tmpl_PANEL_FEEDBACK_ = a5w_load_component("Panel_Feedback_Navgator") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Panel_Feedback_Navgator)
+
+'Override settings start -----------------------------------------
+with tmpl_PANEL_FEEDBACK_
+.alias = "PANEL_FEEDBACK_"
+_dialogFilename = "Panel_Feedback_Navgator"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_PANEL_FEEDBACK_
+dim x_PANEL_FEEDBACK_ as p
+x_PANEL_FEEDBACK_ = a5w_run_Component(tmpl_PANEL_FEEDBACK_) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Panel_Feedback_Navgator)
+
+?x_PANEL_FEEDBACK_.Output.Head.JavaScript
+?x_PANEL_FEEDBACK_.Output.Head.CSS_Link
+
+?x_PANEL_FEEDBACK_.Output.Head.Title 
+%>
+
+
+
+
+
+<title></title>
+</head>
+
+<%a5 ?x_PANEL_FEEDBACK_.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="page">
+<!--Alpha Five Temporary Code End -->	
+
+<div style="text-align: center;">
+<%A5 ?x_PANEL_FEEDBACK_.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %>
+<br></div></body></html>

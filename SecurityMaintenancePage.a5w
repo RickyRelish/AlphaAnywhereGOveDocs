@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_Admin_Main
+DIM tmpl_Admin_Main as P
+tmpl_Admin_Main = a5w_load_component("Admin_MaintainUsersAndGroups") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Admin_MaintainUsersAndGroups)
+
+'Override settings start -----------------------------------------
+with tmpl_Admin_Main
+.alias = "Admin_Main"
+_dialogFilename = "Admin_MaintainUsersAndGroups"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_Admin_Main
+dim x_Admin_Main as p
+x_Admin_Main = a5w_run_Component(tmpl_Admin_Main) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Admin_MaintainUsersAndGroups)
+
+?x_Admin_Main.Output.Head.JavaScript
+?x_Admin_Main.Output.Head.CSS_Link
+
+?x_Admin_Main.Output.Head.Title 
+%>
+
+
+
+
+</head>
+
+
+<%a5 ?x_Admin_Main.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="page">
+<!--Alpha Five Temporary Code End -->	
+
+
+
+
+
+<%a5 ?x_Admin_Main.Output.Body.Dialog2_HTML %>
+<%a5 ?a5dialogHelper_generateCORSHeaders() %>
+
+</body>
+
+</html>
+

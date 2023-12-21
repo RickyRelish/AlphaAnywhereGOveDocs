@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+
+<%a5
+Delete tmpl_PANELCARD_UX
+DIM tmpl_PANELCARD_UX as P
+tmpl_PANELCARD_UX = a5w_load_component("PanelCard_UX") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:PanelCard_UX)
+
+'Override settings start -----------------------------------------
+with tmpl_PANELCARD_UX
+.alias = "PANELCARD_UX"
+_dialogFilename = "PanelCard_UX"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_PANELCARD_UX
+dim x_PANELCARD_UX as p
+x_PANELCARD_UX = a5w_run_Component(tmpl_PANELCARD_UX) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:PanelCard_UX)
+
+?x_PANELCARD_UX.Output.Head.JavaScript
+?x_PANELCARD_UX.Output.Head.CSS_Link
+
+?x_PANELCARD_UX.Output.Head.Title 
+%>
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/MobTan/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+
+<title></title>
+</head>
+<body>
+<%A5 ?x_PANELCARD_UX.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %>
+</body></html>

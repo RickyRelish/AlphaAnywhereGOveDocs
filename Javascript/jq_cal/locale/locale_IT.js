@@ -1,0 +1,46 @@
+/* Realizzato da Stefano Provenzano */
+Web2CalLanguage_IT={
+     CLOSE: "Chiudi"
+     ,DAYS:[ "Domenica","Lunedi","Martedi","Mercoledi","Giovedi","Venerdi","Sabato"]
+     ,DAYS_SHORT: [ "Dom","Lun", "Mar", "Mer", "Gio", "Ven", "Sab"]
+     ,DAYS_SHORT2: [ "Do","Lu", "Ma", "Me", "Gi", "Ve", "Sa"]
+     ,MONTHS_SHORT: ["Gen","Feb","Mar", "Apr","Mag" ,"Giu", "Lug","Ago", "Set","Ott","Nov","Dic"] 
+     ,MONTHS: ["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno", "Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"]
+    ,LABEL_MONTH: "Mese"
+    ,LABEL_WEEK: "Settimana"
+    ,LABEL_DAY: "Giorno"
+    ,LABEL_NEXT: "Prox "
+    ,LABEL_AGENDA: "Agenda"
+    ,LABEL_WORKSHIFT: "Turno di lavoro"
+    ,LABEL_DAYS: "Giorni"
+    ,LABEL_WORKWEEK: "Settimana lavorativa"
+    ,LABEL_HIDESHOW: "Nascondi / Mostra" 
+    ,LABEL_RECUR_EDIT_WINDOW:"Modifica Evento Ricorrente"
+    ,LABEL_EDIT_RECUR_EVENT_DESC: "    Vuoi cambiare solo l'evanto corrente, tutti gli eventi o quest9o e tutti i futuri eventinella serie?"
+    ,LABEL_IS_RECURRING_EVENT: "Questo è un evento ricorrente"
+    ,LABEL_AM: "AM"
+    ,LABEL_PM: "PM" 
+    ,LABEL_EVENTNAME: "Nome Evento"
+    ,LABEL_STARTDATE: "Data Inizio"
+    ,LABEL_STARTTIME: "Ora Inizio"
+    ,LABEL_ENDDATE: "Data Fine"
+    ,LABEL_ENDTIME: "Ora Fine"
+    ,LABEL_GROUP: "Gruppo"
+    ,LABEL_ALLDAY: "tutto il giorno?"
+    ,LABEL_CREATEEVENT: "Crea Evento"
+    ,LABEL_DESCRIPTION: "Descrizione" 
+    ,LABEL_INFORMATION: "Informazione" 
+    ,LABEL_VIEWALL: "Mostra tutto"
+    ,LABEL_DESCRIPTION: "Descrizione"
+    ,LABEL_NOTITLE: "Senza Titolo" 
+    ,LABEL_CREATENEWEVENT: "Crea Nuovo Evento" 
+    ,LABEL_CREATENEW: "Crea Nuovo" 
+    ,LABEL_OPTIONS: "Impostazioni" 
+    ,LABEL_FILTER: "Filtri" 
+    ,LABEL_EXPAND_DETAILS: "Espandi Dettagli" 
+    ,LABEL_COLLAPSE_DETAILS: "Riduci Dettagli" 
+    ,LABEL_MORE: "Di piu" 
+    ,MSG_LOADINGMSG: "Caricamento... Prego attendere"  
+    ,MSG_RETRIEVING: "Acquisizione Eventi"
+    ,MSG_VIEW_NOTFOUND:"Vista '{0}' Non trovata. \nVerifica le impostazioni. La Vista di Default potrebbe non essere nella vista selezionata"
+}

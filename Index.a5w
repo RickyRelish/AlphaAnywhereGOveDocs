@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<%a5
+dim componentAlias as c
+'The componentAlias MUST be UNIQUE for each component on the page.
+'The componentAlias must not have any spaces in the name. Try to keep the componentAlias as short as possible.
+componentAlias = "login"
+Delete tmpl
+DIM tmpl as P
+tmpl  = a5w_load_component("login") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:login)
+'Following code allows you to override settings in the saved component, and specify the component alias (componentName property).
+'Tip: Keep the componentName property short because this name is used in page URLs, and it will help keep the URLs short.
+'Each component on a page must have a unique alias (componentName property).
+with tmpl
+	componentName = "login"
+end with
+'=======================================compute the HTML for the Component=======================================
+delete x_out
+dim x_out as p
+x_out = a5w_run_Component(tmpl) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl)
+ 	'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE - Ajax =========================================================
+'=============================================================================================================
+if x_out.RedirectURL <> "" then
+	response.redirect(x_out.redirectURL)
+	end
+end if
+?x_out.Output.Head.JavaScript
+?x_out.Output.Head.CSS_Link
+%>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/Alpha Anywhere/css/GrOlive/style.css">
+<!--Alpha Five Temporary Code End -->
+<title>login</title>
+</head>
+<body class="GrOlivePage"><div style="text-align: center; color: rgb(23, 10, 58);"><table align="Center" border="0" bordercolor="" bordercolorlight="" bordercolordark="" bgcolor="" cellpadding="" cellspacing="" background=""><tbody><form method="POST"><input type="radio" id="radio1" name="__name__" value=".t."></form><tr><td style="text-align: center;">
+&nbsp;<img src="black_logo_white_background.jpg" style="width:6.5in;height:4in"></td></tr><tr><td><div style="text-align: center;"><br></div><table style="text-align: center;" border="0" bordercolor="" bordercolorlight="" bordercolordark="" bgcolor="" cellpadding="" cellspacing="" background="" align="Center"><tbody><tr><td style="text-align: left;"><%A5 ?x_out.Output.Body.Login_Errors %></td></tr><tr><td><div style="text-align: left;"><%A5 ?x_out.Output.Body.Login_HTML %></div></td></tr></tbody></table></td></tr></tbody></table></div>
+</body>
+</html>

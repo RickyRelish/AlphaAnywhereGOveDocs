@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+<title></title>
+</head>
+<body>
+
+<%A5 'dim the variables
+
+
+'Open the named connetion
+Dim cn as  SQL::Connection
+Dim flagResult as l
+flagResult = cn.open("::Name::Connection3")
+cn.PortableSQLEnabled = .t.
+
+dim sqlstatement as c
+'Get logged in users state , we  will use this for filtering grids, lists etc. 
+Session.test = A5ws_GetCurrentUser()
+
+dim args as sql::Arguments
+args.add("UserName", Session.test)
+GetResult = cn.execute("select USERID, FIRSTNAME, LASTNAME, COMPANY, DEPARTMENT, LOCATOIN, Reviewer FROM ExtendedUserInformation WHERE USERID = :UserName", args)
+'Session.USERID = cn.ResultSet.Data("USERID")
+'Session.Lastname = cn.ResultSet.Data("LASTNAME")
+'Session.Firstname = cn.ResultSet.Data("FIRSTNAME")
+'session.Company = cn.ResultSet.Data("COMPANY")
+Session.Location = cn.ResultSet.Data("LOCATOIN")
+'Session.Reviewer = cn.ResultSet.Data("Reviewer")
+
+
+'Concatenate both sesison to get Username.
+'Session.Username = Session.Firstname + ", " + Session.Lastname
+'dim session.UserName2 as C 
+'session.All_Details = Session.Username + ", " + Session.Location + ", " + session.Company + ", " + session.USERID
+'Designate a Email Address.
+'session.Email = session.USERID
+'dim session.category1 as C used to set the search filter.
+'dim session.category1 as C 
+'session.category1 = "Alpha"
+
+'Dim session.startdate as c
+'session.startdate = "01/01/2020"
+'Dim Session.Enddate as c
+'Session.Enddate = "01/01/2024"
+
+
+args.Clear()
+'delete rs
+cn.FreeResult()
+cn.close()
+
+response.redirect("FrontPage.a5w")%>
+
+</body></html>

@@ -1,0 +1,47 @@
+
+Web2CalLanguage_HUN={
+	 CLOSE: "Bezárás"
+	 ,DAYS:[ "Vasárnap", "Hétfő","Kedd","Szerda", "Csütörtök" , "Péntek","Szombat"]
+	 ,DAYS_SHORT: [ "Vasárnap","Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"]
+	 ,DAYS_SHORT2: [ "Va","He", "Ke", "Sze", "Cs", "Pe", "Szo"]
+	 ,MONTHS_SHORT: ["Jan", "Feb","Mar", "Apr","Maj" ,"Jun", "Jul","Aug", "Sep","Okt","Nov","Dec"] 
+	 ,MONTHS: ["Január", "Február","Március", "Április","Május" ,"Június", "Július","Augusztus", "Szeptember","Október","November","December"]
+	,LABEL_MONTH: "Hónap"
+	,LABEL_W2CVIEW: "W2C Látvány"	
+	,LABEL_WEEK: "Hét"
+	,LABEL_DAY: "Nap"
+	,LABEL_NEXT: "Következő "
+	,LABEL_AGENDA: "Napi lista"
+	,LABEL_WORKSHIFT: "Workshift"
+	,LABEL_DAYS: "nap"
+	,LABEL_WORKWEEK: "Munkanapok"
+	,LABEL_HIDESHOW: "Elrejt / Mutat" 
+	,LABEL_RECUR_EDIT_WINDOW:"Edit Recurring Event"
+	,LABEL_EDIT_RECUR_EVENT_DESC: "	Would you like to change only this event, all events, or this and all future events in the series?"
+	,LABEL_IS_RECURRING_EVENT: "Ez egy ismétlődő esemény"
+	,LABEL_AM: "DE"
+	,LABEL_PM: "DU" 
+	,LABEL_EVENTNAME: "Esemény neve"
+	,LABEL_STARTDATE: "Óra kezdésének dátuma"
+	,LABEL_STARTTIME: "Óra kezdése"
+	,LABEL_ENDDATE: "Óra végének dátuma"
+	,LABEL_ENDTIME: "Óra vége"
+	,LABEL_GROUP: "Csoport"
+	,LABEL_ALLDAY: "Minden nap?"
+	,LABEL_CREATEEVENT: "Új esemény létrehozása"
+	,LABEL_DESCRIPTION: "Leírás" 
+	,LABEL_INFORMATION: "Információ" 
+	,LABEL_VIEWALL: "Mindent mutat"
+	,LABEL_DESCRIPTION: "Leírás"  
+	,LABEL_NOTITLE: "Nincs cím" 
+	,LABEL_CREATENEWEVENT: "Új esemény létrehozása" 
+	,LABEL_CREATENEW: "Új létrehozása" 
+	,LABEL_OPTIONS: "Beállítások" 
+	,LABEL_FILTER: "Szűrő" 	
+	,LABEL_EXPAND_DETAILS: "Show Összes" 
+	,LABEL_COLLAPSE_DETAILS: "Teljesösszecsukás" 
+	,LABEL_MORE: "Több" 	
+	,MSG_LOADINGMSG: "Betöltés.. Kérem várjon"  
+	,MSG_RETRIEVING: "Retrieving Events" 	
+	,MSG_VIEW_NOTFOUND:"View '{0}' Nincs találat. \nKérjük ellenőrizze a beállításait."
+}

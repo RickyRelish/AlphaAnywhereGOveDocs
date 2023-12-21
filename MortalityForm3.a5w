@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<title>Mortality Form</title>
+
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_MORTALITY_INCID
+DIM tmpl_MORTALITY_INCID as P
+tmpl_MORTALITY_INCID = a5w_load_component("Mortality_Incident") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Mortality_Incident)
+
+'Override settings start -----------------------------------------
+with tmpl_MORTALITY_INCID
+.alias = "MORTALITY_INCID"
+_dialogFilename = "Mortality_Incident"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_MORTALITY_INCID
+dim x_MORTALITY_INCID as p
+x_MORTALITY_INCID = a5w_run_Component(tmpl_MORTALITY_INCID) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Mortality_Incident)
+
+?x_MORTALITY_INCID.Output.Head.JavaScript
+?x_MORTALITY_INCID.Output.Head.CSS_Link
+
+?x_MORTALITY_INCID.Output.Head.Title 
+%>
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/Alpha Anywhere/css/MobGray/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+
+</head>
+<body><div><font face="Calibri"><a href="Home_page.a5w">Incident Forms</a><br></font></div><div><br></div><div><a href="LogoutGovs.a5w" style="font-family: Calibri;">Log Out</a></div><table align="Center"><tbody><tr><td style="text-align: center;">&nbsp;<span style="color:#0e1bb7;"><b><font size="4">Mortality Form</font></b></span><br><img src="1_Mort.bmp" style="width:px;height:px"><br></td></tr><tr><td><div style="text-align: center;">Please enter data into all sections.</div></td></tr><tr><td>
+<%A5 ?x_MORTALITY_INCID.Output.Body.Dialog2_HTML %>
+<%A5 ?a5dialogHelper_generateCORSHeaders() %>
+</td></tr><tr><td></td></tr></tbody></table></body></html>

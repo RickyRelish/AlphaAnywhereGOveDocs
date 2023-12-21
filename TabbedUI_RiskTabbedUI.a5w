@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+<%a5
+'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE  - TABBEDUI CONTAINER PAGE
+
+'IMPORTANT NOTE
+'This page is a system generated page. It is automatically generated every time you save a TabbedUI component
+'from within the TabbedUI builder. Any modifications you make to this page (with the EXCEPTION of changes you make
+'in the 'Override Settings' section - between the 'with...' and '...end with' blocks) will be overwritten when you edit the TabbedUI component in the builder.
+
+
+
+Delete tmpl
+DIM tmpl as P
+tmpl = a5w_load_component("RiskTabbedUI") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:RiskTabbedUI)
+
+'Override settings start -----------------------------------------
+with tmpl
+.alias = "tbi"
+._tuiFilename = "RiskTabbedUI"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_out
+dim x_out as p
+x_out = a5w_run_Component(tmpl) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:RiskTabbedUI)
+
+'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE - Ajax2----------------------------------
+dim x_out.IsAjaxResponse as l = default .f.
+if x_out.IsAjaxResponse = .t. then
+	'Discard any pending text in the output buffer.
+	*output_rewind()
+	?x_out.Ajaxresponse
+     end
+end if
+'----------------------------------------------------------------------------------------------
+
+
+
+?x_out.Output.Head.JavaScript
+?x_out.Output.Head.CSS_Link
+?x_out.Output.Head.Title 
+%>
+
+
+
+</head>
+
+
+
+<%a5 ?x_out.Output.Body.Body_tag %>
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="MobGrayPage">
+<!--Alpha Five Temporary Code End -->	
+
+
+
+
+
+<%a5 ?x_out.Output.Body.TabbedUI_HTML %>
+<%a5 ?a5dialogHelper_generateCORSHeaders() %>
+</body>
+</html>
+

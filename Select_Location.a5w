@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+<%a5
+'The componentAlias MUST be UNIQUE for each component on the page. It must not have spaces in the name. Keep name as short as possible
+dim componentAlias as c 
+componentAlias = "EXTENDEDUSERINF"
+Delete tmpl_EXTENDEDUSERINF
+DIM tmpl_EXTENDEDUSERINF as P
+tmpl_EXTENDEDUSERINF = a5w_load_component("ExtendedUserInformation_GridAccess") 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:ExtendedUserInformation_GridAccess)
+'Following code allows you to override settings in the saved component. DO NOT REMOVE SYSTEM GENERATED OVERRIDE_SETTINGS
+tmpl_EXTENDEDUSERINF.override_settings = <<%override_settings%
+	componentName = componentAlias
+	_gridFilename = "ExtendedUserInformation_GridAccess"
+%override_settings%
+'TIP: To refer to local or page variables in the override_settings string, you must first define a local
+'dot variable called 'pageVar' with properties for all of the variables you want to reference. For example:
+'	dim pageVar as p
+'	pageVar.gridRowCount = 10
+'Then, in the override_settings string, you can reference pageVar.gridRowCount. For example:
+'	rows = pageVar.gridRowCount
+'Resolve session and page variables in the override_settings string.
+a5w_resolveVariablesInOverrideSettings(tmpl_EXTENDEDUSERINF,session,local_variables())
+delete x_EXTENDEDUSERINF
+dim x_EXTENDEDUSERINF as p
+x_EXTENDEDUSERINF = a5w_run_Component(tmpl_EXTENDEDUSERINF)  'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl_EXTENDEDUSERINF) (EDIT:ExtendedUserInformation_GridAccess)
+if x_EXTENDEDUSERINF.RedirectURL <> "" then 
+	response.redirect(x_EXTENDEDUSERINF.redirectURL)
+	end
+end if 
+?x_EXTENDEDUSERINF.Output.Head.JavaScript
+?x_EXTENDEDUSERINF.Output.Head.CSS_Link
+%>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl_EXTENDEDUSERINF -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/Alpha Anywhere/css/MobGray/style.css">
+<!--Alpha Five Temporary Code End -->
+
+<title>Select Location</title>
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+
+</head>
+<%a5 ?x_EXTENDEDUSERINF.Output.Body.Body_Tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl_EXTENDEDUSERINF -->
+<body class="MobGrayPage">
+<!--Alpha Five Temporary Code End -->
+<div style="text-align: left;"><div><font style="font-family: Calibri; color: rgb(218, 14, 14);"><a href="FrontPage.a5w" style="">Home Page</a></font><span style="font-family: Calibri;"></span></div><div><br></div><div><a href="LogoutGovs.a5w" style="font-family: Calibri;">Log Out</a></div></div><div style="text-align: center;"><b><font face="Calibri" size="5"><br></font></b></div><div style="text-align: center;"><b><font face="Calibri" size="5">Select Location.</font></b></div><div style="text-align: center;"><b><font face="Calibri" size="5"><br></font></b></div><div style="text-align: center;"><b><font face="Calibri" size="5"><img src="1_Maint.bmp" style="width:px;height:px"><br></font></b></div><div style="text-align: center;"><b><font face="Calibri" size="5"><br></font></b></div><div style="text-align: center;"><b><font face="Calibri" size="5"><br></font></b></div><div style="text-align: center;"><font face="Calibri" style=""><br></font></div><div style="text-align: center;"><font face="Calibri" style=""><table align="Center" style=""><tbody><tr><td><span style="font-family: &quot;Times New Roman&quot;; text-align: center;"><font face="Calibri"><%A5 ?x_EXTENDEDUSERINF.Output.Body.Search_HTML %>&nbsp;<%A5 ?x_EXTENDEDUSERINF.Output.Body.Grid_HTML %>&nbsp;<%A5 ?x_EXTENDEDUSERINF.Output.Body.DetailView_HTML	%>&nbsp;<%A5 ?a5dialogHelper_generateCORSHeaders() %></font></span></td></tr></tbody></table><br></font></div><div style="text-align: center;"><br></div><div style="text-align: center;"><br></div>
+
+</body></html>

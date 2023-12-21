@@ -1,0 +1,11 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<meta content="text/html; charset=unicode" http-equiv=Content-Type>
+
+<%a5
+a5ws_logoutuser(session,request,response)
+session.clear()
+response.redirect("Index.a5w")
+%>
+<meta name=GENERATOR content="MSHTML 8.00.7601.17699"></head>
+<body background=""></body></html>
