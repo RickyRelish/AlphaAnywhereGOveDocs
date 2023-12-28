@@ -168,11 +168,13 @@ DIM switchYear as C
 DIM websocket as P
 DIM websocket.enable as L
 DIM websocket.longpolling as L
-DIM websocket.port as C
+DIM websocket.port as C = "90"
 DIM websocket.using as C = "Simple"
 DIM websocket.redis_url as C
 DIM websocket.redis_host as C
 DIM websocket.redis_port as C
+DIM websocket.redis_password as C
+DIM websocket.redis_appname as C
 DIM tfa as P
 DIM tfa.twillioAccountSID as C
 DIM tfa.twillioAuthCode as C
@@ -328,7 +330,7 @@ DIM activeUsers.maxDays as N = 3
 DIM responseHeaders as P
 DIM responseHeaders.includeInsecureHeaders as L
 DIM responseHeaders.additionalHeaders as C
-DIM __token as C = "c51bf124b9dd4d7eb8b185ae9d6b544b"
+DIM __token as C = "2887191ba9eb4af1bfaf868469ba1855"
 %txt%
 
 dim gv as p 
@@ -339,10 +341,10 @@ dim gv.__buildNumberExe__ as n
 dim gv.__buildNumberAddins__ as n 
 dim gv.__guid as c 
 dim gv.__A5PublishVersion as n 
-gv.__A5PublishTimestamp = 20239921100914232
+gv.__A5PublishTimestamp = 2023535328145314816
 gv.__buildNumberExe__ = 8867
 gv.__buildNumberAddins__ = 5691
-gv.__guid = "73abc600-a388-4450-ae88-c41288a95ef2"
+gv.__guid = "a1ead70d-7729-4dfe-a2ef-78d88388df66"
 gv.__control = <<%txtcontrol%
 hV7+2zUTjP0=
 %txtcontrol%

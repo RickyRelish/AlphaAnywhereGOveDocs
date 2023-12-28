@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+<title></title>
+</head>
+<body><div><b><font face="Calibri" size="4" style="color: rgb(19, 36, 191);">Server Information:</font></b></div><div><b><font face="Calibri"><br></font></b></div><div style="text-align: center;"><%A5 ?a5w_info() %>
+</div></body></html>

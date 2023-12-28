@@ -98,7 +98,7 @@
 	{
 		"page": "SecurityNewUser_UX.a5wcmp",
 		"action": "login",
-		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
 	},
 	{
 		"page": "SecurityChangeUser_UX.a5wcmp",
@@ -118,7 +118,7 @@
 	{
 		"page": "Variables.a5w",
 		"action": "login",
-		"groups": "bba6d50a826847a99cf2d158f59c8e03,Administrators"
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
 	},
 	{
 		"page": "PageTopAdmin.a5w",
@@ -3199,6 +3199,16 @@
 		"page": "TabbedUI_IncidnetTabbedUI.a5w",
 		"action": "login",
 		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,a3e92a7ec8004ee48636fec24f56bb68,Incident2,e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Active_User.a5wcmp",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Sever_Information.a5w",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
 	},
 	{
 		"page": "robots.txt",

@@ -77,11 +77,13 @@
 <switchYear="">
 <websocket<enable=.F.>
 <longpolling=.F.>
-<port="">
+<port="90">
 <using="Simple">
 <redis_url="">
 <redis_host="">
 <redis_port="">
+<redis_password="">
+<redis_appname="">
 >
 <tfa<twillioAccountSID="">
 <twillioAuthCode="">
