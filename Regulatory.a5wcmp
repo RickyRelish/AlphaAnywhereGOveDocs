@@ -26,8 +26,8 @@
         "info": {
             "createdBy": "Owner",
             "dateCreated": "2023-11-24",
-            "dateLastEdited": "2023-12-5",
-            "revisionnumber": 54
+            "dateLastEdited": "2023-12-28",
+            "revisionnumber": 60
         },
         "checkSessionEvery": 1,
         "warningIntervalBeforeExpiration": 1,
@@ -96,22 +96,63 @@
         },
         "page_fields": [
             {
-                "controlType": "layout_directive_TabControl",
-                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=93333d02-79b2-495e-8b05-6bc6b82562f2}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
-                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=93333d02-79b2-495e-8b05-6bc6b82562f2}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
-                "idInternal": "93333d02-79b2-495e-8b05-6bc6b82562f2",
-                "lastIndex": 11,
+                "controltype": "layout_directive_statictext",
+                "display": "{B=White,Light Blue}{B=White,Light Blue}{Data=ea1cf892-f56c-4277-8517-a7cdfcfe58dd}{I:'$$format.text'} [Static Text: Regulatory Complianc] ¶",
+                "displayODFlat": "{B=White,Light Blue}{Data=ea1cf892-f56c-4277-8517-a7cdfcfe58dd}{I:'$$format.text'} [Static Text] ¶",
+                "displayOD": "{B=White,Light Blue}{Data=ea1cf892-f56c-4277-8517-a7cdfcfe58dd}{I:'$$format.text'} [Static Text] ¶",
+                "displayODtree": "{B=White,Light Blue}{B=White,Light Blue}{Data=ea1cf892-f56c-4277-8517-a7cdfcfe58dd}{I:'$$format.text'} [Static Text: Regulatory Complianc] ¶",
+                "idInternal": "ea1cf892-f56c-4277-8517-a7cdfcfe58dd",
                 "parentContainer": -1,
-                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=93333d02-79b2-495e-8b05-6bc6b82562f2}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=93333d02-79b2-495e-8b05-6bc6b82562f2}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_1\" title=\"\"  class=\"\" style=\"\"   >Regulatory Compliance <Br> News, Bullitens, Updates</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "iscollapsed": false,
+                "v": {
+                    "StaticText": "Regulatory Compliance <Br> News, Bullitens, Updates",
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "Class": "<Default>",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "cssGridItemPropertiesJSON": "",
+                    "id": "STATICTEXT_1",
+                    "labelClass": "<Default>",
+                    "labelPosition": "None",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "info": {
+                        "inRepeatingSection": false
+                    },
+                    "controlContainerStyle": "",
+                    "_displayText": "[Static Text: Regulatory Complianc]"
+                }
+            },
+            {
+                "controlType": "layout_directive_TabControl",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=93333d02-79b2-495e-8b05-6bc6b82562f2}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=93333d02-79b2-495e-8b05-6bc6b82562f2}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "idInternal": "93333d02-79b2-495e-8b05-6bc6b82562f2",
+                "lastIndex": 12,
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=93333d02-79b2-495e-8b05-6bc6b82562f2}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=93333d02-79b2-495e-8b05-6bc6b82562f2}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "indentTree": 0,
                 "precalc": {
                     "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: \">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
                     "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'Regulatory Register', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Add Forms', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Print', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1']);\n\n"
                 },
-                "childTabPanes": "2\n4\n6\n",
+                "childTabPanes": "3\n5\n7\n",
                 "errorInDefinition": false,
+                "iscollapsed": false,
                 "v": {
                     "localxbasic": "",
                     "localjavascript": "",
@@ -160,14 +201,14 @@
             },
             {
                 "controlType": "layout_directive_TabPane",
-                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=440117cf-6cc7-4944-952b-e4de73dc7182}{I:'$$control.tab.pane'} [TabPane: Regulatory Register]",
-                "displayODFlat": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=440117cf-6cc7-4944-952b-e4de73dc7182}{I:'$$control.tab.pane'} [TabPane: Regulatory Register]",
+                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=440117cf-6cc7-4944-952b-e4de73dc7182}{I:'$$control.tab.pane'} [TabPane: Regulatory Register]",
+                "displayODFlat": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=440117cf-6cc7-4944-952b-e4de73dc7182}{I:'$$control.tab.pane'} [TabPane: Regulatory Register]",
                 "idInternal": "440117cf-6cc7-4944-952b-e4de73dc7182",
-                "lastIndex": 3,
-                "parentContainer": 1,
-                "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=440117cf-6cc7-4944-952b-e4de73dc7182}{I:'$$control.tab.pane'} [TabPane: Regulatory Register]",
+                "lastIndex": 4,
+                "parentContainer": 2,
+                "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=440117cf-6cc7-4944-952b-e4de73dc7182}{I:'$$control.tab.pane'} [TabPane: Regulatory Register]",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=440117cf-6cc7-4944-952b-e4de73dc7182}{I:'$$control.tab.pane'} [TabPane: Regulatory Register]",
+                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=440117cf-6cc7-4944-952b-e4de73dc7182}{I:'$$control.tab.pane'} [TabPane: Regulatory Register]",
                 "v": {
                     "title": "Regulatory Register",
                     "tabPane": {
@@ -186,26 +227,42 @@
                     "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_1.0.TITLE\" class=\"\" href=\"#\">Regulatory Register</a>\n<div id=\"{grid.componentName}.TAB_1.0.PANE\">\n"
                 },
                 "isCollapsed": false,
-                "parentTabIndex": 1,
+                "parentTabIndex": 2,
                 "tabPaneNumber": 1
             },
             {
                 "controlType": "TabbedUIButton",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=96480a97-a935-404c-b1ca-49022a06ffbb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Forms (UX Component)] ¶",
-                "displayODFlat": "{B=White,Light Blue}{Data=96480a97-a935-404c-b1ca-49022a06ffbb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Forms (UX Component)] ¶",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{Data=96480a97-a935-404c-b1ca-49022a06ffbb}{I:'$$control.html.advButton'} [Tabbed UI Button: View <br>Regulatory Items (UX Component)] ¶",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{Data=96480a97-a935-404c-b1ca-49022a06ffbb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Forms (UX Component)] ¶",
                 "idInternal": "96480a97-a935-404c-b1ca-49022a06ffbb",
-                "parentContainer": 1,
-                "parentTabPaneIndex": 2,
-                "displayOD": "{B=White,Light Blue}{Data=96480a97-a935-404c-b1ca-49022a06ffbb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Forms (UX Component)] ¶",
+                "parentContainer": 2,
+                "parentTabPaneIndex": 3,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{Data=96480a97-a935-404c-b1ca-49022a06ffbb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Forms (UX Component)] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=96480a97-a935-404c-b1ca-49022a06ffbb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Forms (UX Component)] ¶",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{Data=96480a97-a935-404c-b1ca-49022a06ffbb}{I:'$$control.html.advButton'} [Tabbed UI Button: View <br>Regulatory Items (UX Component)] ¶",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_96480a97_a935_404c_b1ca_49022a06ffbb(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View <br>Regulatory Items</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_96480a97_a935_404c_b1ca_49022a06ffbb'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Reg_Grid_hold';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_REG_GRID_H_1637DGFA';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Reg_Grid_hold', title: 'Regulatory Register',  name :'{alias}_REG_GRID_H_1637DGFA', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
-                        "buttonText": "Regulatory Forms",
+                        "buttonText": "View <br>Regulatory Items",
                         "actionType": "Component",
                         "paneTitle": "Regulatory Register",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -228,9 +285,9 @@
                             "gridName": "Reg_Grid_hold",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
-                            "useStaticHTML": false
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
                         "report": {
                             "workingMessage": "Working...",
@@ -282,13 +339,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -304,8 +355,6 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -314,27 +363,19 @@
                             "delayRenderTillVisible": false
                         }
                     },
-                    "_displayText": "[Tabbed UI Button: Regulatory Forms (UX Component)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_96480a97_a935_404c_b1ca_49022a06ffbb(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory Forms</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_96480a97_a935_404c_b1ca_49022a06ffbb'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Reg_Grid_hold';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_REG_GRID_H_12308DGAB';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Reg_Grid_hold', title: 'Regulatory Register',  name :'{alias}_REG_GRID_H_12308DGAB', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                    "_displayText": "[Tabbed UI Button: View <br>Regulatory Items (UX Component)]"
+                }
             },
             {
                 "controlType": "layout_directive_TabPane",
-                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=13840096-8a66-427e-b946-65ce252ce67c}{I:'$$control.tab.pane'} [TabPane: Add Forms]",
-                "displayODFlat": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=13840096-8a66-427e-b946-65ce252ce67c}{I:'$$control.tab.pane'} [TabPane: Add Forms]",
+                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=13840096-8a66-427e-b946-65ce252ce67c}{I:'$$control.tab.pane'} [TabPane: Add Forms]",
+                "displayODFlat": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=13840096-8a66-427e-b946-65ce252ce67c}{I:'$$control.tab.pane'} [TabPane: Add Forms]",
                 "idInternal": "13840096-8a66-427e-b946-65ce252ce67c",
-                "lastIndex": 5,
-                "parentContainer": 1,
-                "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=13840096-8a66-427e-b946-65ce252ce67c}{I:'$$control.tab.pane'} [TabPane: Add Forms]",
+                "lastIndex": 6,
+                "parentContainer": 2,
+                "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=13840096-8a66-427e-b946-65ce252ce67c}{I:'$$control.tab.pane'} [TabPane: Add Forms]",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=13840096-8a66-427e-b946-65ce252ce67c}{I:'$$control.tab.pane'} [TabPane: Add Forms]",
+                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=13840096-8a66-427e-b946-65ce252ce67c}{I:'$$control.tab.pane'} [TabPane: Add Forms]",
                 "v": {
                     "title": "Add Forms",
                     "tabPane": {
@@ -353,26 +394,41 @@
                     "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_1.1.TITLE\" class=\"\" href=\"#\">Add Forms</a>\n<div id=\"{grid.componentName}.TAB_1.1.PANE\">\n"
                 },
                 "isCollapsed": false,
-                "parentTabIndex": 1,
+                "parentTabIndex": 2,
                 "tabPaneNumber": 2
             },
             {
                 "controlType": "TabbedUIButton",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=c725bb2f-2318-4fda-bfc5-64f435b65a63}{I:'$$control.html.advButton'} [Tabbed UI Button: Add New Form (UX Component)] ¶",
-                "displayODFlat": "{B=White,Light Blue}{Data=c725bb2f-2318-4fda-bfc5-64f435b65a63}{I:'$$control.html.advButton'} [Tabbed UI Button: Add New Form (UX Component)] ¶",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{Data=c725bb2f-2318-4fda-bfc5-64f435b65a63}{I:'$$control.html.advButton'} [Tabbed UI Button: Add New Item (UX Component)] ¶",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{Data=c725bb2f-2318-4fda-bfc5-64f435b65a63}{I:'$$control.html.advButton'} [Tabbed UI Button: Add New Form (UX Component)] ¶",
                 "idInternal": "c725bb2f-2318-4fda-bfc5-64f435b65a63",
-                "parentContainer": 1,
-                "parentTabPaneIndex": 4,
-                "displayOD": "{B=White,Light Blue}{Data=c725bb2f-2318-4fda-bfc5-64f435b65a63}{I:'$$control.html.advButton'} [Tabbed UI Button: Add New Form (UX Component)] ¶",
+                "parentContainer": 2,
+                "parentTabPaneIndex": 5,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{Data=c725bb2f-2318-4fda-bfc5-64f435b65a63}{I:'$$control.html.advButton'} [Tabbed UI Button: Add New Form (UX Component)] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=c725bb2f-2318-4fda-bfc5-64f435b65a63}{I:'$$control.html.advButton'} [Tabbed UI Button: Add New Form (UX Component)] ¶",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{Data=c725bb2f-2318-4fda-bfc5-64f435b65a63}{I:'$$control.html.advButton'} [Tabbed UI Button: Add New Item (UX Component)] ¶",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width: 2in;\" title=\"\"  onclick=\"action_{alias}_c725bb2f_2318_4fda_bfc5_64f435b65a63(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add New Item</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_c725bb2f_2318_4fda_bfc5_64f435b65a63'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Add_Reg';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_ADD_REG_16348EHCE';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Add_Reg', title: 'New Form',  name :'{alias}_ADD_REG_16348EHCE', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
-                        "buttonText": "Add New Form",
+                        "buttonText": "Add New Item",
                         "actionType": "Component",
                         "paneTitle": "New Form",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -395,9 +451,9 @@
                             "gridName": "Add_Reg",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
-                            "useStaticHTML": false
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
                         "report": {
                             "workingMessage": "Working...",
@@ -449,19 +505,14 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width: 2in;",
                     "BreakType": "After",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
+                    "securityGroups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,bba6d50a826847a99cf2d158f59c8e03,Administrators",
                     "javascript": {
                         "onclick": "action_{alias}_c725bb2f_2318_4fda_bfc5_64f435b65a63(); return false;"
                     },
@@ -471,8 +522,6 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -481,26 +530,19 @@
                             "delayRenderTillVisible": false
                         }
                     },
-                    "_displayText": "[Tabbed UI Button: Add New Form (UX Component)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width: 2in;\" title=\"\"  onclick=\"action_{alias}_c725bb2f_2318_4fda_bfc5_64f435b65a63(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add New Form</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_c725bb2f_2318_4fda_bfc5_64f435b65a63'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Add_Reg';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_ADD_REG_123049FFII';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Add_Reg', title: 'New Form',  name :'{alias}_ADD_REG_123049FFII', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "inPanelCard": false,
-                "inTreeControl": false
+                    "_displayText": "[Tabbed UI Button: Add New Item (UX Component)]"
+                }
             },
             {
                 "controlType": "layout_directive_TabPane",
-                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=22c25912-e0b1-4666-a44a-9101fab3016d}{I:'$$control.tab.pane'} [TabPane: Print]",
-                "displayODFlat": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=22c25912-e0b1-4666-a44a-9101fab3016d}{I:'$$control.tab.pane'} [TabPane: Print]",
+                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=22c25912-e0b1-4666-a44a-9101fab3016d}{I:'$$control.tab.pane'} [TabPane: Print]",
+                "displayODFlat": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=22c25912-e0b1-4666-a44a-9101fab3016d}{I:'$$control.tab.pane'} [TabPane: Print]",
                 "idInternal": "22c25912-e0b1-4666-a44a-9101fab3016d",
-                "lastIndex": 10,
-                "parentContainer": 1,
-                "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=22c25912-e0b1-4666-a44a-9101fab3016d}{I:'$$control.tab.pane'} [TabPane: Print]",
+                "lastIndex": 11,
+                "parentContainer": 2,
+                "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=22c25912-e0b1-4666-a44a-9101fab3016d}{I:'$$control.tab.pane'} [TabPane: Print]",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=22c25912-e0b1-4666-a44a-9101fab3016d}{I:'$$control.tab.pane'} [TabPane: Print]",
+                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=22c25912-e0b1-4666-a44a-9101fab3016d}{I:'$$control.tab.pane'} [TabPane: Print]",
                 "v": {
                     "title": "Print",
                     "tabPane": {
@@ -519,42 +561,26 @@
                     "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_1.2.TITLE\" class=\"\" href=\"#\">Print</a>\n<div id=\"{grid.componentName}.TAB_1.2.PANE\">\n"
                 },
                 "isCollapsed": false,
-                "parentTabIndex": 1,
+                "parentTabIndex": 2,
                 "tabPaneNumber": 3
             },
             {
                 "controlType": "TabbedUIButton",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=28305fd1-4f76-4dbd-967c-9cb70a3a3802}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register (Report Layout)] ¶",
-                "displayODFlat": "{B=White,Light Blue}{Data=28305fd1-4f76-4dbd-967c-9cb70a3a3802}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register (Report Layout)] ¶",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{Data=28305fd1-4f76-4dbd-967c-9cb70a3a3802}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register (Report Layout)] ¶",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{Data=28305fd1-4f76-4dbd-967c-9cb70a3a3802}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register (Report Layout)] ¶",
                 "idInternal": "28305fd1-4f76-4dbd-967c-9cb70a3a3802",
-                "parentContainer": 1,
-                "parentTabPaneIndex": 6,
-                "displayOD": "{B=White,Light Blue}{Data=28305fd1-4f76-4dbd-967c-9cb70a3a3802}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register (Report Layout)] ¶",
+                "parentContainer": 2,
+                "parentTabPaneIndex": 7,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{Data=28305fd1-4f76-4dbd-967c-9cb70a3a3802}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register (Report Layout)] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=28305fd1-4f76-4dbd-967c-9cb70a3a3802}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register (Report Layout)] ¶",
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_28305fd1_4f76_4dbd_967c_9cb70a3a3802(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory <br> Register</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_28305fd1_4f76_4dbd_967c_9cb70a3a3802'] = function(obj) {\n\tvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\t\n\tvar ro = new Object();\n\t\tro.hostComponentType = 'tabbedUI';\n\n\tro.reportName = 'Regulatory@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = '';\n\tro.sqlOrder = '';\n\tro.arguments = '';\n\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.afterExecuteJavascript = '';\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\t\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tro[n] = obj[n]\n\t\t}\n\t}\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title:'Regulatory Register ',  name:'PANE_28305fd1_4f76_4dbd_967c_9cb70a3a3802',  type:'report', data: ro , autoRefresh: false , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}\t});\n\t\n\t}\n"
-                },
-                "inPanelCard": false,
-                "inTreeControl": false,
-                "iscollapsed": false,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{Data=28305fd1-4f76-4dbd-967c-9cb70a3a3802}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register (Report Layout)] ¶",
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "tabbedUI": {
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
                         "buttonType": "Button",
                         "buttonText": "Regulatory <br> Register",
                         "actionType": "Report Layout",
                         "paneTitle": "Regulatory Register ",
                         "canClosePane": true,
-                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -575,9 +601,9 @@
                         },
                         "grid": {
                             "componentType": "Grid",
-                            "useStaticHTML": false,
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
                         },
                         "report": {
                             "reportPrintDefinition": "<layoutName=\"Regulatory@ProjectReport\">\n<layoutType=1>\n<dbfFilter=\"\">\n<dbfOrder=\"\">\n<sqlFilter=\"\">\n<sqlOrder=\"\">\n<localArguments=\"\">\n<argumentBindings=\"\">\n<pdfOptions=\"\">\n<localFilter=\"\">\n<localOrder=\"\">\n<isSQL=.F.>\n<SQLReport=.T.>\n<sqladhocarguments=\"\">\n",
@@ -633,7 +659,13 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -649,28 +681,38 @@
                             "duration": 500
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Tabbed UI Button: Regulatory <br> Register (Report Layout)]"
-                }
+                },
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_28305fd1_4f76_4dbd_967c_9cb70a3a3802(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory <br> Register</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_28305fd1_4f76_4dbd_967c_9cb70a3a3802'] = function(obj) {\n\tvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\t\n\tvar ro = new Object();\n\t\tro.hostComponentType = 'tabbedUI';\n\n\tro.reportName = 'Regulatory@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = '';\n\tro.sqlOrder = '';\n\tro.arguments = '';\n\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.afterExecuteJavascript = '';\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\t\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tro[n] = obj[n]\n\t\t}\n\t}\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title:'Regulatory Register ',  name:'PANE_28305fd1_4f76_4dbd_967c_9cb70a3a3802',  type:'report', data: ro , autoRefresh: false , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}\t});\n\t\n\t}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
             },
             {
                 "controlType": "TabbedUIButton",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=90c57000_bc4d_4783_a43a_aa3a8de6f2bb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register Heading (Report Layout)] ¶",
-                "displayODFlat": "{B=White,Light Blue}{Data=90c57000_bc4d_4783_a43a_aa3a8de6f2bb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register (Report Layout)] ¶",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{Data=90c57000_bc4d_4783_a43a_aa3a8de6f2bb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register by Type (Report Layout)] ¶",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{Data=90c57000_bc4d_4783_a43a_aa3a8de6f2bb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register Heading (Report Layout)] ¶",
                 "idInternal": "90c57000_bc4d_4783_a43a_aa3a8de6f2bb",
-                "parentContainer": 1,
-                "parentTabPaneIndex": 6,
-                "displayOD": "{B=White,Light Blue}{Data=90c57000_bc4d_4783_a43a_aa3a8de6f2bb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register (Report Layout)] ¶",
+                "parentContainer": 2,
+                "parentTabPaneIndex": 7,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{Data=90c57000_bc4d_4783_a43a_aa3a8de6f2bb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register Heading (Report Layout)] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=90c57000_bc4d_4783_a43a_aa3a8de6f2bb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register Heading (Report Layout)] ¶",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{Data=90c57000_bc4d_4783_a43a_aa3a8de6f2bb}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory <br> Register by Type (Report Layout)] ¶",
                 "indentTree": 2,
-                "inPanelCard": false,
-                "inTreeControl": false,
-                "iscollapsed": false,
-                "parentIsCollapsed": false,
                 "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_90c57000_bc4d_4783_a43a_aa3a8de6f2bb(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory <br> Register Heading</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_90c57000_bc4d_4783_a43a_aa3a8de6f2bb(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory <br> Register by Type</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
                     "tabbedUIButtonJavascript": "window['action_{alias}_90c57000_bc4d_4783_a43a_aa3a8de6f2bb'] = function() {\n\t{tabbedUI.alias}Obj.add({title: 'Regulatory Register by Heading',  name: 'PANE_90c57000_bc4d_4783_a43a_aa3a8de6f2bb', type: 'url', url: '' , header: {\n\tclassName: '[theme:tabbedUI.base.footerClassName|{tabbedUI.style}FooterTD]',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"90c57000_bc4d_4783_a43a_aa3a8de6f2bb\"><div></div><div style=\"padding: 4px;\">[[computeAtRuntime:HTMLArgumentsForm:90c57000_bc4d_4783_a43a_aa3a8de6f2bb]]</div></div>'\n}, autoRefresh: false  , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}  });\n\t\n\n}\n\nwindow['showReport_{alias}_90c57000_bc4d_4783_a43a_aa3a8de6f2bb'] = function() {\nvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\n\n\nvar paneIndex = -1;\n\tfor (var i = 0; i < tbiObj._tbObj._panes.length; i++) {\n\t\tif(tbiObj._tbObj._panes[i].name == 'PANE_90c57000_bc4d_4783_a43a_aa3a8de6f2bb') {\n\t\t\tpaneIndex = i;\n\t\t\tbreak;\n\t\t}\n\t}\n\tif(paneIndex != -1) {\n\tvar ro = new Object();\n\tro.pageVars = new Array();\n\t\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.HEADING',$gvs('90c57000_bc4d_4783_a43a_aa3a8de6f2bb.PROMPT.HEADING')));\n\n\n\tro.reportName = 'Regulatory@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = 'Regulatory.Heading = :Heading';\n\tro.sqlOrder = 'Regulatory.Start_Date DESC ';\n\tro.arguments = 'Heading|Character|{<Prompt at Run-time>}';\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.reportIFrame = tbiObj._tbObj._panes[paneIndex]._id +'.PANE';\n\tro.afterExecuteJavascript = '';\n\t\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\t\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tA5.component.runReport(ro);\n\ttbiObj._tbObj._panes[paneIndex].type = 'report';\n\ttbiObj._tbObj._panes[paneIndex].data = ro;\n\t}\n}\n\n"
                 },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
                     "localxbasic": "",
                     "localjavascript": "",
@@ -681,7 +723,7 @@
                             "canBeFav": true
                         },
                         "buttonType": "Button",
-                        "buttonText": "Regulatory <br> Register Heading",
+                        "buttonText": "Regulatory <br> Register by Type",
                         "actionType": "Report Layout",
                         "paneTitle": "Regulatory Register by Heading",
                         "canClosePane": true,
@@ -784,27 +826,27 @@
                             "duration": 500
                         }
                     },
-                    "_displayText": "[Tabbed UI Button: Regulatory <br> Register Heading (Report Layout)]"
+                    "_displayText": "[Tabbed UI Button: Regulatory <br> Register by Type (Report Layout)]"
                 }
             },
             {
-                "controltype": "TabbedUIButton",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=b72ff485-bb82-4eaf-913f-2e23bb1c9def}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary  (Report Layout)] ¶",
-                "displayODFlat": "{Data=b72ff485-bb82-4eaf-913f-2e23bb1c9def}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary <br> by Heading] ¶",
-                "displayOD": "{Data=b72ff485-bb82-4eaf-913f-2e23bb1c9def}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary <br> by Heading] ¶",
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=b72ff485-bb82-4eaf-913f-2e23bb1c9def}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary  (Report Layout)] ¶",
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=b72ff485-bb82-4eaf-913f-2e23bb1c9def}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory<br> Summary  (Report Layout)] ¶",
+                "displayODFlat": "{B=White,Light Blue}{Data=b72ff485-bb82-4eaf-913f-2e23bb1c9def}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary  (Report Layout)] ¶",
                 "idInternal": "b72ff485-bb82-4eaf-913f-2e23bb1c9def",
-                "parentContainer": 1,
-                "inPanelCard": false,
-                "inTreeControl": false,
-                "parentTabPaneIndex": 6,
+                "parentContainer": 2,
+                "parentTabPaneIndex": 7,
+                "displayOD": "{B=White,Light Blue}{Data=b72ff485-bb82-4eaf-913f-2e23bb1c9def}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary  (Report Layout)] ¶",
                 "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=b72ff485-bb82-4eaf-913f-2e23bb1c9def}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory<br> Summary  (Report Layout)] ¶",
                 "indentTree": 2,
                 "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_b72ff485_bb82_4eaf_913f_2e23bb1c9def(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory Summary </button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_b72ff485_bb82_4eaf_913f_2e23bb1c9def(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory<br> Summary </button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
                     "tabbedUIButtonJavascript": "window['action_{alias}_b72ff485_bb82_4eaf_913f_2e23bb1c9def'] = function(obj) {\n\tvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\t\n\tvar ro = new Object();\n\t\tro.hostComponentType = 'tabbedUI';\n\n\tro.reportName = 'RegulatorySummary@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = '';\n\tro.sqlOrder = '';\n\tro.arguments = '';\n\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.afterExecuteJavascript = '';\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\t\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tro[n] = obj[n]\n\t\t}\n\t}\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title:'Regulatory Summary',  name:'PANE_b72ff485_bb82_4eaf_913f_2e23bb1c9def',  type:'report', data: ro , autoRefresh: false , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}\t});\n\t\n\t}\n"
                 },
-                "iscollapsed": false,
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
                     "localxbasic": "",
                     "localjavascript": "",
@@ -815,7 +857,7 @@
                             "canBeFav": true
                         },
                         "buttonType": "Button",
-                        "buttonText": "Regulatory Summary ",
+                        "buttonText": "Regulatory<br> Summary ",
                         "actionType": "Report Layout",
                         "paneTitle": "Regulatory Summary",
                         "canClosePane": true,
@@ -914,28 +956,28 @@
                             "duration": 500
                         }
                     },
-                    "_displayText": "[Tabbed UI Button: Regulatory Summary  (Report Layout)]"
+                    "_displayText": "[Tabbed UI Button: Regulatory<br> Summary  (Report Layout)]"
                 }
             },
             {
-                "controltype": "TabbedUIButton",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=216d7d05_7dad_4b25_b382_debfd7843938}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary <br> by Heading (Report Layout)] ¶",
-                "displayODFlat": "{Data=216d7d05_7dad_4b25_b382_debfd7843938}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary <br> by Heading] ¶",
-                "displayOD": "{Data=216d7d05_7dad_4b25_b382_debfd7843938}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary <br> by Heading] ¶",
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=216d7d05_7dad_4b25_b382_debfd7843938}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary <br> by Heading (Report Layout)] ¶",
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=216d7d05_7dad_4b25_b382_debfd7843938}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary <br> by Heading (Report Layout)] ¶",
+                "displayODFlat": "{B=White,Light Blue}{Data=216d7d05_7dad_4b25_b382_debfd7843938}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary <br> by Heading (Report Layout)] ¶",
                 "idInternal": "216d7d05_7dad_4b25_b382_debfd7843938",
-                "parentContainer": 1,
-                "inPanelCard": false,
-                "inTreeControl": false,
-                "parentTabPaneIndex": 6,
+                "parentContainer": 2,
+                "parentTabPaneIndex": 7,
+                "displayOD": "{B=White,Light Blue}{Data=216d7d05_7dad_4b25_b382_debfd7843938}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary <br> by Heading (Report Layout)] ¶",
                 "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=216d7d05_7dad_4b25_b382_debfd7843938}{I:'$$control.html.advButton'} [Tabbed UI Button: Regulatory Summary <br> by Heading (Report Layout)] ¶",
                 "indentTree": 2,
-                "iscollapsed": false,
-                "parentIsCollapsed": false,
                 "precalc": {
                     "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_216d7d05_7dad_4b25_b382_debfd7843938(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory Summary <br> by Heading</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_216d7d05_7dad_4b25_b382_debfd7843938'] = function() {\n\t{tabbedUI.alias}Obj.add({title: 'Regulatory Summary by Heading ',  name: 'PANE_216d7d05_7dad_4b25_b382_debfd7843938', type: 'url', url: '' , header: {\n\tclassName: '[theme:tabbedUI.base.footerClassName|{tabbedUI.style}FooterTD]',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"216d7d05_7dad_4b25_b382_debfd7843938\"><div></div><div style=\"padding: 4px;\">[[computeAtRuntime:HTMLArgumentsForm:216d7d05_7dad_4b25_b382_debfd7843938]]</div></div>'\n}, autoRefresh: false  , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}  });\n\t\n\n}\n\nwindow['showReport_{alias}_216d7d05_7dad_4b25_b382_debfd7843938'] = function() {\nvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\n\n\nvar paneIndex = -1;\n\tfor (var i = 0; i < tbiObj._tbObj._panes.length; i++) {\n\t\tif(tbiObj._tbObj._panes[i].name == 'PANE_216d7d05_7dad_4b25_b382_debfd7843938') {\n\t\t\tpaneIndex = i;\n\t\t\tbreak;\n\t\t}\n\t}\n\tif(paneIndex != -1) {\n\tvar ro = new Object();\n\tro.pageVars = new Array();\n\t\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.HEADING',$gvs('216d7d05_7dad_4b25_b382_debfd7843938.PROMPT.HEADING')));\n\n\n\tro.reportName = 'RegulatorySummary@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = 'Heading = :Heading';\n\tro.sqlOrder = '';\n\tro.arguments = 'Heading|Character|{<Prompt at Run-time>}';\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.reportIFrame = tbiObj._tbObj._panes[paneIndex]._id +'.PANE';\n\tro.afterExecuteJavascript = '';\n\t\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\t\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tA5.component.runReport(ro);\n\ttbiObj._tbObj._panes[paneIndex].type = 'report';\n\ttbiObj._tbObj._panes[paneIndex].data = ro;\n\t}\n}\n\n"
+                    "tabbedUIButtonJavascript": "window['action_{alias}_216d7d05_7dad_4b25_b382_debfd7843938'] = function() {\n\t{tabbedUI.alias}Obj.add({title: 'Regulatory Summary by Heading ',  name: 'PANE_216d7d05_7dad_4b25_b382_debfd7843938', type: 'url', url: '' , header: {\n\tclassName: '[theme:tabbedUI.base.footerClassName|{tabbedUI.style}FooterTD]',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"216d7d05_7dad_4b25_b382_debfd7843938\"><div></div><div style=\"padding: 4px;\">[[computeAtRuntime:HTMLArgumentsForm:216d7d05_7dad_4b25_b382_debfd7843938]]</div></div>'\n}, autoRefresh: false  , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}  });\n\t\n\n}\n\nwindow['showReport_{alias}_216d7d05_7dad_4b25_b382_debfd7843938'] = function() {\nvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\n\n\nvar paneIndex = -1;\n\tfor (var i = 0; i < tbiObj._tbObj._panes.length; i++) {\n\t\tif(tbiObj._tbObj._panes[i].name == 'PANE_216d7d05_7dad_4b25_b382_debfd7843938') {\n\t\t\tpaneIndex = i;\n\t\t\tbreak;\n\t\t}\n\t}\n\tif(paneIndex != -1) {\n\tvar ro = new Object();\n\tro.pageVars = new Array();\n\t\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.HEADING',$gvs('216d7d05_7dad_4b25_b382_debfd7843938.PROMPT.HEADING')));\n\n\n\tro.reportName = 'RegulatorySummary@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = 'Heading = :Heading';\n\tro.sqlOrder = 'Start_Date DESC ';\n\tro.arguments = 'Heading|Character|{<Prompt at Run-time>}';\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.reportIFrame = tbiObj._tbObj._panes[paneIndex]._id +'.PANE';\n\tro.afterExecuteJavascript = '';\n\t\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\t\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tA5.component.runReport(ro);\n\ttbiObj._tbObj._panes[paneIndex].type = 'report';\n\ttbiObj._tbObj._panes[paneIndex].data = ro;\n\t}\n}\n\n"
                 },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
                     "localxbasic": "",
                     "localjavascript": "",
@@ -976,10 +1018,11 @@
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
                         "report": {
-                            "reportPrintDefinition": "<layoutName=\"RegulatorySummary@ProjectReport\">\n<layoutType=1>\n<dbfFilter=\"\">\n<dbfOrder=\"\">\n<sqlFilter=\"Heading = :Heading\">\n<sqlOrder=\"\">\n<localArguments=<<%str%\n<Arguments<[1]<variablename=\"Heading\">\n<prompt=\"Select the Heading\">\n<type=\"Character\">\n<style=\"ComboBox\">\n<default_value=\"\">\n<helptext=\"\">\n<choices=\"=a5_arguments_SQLList(\\\"::Name::Connection3\\\",\\\"Regulatory\\\",\\\"\\\",\\\"Heading\\\",\\\"Heading\\\",1000)\">\n<maximumvalue=\"\">\n<minimumvalue=\"\">\n>\n>\n<DialogTitle=\"Specify Argument Values\">\n<OKButtonLabel=\"&OK\">\n<CancelButtonLabel=\"&Cancel\">\n%str%>\n<argumentBindings=<<%str%\nHeading|Character|{<Prompt at Run-time>}\n%str%>\n<pdfOptions=\"\">\n<localFilter=\"\">\n<localOrder=\"\">\n<isSQL=.F.>\n<SQLReport=.T.>\n<sqladhocarguments=\"\">\n",
+                            "reportPrintDefinition": "<layoutName=\"RegulatorySummary@ProjectReport\">\n<layoutType=1>\n<dbfFilter=\"\">\n<dbfOrder=\"\">\n<sqlFilter=\"Heading = :Heading\">\n<sqlOrder=\"Start_Date DESC \">\n<localArguments=<<%str%\n<Arguments<[1]<variablename=\"Heading\">\n<prompt=\"Select the Heading\">\n<type=\"Character\">\n<style=\"ComboBox\">\n<default_value=\"\">\n<helptext=\"\">\n<choices=\"=a5_arguments_SQLList(\\\"::Name::Connection3\\\",\\\"Regulatory\\\",\\\"\\\",\\\"Heading\\\",\\\"Heading\\\",1000)\">\n<maximumvalue=\"\">\n<minimumvalue=\"\">\n>\n>\n<DialogTitle=\"Specify Argument Values\">\n<OKButtonLabel=\"&OK\">\n<CancelButtonLabel=\"&Cancel\">\n%str%>\n<argumentBindings=<<%str%\nHeading|Character|{<Prompt at Run-time>}\n%str%>\n<pdfOptions=\"\">\n<localFilter=\"\">\n<localOrder=\"\">\n<isSQL=.F.>\n<SQLReport=.T.>\n<sqladhocarguments=\"\">\n",
                             "layoutTypeC": "Report",
                             "layoutName": "RegulatorySummary@ProjectReport",
                             "sqlFilter": "Heading = :Heading",
+                            "sqlOrder": "Start_Date DESC ",
                             "localArguments": "<Arguments<[1]<variablename=\"Heading\">\n<prompt=\"Select the Heading\">\n<type=\"Character\">\n<style=\"ComboBox\">\n<default_value=\"\">\n<helptext=\"\">\n<choices=\"=a5_arguments_SQLList(\\\"::Name::Connection3\\\",\\\"Regulatory\\\",\\\"\\\",\\\"Heading\\\",\\\"Heading\\\",1000)\">\n<maximumvalue=\"\">\n<minimumvalue=\"\">\n>\n>\n<DialogTitle=\"Specify Argument Values\">\n<OKButtonLabel=\"&OK\">\n<CancelButtonLabel=\"&Cancel\">\n",
                             "argumentBindings": "Heading|Character|{<Prompt at Run-time>}\n",
                             "sqlReport": true,
@@ -1053,13 +1096,13 @@
             },
             {
                 "controlType": "layout_directive_TabControlEnd",
-                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=becd8324-53dc-44d8-b6d7-d34eeea55f1d}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
-                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=becd8324-53dc-44d8-b6d7-d34eeea55f1d}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=becd8324-53dc-44d8-b6d7-d34eeea55f1d}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
+                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=becd8324-53dc-44d8-b6d7-d34eeea55f1d}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
                 "idInternal": "becd8324-53dc-44d8-b6d7-d34eeea55f1d",
                 "parentContainer": -1,
-                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=becd8324-53dc-44d8-b6d7-d34eeea55f1d}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=becd8324-53dc-44d8-b6d7-d34eeea55f1d}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=becd8324-53dc-44d8-b6d7-d34eeea55f1d}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=becd8324-53dc-44d8-b6d7-d34eeea55f1d}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
                 "v": {
                     "TabControl": {
                         "BreakType": "After",
@@ -1073,18 +1116,18 @@
                     "ControlHTML": "</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
                 },
                 "isCollapsed": false,
-                "containerStartIndex": 1
+                "containerStartIndex": 2
             },
             {
                 "controlType": "layout_directive_FrameBegin",
-                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fa123641_f83c_4ffd_82cf_a80f3b1c95b0}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
-                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fa123641_f83c_4ffd_82cf_a80f3b1c95b0}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fa123641_f83c_4ffd_82cf_a80f3b1c95b0}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
+                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fa123641_f83c_4ffd_82cf_a80f3b1c95b0}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
                 "idInternal": "fa123641_f83c_4ffd_82cf_a80f3b1c95b0",
-                "lastIndex": 16,
+                "lastIndex": 17,
                 "parentContainer": -1,
-                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fa123641_f83c_4ffd_82cf_a80f3b1c95b0}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fa123641_f83c_4ffd_82cf_a80f3b1c95b0}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fa123641_f83c_4ffd_82cf_a80f3b1c95b0}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fa123641_f83c_4ffd_82cf_a80f3b1c95b0}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
                 "v": {
                     "FrameTitle": "Navigation",
                     "Frame": {
@@ -1111,13 +1154,13 @@
             },
             {
                 "controlType": "layout_directive_hyperlink",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=885f6731_e378_4372_a6c1_1d10a6b73c63}{I:'$$generic.link'} [Hyperlink: Home Page] ¶",
-                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=885f6731_e378_4372_a6c1_1d10a6b73c63}{I:'$$generic.link'} [Hyperlink: Home Page] ¶",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=885f6731_e378_4372_a6c1_1d10a6b73c63}{I:'$$generic.link'} [Hyperlink: Home Page] ¶",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=885f6731_e378_4372_a6c1_1d10a6b73c63}{I:'$$generic.link'} [Hyperlink: Home Page] ¶",
                 "idInternal": "885f6731_e378_4372_a6c1_1d10a6b73c63",
-                "parentContainer": 12,
-                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=885f6731_e378_4372_a6c1_1d10a6b73c63}{I:'$$generic.link'} [Hyperlink: Home Page] ¶",
+                "parentContainer": 13,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=885f6731_e378_4372_a6c1_1d10a6b73c63}{I:'$$generic.link'} [Hyperlink: Home Page] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=885f6731_e378_4372_a6c1_1d10a6b73c63}{I:'$$generic.link'} [Hyperlink: Home Page] ¶",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=885f6731_e378_4372_a6c1_1d10a6b73c63}{I:'$$generic.link'} [Hyperlink: Home Page] ¶",
                 "v": {
                     "hyperlinkText": "Home Page",
                     "Class": "<Default>",
@@ -1154,13 +1197,13 @@
             },
             {
                 "controlType": "layout_directive_hyperlink",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=b86e73c4_baa0_4137_b05e_fc4851780447}{I:'$$generic.link'} [Hyperlink: Management] ¶",
-                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=b86e73c4_baa0_4137_b05e_fc4851780447}{I:'$$generic.link'} [Hyperlink: Management] ¶",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=b86e73c4_baa0_4137_b05e_fc4851780447}{I:'$$generic.link'} [Hyperlink: Management] ¶",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=b86e73c4_baa0_4137_b05e_fc4851780447}{I:'$$generic.link'} [Hyperlink: Management] ¶",
                 "idInternal": "b86e73c4_baa0_4137_b05e_fc4851780447",
-                "parentContainer": 12,
-                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=b86e73c4_baa0_4137_b05e_fc4851780447}{I:'$$generic.link'} [Hyperlink: Management] ¶",
+                "parentContainer": 13,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=b86e73c4_baa0_4137_b05e_fc4851780447}{I:'$$generic.link'} [Hyperlink: Management] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=b86e73c4_baa0_4137_b05e_fc4851780447}{I:'$$generic.link'} [Hyperlink: Management] ¶",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=b86e73c4_baa0_4137_b05e_fc4851780447}{I:'$$generic.link'} [Hyperlink: Management] ¶",
                 "v": {
                     "hyperlinkText": "Management",
                     "Class": "<Default>",
@@ -1197,13 +1240,13 @@
             },
             {
                 "controlType": "layout_directive_hyperlink",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=fe2e97e0_6478_4192_ac36_6c47e97540d7}{I:'$$generic.link'} [Hyperlink: Log out] ¶",
-                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=fe2e97e0_6478_4192_ac36_6c47e97540d7}{I:'$$generic.link'} [Hyperlink: Log out] ¶",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=fe2e97e0_6478_4192_ac36_6c47e97540d7}{I:'$$generic.link'} [Hyperlink: Log out] ¶",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=fe2e97e0_6478_4192_ac36_6c47e97540d7}{I:'$$generic.link'} [Hyperlink: Log out] ¶",
                 "idInternal": "fe2e97e0_6478_4192_ac36_6c47e97540d7",
-                "parentContainer": 12,
-                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=fe2e97e0_6478_4192_ac36_6c47e97540d7}{I:'$$generic.link'} [Hyperlink: Log out] ¶",
+                "parentContainer": 13,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=fe2e97e0_6478_4192_ac36_6c47e97540d7}{I:'$$generic.link'} [Hyperlink: Log out] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=fe2e97e0_6478_4192_ac36_6c47e97540d7}{I:'$$generic.link'} [Hyperlink: Log out] ¶",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=fe2e97e0_6478_4192_ac36_6c47e97540d7}{I:'$$generic.link'} [Hyperlink: Log out] ¶",
                 "v": {
                     "hyperlinkText": "Log out",
                     "Class": "<Default>",
@@ -1240,13 +1283,13 @@
             },
             {
                 "controlType": "layout_directive_FrameEnd",
-                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=def18080_f147_4cdd_b448_f8ac169665d7}{I:'vertLineCap'} [Frame End - FRAME_2] ¶",
-                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=def18080_f147_4cdd_b448_f8ac169665d7}{I:'vertLineCap'} [Frame End - FRAME_2] ¶",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=def18080_f147_4cdd_b448_f8ac169665d7}{I:'vertLineCap'} [Frame End - FRAME_2] ¶",
+                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=def18080_f147_4cdd_b448_f8ac169665d7}{I:'vertLineCap'} [Frame End - FRAME_2] ¶",
                 "idInternal": "def18080_f147_4cdd_b448_f8ac169665d7",
                 "parentContainer": -1,
-                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=def18080_f147_4cdd_b448_f8ac169665d7}{I:'vertLineCap'} [Frame End - FRAME_2] ¶",
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=def18080_f147_4cdd_b448_f8ac169665d7}{I:'vertLineCap'} [Frame End - FRAME_2] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=def18080_f147_4cdd_b448_f8ac169665d7}{I:'vertLineCap'} [Frame End - FRAME_2] ¶",
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=def18080_f147_4cdd_b448_f8ac169665d7}{I:'vertLineCap'} [Frame End - FRAME_2] ¶",
                 "v": {
                     "Frame": {
                         "BreakType": "After",
@@ -1261,7 +1304,7 @@
                 },
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
-                "containerStartIndex": 12
+                "containerStartIndex": 13
             }
         ],
         "builderType": "TabbedUI",
@@ -1289,19 +1332,19 @@
         "_style_hassubthemeTweaks": false,
         "repeatingSectionsAreDirty": true,
         "flagDropdownCascadingChanged": false,
-        "toolBox_value": "tabbedUIButton_Report",
+        "toolBox_value": "layout_directive_StaticText",
         "addinBuildNumber": "5691",
         "addinBuildNumberHighestUsed": "5691",
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "53",
-        "securityEnabled": false,
+        "_buildCount": "59",
+        "securityEnabled": true,
         "showHideIsUsed": false,
         "precalc": {
             "usesSystemSVG": true,
             "buttonPanel": {
-                "HTML": "<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: \">\n\t<div id=\"{tabbedUI.alias}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_1.0.TITLE\" class=\"\" href=\"#\">Regulatory Register</a>\n<div id=\"{tabbedUI.alias}.TAB_1.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_96480a97_a935_404c_b1ca_49022a06ffbb(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory Forms</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.1.TITLE\" class=\"\" href=\"#\">Add Forms</a>\n<div id=\"{tabbedUI.alias}.TAB_1.1.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width: 2in;\" title=\"\"  onclick=\"action_{alias}_c725bb2f_2318_4fda_bfc5_64f435b65a63(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add New Form</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.2.TITLE\" class=\"\" href=\"#\">Print</a>\n<div id=\"{tabbedUI.alias}.TAB_1.2.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_28305fd1_4f76_4dbd_967c_9cb70a3a3802(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory <br> Register</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_90c57000_bc4d_4783_a43a_aa3a8de6f2bb(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory <br> Register Heading</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_b72ff485_bb82_4eaf_913f_2e23bb1c9def(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory Summary </button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_216d7d05_7dad_4b25_b382_debfd7843938(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory Summary <br> by Heading</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\"      ><!-- DIV Container for fieldset '{tabbedUI.alias}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{tabbedUI.alias}FRAME_2\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Navigation</legend>\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_8\" title=\"\" href=\"FrontPage.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Home Page</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_9\" title=\"\" href=\"Home_Page_Admin.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Management</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_10\" title=\"\" href=\"Logout.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Log out</a>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
+                "HTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_1\" title=\"\"  class=\"\" style=\"\"   >Regulatory Compliance <Br> News, Bullitens, Updates</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: \">\n\t<div id=\"{tabbedUI.alias}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_1.0.TITLE\" class=\"\" href=\"#\">Regulatory Register</a>\n<div id=\"{tabbedUI.alias}.TAB_1.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_96480a97_a935_404c_b1ca_49022a06ffbb(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View <br>Regulatory Items</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.1.TITLE\" class=\"\" href=\"#\">Add Forms</a>\n<div id=\"{tabbedUI.alias}.TAB_1.1.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width: 2in;\" title=\"\"  onclick=\"action_{alias}_c725bb2f_2318_4fda_bfc5_64f435b65a63(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add New Item</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.2.TITLE\" class=\"\" href=\"#\">Print</a>\n<div id=\"{tabbedUI.alias}.TAB_1.2.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_28305fd1_4f76_4dbd_967c_9cb70a3a3802(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory <br> Register</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_90c57000_bc4d_4783_a43a_aa3a8de6f2bb(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory <br> Register by Type</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_b72ff485_bb82_4eaf_913f_2e23bb1c9def(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory<br> Summary </button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_216d7d05_7dad_4b25_b382_debfd7843938(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Regulatory Summary <br> by Heading</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\"      ><!-- DIV Container for fieldset '{tabbedUI.alias}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{tabbedUI.alias}FRAME_2\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Navigation</legend>\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_8\" title=\"\" href=\"FrontPage.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Home Page</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_9\" title=\"\" href=\"Home_Page_Admin.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Management</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_10\" title=\"\" href=\"Logout.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Log out</a>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
                 "JS": "window['{tabbedUI.alias}.TAB_1Obj'] = new A5.Accordion('{tabbedUI.alias}.TAB_1',[\n{ \thtml: 'Regulatory Register', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Add Forms', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Print', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\twindow['{tabbedUI.alias}.TAB_1Obj'].select(['1']);"
             },
             "treeControlJS": "",
@@ -1315,7 +1358,7 @@
         "alias": "tbi",
         "flagForcerecalc": false,
         "linkedResources": "",
-        "A5SaveTimeStamp": "20231205154727237",
+        "A5SaveTimeStamp": "20231228161516568",
         "minimumBuildNumber": "",
         "style_color_palette": "",
         "__LPhostName": "Chrome",
@@ -1336,15 +1379,15 @@
         "forceChromeControl": true,
         "_flagDoTreeview": true,
         "_move": {
-            "index": 4,
-            "targetIndex": 2,
-            "count": 2
+            "index": 2,
+            "targetIndex": 1,
+            "count": 1
         },
         "compressUX": false,
         "useCSSFlexForContainerAlignment": true,
         "__allowCascadingRecalc": true,
         "_flagForceRecalcChildren": true,
-        "Livepreview_permissions": "",
+        "Livepreview_permissions": "31a3b286ef394725a3c4a38171848772,bba6d50a826847a99cf2d158f59c8e03,5f1c541f3c0b4dfeab7073ca57e5b621,04e6cabf50fb4daf84e2ca59511ab76c,5248c586e68849559db59a7847d3da6e,abd517f3a5d443c5934aa3f851684048,a3e92a7ec8004ee48636fec24f56bb68,2dddabbf5f3842f89229e45fe4466d11,fe468545b63f4f70a6e401ddd6e0c6ed,e0e08ba834bc4a52b433593517bc884d,aaf709d22b84457b9bfbb113b56d97eb,993b775034f140d193dfba83b11405d9",
         "storeSecurityGroupsInDatabase": false,
         "useCompactOnWhichParts": "EntireComponent",
         "headerHTML": "<img src=\"black_textlogo_white_background.jpg\" style=\"width:7.0in;height:0.9in\">",
@@ -1455,6 +1498,7 @@
         "hideButtonPanePermanenly": false,
         "storeSecurityGroupsInDatabase_buttonBubbleHelp": "Edit security groups",
         "storeSecurityGroupsInDatabase_buttonText": "{icon}",
-        "legacyThemeJS": "A5.themes.add('{tabbedUI.style}',{\n\ttabBand: {\n\t\tbase: {\n\t\t\tclassName: '{grid.style}FormTABLE {grid.style}ColumnTD A5TabBand',\n\t\t\tseparator:{\n\t\t\t\tclassName: '{grid.style}DataTD A5TabBandSeparator'\n\t\t\t},\n\t\t\ttab: {\n\t\t\t\tclassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabOff',\n\t\t\t\tselectedClassName: '{grid.style}FormTABLE {grid.style}DataTD A5TabBandTabOn',\n\t\t\t\tdisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabDisabled',\n\t\t\t\tcloseIcon: 'css/A5System/Images/tabclose.png',\n\t\t\t\tcloseIconHover: 'css/A5System/Images/tabcloseHover.png'\n\t\t\t},\n\t\t\tscrollButtons: {\n\t\t\t\tprevClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevImage: 'css/{grid.style}/PrevOn.png',\n\t\t\t\tprevDisabledImage: 'css/{grid.style}/PrevOff.png',\n\t\t\t\tnextClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextImage: 'css/{grid.style}/NextOn.png',\n\t\t\t\tnextDisabledImage: 'css/{grid.style}/NextOff.png'\n\t\t\t}\n\t\t}\n\t}\n});\n"
+        "legacyThemeJS": "A5.themes.add('{tabbedUI.style}',{\n\ttabBand: {\n\t\tbase: {\n\t\t\tclassName: '{grid.style}FormTABLE {grid.style}ColumnTD A5TabBand',\n\t\t\tseparator:{\n\t\t\t\tclassName: '{grid.style}DataTD A5TabBandSeparator'\n\t\t\t},\n\t\t\ttab: {\n\t\t\t\tclassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabOff',\n\t\t\t\tselectedClassName: '{grid.style}FormTABLE {grid.style}DataTD A5TabBandTabOn',\n\t\t\t\tdisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabDisabled',\n\t\t\t\tcloseIcon: 'css/A5System/Images/tabclose.png',\n\t\t\t\tcloseIconHover: 'css/A5System/Images/tabcloseHover.png'\n\t\t\t},\n\t\t\tscrollButtons: {\n\t\t\t\tprevClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevImage: 'css/{grid.style}/PrevOn.png',\n\t\t\t\tprevDisabledImage: 'css/{grid.style}/PrevOff.png',\n\t\t\t\tnextClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextImage: 'css/{grid.style}/NextOn.png',\n\t\t\t\tnextDisabledImage: 'css/{grid.style}/NextOff.png'\n\t\t\t}\n\t\t}\n\t}\n});\n",
+        "Livepreview_permissions_friendly": "Admin_Staff\nAdministrators\nBoard\nCompliance\nFinance\nGovernance\nIncident2\nMaintenance\nPrint\nQuality\nSystem_Administrator\nUsers\n"
     }
 }
