@@ -27,8 +27,8 @@
             "createdBy": "Ricky",
             "lastUpdatedBy": "Ricky",
             "dateCreated": "2022-11-11",
-            "dateLastEdited": "2023-12-20",
-            "revisionnumber": 208
+            "dateLastEdited": "2024-1-3",
+            "revisionnumber": 209
         },
         "checkSessionEvery": 1,
         "warningIntervalBeforeExpiration": 1,
@@ -119,13 +119,13 @@
                     "precalc": {
                         "javascriptAbstractSetupCode": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Static Text: Continuous Improveme]"
                 },
                 "indentTree": 0,
@@ -146,16 +146,7 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=95f53c00-25eb-4980-bebc-3b7fd2377a33}{I:'$a5_control_tab'} [Tab Control: TAB_3]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=95f53c00-25eb-4980-bebc-3b7fd2377a33}{I:'$a5_control_tab'} [Tab Control: TAB_3]",
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<!--TAGSTART:95f53c00-25eb-4980-bebc-3b7fd2377a33-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_3\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
-                    "controlJS": "window['{grid.componentName}.TAB_3Obj'] = new A5.Accordion('{grid.componentName}.TAB_3',[\n{ \thtml: 'Add a CI action', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: true,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\n\n"
-                },
-                "childTabPanes": "3\n",
-                "errorInDefinition": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_3",
@@ -182,6 +173,8 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator",
                     "showHideExpn": "",
@@ -197,7 +190,14 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_3]"
-                }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<!--TAGSTART:95f53c00-25eb-4980-bebc-3b7fd2377a33-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_3\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
+                    "controlJS": "window['{grid.componentName}.TAB_3Obj'] = new A5.Accordion('{grid.componentName}.TAB_3',[\n{ \thtml: 'Add a CI action', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: true,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\n\n"
+                },
+                "childTabPanes": "3\n",
+                "errorInDefinition": false
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -209,16 +209,7 @@
                 "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=9ab88ef7-c029-4e39-9448-0ca515234730}{I:'$$control.tab.pane'} [TabPane: Add a CI Plan]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{B=White,#110+179+236}{F=+B}{Data=9ab88ef7-c029-4e39-9448-0ca515234730}{I:'$$control.tab.pane'} [TabPane: Add a CI action]",
-                "indentTree": 1,
-                "precalc": {
-                    "ControlHTML": "<a id=\"{grid.componentName}.TAB_3.0.TITLE\" class=\"\" href=\"#\">Add a CI action</a>\n<div id=\"{grid.componentName}.TAB_3.0.PANE\">\n",
-                    "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_3.0.TITLE\" class=\"\" href=\"#\">Add a CI action</a>\n<div id=\"{grid.componentName}.TAB_3.0.PANE\">\n"
-                },
-                "parentTabIndex": 2,
-                "tabPaneNumber": 1,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "title": "Add a CI action",
                     "tabPane": {
                         "show": true
@@ -226,8 +217,17 @@
                     "javascript": {
                         "renderChildren": ""
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[TabPane: Add a CI action]"
-                }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<a id=\"{grid.componentName}.TAB_3.0.TITLE\" class=\"\" href=\"#\">Add a CI action</a>\n<div id=\"{grid.componentName}.TAB_3.0.PANE\">\n",
+                    "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_3.0.TITLE\" class=\"\" href=\"#\">Add a CI action</a>\n<div id=\"{grid.componentName}.TAB_3.0.PANE\">\n"
+                },
+                "parentTabIndex": 2,
+                "tabPaneNumber": 1
             },
             {
                 "controlType": "TabbedUIButton",
@@ -398,17 +398,7 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=ad577e3a-903e-440b-8dfb-c4fadd09b899}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=ad577e3a-903e-440b-8dfb-c4fadd09b899}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<!--TAGSTART:ad577e3a-903e-440b-8dfb-c4fadd09b899-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
-                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'CI - Register', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Dashboard', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'CI - Reports', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1']);\n\n"
-                },
-                "isCollapsed": false,
-                "childTabPanes": "7\n12\n14\n",
-                "errorInDefinition": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_1",
@@ -436,6 +426,8 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator",
                     "showHideExpn": "",
@@ -451,7 +443,15 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_1]"
-                }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<!--TAGSTART:ad577e3a-903e-440b-8dfb-c4fadd09b899-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
+                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'CI - Register', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Dashboard', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'CI - Reports', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1']);\n\n"
+                },
+                "isCollapsed": false,
+                "childTabPanes": "7\n12\n14\n",
+                "errorInDefinition": false
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -468,11 +468,11 @@
                     "tabPane": {
                         "show": true
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[TabPane: CI - Register]"
                 },
                 "indentTree": 1,
@@ -1043,11 +1043,11 @@
                         "show": true,
                         "id": "PANE_10"
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[TabPane: Dashboard]"
                 },
                 "indentTree": 1,
@@ -1209,11 +1209,11 @@
                         "show": true
                     },
                     "securityGroups": "839924749d9e43319cc8613f62415050,CIP,bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[TabPane: CI - Reports]"
                 },
                 "indentTree": 1,
@@ -1671,13 +1671,13 @@
                     "precalc": {
                         "javascriptAbstractSetupCode": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Static Text: Facility & Regional ]"
                 },
                 "indentTree": 0,
@@ -1697,16 +1697,7 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=d2965fb1-5d82-4eef-934d-367e7c09a955}{I:'$a5_control_tab'} [Tab Control: TAB_4]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=d2965fb1-5d82-4eef-934d-367e7c09a955}{I:'$a5_control_tab'} [Tab Control: TAB_4]",
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<!--TAGSTART:d2965fb1-5d82-4eef-934d-367e7c09a955-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_4\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
-                    "controlJS": "window['{grid.componentName}.TAB_4Obj'] = new A5.Accordion('{grid.componentName}.TAB_4',[\n{ \thtml: 'Meetings', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_4Obj'].select(['1']);\n\n"
-                },
-                "childTabPanes": "21\n",
-                "errorInDefinition": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_4",
@@ -1734,6 +1725,8 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator",
                     "showHideExpn": "",
@@ -1749,7 +1742,14 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_4]"
-                }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<!--TAGSTART:d2965fb1-5d82-4eef-934d-367e7c09a955-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_4\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
+                    "controlJS": "window['{grid.componentName}.TAB_4Obj'] = new A5.Accordion('{grid.componentName}.TAB_4',[\n{ \thtml: 'Meetings', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_4Obj'].select(['1']);\n\n"
+                },
+                "childTabPanes": "21\n",
+                "errorInDefinition": false
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -1766,11 +1766,11 @@
                     "tabPane": {
                         "show": true
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[TabPane: Meetings]"
                 },
                 "indentTree": 1,
@@ -2135,13 +2135,13 @@
                     "labelAlignment": "Left",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Hyperlink: Home Page]"
                 },
                 "indentTree": 1,
@@ -2178,13 +2178,13 @@
                     "labelAlignment": "Left",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Hyperlink: Management]"
                 },
                 "indentTree": 1,
@@ -2221,13 +2221,13 @@
                     "labelAlignment": "Left",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Hyperlink: Log out]"
                 },
                 "indentTree": 1,
@@ -2279,7 +2279,7 @@
         "showLineNumbersInControlsList": false,
         "saveFileType": "Formatted JSON",
         "keyboardShortcutsJSON": "",
-        "selected": "9ab88ef7-c029-4e39-9448-0ca515234730\n",
+        "selected": "f2abc55d-674e-4871-b689-eb56eb756188\n",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "serverSideEventIndex": 1,
@@ -2296,7 +2296,7 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "207",
+        "_buildCount": "208",
         "securityEnabled": true,
         "showHideIsUsed": true,
         "precalc": {
@@ -2316,35 +2316,34 @@
         "alias": "tbi",
         "flagForcerecalc": false,
         "linkedResources": "",
-        "A5SaveTimeStamp": "20231220095505612",
-        "minimumBuildNumber": "",
-        "style_color_palette": "",
-        "__LPhostName": "Chrome",
-        "showPulseEffect": false,
-        "_style_isInherited": false,
+        "A5SaveTimeStamp": "20240103135640047",
+        "forceChromeControl": true,
         "flagOptimizedUXTree": false,
-        "cachecomponent": false,
-        "_treeErrors": "",
-        "_display": "",
-        "listofstyles": "",
-        "allowusertoswitchstylesatruntime": false,
         "flagReanalyzeContainers": false,
+        "minimumBuildNumber": "",
+        "_display": "",
         "flagShowDeleteConfirmation": false,
+        "showPulseEffect": false,
+        "cachecomponent": false,
+        "allowusertoswitchstylesatruntime": false,
+        "listofstyles": "",
         "templateforstyleselector": "<table><tr><td style=\"white-space:nowrap;\">Component style:</td><td>{selector}</td></tr></table>",
         "baseURLForStyles": "",
         "pusherConfigJSON": "",
         "pusherApp": false,
-        "forceChromeControl": true,
+        "__LPhostName": "Chrome",
+        "_style_isInherited": false,
+        "compressux": false,
+        "_flagForceRecalcChildren": true,
+        "_treeErrors": "",
+        "style_color_palette": "",
         "_flagDoTreeview": true,
         "_move": {
             "index": 5,
             "targetIndex": 1,
             "count": 1
         },
-        "compressUX": false,
-        "livePreview_permissions_friendly": "Add New Admin\nAdd_News\nAdmin_Staff\nAdministrators\nBoard\nCIP\nCompliance\nDocument_Manager\nFinance\nGovernance\nHumanResource\nIncident1\nIncident2\nMaintenance\nPrint\nReviewer\nSenior_Staff\nSystem_Administrator\nUsers\n",
-        "_flagForceRecalcChildren": true,
-        "Livepreview_permissions": "d96a06ca551e484db6c089e40f480b45,09153641ce1a424e917d6e319b6f9ef5,31a3b286ef394725a3c4a38171848772,bba6d50a826847a99cf2d158f59c8e03,5f1c541f3c0b4dfeab7073ca57e5b621,839924749d9e43319cc8613f62415050,04e6cabf50fb4daf84e2ca59511ab76c,5ba02bffe6e7480b88335cf9a00fd6ae,5248c586e68849559db59a7847d3da6e,abd517f3a5d443c5934aa3f851684048,0aac01047b994dc0ace764a1d5105223,b3f39bd376b545fc964966a7815a2cfb,a3e92a7ec8004ee48636fec24f56bb68,2dddabbf5f3842f89229e45fe4466d11,fe468545b63f4f70a6e401ddd6e0c6ed,3afbfb288d5a49f4ae1baecad0a82367,e3549b03e9a54350918182ec6ea88ba9,aaf709d22b84457b9bfbb113b56d97eb,993b775034f140d193dfba83b11405d9",
+        "Livepreview_permissions_friendly": "Add New Admin\nAdd_News\nAdmin_Staff\nAdministrators\nBoard\nCIP\nCompliance\nDocument_Manager\nFinance\nGovernance\nHumanResource\nIncident1\nIncident2\nMaintenance\nPrint\nReviewer\nSenior_Staff\nSystem_Administrator\nUsers\n",
         "storeSecurityGroupsInDatabase": false,
         "useCompactOnWhichParts": "EntireComponent",
         "headerHTML": "<img src=\"black_textlogo_white_background.jpg\" style=\"width:7.0in;height:0.9in\">",
@@ -2455,6 +2454,7 @@
         "hideButtonPanePermanenly": false,
         "storeSecurityGroupsInDatabase_buttonBubbleHelp": "",
         "storeSecurityGroupsInDatabase_buttonText": "",
-        "legacyThemeJS": "A5.themes.add('{tabbedUI.style}',{\n\ttabBand: {\n\t\tbase: {\n\t\t\tclassName: '{grid.style}FormTABLE {grid.style}ColumnTD A5TabBand',\n\t\t\tseparator:{\n\t\t\t\tclassName: '{grid.style}DataTD A5TabBandSeparator'\n\t\t\t},\n\t\t\ttab: {\n\t\t\t\tclassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabOff',\n\t\t\t\tselectedClassName: '{grid.style}FormTABLE {grid.style}DataTD A5TabBandTabOn',\n\t\t\t\tdisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabDisabled',\n\t\t\t\tcloseIcon: 'css/A5System/Images/tabclose.png',\n\t\t\t\tcloseIconHover: 'css/A5System/Images/tabcloseHover.png'\n\t\t\t},\n\t\t\tscrollButtons: {\n\t\t\t\tprevClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevImage: 'css/{grid.style}/PrevOn.png',\n\t\t\t\tprevDisabledImage: 'css/{grid.style}/PrevOff.png',\n\t\t\t\tnextClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextImage: 'css/{grid.style}/NextOn.png',\n\t\t\t\tnextDisabledImage: 'css/{grid.style}/NextOff.png'\n\t\t\t}\n\t\t}\n\t}\n});\n"
+        "legacyThemeJS": "A5.themes.add('{tabbedUI.style}',{\n\ttabBand: {\n\t\tbase: {\n\t\t\tclassName: '{grid.style}FormTABLE {grid.style}ColumnTD A5TabBand',\n\t\t\tseparator:{\n\t\t\t\tclassName: '{grid.style}DataTD A5TabBandSeparator'\n\t\t\t},\n\t\t\ttab: {\n\t\t\t\tclassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabOff',\n\t\t\t\tselectedClassName: '{grid.style}FormTABLE {grid.style}DataTD A5TabBandTabOn',\n\t\t\t\tdisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabDisabled',\n\t\t\t\tcloseIcon: 'css/A5System/Images/tabclose.png',\n\t\t\t\tcloseIconHover: 'css/A5System/Images/tabcloseHover.png'\n\t\t\t},\n\t\t\tscrollButtons: {\n\t\t\t\tprevClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevImage: 'css/{grid.style}/PrevOn.png',\n\t\t\t\tprevDisabledImage: 'css/{grid.style}/PrevOff.png',\n\t\t\t\tnextClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextImage: 'css/{grid.style}/NextOn.png',\n\t\t\t\tnextDisabledImage: 'css/{grid.style}/NextOff.png'\n\t\t\t}\n\t\t}\n\t}\n});\n",
+        "Livepreview_permissions": "d96a06ca551e484db6c089e40f480b45,09153641ce1a424e917d6e319b6f9ef5,31a3b286ef394725a3c4a38171848772,bba6d50a826847a99cf2d158f59c8e03,5f1c541f3c0b4dfeab7073ca57e5b621,839924749d9e43319cc8613f62415050,04e6cabf50fb4daf84e2ca59511ab76c,5ba02bffe6e7480b88335cf9a00fd6ae,5248c586e68849559db59a7847d3da6e,abd517f3a5d443c5934aa3f851684048,0aac01047b994dc0ace764a1d5105223,b3f39bd376b545fc964966a7815a2cfb,a3e92a7ec8004ee48636fec24f56bb68,2dddabbf5f3842f89229e45fe4466d11,fe468545b63f4f70a6e401ddd6e0c6ed,3afbfb288d5a49f4ae1baecad0a82367,e3549b03e9a54350918182ec6ea88ba9,aaf709d22b84457b9bfbb113b56d97eb,993b775034f140d193dfba83b11405d9"
     }
 }

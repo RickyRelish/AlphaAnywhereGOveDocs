@@ -3211,6 +3211,21 @@
 		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
 	},
 	{
+		"page": "Picture1.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Picture2.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Picture3.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
 		"page": "robots.txt",
 		"action": "allow",
 		"groups": ""
