@@ -330,7 +330,7 @@ DIM activeUsers.maxDays as N = 3
 DIM responseHeaders as P
 DIM responseHeaders.includeInsecureHeaders as L
 DIM responseHeaders.additionalHeaders as C
-DIM __token as C = "a239d92c1ada485eac5cac776fe0bc93"
+DIM __token as C = "8b787cd051f0400d9c42cd0a1f372c70"
 %txt%
 
 dim gv as p 
@@ -341,10 +341,10 @@ dim gv.__buildNumberExe__ as n
 dim gv.__buildNumberAddins__ as n 
 dim gv.__guid as c 
 dim gv.__A5PublishVersion as n 
-gv.__A5PublishTimestamp = 202452520314529802
+gv.__A5PublishTimestamp = 2024373705103724627
 gv.__buildNumberExe__ = 8867
 gv.__buildNumberAddins__ = 5691
-gv.__guid = "f5e9c387-4aa8-4b00-a2c1-959e614a90b4"
+gv.__guid = "80ae70a7-7ca3-4cdb-8be0-85027cddec36"
 gv.__control = <<%txtcontrol%
 hV7+2zUTjP0=
 %txtcontrol%
