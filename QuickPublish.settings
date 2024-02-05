@@ -1,10 +1,10 @@
 <profile="Local Webroot">
-<pubType=1>
-<files="">
+<pubType=3>
+<files="C:\Workspaces\Gove_Doc_Risk\GOVDOCS.WebProjects\Default.WebProject\Index.a5w">
 <optimize=.T.>
 <pubALB=.T.>
 <pubSecurity=.F.>
-<default_page="">
+<default_page="Index.a5w">
 <open_in_browser=.T.>
 <pubSupport=.T.>
 <pubSelected=.F.>
