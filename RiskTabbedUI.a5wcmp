@@ -26,8 +26,8 @@
         "info": {
             "createdBy": "Owner",
             "dateCreated": "2023-5-12",
-            "dateLastEdited": "2023-12-8",
-            "revisionnumber": 131
+            "dateLastEdited": "2024-2-15",
+            "revisionnumber": 132
         },
         "checkSessionEvery": 1,
         "warningIntervalBeforeExpiration": 1,
@@ -146,17 +146,7 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=3b3c5fa6-853b-4344-aa9b-726ce9611e41}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=3b3c5fa6-853b-4344-aa9b-726ce9611e41}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
-                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'View - Risk Register', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Add - A  New Risk', \tvalue: '2', \tonDynamicLoadDelay: 0, \tpaneWidth: '2in', \tshow: true, \tdisabled: false },\n{ \thtml: 'Dashboard', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1']);\n\n"
-                },
-                "isCollapsed": false,
-                "childTabPanes": "3\n5\n7\n",
-                "errorInDefinition": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_1",
@@ -183,6 +173,8 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "",
                     "showHideExpn": "",
@@ -198,7 +190,15 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_1]"
-                }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
+                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'View - Risk Register', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Add - A  New Risk', \tvalue: '2', \tonDynamicLoadDelay: 0, \tpaneWidth: '2in', \tshow: true, \tdisabled: false },\n{ \thtml: 'Dashboard', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1']);\n\n"
+                },
+                "isCollapsed": false,
+                "childTabPanes": "3\n5\n7\n",
+                "errorInDefinition": false
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -532,10 +532,10 @@
                     "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_0d8d7cd5_282a_4477_8df9_5043c498ae1d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add to Risk Register</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
                     "tabbedUIButtonJavascript": "window['action_{alias}_0d8d7cd5_282a_4477_8df9_5043c498ae1d'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_R_ADD';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_R_ADD_95041DAIJ';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender; if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_R_ADD', title: 'Add Risk',  name :'{alias}_UX_R_ADD_95041DAIJ', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
                 },
+                "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "inPanelCard": false,
-                "inTreeControl": false,
-                "iscollapsed": false
+                "inTreeControl": false
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -810,17 +810,7 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=e58abb4d-fb0f-409d-b7b4-e178e53c834a}{I:'$a5_control_tab'} [Tab Control: TAB_2]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=e58abb4d-fb0f-409d-b7b4-e178e53c834a}{I:'$a5_control_tab'} [Tab Control: TAB_2]",
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{grid.componentname}.TAB_2\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
-                    "controlJS": "window['{grid.componentName}.TAB_2Obj'] = new A5.Accordion('{grid.componentName}.TAB_2',[\n{ \thtml: 'Risk Reporting', \tvalue: '1', \tonDynamicLoadDelay: 0, \tpaneWidth: '2in', \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: true,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_2Obj'].select(['1']);\n\n"
-                },
-                "isCollapsed": false,
-                "childTabPanes": "13\n",
-                "errorInDefinition": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_2",
@@ -848,6 +838,8 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "",
                     "showHideExpn": "",
@@ -863,7 +855,15 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_2]"
-                }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{grid.componentname}.TAB_2\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
+                    "controlJS": "window['{grid.componentName}.TAB_2Obj'] = new A5.Accordion('{grid.componentName}.TAB_2',[\n{ \thtml: 'Risk Reporting', \tvalue: '1', \tonDynamicLoadDelay: 0, \tpaneWidth: '2in', \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: true,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_2Obj'].select(['1']);\n\n"
+                },
+                "isCollapsed": false,
+                "childTabPanes": "13\n",
+                "errorInDefinition": false
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -1512,9 +1512,10 @@
         "useCompactTheme": false,
         "SVGLinkedFiles": "",
         "localsvg": "",
+        "showLineNumbersInControlsList": false,
         "saveFileType": "Formatted JSON",
         "keyboardShortcutsJSON": "",
-        "selected": "3b3c5fa6-853b-4344-aa9b-726ce9611e41\n",
+        "selected": "7151523c-b3c5-4726-8afa-b1486f77af70\n",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "serverSideEventIndex": 1,
@@ -1531,7 +1532,7 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "130",
+        "_buildCount": "131",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
@@ -1551,7 +1552,7 @@
         "alias": "tbi",
         "flagForcerecalc": false,
         "linkedResources": "",
-        "A5SaveTimeStamp": "20231208112907147",
+        "A5SaveTimeStamp": "20240215161036046",
         "minimumBuildNumber": "",
         "style_color_palette": "",
         "__LPhostName": "Chrome",
@@ -1690,7 +1691,6 @@
         "storeSecurityGroupsInDatabase_buttonBubbleHelp": "Edit security groups",
         "storeSecurityGroupsInDatabase_buttonText": "{icon}",
         "legacyThemeJS": "A5.themes.add('{tabbedUI.style}',{\n\ttabBand: {\n\t\tbase: {\n\t\t\tclassName: '{grid.style}FormTABLE {grid.style}ColumnTD A5TabBand',\n\t\t\tseparator:{\n\t\t\t\tclassName: '{grid.style}DataTD A5TabBandSeparator'\n\t\t\t},\n\t\t\ttab: {\n\t\t\t\tclassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabOff',\n\t\t\t\tselectedClassName: '{grid.style}FormTABLE {grid.style}DataTD A5TabBandTabOn',\n\t\t\t\tdisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabDisabled',\n\t\t\t\tcloseIcon: 'css/A5System/Images/tabclose.png',\n\t\t\t\tcloseIconHover: 'css/A5System/Images/tabcloseHover.png'\n\t\t\t},\n\t\t\tscrollButtons: {\n\t\t\t\tprevClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevImage: 'css/{grid.style}/PrevOn.png',\n\t\t\t\tprevDisabledImage: 'css/{grid.style}/PrevOff.png',\n\t\t\t\tnextClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextImage: 'css/{grid.style}/NextOn.png',\n\t\t\t\tnextDisabledImage: 'css/{grid.style}/NextOff.png'\n\t\t\t}\n\t\t}\n\t}\n});\n",
-        "_choices": "",
-        "showLineNumbersInControlsList": false
+        "_choices": ""
     }
 }

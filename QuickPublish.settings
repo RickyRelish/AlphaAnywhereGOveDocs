@@ -1,6 +1,6 @@
 <profile="Local Webroot">
-<pubType=3>
-<files="C:\Workspaces\Gove_Doc_Risk\GOVDOCS.WebProjects\Default.WebProject\Index.a5w">
+<pubType=1>
+<files="">
 <optimize=.T.>
 <pubALB=.T.>
 <pubSecurity=.F.>
