@@ -229,7 +229,7 @@
             "lastUpdatedBy": "Ricky",
             "dateCreated": "2022-11-3",
             "dateLastEdited": "2024-2-19",
-            "revisionnumber": 395
+            "revisionnumber": 396
         },
         "flagShowCommentsInTree": true,
         "treeCommentOffset": "6",
@@ -1047,18 +1047,7 @@
                 "lastIndex": 165,
                 "parentContainer": 1,
                 "crc": "4294934892",
-                "precalc": {
-                    "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5CWLayout\" style=\"width: 10.5in\">\n\t<div id=\"{dialog.componentname}.V.R{dialog.rowNumber}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
-                    "DesignViewHTML": "",
-                    "controlJS": "window['{dialog.componentName}.V.R{dialog.rownumber}.TAB_1Obj'] = new A5.Accordion('{dialog.componentName}.V.R{dialog.rownumber}.TAB_1',[\n{ \thtml: 'Incident', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Review/Outcome', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}:icon',\n\tonChange: function() {{dialog.object}._tabPaneChange('TAB_1');},\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{dialog.componentName}.V.R{dialog.rownumber}.TAB_1Obj'].select(['1']);\n\n"
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "containerStartIndex": 0,
-                "childTabPanes": "11\n109\n",
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_1",
@@ -1087,6 +1076,8 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "",
                     "showHideExpn": "",
@@ -1127,7 +1118,16 @@
                         "paneIDsInTabLIST": "9db0c846-2db7-4fa7-8f20-bd2a3f166dbd\na04d0c55-453b-4190-8770-d1cf7a6e08b7",
                         "break": false
                     }
-                }
+                },
+                "precalc": {
+                    "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5CWLayout\" style=\"width: 10.5in\">\n\t<div id=\"{dialog.componentname}.V.R{dialog.rowNumber}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
+                    "DesignViewHTML": "",
+                    "controlJS": "window['{dialog.componentName}.V.R{dialog.rownumber}.TAB_1Obj'] = new A5.Accordion('{dialog.componentName}.V.R{dialog.rownumber}.TAB_1',[\n{ \thtml: 'Incident', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Review/Outcome', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}:icon',\n\tonChange: function() {{dialog.object}._tabPaneChange('TAB_1');},\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{dialog.componentName}.V.R{dialog.rownumber}.TAB_1Obj'].select(['1']);\n\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 0,
+                "childTabPanes": "11\n109\n"
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -3072,20 +3072,20 @@
                 "displayOD": "{Data=3cdf0623_ddf8_469a_9be8_e22daec5484c}",
                 "displayODtree": "{Data=3cdf0623_ddf8_469a_9be8_e22daec5484c}",
                 "crc": "4294917519",
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "containerStartIndex": 0,
                 "v": {
                     "controlType": "textbox",
                     "variableName": "Date",
                     "type": "Date",
-                    "localXbasic": "",
-                    "localJavascript": "",
-                    "controlContainerStyle": "",
-                    "cssGridItemPropertiesJSON": "",
                     "maxLength": -1,
                     "watermark": {
                         "text": "<FieldLabel>"
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Date_3cdf0623ddf8469a9be8e22daec5484c(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DATE');};",
+                        "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['DATE']) {  {dialog.componentName}_DlgObj.fieldHelpers['DATE'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '<DefaultDateOnlyFormat>',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t},\n\t\t\twidth: '100%',\n\t\t\theight: ''\n\t\t},\n\t\tswitchYear: 30,\n\t\tcombinedContainer: {\n\t\t\tstyle: 'display:block'\n\t\t}\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t{\n\t\t\t\thtml: 'OK',\n\t\t\t\taction: 'commit'\n\t\t\t},\n\t\t\t{\n\t\t\t\thtml: 'Cancel',\n\t\t\t\taction: 'close'\n\t\t\t}]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
+                        "xbasic_LookupfieldsPopulate": "",
+                        "javascriptDatePicker": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -3093,7 +3093,6 @@
                             "openLookupOnFocus": false
                         }
                     },
-                    "textboxSubTheme": "",
                     "textboxAutocorrect": true,
                     "textboxAutoCapitalize": true,
                     "label": "Date",
@@ -3139,8 +3138,6 @@
                         "separatorCharacter": ",",
                         "trimTrailingSeparatorOnBlur": false
                     },
-                    "getFunction": "",
-                    "setFunction": "",
                     "onChange_ValidationOption": "Client-side only",
                     "dataBinding": {
                         "updateable": true,
@@ -3161,10 +3158,26 @@
                         "encrypted": false,
                         "encryptionkey": ""
                     },
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
+                    "textboxSubTheme": "",
+                    "getFunction": "",
+                    "setFunction": "",
                     "datePicker": {
+                        "displayTimePicker": false,
+                        "openMethod": "ClickIcon",
+                        "dateFormat": "<DefaultDateOnlyFormat>",
+                        "iconNumber": 2,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "userMustSelectFromDatePicker": false,
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "timePickerOptionsDefined": false,
                         "display": true,
                         "timePickerOptions": {
                             "customizeHours": false,
@@ -3186,14 +3199,10 @@
                             "SecondsExplicit": "",
                             "SecondsJavascript": ""
                         },
-                        "timePickerOptionsDefined": false,
-                        "openMethod": "ClickIcon",
                         "useComboBoxes": true,
-                        "dateFormat": "<DefaultDateOnlyFormat>",
                         "lowYear": 1950,
                         "highYear": 2050,
                         "switchYear": 30,
-                        "iconNumber": 2,
                         "lowDate": "",
                         "highDate": "",
                         "disabledDays": "",
@@ -3205,10 +3214,7 @@
                         "showDaysOfWeek": true,
                         "showWeeksOfYear": false,
                         "showTodayButton": true,
-                        "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel",
                         "lockColumnWidths": false,
-                        "userMustSelectFromDatePicker": false,
                         "drawBoxAroundDates": false,
                         "dateItemHoverClassName": "",
                         "dateItemSelectedClassName": "",
@@ -3226,19 +3232,18 @@
                             "onMonthNavigate": "",
                             "onYearNavigate": ""
                         },
-                        "multiple": {
-                            "allow": false,
-                            "separators": ".."
-                        },
-                        "hasMask": false,
-                        "format": {
-                            "mask": ""
-                        },
-                        "displayTimePicker": false,
                         "friendlyDisplay": {
                             "enabled": false
                         }
                     },
+                    "displayAsSlider": false,
+                    "flags": {
+                        "clientSideDefinition": false
+                    },
+                    "localXbasic": "",
+                    "localJavascript": "",
+                    "controlContainerStyle": "",
+                    "cssGridItemPropertiesJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -3263,23 +3268,18 @@
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=3cdf0623_ddf8_469a_9be8_e22daec5484c}{I:'$$control.edit'} [Date]",
                         "inCSSGridContainer": false
                     },
-                    "displayAsSlider": false,
-                    "precalc": {
-                        "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['DATE']) {  {dialog.componentName}_DlgObj.fieldHelpers['DATE'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '<DefaultDateOnlyFormat>',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t},\n\t\t\twidth: '100%',\n\t\t\theight: ''\n\t\t},\n\t\tswitchYear: 30,\n\t\tcombinedContainer: {\n\t\t\tstyle: 'display:block'\n\t\t}\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t{\n\t\t\t\thtml: 'OK',\n\t\t\t\taction: 'commit'\n\t\t\t},\n\t\t\t{\n\t\t\t\thtml: 'Cancel',\n\t\t\t\taction: 'close'\n\t\t\t}]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "javascriptDatePicker": "",
-                        "_jsOnChangeFunction": "function onChange_Date_3cdf0623ddf8469a9be8e22daec5484c(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DATE');};",
-                        "javascriptAbstractSetupCode": ""
-                    },
-                    "flags": {
-                        "clientSideDefinition": false
-                    }
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
-                    "columnInfo": "'DATE': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  }\n",
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 1.3in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.DATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.DATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #3d1212; font-weight: bold; display: block; \">Date</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE\" name=\"V.R{grid.rownumber}.DATE\"  value=\"\"  autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>",
-                    "DesignViewHTML": ""
-                }
+                    "DesignViewHTML": "",
+                    "columnInfo": "'DATE': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  }\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 0
             },
             {
                 "controlType": "layout_directive_FrameBegin",
@@ -3292,12 +3292,7 @@
                 "displayOD": "{Data=39e71ba3_d782_4d5d_afe1_43548f3a0932}",
                 "displayODtree": "{Data=39e71ba3_d782_4d5d_afe1_43548f3a0932}",
                 "crc": "4294934918",
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "containerStartIndex": 0,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "FrameTitle": "Time",
                     "Frame": {
                         "ID": "FRAME_28",
@@ -3305,14 +3300,16 @@
                             "Style": "color: #1533dd; font-weight: bold;"
                         },
                         "type": "Simple",
-                        "nonFloating": false,
                         "initialState": "Shown",
+                        "nonFloating": false,
                         "oneFrameOpenOnly": false
                     },
-                    "cssGridItemPropertiesJSON": "",
                     "precalc": {
                         "javascriptAbstractSetupCode": ""
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "cssGridItemPropertiesJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": true,
@@ -3342,7 +3339,10 @@
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\"      style=\"width: ; \"  ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_28'-->\n\t<div>\n\t<fieldset id=\"{dialog.componentName}.V.R{dialog.rowNumber}.FRAME_28\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" >\n\t<legend class=\"\" style=\"color: #1533dd; font-weight: bold;\"  >Time</legend>",
                     "DesignViewHTML": ""
-                }
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 0
             },
             {
                 "controlType": "dialog_formcontrol",
@@ -3353,7 +3353,7 @@
                 "parentTabPaneIndex": 11,
                 "displayOD": "{Data=2c6077af_4c4b_4c48_8c6e_71dd2bf31321}",
                 "displayODtree": "{Data=2c6077af_4c4b_4c48_8c6e_71dd2bf31321}",
-                "crc": "4294947597",
+                "crc": "4294927956",
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "containerStartIndex": 0,
@@ -3457,7 +3457,7 @@
                         "size": 1,
                         "type": "Static",
                         "selectStyle": "Single",
-                        "choices": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12",
+                        "choices": "01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12",
                         "errorinlinestyle": "",
                         "datasource": "AlphaDAO",
                         "additionalChoicesPre": "",
@@ -3521,11 +3521,6 @@
                         "disabledDays": "",
                         "disabledDates": ""
                     },
-                    "precalc": {
-                        "clientSideValidation": "if($u.s.aTrim(data) == '') return 'Value is required';if(RegExp('.*[A-z].*').test(data)) return 'Value cannot contain letters.';if(RegExp('.*[ \\t\\v\\f\\n\\r].*').test(data)) return 'Value cannot contain whitespace.';",
-                        "_jsOnChangeFunction": "function onChange_Hour_2c6077af4c4b4c488c6e71dd2bf31321(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('HOUR');};",
-                        "javascriptAbstractSetupCode": ""
-                    },
                     "info": {
                         "level": 5,
                         "isContainerStart": false,
@@ -3551,6 +3546,11 @@
                         "inCSSGridContainer": false
                     },
                     "displayAsSlider": false,
+                    "precalc": {
+                        "_jsOnChangeFunction": "function onChange_Hour_2c6077af4c4b4c488c6e71dd2bf31321(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('HOUR');};",
+                        "javascriptAbstractSetupCode": "",
+                        "clientSideValidation": "if($u.s.aTrim(data) == '') return 'Value is required';if(RegExp('.*[A-z].*').test(data)) return 'Value cannot contain letters.';if(RegExp('.*[ \\t\\v\\f\\n\\r].*').test(data)) return 'Value cannot contain whitespace.';"
+                    },
                     "flags": {
                         "clientSideDefinition": false
                     }
@@ -3570,7 +3570,7 @@
                 "parentTabPaneIndex": 11,
                 "displayOD": "{Data=05da8827_2266_4f99_b295_8b3b6be06e9a}",
                 "displayODtree": "{Data=05da8827_2266_4f99_b295_8b3b6be06e9a}",
-                "crc": "4294909020",
+                "crc": "4294950955",
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "containerStartIndex": 0,
@@ -3739,11 +3739,6 @@
                         "disabledDays": "",
                         "disabledDates": ""
                     },
-                    "precalc": {
-                        "clientSideValidation": "if($u.s.aTrim(data) == '') return 'Value is required';if(RegExp('.*[A-z].*').test(data)) return 'Value cannot contain letters.';if(RegExp('.*[ \\t\\v\\f\\n\\r].*').test(data)) return 'Value cannot contain whitespace.';",
-                        "_jsOnChangeFunction": "function onChange_Min_05da882722664f99b2958b3b6be06e9a(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('MIN');};",
-                        "javascriptAbstractSetupCode": ""
-                    },
                     "info": {
                         "level": 5,
                         "isContainerStart": false,
@@ -3769,6 +3764,11 @@
                         "inCSSGridContainer": false
                     },
                     "displayAsSlider": false,
+                    "precalc": {
+                        "_jsOnChangeFunction": "function onChange_Min_05da882722664f99b2958b3b6be06e9a(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('MIN');};",
+                        "javascriptAbstractSetupCode": "",
+                        "clientSideValidation": "if($u.s.aTrim(data) == '') return 'Value is required';if(RegExp('.*[A-z].*').test(data)) return 'Value cannot contain letters.';if(RegExp('.*[ \\t\\v\\f\\n\\r].*').test(data)) return 'Value cannot contain whitespace.';"
+                    },
                     "flags": {
                         "clientSideDefinition": false
                     }
@@ -3789,20 +3789,18 @@
                 "displayOD": "{Data=d56f304a_528c_44a9_9d40_112896c5a2ff}",
                 "displayODtree": "{Data=d56f304a_528c_44a9_9d40_112896c5a2ff}",
                 "crc": "4294938468",
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "containerStartIndex": 0,
                 "v": {
                     "controlType": "DropDownBox",
                     "variableName": "Day",
                     "type": "Character",
-                    "localXbasic": "",
-                    "localJavascript": "",
-                    "controlContainerStyle": "",
-                    "cssGridItemPropertiesJSON": "",
                     "maxLength": -1,
                     "watermark": {
                         "text": "<FieldLabel>"
+                    },
+                    "precalc": {
+                        "clientSideValidation": "if($u.s.aTrim(data) == '') return 'Value is required';if(RegExp('.*[0-9].*').test(data)) return 'Value cannot contain numbers.';if(RegExp('.*[ \\t\\v\\f\\n\\r].*').test(data)) return 'Value cannot contain whitespace.';",
+                        "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Day_d56f304a528c44a99d40112896c5a2ff(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DAY');};"
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -3810,7 +3808,6 @@
                             "openLookupOnFocus": false
                         }
                     },
-                    "textboxSubTheme": "",
                     "textboxAutocorrect": true,
                     "textboxAutoCapitalize": true,
                     "label": "Day",
@@ -3868,8 +3865,6 @@
                         "separatorCharacter": ",",
                         "trimTrailingSeparatorOnBlur": false
                     },
-                    "getFunction": "",
-                    "setFunction": "",
                     "onChange_ValidationOption": "Client-side only",
                     "dataBinding": {
                         "updateable": true,
@@ -3888,6 +3883,68 @@
                         },
                         "encrypted": false,
                         "encryptionkey": ""
+                    },
+                    "textboxSubTheme": "",
+                    "getFunction": "",
+                    "setFunction": "",
+                    "datePicker": {
+                        "displayTimePicker": false,
+                        "openMethod": "ClickIcon",
+                        "dateFormat": "<Default>",
+                        "iconNumber": 2,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "userMustSelectFromDatePicker": false,
+                        "multiple": {
+                            "allow": false,
+                            "separators": ".."
+                        },
+                        "hasMask": false,
+                        "format": {
+                            "mask": ""
+                        },
+                        "timePickerOptionsDefined": false,
+                        "display": false,
+                        "useComboBoxes": true,
+                        "lowYear": 1950,
+                        "highYear": 2050,
+                        "switchYear": 30,
+                        "lowDate": "",
+                        "highDate": "",
+                        "disabledDays": "",
+                        "disabledDates": ""
+                    },
+                    "displayAsSlider": false,
+                    "flags": {
+                        "clientSideDefinition": false
+                    },
+                    "localXbasic": "",
+                    "localJavascript": "",
+                    "controlContainerStyle": "",
+                    "cssGridItemPropertiesJSON": "",
+                    "info": {
+                        "level": 5,
+                        "isContainerStart": false,
+                        "isTabControlStart": false,
+                        "isContainerEnd": false,
+                        "isTabControlEnd": false,
+                        "isTabPaneEnd": false,
+                        "lastItemInTabPane": false,
+                        "inContainer": true,
+                        "inRepeatingSection": false,
+                        "inTabPane": true,
+                        "parentContainerID": "39e71ba3_d782_4d5d_afe1_43548f3a0932",
+                        "repeatingSectionParentId": "",
+                        "parentTabID": "a31398ba-17e1-4428-92bc-574af51c08fa",
+                        "parentTabPaneID": "9db0c846-2db7-4fa7-8f20-bd2a3f166dbd",
+                        "index": 30,
+                        "color": "",
+                        "icon": "$$control.editCombo",
+                        "displayText": "[Day]",
+                        "parentPanelCardId": "",
+                        "break": false,
+                        "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=d56f304a_528c_44a9_9d40_112896c5a2ff}{I:'$$control.editCombo'} [Day]",
+                        "inCSSGridContainer": false
                     },
                     "dropdownbox": {
                         "size": 1,
@@ -3929,73 +3986,16 @@
                         "flagIsDefined": true,
                         "javascriptcontroljsonsettings": "",
                         "javascriptcontrol": false
-                    },
-                    "datePicker": {
-                        "displayTimePicker": false,
-                        "openMethod": "ClickIcon",
-                        "dateFormat": "<Default>",
-                        "iconNumber": 2,
-                        "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel",
-                        "userMustSelectFromDatePicker": false,
-                        "multiple": {
-                            "allow": false,
-                            "separators": ".."
-                        },
-                        "hasMask": false,
-                        "format": {
-                            "mask": ""
-                        },
-                        "timePickerOptionsDefined": false,
-                        "display": false,
-                        "useComboBoxes": true,
-                        "lowYear": 1950,
-                        "highYear": 2050,
-                        "switchYear": 30,
-                        "lowDate": "",
-                        "highDate": "",
-                        "disabledDays": "",
-                        "disabledDates": ""
-                    },
-                    "precalc": {
-                        "clientSideValidation": "if($u.s.aTrim(data) == '') return 'Value is required';if(RegExp('.*[0-9].*').test(data)) return 'Value cannot contain numbers.';if(RegExp('.*[ \\t\\v\\f\\n\\r].*').test(data)) return 'Value cannot contain whitespace.';",
-                        "_jsOnChangeFunction": "function onChange_Day_d56f304a528c44a99d40112896c5a2ff(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DAY');};",
-                        "javascriptAbstractSetupCode": ""
-                    },
-                    "info": {
-                        "level": 5,
-                        "isContainerStart": false,
-                        "isTabControlStart": false,
-                        "isContainerEnd": false,
-                        "isTabControlEnd": false,
-                        "isTabPaneEnd": false,
-                        "lastItemInTabPane": false,
-                        "inContainer": true,
-                        "inRepeatingSection": false,
-                        "inTabPane": true,
-                        "parentContainerID": "39e71ba3_d782_4d5d_afe1_43548f3a0932",
-                        "repeatingSectionParentId": "",
-                        "parentTabID": "a31398ba-17e1-4428-92bc-574af51c08fa",
-                        "parentTabPaneID": "9db0c846-2db7-4fa7-8f20-bd2a3f166dbd",
-                        "index": 30,
-                        "color": "",
-                        "icon": "$$control.editCombo",
-                        "displayText": "[Day]",
-                        "parentPanelCardId": "",
-                        "break": false,
-                        "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=d56f304a_528c_44a9_9d40_112896c5a2ff}{I:'$$control.editCombo'} [Day]",
-                        "inCSSGridContainer": false
-                    },
-                    "displayAsSlider": false,
-                    "flags": {
-                        "clientSideDefinition": false
                     }
                 },
                 "precalc": {
-                    "columnInfo": "'DAY': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C', validate: function(data,colName,rowNum,instNum) {if($u.s.aTrim(data) == '') return 'Value is required';if(RegExp('.*[0-9].*').test(data)) return 'Value cannot contain numbers.';if(RegExp('.*[ \\t\\v\\f\\n\\r].*').test(data)) return 'Value cannot contain whitespace.'; return true; }  }\n",
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2.0cm\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.DAY\" for=\"{grid.componentname}.V.R{grid.rownumber}.DAY\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"color: #3d1212; font-weight: bold; display: block; \">Day</label>\n<!--LblE-->\n\t<!--FldS--><select \t\n\t\tsize=\"1\" \n\t\tclass=\"[theme:edit.base.className|class.dialogSelect] \"  \n\t\tname=\"V.R{grid.rownumber}.DAY\" \n\t\ttitle=\"\"\n\t\tstyle=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"\n\t\tid=\"{grid.componentname}.V.R{grid.rownumber}.DAY\"  \n\t\t onchange=\"var tfunc = function() {onChange_Day_d56f304a528c44a99d40112896c5a2ff.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"  \n\t\t\n\t\t\n\t\t >\n{dialog.dropdownboxchoices.DAY}\n</select>\n<!--FldE-->\n</div>",
-                    "DesignViewHTML": ""
-                }
+                    "DesignViewHTML": "",
+                    "columnInfo": "'DAY': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C', validate: function(data,colName,rowNum,instNum) {if($u.s.aTrim(data) == '') return 'Value is required';if(RegExp('.*[0-9].*').test(data)) return 'Value cannot contain numbers.';if(RegExp('.*[ \\t\\v\\f\\n\\r].*').test(data)) return 'Value cannot contain whitespace.'; return true; }  }\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 0
             },
             {
                 "controlType": "layout_directive_FrameEnd",
@@ -4007,13 +4007,6 @@
                 "displayOD": "{Data=84c39133_d993_49df_bb38_7014cc15c737}",
                 "displayODtree": "{Data=84c39133_d993_49df_bb38_7014cc15c737}",
                 "crc": "4294944565",
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "containerStartIndex": 27,
-                "precalc": {
-                    "ControlHTML": "</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
-                    "DesignViewHTML": ""
-                },
                 "v": {
                     "Frame": {
                         "BreakType": "After",
@@ -4045,7 +4038,14 @@
                         "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=84c39133_d993_49df_bb38_7014cc15c737}{I:'vertLineCap'} [Frame End: FRAME_28]<<break>>",
                         "inCSSGridContainer": false
                     }
-                }
+                },
+                "precalc": {
+                    "ControlHTML": "</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": ""
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 27
             },
             {
                 "controlType": "dialog_formcontrol",
@@ -4057,20 +4057,20 @@
                 "displayOD": "{Data=589876d1_54af_4ced_9c9b_988a2988efd5}",
                 "displayODtree": "{Data=589876d1_54af_4ced_9c9b_988a2988efd5}",
                 "crc": "4294956254",
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "containerStartIndex": 0,
                 "v": {
                     "controlType": "textbox",
                     "variableName": "Time",
                     "type": "Short-time",
-                    "localXbasic": "",
-                    "localJavascript": "",
-                    "controlContainerStyle": "",
-                    "cssGridItemPropertiesJSON": "",
                     "maxLength": -1,
                     "watermark": {
                         "text": "<FieldLabel>"
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Time_589876d154af4ced9c9b988a2988efd5(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('TIME');};",
+                        "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['TIME']) {  {dialog.componentName}_DlgObj.fieldHelpers['TIME'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '0h:0m AM',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t},\n\t\t\twidth: '100%'\n\t\t},\n\t\tswitchYear: 20,\n\t\tcombinedContainer: {\n\t\t\tstyle: 'display:block'\n\t\t}\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t{\n\t\t\t\thtml: 'OK',\n\t\t\t\taction: 'commit'\n\t\t\t},\n\t\t\t{\n\t\t\t\thtml: 'Cancel',\n\t\t\t\taction: 'close'\n\t\t\t}]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
+                        "xbasic_LookupfieldsPopulate": "",
+                        "javascriptDatePicker": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -4078,7 +4078,6 @@
                             "openLookupOnFocus": false
                         }
                     },
-                    "textboxSubTheme": "",
                     "textboxAutocorrect": true,
                     "textboxAutoCapitalize": true,
                     "label": "Time",
@@ -4124,8 +4123,6 @@
                         "separatorCharacter": ",",
                         "trimTrailingSeparatorOnBlur": false
                     },
-                    "getFunction": "",
-                    "setFunction": "",
                     "onChange_ValidationOption": "Client-side only",
                     "dataBinding": {
                         "updateable": true,
@@ -4146,9 +4143,9 @@
                         "encrypted": false,
                         "encryptionkey": ""
                     },
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
+                    "textboxSubTheme": "",
+                    "getFunction": "",
+                    "setFunction": "",
                     "datePicker": {
                         "displayTimePicker": true,
                         "openMethod": "ClickIcon",
@@ -4179,6 +4176,14 @@
                             "enabled": false
                         }
                     },
+                    "displayAsSlider": false,
+                    "flags": {
+                        "clientSideDefinition": false
+                    },
+                    "localXbasic": "",
+                    "localJavascript": "",
+                    "controlContainerStyle": "",
+                    "cssGridItemPropertiesJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -4203,23 +4208,18 @@
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=589876d1_54af_4ced_9c9b_988a2988efd5}{I:'$$control.edit'} [Time]<<break>>",
                         "inCSSGridContainer": false
                     },
-                    "displayAsSlider": false,
-                    "precalc": {
-                        "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['TIME']) {  {dialog.componentName}_DlgObj.fieldHelpers['TIME'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '0h:0m AM',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t},\n\t\t\twidth: '100%'\n\t\t},\n\t\tswitchYear: 20,\n\t\tcombinedContainer: {\n\t\t\tstyle: 'display:block'\n\t\t}\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t{\n\t\t\t\thtml: 'OK',\n\t\t\t\taction: 'commit'\n\t\t\t},\n\t\t\t{\n\t\t\t\thtml: 'Cancel',\n\t\t\t\taction: 'close'\n\t\t\t}]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "javascriptDatePicker": "",
-                        "_jsOnChangeFunction": "function onChange_Time_589876d154af4ced9c9b988a2988efd5(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('TIME');};",
-                        "javascriptAbstractSetupCode": ""
-                    },
-                    "flags": {
-                        "clientSideDefinition": false
-                    }
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
-                    "columnInfo": "'TIME': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'S'  }\n",
                     "ControlHTML": "<span><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.TIME.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.TIME\" name=\"V.R{grid.rownumber}.TIME\"  value=\"\"  autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t</tr>\n</table>\n</span>",
-                    "DesignViewHTML": ""
-                }
+                    "DesignViewHTML": "",
+                    "columnInfo": "'TIME': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'S'  }\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 0
             },
             {
                 "controlType": "layout_directive_FrameBegin",
@@ -23565,7 +23565,7 @@
         "keyboardShortcutsJSON": "",
         "preRenderWarningMessageShow": false,
         "autoSetPreRenderOnForAllUX": true,
-        "selected": "d56f304a_528c_44a9_9d40_112896c5a2ff\n",
+        "selected": "05da8827_2266_4f99_b295_8b3b6be06e9a\n",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "serverSideEventIndex": 4,
@@ -23576,6 +23576,8 @@
         "embeddedMode": false,
         "_style_hassubthemeTweaks": false,
         "repeatingSectionsAreDirty": true,
+        "containerSubTypeNew": "",
+        "containerSubTypeOld": "",
         "flagDropdownCascadingChanged": false,
         "toolBox_value": "",
         "addinBuildNumber": "5691",
@@ -23583,7 +23585,7 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "394",
+        "_buildCount": "395",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
@@ -23681,7 +23683,7 @@
                 "includeJSONPath": false
             },
             "hasIndexedDBJS": false,
-            "_jsOnChangeFunctions": "function onChange_Day_d56f304a528c44a99d40112896c5a2ff(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DAY');};",
+            "_jsOnChangeFunctions": "function onChange_Min_05da882722664f99b2958b3b6be06e9a(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('MIN');};",
             "_jsOnClickFunctions": "",
             "__freeformLayoutLists_searchReplace": "[]",
             "__freeformLayoutLists_searchReplaceCB": "[]"
@@ -23743,7 +23745,7 @@
         "sassProcessor": true,
         "debugMode": false,
         "__jsLibraries": "<script type=\"text/javascript\" src=\"javascript/a5.js\"></script>\n<script type=\"text/javascript\" src=\"javascript/a5_url.js\"></script>\n",
-        "A5SaveTimeStamp": "20240219113412941",
+        "A5SaveTimeStamp": "20240219130959959",
         "a_actionJavascript": [
             {
                 "actionGuid": "0b354214-667b-4bde-8558-4413affb4a70",
@@ -23848,8 +23850,8 @@
         "corsAllowPrivateNetwork": false,
         "populateArgumentsFromQueryString": false,
         "_style_name_beforeResolve": "<ProjectStyle>",
-        "__idinternalCurrentControl": "d56f304a_528c_44a9_9d40_112896c5a2ff",
-        "__nameCurrentControl": "Day",
+        "__idinternalCurrentControl": "05da8827_2266_4f99_b295_8b3b6be06e9a",
+        "__nameCurrentControl": "Min",
         "serverSideActionsArray": [
             {
                 "name": "Save_Submitted_Data_to_Table_s_",
@@ -23894,14 +23896,12 @@
         ],
         "unboundActionShowOnNewActionMessage": true,
         "actionJavascriptUnboundLastEdited": "569b80f7-551c-4ad5-ac23-d3c15976a4ad",
-        "containerSubTypeNew": "",
-        "containerSubTypeOld": "",
         "prerendered": {
             "_styledataVersion": 2,
             "output": {
                 "Head": {
                     "JavaScript": "*gzip:H4sIAAAAAAAAC5WMsQ6CQBAFexP/Aa/Hq+gOOjsqf2Cznq84PPGyuyD8vSQUFlaWM5NM0CipWGVrQesMi/mBZ96tq1Ri677Cc3Me1HXB79wdD+HfAU2Sfyanun/x/bIYZOTcp5uwJGi9NSJByRzBdp1GS08QRVW1NcPe4IcSfQAk7ywxxgAAAA==",
-                    "CSS_Link": "*gzip:H4sIAAAAAAAAC81Z/0/bRhTfr1Tq/3CDosKEiZM0EziFiQJtkehWBTo2TdN0sc/JFcdnnS8EGvG/790X22fHTkLZDxNq8T2/7/fe592Zt6l4iAgSDwk52hTkXrT8NN08fvliLCYRmiNnRoa3VDgCJ86YjsYR/BOOzyLGPcRHQ7zj7qmf3X7OO00Jd1ISEV94KGYxgVeT1BFs6o8d7AvKYkN/fPmChhxPCJrXCkuHJNP+Sc9nscA0JhzNw4hh4UUkFP0EBwGNR56b3Bu+05tL/MCmAs2zd+gNvERaCCkpNGT3Tkq/qbdDxgMwCSTpJvvmNL9Mm98Z7xvea9c+cBp8pAE555zxUxYhQ8vX84CmSYQfPJ20QmrAZorpArJQ4bJU4zTjQ0vlaBxBIp1hxPzbfsnI75TMPrGAFLw1TOcBFWWmiiPAcxHnXMu0rym4aLHGrTPKxcMy1acRwQtZqFhPtZZGresJVSzlrhC5F9dQ02iuO4iToB9CYcuaId5BIspsH7OGg5qXXDMiF96QRc1iNLGVD7F/O+JsGgfeVhiGOMRoyqOd13SCRyRtvYLibL2SWloH9wetVyGNotaXZLv3/oziEYtx5N2MqSDb3ZPtTrfT6213TjvdQ/3/fhKP9nFPqXq929fl7rWTe5SyiAZoKzw46E8wH9EYej/xOtCGWU/K54YILuJkWkrQgmJJ1HolsSJp5WxBRadORQEdVwp1SPBuKoTsF5Zgn4oHb7/Xh8QIUICjZIx3DP2oB6CnJS/iO5rSYUQuoSzR3Mp6FSM1vwIjWSWAZsiXvyVciDHAVJ4UJB1DMxqIsXke6+3XC3ZHOKiZeWhMg4DEfZTjnXpvotMLE7+GFeUqjWRkmaj26pKm4gO4nXwkGNhTNP/m0Dgg916vv5GwlCrk5iTCgt6pitY/EnUzdD6B3MenJBYSqMsIbEpBIrCHp4JltcFVVIoi8d7BUoWHfKWkEasfa+xeguoGqw1Glo6DR1RjY6Bra0Votg1lelkczRk8RtZE20P1Aa9i0h6v4rIt5rN2qcllXJbNYnAXiIhKIyibzRZkn9EUQzsFRROi/d5jXm7vpQBk8hIPSSQto3lRoCiv0A0LfVCnaPSS+EWcwkxeomS5DJWgozLQxKEPM0tZZLlgTrD0QBdW4TP6kU4SxgWORV4sJT1NmqFIGZWb6pA72NxUt78VIh4CGE4F0Kwk9zeU5Z673d9Q9YzaMnH9Dd1BZoUEx3EaMj7x9CMki+zAqz2n197eBSWSaOzkvKjrupN0D4GF7DHHO02o2yC1WIgRUmVhpfJKe66e8oDaxpVaV9uuu727vsksrc82/HNyv5vv5Wcck2hAVA7mqBgd5pBtzY/9dk9PEAt4T3wfsATSfE1FRH6LVTFUiGFYQy06LG9K3Y1mViBrkB8eHuaTG8nRreAtIKAPW6d5f8pTeS0wZZfhOww2wSZaENlqHssRyETA7Kw3bxBTJVoZq1Fud7vTybv9Gg+vWWJSYxYmJXrVmAr7zrDcr8wN2zXTMPax5wnJK/uO5pV4nXahNid27ZjfKWIRtlkXkWvCc4L/bwPNHM5qwNrsEiiWopTjqIhRrYoI5fKpdV5TV88JSvuXb59JVWn3DE2GZQI3FGsegiY1UotQ9bKIVa2fGqyxp3G+qa2eE75xOo9fWyqFr0ndSrtKMCgXqk2RWbXXysxS/CgBT784SUj1OA7WkHNLzQUy8MvqLkOw2ktTii2pOVs8aZdWYEzprPN92zaTdz0nhRFGJMeM46Qm5O/BIpC9IgkG64wXuVZO2M1eCTy78HTtcFxzdZRPAmFOcVQ2JIvjyucsitbJeSlN6wZWn861m6xuQ0shqHr+H8ZgA9PKIKzirxm2dRhdi2X142rpicY+ziJzdUelu7s84O5qb2/gistmaG6+/ek4cUCnqc6T9W1v4Z2tQV7961DEdV37Mwza6nQ6/cLDTv5xoephp1ccEqvHPG8s7//1hz3rXQmYynR9CirTzPgsE7NBU1GbnSY0eb5QTRAr4dnHMhXDJxJPLwSZoAXm0sUPR2w0uFpAiwIgAjANu7zl+34fqWukwYmedRXXl5h8izK17xlTXyZsrrabFNfwk5hOBkzASf3Q1em1CKenNxVa+6DKBRRga7rqLrkWGU9te3/hnuOPiX9LgiMW/w2JK24UXPHsHLoBGe3WyIITa4g7DfIQxRrSwNUkvab5RQ1XM5xUQkHH6CcvwqkAdTQK1oujRo/cl9WqVmsCp9dxaY3YTLGsVlava/ls+I7CU0rBG+OC4TeI1Mhd8r3m80J+O9YjUD7lIOdW9FWLRqoPKS/0P0nSdsy6mVtX6Lct9QewY/UM+bqFA19EAGCONjdlTo821ft0TIjYrP6ZDI05CY824bE1//LH58H54PzXs/PB1fWfl+ePWvE+vPxlOAUPfIB/8U/38I3869rb1OcUji+cTAA+aUjjGeO3MKITTu4omdmWvuI7rNk3Ucr9Ffa+LpqDGJX4cRbiE+L6Jx1jToIrxbw0JPnzw7+PoJQoTxwAAA==",
+                    "CSS_Link": "*gzip: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",
                     "title": "*gzip:H4sIAAAAAAAAC7MpySzJSbULjbDRh7AAiMez8hEAAAA="
                 },
                 "body": {
