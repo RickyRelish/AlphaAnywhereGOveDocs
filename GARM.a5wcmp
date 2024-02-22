@@ -27,8 +27,8 @@
             "createdBy": "Ricky",
             "lastUpdatedBy": "Ricky",
             "dateCreated": "2022-11-11",
-            "dateLastEdited": "2024-2-13",
-            "revisionnumber": 307
+            "dateLastEdited": "2024-2-21",
+            "revisionnumber": 310
         },
         "checkSessionEvery": 1,
         "warningIntervalBeforeExpiration": 1,
@@ -146,7 +146,17 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=28eba11d-8ac2-4700-a99b-2f466bc1ecc5}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=28eba11d-8ac2-4700-a99b-2f466bc1ecc5}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: \">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
+                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'Accreditation Status', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'View Submitted  Report', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Add Governance Report', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Print Reports', \tvalue: '4', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1','2','3']);\n\n"
+                },
+                "isCollapsed": false,
+                "childTabPanes": "3\n5\n7\n9\n",
+                "errorInDefinition": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_1",
@@ -154,7 +164,7 @@
                         "TabPosition": "Top",
                         "AccordionType": "Multiple",
                         "InitialPane": 1,
-                        "InitialOpenAccordionPanes": "1",
+                        "InitialOpenAccordionPanes": "1,2,3",
                         "animation": {
                             "hasAnimation": true,
                             "show": {
@@ -172,8 +182,6 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "",
                     "showHideExpn": "",
@@ -189,15 +197,7 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_1]"
-                },
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: \">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
-                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'Accreditation Status', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'View Submitted  Report', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Add Governance Report', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Print Reports', \tvalue: '4', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1']);\n\n"
-                },
-                "isCollapsed": false,
-                "childTabPanes": "3\n5\n7\n9\n",
-                "errorInDefinition": false
+                }
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -1086,7 +1086,7 @@
         "showLineNumbersInControlsList": false,
         "saveFileType": "Formatted JSON",
         "keyboardShortcutsJSON": "",
-        "selected": "d699d111-22f5-44fd-b430-1262ee695415\n",
+        "selected": "17aba8ae-d275-4546-afc2-de235bce248b\n",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "serverSideEventIndex": 1,
@@ -1103,14 +1103,14 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "306",
+        "_buildCount": "309",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
             "usesSystemSVG": true,
             "buttonPanel": {
                 "HTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_1\" title=\"\"  class=\"\" style=\"\"   >Governance Reports Register - <%A5 ? Session.location%></div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: \">\n\t<div id=\"{tabbedUI.alias}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_1.0.TITLE\" class=\"\" href=\"#\">Accreditation Status</a>\n<div id=\"{tabbedUI.alias}.TAB_1.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_2f69647f_bffb_423c_8221_551453be1a72(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Accreditation</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.1.TITLE\" class=\"\" href=\"#\">View Submitted  Report</a>\n<div id=\"{tabbedUI.alias}.TAB_1.1.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_d699d111_22f5_44fd_b430_1262ee695415(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View Reports</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.2.TITLE\" class=\"\" href=\"#\">Add Governance Report</a>\n<div id=\"{tabbedUI.alias}.TAB_1.2.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_17aba8ae_d275_4546_afc2_de235bce248b(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add a Report</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.3.TITLE\" class=\"\" href=\"#\">Print Reports</a>\n<div id=\"{tabbedUI.alias}.TAB_1.3.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_3fc37ad4_01be_44ca_82a3_11c910fcf495(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Print / View by ID-No</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\"      ><!-- DIV Container for fieldset '{tabbedUI.alias}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{tabbedUI.alias}FRAME_2\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Navigation</legend>\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_8\" title=\"\" href=\"FrontPage.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Home Page</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_9\" title=\"\" href=\"Home_Page_Admin.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Management</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_10\" title=\"\" href=\"Logout.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Log out</a>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
-                "JS": "window['{tabbedUI.alias}.TAB_1Obj'] = new A5.Accordion('{tabbedUI.alias}.TAB_1',[\n{ \thtml: 'Accreditation Status', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'View Submitted  Report', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Add Governance Report', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Print Reports', \tvalue: '4', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\twindow['{tabbedUI.alias}.TAB_1Obj'].select(['1']);"
+                "JS": "window['{tabbedUI.alias}.TAB_1Obj'] = new A5.Accordion('{tabbedUI.alias}.TAB_1',[\n{ \thtml: 'Accreditation Status', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'View Submitted  Report', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Add Governance Report', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Print Reports', \tvalue: '4', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\twindow['{tabbedUI.alias}.TAB_1Obj'].select(['1','2','3']);"
             },
             "treeControlJS": "",
             "expandingMenuJS": "",
@@ -1123,7 +1123,7 @@
         "alias": "tbi",
         "flagForcerecalc": false,
         "linkedResources": "",
-        "A5SaveTimeStamp": "20240213074805658",
+        "A5SaveTimeStamp": "20240221145702821",
         "storeSecurityGroupsInDatabase": false,
         "forceChromeControl": true,
         "flagOptimizedUXTree": false,
