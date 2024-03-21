@@ -27,7 +27,7 @@
             "createdBy": "Owner",
             "dateCreated": "2023-5-12",
             "dateLastEdited": "2024-3-22",
-            "revisionnumber": 131
+            "revisionnumber": 135
         },
         "checkSessionEvery": 1,
         "warningIntervalBeforeExpiration": 1,
@@ -738,8 +738,8 @@
             {
                 "controltype": "TabbedUIButton",
                 "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=7b6a8d04-fe27-48aa-9187-e36d47afb08b}{I:'$$control.html.advButton'} [Tabbed UI Button: Facility Details (UX Component)] ¶",
-                "displayODFlat": "{Data=7b6a8d04-fe27-48aa-9187-e36d47afb08b}{I:'$$control.html.advButton'} [Tabbed UI Button: Facility Details]",
-                "displayOD": "{Data=7b6a8d04-fe27-48aa-9187-e36d47afb08b}{I:'$$control.html.advButton'} [Tabbed UI Button: Facility Details]",
+                "displayODFlat": "{Data=7b6a8d04-fe27-48aa-9187-e36d47afb08b}{I:'$$control.html.advButton'} [Tabbed UI Button: Facility Details] ¶",
+                "displayOD": "{Data=7b6a8d04-fe27-48aa-9187-e36d47afb08b}{I:'$$control.html.advButton'} [Tabbed UI Button: Facility Details] ¶",
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=7b6a8d04-fe27-48aa-9187-e36d47afb08b}{I:'$$control.html.advButton'} [Tabbed UI Button: Facility Details (UX Component)] ¶",
                 "idInternal": "7b6a8d04-fe27-48aa-9187-e36d47afb08b",
                 "parentContainer": 2,
@@ -862,7 +862,8 @@
                         "inPanelCard": {
                             "delayRenderTillVisible": false
                         }
-                    }
+                    },
+                    "_displayText": "[Tabbed UI Button: Facility Details (UX Component)]"
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_7b6a8d04_fe27_48aa_9187_e36d47afb08b(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Facility Details</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
@@ -1518,17 +1519,14 @@
             },
             {
                 "controlType": "layout_directive_hyperlink",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=4f82b035_8e16_4c40_ae8f_4daf6f449c11}{I:'$$generic.link'} [Hyperlink: Incident / Risk Mgt ] ¶",
-                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=4f82b035_8e16_4c40_ae8f_4daf6f449c11}{I:'$$generic.link'} [Hyperlink: Incident / Risk Mgt ] ¶",
-                "idInternal": "4f82b035_8e16_4c40_ae8f_4daf6f449c11",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=14ee8c5f_d6c0_4a32_8129_26f4b5e0bd85}{I:'$$generic.link'} [Hyperlink: Home Page] ¶",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=14ee8c5f_d6c0_4a32_8129_26f4b5e0bd85}{I:'$$generic.link'} [Hyperlink: Incident / Risk Mgt ] ¶",
+                "idInternal": "14ee8c5f_d6c0_4a32_8129_26f4b5e0bd85",
                 "parentContainer": 20,
-                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=4f82b035_8e16_4c40_ae8f_4daf6f449c11}{I:'$$generic.link'} [Hyperlink: Incident / Risk Mgt ] ¶",
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=14ee8c5f_d6c0_4a32_8129_26f4b5e0bd85}{I:'$$generic.link'} [Hyperlink: Incident / Risk Mgt ] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=4f82b035_8e16_4c40_ae8f_4daf6f449c11}{I:'$$generic.link'} [Hyperlink: Incident / Risk Mgt ] ¶",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=14ee8c5f_d6c0_4a32_8129_26f4b5e0bd85}{I:'$$generic.link'} [Hyperlink: Home Page] ¶",
                 "indentTree": 1,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<a id=\"HYPERLINK_4\" title=\"\" href=\"Home_Page.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Incident / Risk Mgt / Forms</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
-                },
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "inPanelCard": false,
@@ -1536,12 +1534,12 @@
                 "v": {
                     "localxbasic": "",
                     "localjavascript": "",
-                    "hyperlinkText": "Incident / Risk Mgt / Forms",
+                    "hyperlinkText": "Home Page",
                     "Class": "<Default>",
                     "BreakType": "After",
                     "hyperlinkTextClass": "<Default>",
-                    "href": "Home_Page.a5w",
-                    "id": "HYPERLINK_4",
+                    "href": "FrontPage.a5w",
+                    "id": "HYPERLINK_5",
                     "cssGridItemPropertiesJSON": "",
                     "labelClass": "<Default>",
                     "labelPosition": "None",
@@ -1556,22 +1554,22 @@
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
-                    "_displayText": "[Hyperlink: Incident / Risk Mgt ]"
+                    "_displayText": "[Hyperlink: Home Page]"
+                },
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<a id=\"HYPERLINK_5\" title=\"\" href=\"FrontPage.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Home Page</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
                 }
             },
             {
                 "controlType": "layout_directive_hyperlink",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=de187d0e_f4aa_4e84_bf2d_638c205deb33}{I:'$$generic.link'} [Hyperlink: Incident / Gov / Adm] ¶",
-                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=de187d0e_f4aa_4e84_bf2d_638c205deb33}{I:'$$generic.link'} [Hyperlink: Incident / Gov / Adm] ¶",
-                "idInternal": "de187d0e_f4aa_4e84_bf2d_638c205deb33",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=709d268e_0442_4dfb_a507_9da77f57038f}{I:'$$generic.link'} [Hyperlink: Management] ¶",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=709d268e_0442_4dfb_a507_9da77f57038f}{I:'$$generic.link'} [Hyperlink: Incident / Gov / Adm] ¶",
+                "idInternal": "709d268e_0442_4dfb_a507_9da77f57038f",
                 "parentContainer": 20,
-                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=de187d0e_f4aa_4e84_bf2d_638c205deb33}{I:'$$generic.link'} [Hyperlink: Incident / Gov / Adm] ¶",
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=709d268e_0442_4dfb_a507_9da77f57038f}{I:'$$generic.link'} [Hyperlink: Incident / Gov / Adm] ¶",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=de187d0e_f4aa_4e84_bf2d_638c205deb33}{I:'$$generic.link'} [Hyperlink: Incident / Gov / Adm] ¶",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=709d268e_0442_4dfb_a507_9da77f57038f}{I:'$$generic.link'} [Hyperlink: Management] ¶",
                 "indentTree": 1,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<a id=\"HYPERLINK_3\" title=\"\" href=\"Home_Page_Admin.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Incident / Gov / Admin</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
-                },
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "inPanelCard": false,
@@ -1579,12 +1577,12 @@
                 "v": {
                     "localxbasic": "",
                     "localjavascript": "",
-                    "hyperlinkText": "Incident / Gov / Admin",
+                    "hyperlinkText": "Management",
                     "Class": "<Default>",
                     "BreakType": "After",
                     "hyperlinkTextClass": "<Default>",
                     "href": "Home_Page_Admin.a5w",
-                    "id": "HYPERLINK_3",
+                    "id": "HYPERLINK_6",
                     "cssGridItemPropertiesJSON": "",
                     "labelClass": "<Default>",
                     "labelPosition": "None",
@@ -1599,7 +1597,10 @@
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
-                    "_displayText": "[Hyperlink: Incident / Gov / Adm]"
+                    "_displayText": "[Hyperlink: Management]"
+                },
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<a id=\"HYPERLINK_6\" title=\"\" href=\"Home_Page_Admin.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Management</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
                 }
             },
             {
@@ -1684,7 +1685,7 @@
         "localsvg": "",
         "saveFileType": "Formatted JSON",
         "keyboardShortcutsJSON": "",
-        "selected": "3b3c5fa6-853b-4344-aa9b-726ce9611e41\n",
+        "selected": "0a0361dc_1c87_4e45_8015_370c35ade6c1\n",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "serverSideEventIndex": 1,
@@ -1701,13 +1702,13 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "130",
+        "_buildCount": "134",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
             "usesSystemSVG": true,
             "buttonPanel": {
-                "HTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_1\" title=\"\"  class=\"\" style=\"\"   >Risk Register Management.</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{tabbedUI.alias}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_1.0.TITLE\" class=\"\" href=\"#\">Add - New Risk</a>\n<div id=\"{tabbedUI.alias}.TAB_1.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_0d8d7cd5_282a_4477_8df9_5043c498ae1d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add to Risk Register</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.1.TITLE\" class=\"\" href=\"#\">Risk Register</a>\n<div id=\"{tabbedUI.alias}.TAB_1.1.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_7151523c_b3c5_4726_8afa_b1486f77af70(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View Risk Register</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.2.TITLE\" class=\"\" href=\"#\">Dashboard</a>\n<div id=\"{tabbedUI.alias}.TAB_1.2.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_077e394b_e028_4a71_9961_fa99b2576c3d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Risk Register Details</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.3.TITLE\" class=\"\" href=\"#\">Accreditation Status</a>\n<div id=\"{tabbedUI.alias}.TAB_1.3.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_7b6a8d04_fe27_48aa_9187_e36d47afb08b(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Facility Details</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<div id=\"SPACER_1\" style=\"height: 1px;width: 0px;; font: 0pt Arial;\">&nbsp;</div>\n</div><br style=\"clear:both;\" />\n<div class=\"A5container\">\n\t<div id=\"STATICTEXT_2\" title=\"\"  class=\"\" style=\"\"   >Reporting</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{tabbedUI.alias}.TAB_2\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_2.0.TITLE\" class=\"\" href=\"#\">Risk Reporting</a>\n<div id=\"{tabbedUI.alias}.TAB_2.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_fbd7f597_efa4_4e79_ab6c_d05f3b481a8b(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Risk Detail by ID No</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_00c410b6_1d3c_4fc0_a313_fd58c3417b68(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Risk Summary by Severity</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_16c12dcc_e2eb_4787_b158_5fe08e54d51e(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Risks Summary by Status</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\"      ><!-- DIV Container for fieldset '{tabbedUI.alias}.FRAME_1'-->\n\t<div>\n\t<fieldset id=\"{tabbedUI.alias}FRAME_1\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Links</legend>\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_4\" title=\"\" href=\"Home_Page.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Incident / Risk Mgt / Forms</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_3\" title=\"\" href=\"Home_Page_Admin.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Incident / Gov / Admin</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_2\" title=\"\" href=\"Logout.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Log out</a>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
+                "HTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_1\" title=\"\"  class=\"\" style=\"\"   >Risk Register Management.</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{tabbedUI.alias}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_1.0.TITLE\" class=\"\" href=\"#\">Add - New Risk</a>\n<div id=\"{tabbedUI.alias}.TAB_1.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_0d8d7cd5_282a_4477_8df9_5043c498ae1d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add to Risk Register</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.1.TITLE\" class=\"\" href=\"#\">Risk Register</a>\n<div id=\"{tabbedUI.alias}.TAB_1.1.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_7151523c_b3c5_4726_8afa_b1486f77af70(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View Risk Register</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.2.TITLE\" class=\"\" href=\"#\">Dashboard</a>\n<div id=\"{tabbedUI.alias}.TAB_1.2.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_077e394b_e028_4a71_9961_fa99b2576c3d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Risk Register Details</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_1.3.TITLE\" class=\"\" href=\"#\">Accreditation Status</a>\n<div id=\"{tabbedUI.alias}.TAB_1.3.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_7b6a8d04_fe27_48aa_9187_e36d47afb08b(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Facility Details</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<div id=\"SPACER_1\" style=\"height: 1px;width: 0px;; font: 0pt Arial;\">&nbsp;</div>\n</div><br style=\"clear:both;\" />\n<div class=\"A5container\">\n\t<div id=\"STATICTEXT_2\" title=\"\"  class=\"\" style=\"\"   >Reporting</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{tabbedUI.alias}.TAB_2\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_2.0.TITLE\" class=\"\" href=\"#\">Risk Reporting</a>\n<div id=\"{tabbedUI.alias}.TAB_2.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_fbd7f597_efa4_4e79_ab6c_d05f3b481a8b(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Risk Detail by ID No</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_00c410b6_1d3c_4fc0_a313_fd58c3417b68(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Risk Summary by Severity</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_16c12dcc_e2eb_4787_b158_5fe08e54d51e(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Risks Summary by Status</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\"      ><!-- DIV Container for fieldset '{tabbedUI.alias}.FRAME_1'-->\n\t<div>\n\t<fieldset id=\"{tabbedUI.alias}FRAME_1\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Links</legend>\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_5\" title=\"\" href=\"FrontPage.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Home Page</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_6\" title=\"\" href=\"Home_Page_Admin.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Management</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_2\" title=\"\" href=\"Logout.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Log out</a>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
                 "JS": "window['{tabbedUI.alias}.TAB_1Obj'] = new A5.Accordion('{tabbedUI.alias}.TAB_1',[\n{ \thtml: 'Add - New Risk', \tvalue: '1', \tonDynamicLoadDelay: 0, \tpaneWidth: '2in', \tshow: true, \tdisabled: false },\n{ \thtml: 'Risk Register', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Dashboard', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Accreditation Status', \tvalue: '4', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\twindow['{tabbedUI.alias}.TAB_1Obj'].select(['2']);\nwindow['{tabbedUI.alias}.TAB_2Obj'] = new A5.Accordion('{tabbedUI.alias}.TAB_2',[\n{ \thtml: 'Risk Reporting', \tvalue: '1', \tonDynamicLoadDelay: 0, \tpaneWidth: '2in', \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: true,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\twindow['{tabbedUI.alias}.TAB_2Obj'].select(['1']);"
             },
             "treeControlJS": "",
@@ -1721,7 +1722,7 @@
         "alias": "tbi",
         "flagForcerecalc": false,
         "linkedResources": "",
-        "A5SaveTimeStamp": "20240322094042923",
+        "A5SaveTimeStamp": "20240322100211411",
         "minimumBuildNumber": "",
         "style_color_palette": "",
         "__LPhostName": "Chrome",
