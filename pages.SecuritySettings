@@ -3251,6 +3251,16 @@
 		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,5f1c541f3c0b4dfeab7073ca57e5b621,Board,04e6cabf50fb4daf84e2ca59511ab76c,Compliance,5248c586e68849559db59a7847d3da6e,Finance,abd517f3a5d443c5934aa3f851684048,Governance,a3e92a7ec8004ee48636fec24f56bb68,Incident2,2dddabbf5f3842f89229e45fe4466d11,Maintenance,fe468545b63f4f70a6e401ddd6e0c6ed,Print,e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,993b775034f140d193dfba83b11405d9,Users"
 	},
 	{
+		"page": "Resources.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Resource.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
 		"page": "robots.txt",
 		"action": "allow",
 		"groups": ""
