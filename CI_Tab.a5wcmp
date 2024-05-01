@@ -27,8 +27,8 @@
             "createdBy": "Ricky",
             "lastUpdatedBy": "Ricky",
             "dateCreated": "2022-11-11",
-            "dateLastEdited": "2024-2-15",
-            "revisionnumber": 210
+            "dateLastEdited": "2024-4-26",
+            "revisionnumber": 211
         },
         "checkSessionEvery": 1,
         "warningIntervalBeforeExpiration": 1,
@@ -105,12 +105,22 @@
                 "displayOD": "{B=White,Light Blue}{Data=36803696-d1ab-4b34-870b-46c948305790}{I:'$$format.text'} [Static Text: Continuous Improveme] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{Data=36803696-d1ab-4b34-870b-46c948305790}{I:'$$format.text'} [Static Text: Continuous Improveme] �",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_2\" title=\"\"  class=\"\" style=\"\"   >Continuous Improvement - <%A5 ? Session.location%></div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
                     "StaticText": "Continuous Improvement - <%A5 ? Session.location%>",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "Class": "<Default>",
                     "BreakType": "After",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
+                    "cssGridItemPropertiesJSON": "",
                     "id": "STATICTEXT_2",
                     "labelClass": "<Default>",
                     "labelPosition": "None",
@@ -119,22 +129,12 @@
                     "precalc": {
                         "javascriptAbstractSetupCode": ""
                     },
-                    "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[Static Text: Continuous Improveme]"
-                },
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_2\" title=\"\"  class=\"\" style=\"\"   >Continuous Improvement - <%A5 ? Session.location%></div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "layout_directive_TabControl",
@@ -146,7 +146,16 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=95f53c00-25eb-4980-bebc-3b7fd2377a33}{I:'$a5_control_tab'} [Tab Control: TAB_3]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=95f53c00-25eb-4980-bebc-3b7fd2377a33}{I:'$a5_control_tab'} [Tab Control: TAB_3]",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<!--TAGSTART:95f53c00-25eb-4980-bebc-3b7fd2377a33-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_3\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
+                    "controlJS": "window['{grid.componentName}.TAB_3Obj'] = new A5.Accordion('{grid.componentName}.TAB_3',[\n{ \thtml: 'Add a CI action', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: true,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\n\n"
+                },
+                "childTabPanes": "3\n",
+                "errorInDefinition": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_3",
@@ -173,8 +182,6 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator",
                     "showHideExpn": "",
@@ -190,14 +197,7 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_3]"
-                },
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<!--TAGSTART:95f53c00-25eb-4980-bebc-3b7fd2377a33-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_3\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
-                    "controlJS": "window['{grid.componentName}.TAB_3Obj'] = new A5.Accordion('{grid.componentName}.TAB_3',[\n{ \thtml: 'Add a CI action', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: true,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\n\n"
-                },
-                "childTabPanes": "3\n",
-                "errorInDefinition": false
+                }
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -209,7 +209,16 @@
                 "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=9ab88ef7-c029-4e39-9448-0ca515234730}{I:'$$control.tab.pane'} [TabPane: Add a CI Plan]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{B=White,#110+179+236}{F=+B}{Data=9ab88ef7-c029-4e39-9448-0ca515234730}{I:'$$control.tab.pane'} [TabPane: Add a CI action]",
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<a id=\"{grid.componentName}.TAB_3.0.TITLE\" class=\"\" href=\"#\">Add a CI action</a>\n<div id=\"{grid.componentName}.TAB_3.0.PANE\">\n",
+                    "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_3.0.TITLE\" class=\"\" href=\"#\">Add a CI action</a>\n<div id=\"{grid.componentName}.TAB_3.0.PANE\">\n"
+                },
+                "parentTabIndex": 2,
+                "tabPaneNumber": 1,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "title": "Add a CI action",
                     "tabPane": {
                         "show": true
@@ -217,17 +226,8 @@
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: Add a CI action]"
-                },
-                "indentTree": 1,
-                "precalc": {
-                    "ControlHTML": "<a id=\"{grid.componentName}.TAB_3.0.TITLE\" class=\"\" href=\"#\">Add a CI action</a>\n<div id=\"{grid.componentName}.TAB_3.0.PANE\">\n",
-                    "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_3.0.TITLE\" class=\"\" href=\"#\">Add a CI action</a>\n<div id=\"{grid.componentName}.TAB_3.0.PANE\">\n"
-                },
-                "parentTabIndex": 2,
-                "tabPaneNumber": 1
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -239,13 +239,30 @@
                 "displayOD": "{B=White,Light Blue}{Data=4e579359-b79f-45b3-bd03-35e4be4c39f3}{I:'$$control.html.advButton'} [Tabbed UI Button: Add a Continuous Improvement (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=4e579359-b79f-45b3-bd03-35e4be4c39f3}{I:'$$control.html.advButton'} [Tabbed UI Button: Add a Continuous Improvement (UX Component)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width: 2in;\" title=\"\"  onclick=\"action_{alias}_4e579359_b79f_45b3_bd03_35e4be4c39f3(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add a Continuous Improvement</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_4e579359_b79f_45b3_bd03_35e4be4c39f3'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_CI_Dash1';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_CI_DASH_11140CHDG';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_CI_Dash1', title: 'New CI',  name :'{alias}_UX_CI_DASH_11140CHDG', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "Add a Continuous Improvement",
                         "actionType": "Component",
                         "paneTitle": "New CI",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -268,6 +285,7 @@
                             "gridName": "UX_CI_Dash1",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -321,13 +339,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width: 2in;",
@@ -343,8 +355,6 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -354,16 +364,7 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: Add a Continuous Improvement (UX Component)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width: 2in;\" title=\"\"  onclick=\"action_{alias}_4e579359_b79f_45b3_bd03_35e4be4c39f3(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add a Continuous Improvement</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_4e579359_b79f_45b3_bd03_35e4be4c39f3'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_CI_Dash1';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_CI_DASH_152440FHFH';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender; if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_CI_Dash1', title: 'New CI',  name :'{alias}_UX_CI_DASH_152440FHFH', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "layout_directive_TabControlEnd",
@@ -374,6 +375,11 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=d368c5a7-5860-4117-b628-69bd8ef5f76b}{I:'vertLineCap'} [Tab Control End - TAB_3] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=d368c5a7-5860-4117-b628-69bd8ef5f76b}{I:'vertLineCap'} [Tab Control End - TAB_3] �",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "</div>\n</div>\n<!--TAGEND:95f53c00-25eb-4980-bebc-3b7fd2377a33-->\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "containerStartIndex": 2,
                 "v": {
                     "TabControl": {
                         "BreakType": "After",
@@ -381,12 +387,7 @@
                         "breakHorizontalSpace": ".1in"
                     },
                     "_displayText": "[Tab Control End - TAB_3]"
-                },
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "</div>\n</div>\n<!--TAGEND:95f53c00-25eb-4980-bebc-3b7fd2377a33-->\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
-                },
-                "containerStartIndex": 2
+                }
             },
             {
                 "controlType": "layout_directive_TabControl",
@@ -398,7 +399,17 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=ad577e3a-903e-440b-8dfb-c4fadd09b899}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=ad577e3a-903e-440b-8dfb-c4fadd09b899}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<!--TAGSTART:ad577e3a-903e-440b-8dfb-c4fadd09b899-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
+                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'CI - Register', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Dashboard', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'CI - Reports', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1']);\n\n"
+                },
+                "isCollapsed": false,
+                "childTabPanes": "7\n12\n14\n",
+                "errorInDefinition": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_1",
@@ -426,8 +437,6 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator",
                     "showHideExpn": "",
@@ -443,15 +452,7 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_1]"
-                },
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<!--TAGSTART:ad577e3a-903e-440b-8dfb-c4fadd09b899-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
-                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'CI - Register', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Dashboard', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'CI - Reports', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1']);\n\n"
-                },
-                "isCollapsed": false,
-                "childTabPanes": "7\n12\n14\n",
-                "errorInDefinition": false
+                }
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -463,18 +464,6 @@
                 "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=f275402e-c9b1-499f-b705-051fcb0d217c}{I:'$$control.tab.pane'} [TabPane: CI - Register]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{B=White,#110+179+236}{F=+B}{Data=f275402e-c9b1-499f-b705-051fcb0d217c}{I:'$$control.tab.pane'} [TabPane: CI - Register]",
-                "v": {
-                    "title": "CI - Register",
-                    "tabPane": {
-                        "show": true
-                    },
-                    "javascript": {
-                        "renderChildren": ""
-                    },
-                    "localxbasic": "",
-                    "localjavascript": "",
-                    "_displayText": "[TabPane: CI - Register]"
-                },
                 "indentTree": 1,
                 "precalc": {
                     "ControlHTML": "<a id=\"{grid.componentName}.TAB_1.0.TITLE\" class=\"\" href=\"#\">CI - Register</a>\n<div id=\"{grid.componentName}.TAB_1.0.PANE\">\n",
@@ -482,7 +471,19 @@
                 },
                 "isCollapsed": false,
                 "parentTabIndex": 6,
-                "tabPaneNumber": 1
+                "tabPaneNumber": 1,
+                "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "title": "CI - Register",
+                    "tabPane": {
+                        "show": true
+                    },
+                    "javascript": {
+                        "renderChildren": ""
+                    },
+                    "_displayText": "[TabPane: CI - Register]"
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -494,13 +495,30 @@
                 "displayOD": "{B=White,Light Blue}{Data=e3363418-ec06-4e58-a900-89b47125499d}{I:'$$control.html.advButton'} [Tabbed UI Button: Open / Under Review (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=e3363418-ec06-4e58-a900-89b47125499d}{I:'$$control.html.advButton'} [Tabbed UI Button: Open / Under Review (UX Component)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_e3363418_ec06_4e58_a900_89b47125499d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Open / Under Review</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_e3363418_ec06_4e58_a900_89b47125499d'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_C_Open';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_C_OPEN_11140HAJB';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_C_Open', title: 'CI Action - Open / Under Review',  name :'{alias}_UX_C_OPEN_11140HAJB', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "Open / Under Review",
                         "actionType": "Component",
                         "paneTitle": "CI Action - Open / Under Review",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -523,6 +541,7 @@
                             "gridName": "UX_C_Open",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -576,13 +595,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -598,8 +611,6 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -609,16 +620,7 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: Open / Under Review (UX Component)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_e3363418_ec06_4e58_a900_89b47125499d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Open / Under Review</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_e3363418_ec06_4e58_a900_89b47125499d'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_C_Open';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_C_OPEN_152441AAEJ';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender; if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_C_Open', title: 'CI Action - Open / Under Review',  name :'{alias}_UX_C_OPEN_152441AAEJ', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -630,13 +632,29 @@
                 "displayOD": "{B=White,Light Blue}{Data=1c5e0f67-d67e-4168-a36b-59901e21d5c1}{I:'$$control.html.advButton'} [Tabbed UI Button: Under Review (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=1c5e0f67-d67e-4168-a36b-59901e21d5c1}{I:'$$control.html.advButton'} [Tabbed UI Button: Under Review (UX Component)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_1c5e0f67_d67e_4168_a36b_59901e21d5c1(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Under Review</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_1c5e0f67_d67e_4168_a36b_59901e21d5c1'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_C_Underreview';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_C_UNDER_11140HIDJ';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_C_Underreview', title: 'CI Plans Under Review',  name :'{alias}_UX_C_UNDER_11140HIDJ', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "Under Review",
                         "actionType": "Component",
                         "paneTitle": "CI Plans Under Review",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -659,6 +677,7 @@
                             "gridName": "UX_C_Underreview",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -712,13 +731,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -735,8 +748,6 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -746,15 +757,7 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: Under Review (UX Component)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_1c5e0f67_d67e_4168_a36b_59901e21d5c1(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Under Review</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_1c5e0f67_d67e_4168_a36b_59901e21d5c1'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_C_Underreview';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_C_UNDER_152441GDJG';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender; if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_C_Underreview', title: 'CI Plans Under Review',  name :'{alias}_UX_C_UNDER_152441GDJG', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -766,13 +769,29 @@
                 "displayOD": "{B=White,Light Blue}{Data=f2abc55d-674e-4871-b689-eb56eb756188}{I:'$$control.html.advButton'} [Tabbed UI Button: Closed (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=f2abc55d-674e-4871-b689-eb56eb756188}{I:'$$control.html.advButton'} [Tabbed UI Button: Closed (UX Component)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_f2abc55d_674e_4871_b689_eb56eb756188(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Closed</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_f2abc55d_674e_4871_b689_eb56eb756188'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_C_Closed';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_C_CLOSE_11140DFEE';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_C_Closed', title: 'CI Action - Closed CI Plans',  name :'{alias}_UX_C_CLOSE_11140DFEE', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "Closed",
                         "actionType": "Component",
                         "paneTitle": "CI Action - Closed CI Plans",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -795,6 +814,7 @@
                             "gridName": "UX_C_Closed",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -848,13 +868,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -870,8 +884,6 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -881,15 +893,7 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: Closed (UX Component)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_f2abc55d_674e_4871_b689_eb56eb756188(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Closed</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_f2abc55d_674e_4871_b689_eb56eb756188'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_C_Closed';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_C_CLOSE_152441ACBD';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender; if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_C_Closed', title: 'CI Action - Closed CI Plans',  name :'{alias}_UX_C_CLOSE_152441ACBD', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -901,13 +905,29 @@
                 "displayOD": "{B=White,Light Blue}{Data=c9d5e386-cbaf-4b86-a478-7820141c3f37}{I:'$$control.html.advButton'} [Tabbed UI Button: Total (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=c9d5e386-cbaf-4b86-a478-7820141c3f37}{I:'$$control.html.advButton'} [Tabbed UI Button: Total (UX Component)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_c9d5e386_cbaf_4b86_a478_7820141c3f37(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Total</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_c9d5e386_cbaf_4b86_a478_7820141c3f37'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_C_Total';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_C_TOTAL_11140GHIJ';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_C_Total', title: 'Total CI Plans',  name :'{alias}_UX_C_TOTAL_11140GHIJ', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "Total",
                         "actionType": "Component",
                         "paneTitle": "Total CI Plans",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -930,6 +950,7 @@
                             "gridName": "UX_C_Total",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -983,13 +1004,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -1006,8 +1021,6 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -1017,15 +1030,7 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: Total (UX Component)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_c9d5e386_cbaf_4b86_a478_7820141c3f37(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Total</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_c9d5e386_cbaf_4b86_a478_7820141c3f37'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_C_Total';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_C_TOTAL_152441BJBA';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender; if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_C_Total', title: 'Total CI Plans',  name :'{alias}_UX_C_TOTAL_152441BJBA', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -1037,7 +1042,17 @@
                 "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=de170be1-0e9c-4bcb-ac2a-4abbe320cbfd}{I:'$$control.tab.pane'} [TabPane: Dashboard]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{B=White,#110+179+236}{F=+B}{Data=de170be1-0e9c-4bcb-ac2a-4abbe320cbfd}{I:'$$control.tab.pane'} [TabPane: Dashboard]",
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<a id=\"{grid.componentName}.TAB_1.1.TITLE\" class=\"\" href=\"#\">Dashboard</a>\n<div id=\"{grid.componentName}.TAB_1.1.PANE\">\n",
+                    "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_1.1.TITLE\" class=\"\" href=\"#\">Dashboard</a>\n<div id=\"{grid.componentName}.TAB_1.1.PANE\">\n"
+                },
+                "isCollapsed": false,
+                "parentTabIndex": 6,
+                "tabPaneNumber": 2,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "title": "Dashboard",
                     "tabPane": {
                         "show": true,
@@ -1046,18 +1061,8 @@
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: Dashboard]"
-                },
-                "indentTree": 1,
-                "precalc": {
-                    "ControlHTML": "<a id=\"{grid.componentName}.TAB_1.1.TITLE\" class=\"\" href=\"#\">Dashboard</a>\n<div id=\"{grid.componentName}.TAB_1.1.PANE\">\n",
-                    "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_1.1.TITLE\" class=\"\" href=\"#\">Dashboard</a>\n<div id=\"{grid.componentName}.TAB_1.1.PANE\">\n"
-                },
-                "isCollapsed": false,
-                "parentTabIndex": 6,
-                "tabPaneNumber": 2
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -1069,13 +1074,28 @@
                 "displayOD": "{B=White,Light Blue}{Data=3a6cd622-a57c-46ed-b9b3-b3c7847eac1a}{I:'$$control.html.advButton'} [Tabbed UI Button: CIP Overview (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=3a6cd622-a57c-46ed-b9b3-b3c7847eac1a}{I:'$$control.html.advButton'} [Tabbed UI Button: CIP Overview (UX Component)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_3a6cd622_a57c_46ed_b9b3_b3c7847eac1a(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >CIP Overview</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_3a6cd622_a57c_46ed_b9b3_b3c7847eac1a'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'DashBoard_UX_CI';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_DASHBOARD__11140GIAH';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'DashBoard_UX_CI', title: 'CIP Overview',  name :'{alias}_DASHBOARD__11140GIAH', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "CIP Overview",
                         "actionType": "Component",
                         "paneTitle": "CIP Overview",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -1098,6 +1118,7 @@
                             "gridName": "DashBoard_UX_CI",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -1151,13 +1172,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -1173,8 +1188,6 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -1184,14 +1197,7 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: CIP Overview (UX Component)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_3a6cd622_a57c_46ed_b9b3_b3c7847eac1a(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >CIP Overview</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_3a6cd622_a57c_46ed_b9b3_b3c7847eac1a'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'DashBoard_UX_CI';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_DASHBOARD__152441BCHA';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender; if(flag) { {tabbedUI.alias}Obj.add({objectName: 'DashBoard_UX_CI', title: 'CIP Overview',  name :'{alias}_DASHBOARD__152441BCHA', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -1203,7 +1209,17 @@
                 "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=e2992caa-3b9d-4730-9ba4-7c0635401ae7}{I:'$$control.tab.pane'} [TabPane: CI - Reports]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{B=White,#110+179+236}{F=+B}{Data=e2992caa-3b9d-4730-9ba4-7c0635401ae7}{I:'$$control.tab.pane'} [TabPane: CI - Reports]",
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<a id=\"{grid.componentName}.TAB_1.2.TITLE\" class=\"\" href=\"#\">CI - Reports</a>\n<div id=\"{grid.componentName}.TAB_1.2.PANE\">\n",
+                    "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_1.2.TITLE\" class=\"\" href=\"#\">CI - Reports</a>\n<div id=\"{grid.componentName}.TAB_1.2.PANE\">\n"
+                },
+                "isCollapsed": false,
+                "parentTabIndex": 6,
+                "tabPaneNumber": 3,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "title": "CI - Reports",
                     "tabPane": {
                         "show": true
@@ -1212,18 +1228,8 @@
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: CI - Reports]"
-                },
-                "indentTree": 1,
-                "precalc": {
-                    "ControlHTML": "<a id=\"{grid.componentName}.TAB_1.2.TITLE\" class=\"\" href=\"#\">CI - Reports</a>\n<div id=\"{grid.componentName}.TAB_1.2.PANE\">\n",
-                    "DesignViewHTML": "<a id=\"{grid.componentName}.TAB_1.2.TITLE\" class=\"\" href=\"#\">CI - Reports</a>\n<div id=\"{grid.componentName}.TAB_1.2.PANE\">\n"
-                },
-                "isCollapsed": false,
-                "parentTabIndex": 6,
-                "tabPaneNumber": 3
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -1235,13 +1241,29 @@
                 "displayOD": "{B=White,Light Blue}{Data=bf9f7ad0-5484-4320-a528-fd8ed8a973a4}{I:'$$control.html.advButton'} [Tabbed UI Button: CI Actions  - List (Report Layout)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=bf9f7ad0-5484-4320-a528-fd8ed8a973a4}{I:'$$control.html.advButton'} [Tabbed UI Button: CI Actions  - List (Report Layout)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_bf9f7ad0_5484_4320_a528_fd8ed8a973a4(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >CI Actions  - List</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_bf9f7ad0_5484_4320_a528_fd8ed8a973a4'] = function() {\n\t{tabbedUI.alias}Obj.add({title: 'CI - Actions List',  name: 'PANE_bf9f7ad0_5484_4320_a528_fd8ed8a973a4', type: 'url', url: '' , header: {\n\tclassName: '[theme:tabbedUI.base.footerClassName|{tabbedUI.style}FooterTD]',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"bf9f7ad0_5484_4320_a528_fd8ed8a973a4\"><div></div><div style=\"padding: 4px;\">[[computeAtRuntime:HTMLArgumentsForm:bf9f7ad0_5484_4320_a528_fd8ed8a973a4]]</div></div>'\n}, autoRefresh: false  , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}  });\n\t\nif(typeof tbiObj._datePicker_SDATE != 'undefined') tbiObj._datePicker_SDATE.bind('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.SDATE');\nif(typeof tbiObj._datePicker_EDATE != 'undefined') tbiObj._datePicker_EDATE.bind('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.EDATE');\n\n}\n\nwindow['showReport_{alias}_bf9f7ad0_5484_4320_a528_fd8ed8a973a4'] = function() {\nvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\n\n\nvar paneIndex = -1;\n\tfor (var i = 0; i < tbiObj._tbObj._panes.length; i++) {\n\t\tif(tbiObj._tbObj._panes[i].name == 'PANE_bf9f7ad0_5484_4320_a528_fd8ed8a973a4') {\n\t\t\tpaneIndex = i;\n\t\t\tbreak;\n\t\t}\n\t}\n\tif(paneIndex != -1) {\n\tvar ro = new Object();\n\tro.pageVars = new Array();\n\t\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.LOCATIONFIND',$gvs('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.LOCATIONFIND')));\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.DATEFORMAT_SDATE',$gvs('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.SDATE.DATEFORMAT')));\n\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.SDATE',$gvs('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.SDATE')));\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.DATEFORMAT_EDATE',$gvs('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.EDATE.DATEFORMAT')));\n\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.EDATE',$gvs('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.EDATE')));\n\n\n\tro.reportName = '1_SQL_CI_Headings@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = 'CI_Plan.Location = :LocationFind AND CI_Plan.Date_Start>=:Sdate AND CI_Plan.Date_Start<=:Edate';\n\tro.sqlOrder = '';\n\tro.arguments = 'LocationFind|Character|{<Prompt at Run-time>}\\nSdate|Date|{<Prompt at Run-time>}\\nEdate|Date|{<Prompt at Run-time>}';\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.reportIFrame = tbiObj._tbObj._panes[paneIndex]._id +'.PANE';\n\tro.afterExecuteJavascript = '';\n\t\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\t\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tA5.component.runReport(ro);\n\ttbiObj._tbObj._panes[paneIndex].type = 'report';\n\ttbiObj._tbObj._panes[paneIndex].data = ro;\n\t}\n}\n\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "CI Actions  - List",
                         "actionType": "Report Layout",
                         "paneTitle": "CI - Actions List",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -1262,6 +1284,7 @@
                         },
                         "grid": {
                             "componentType": "Grid",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -1322,13 +1345,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -1344,18 +1361,8 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[Tabbed UI Button: CI Actions  - List (Report Layout)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_bf9f7ad0_5484_4320_a528_fd8ed8a973a4(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >CI Actions  - List</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_bf9f7ad0_5484_4320_a528_fd8ed8a973a4'] = function() {\n\t{tabbedUI.alias}Obj.add({title: 'CI - Actions List',  name: 'PANE_bf9f7ad0_5484_4320_a528_fd8ed8a973a4', type: 'url', url: '' , header: {\n\tclassName: '[theme:tabbedUI.base.footerClassName|{tabbedUI.style}FooterTD]',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"bf9f7ad0_5484_4320_a528_fd8ed8a973a4\"><div></div><div style=\"padding: 4px;\">[[computeAtRuntime:HTMLArgumentsForm:bf9f7ad0_5484_4320_a528_fd8ed8a973a4]]</div></div>'\n}, autoRefresh: false  , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}  });\n\t\nif(typeof tbiObj._datePicker_SDATE != 'undefined') tbiObj._datePicker_SDATE.bind('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.SDATE');\nif(typeof tbiObj._datePicker_EDATE != 'undefined') tbiObj._datePicker_EDATE.bind('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.EDATE');\n\n}\n\nwindow['showReport_{alias}_bf9f7ad0_5484_4320_a528_fd8ed8a973a4'] = function() {\nvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\n\n\nvar paneIndex = -1;\n\tfor (var i = 0; i < tbiObj._tbObj._panes.length; i++) {\n\t\tif(tbiObj._tbObj._panes[i].name == 'PANE_bf9f7ad0_5484_4320_a528_fd8ed8a973a4') {\n\t\t\tpaneIndex = i;\n\t\t\tbreak;\n\t\t}\n\t}\n\tif(paneIndex != -1) {\n\tvar ro = new Object();\n\tro.pageVars = new Array();\n\t\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.LOCATIONFIND',$gvs('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.LOCATIONFIND')));\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.DATEFORMAT_SDATE',$gvs('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.SDATE.DATEFORMAT')));\n\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.SDATE',$gvs('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.SDATE')));\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.DATEFORMAT_EDATE',$gvs('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.EDATE.DATEFORMAT')));\n\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.EDATE',$gvs('bf9f7ad0_5484_4320_a528_fd8ed8a973a4.PROMPT.EDATE')));\n\n\n\tro.reportName = '1_SQL_CI_Headings@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = 'CI_Plan.Location = :LocationFind AND CI_Plan.Date_Start>=:Sdate AND CI_Plan.Date_Start<=:Edate';\n\tro.sqlOrder = '';\n\tro.arguments = 'LocationFind|Character|{<Prompt at Run-time>}\\nSdate|Date|{<Prompt at Run-time>}\\nEdate|Date|{<Prompt at Run-time>}';\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.reportIFrame = tbiObj._tbObj._panes[paneIndex]._id +'.PANE';\n\tro.afterExecuteJavascript = '';\n\t\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\t\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tA5.component.runReport(ro);\n\ttbiObj._tbObj._panes[paneIndex].type = 'report';\n\ttbiObj._tbObj._panes[paneIndex].data = ro;\n\t}\n}\n\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -1367,13 +1374,29 @@
                 "displayOD": "{B=White,Light Blue}{Data=da51fe5d-8351-4937-aa69-0ec9b701da9c}{I:'$$control.html.advButton'} [Tabbed UI Button: CI - Action Details (Report Layout)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=da51fe5d-8351-4937-aa69-0ec9b701da9c}{I:'$$control.html.advButton'} [Tabbed UI Button: CI - Action Details (Report Layout)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_da51fe5d_8351_4937_aa69_0ec9b701da9c(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >CI - Action Details</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_da51fe5d_8351_4937_aa69_0ec9b701da9c'] = function() {\n\t{tabbedUI.alias}Obj.add({title: 'CI - Action Details',  name: 'PANE_da51fe5d_8351_4937_aa69_0ec9b701da9c', type: 'url', url: '' , header: {\n\tclassName: '[theme:tabbedUI.base.footerClassName|{tabbedUI.style}FooterTD]',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"da51fe5d_8351_4937_aa69_0ec9b701da9c\"><div></div><div style=\"padding: 4px;\">[[computeAtRuntime:HTMLArgumentsForm:da51fe5d_8351_4937_aa69_0ec9b701da9c]]</div></div>'\n}, autoRefresh: false  , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}  });\n\t\n\n}\n\nwindow['showReport_{alias}_da51fe5d_8351_4937_aa69_0ec9b701da9c'] = function() {\nvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\n\n\nvar paneIndex = -1;\n\tfor (var i = 0; i < tbiObj._tbObj._panes.length; i++) {\n\t\tif(tbiObj._tbObj._panes[i].name == 'PANE_da51fe5d_8351_4937_aa69_0ec9b701da9c') {\n\t\t\tpaneIndex = i;\n\t\t\tbreak;\n\t\t}\n\t}\n\tif(paneIndex != -1) {\n\tvar ro = new Object();\n\tro.pageVars = new Array();\n\t\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.IDNUMBER',$gvs('da51fe5d_8351_4937_aa69_0ec9b701da9c.PROMPT.IDNUMBER')));\n\n\n\tro.reportName = '1_SQL_CI_ACTION@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = 'CI_Plan.ID_CI = :IDNumber ';\n\tro.sqlOrder = '';\n\tro.arguments = 'IDNumber|Numeric|{<Prompt at Run-time>}';\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = 'DIM Concatenate as L\\nDIM HasWatermark as L\\nDIM MultilingualSupport as L = .T.\\nDIM EmbedFonts as L = .T.\\nDIM LinearizeForWeb as L\\nDIM Colors2GrayScale as L\\nDIM ConvertHyperlinks as L\\nDIM WatermarkType as C = `Text`\\nDIM WatermarkText as C = `D R A F T`\\nDIM WatermarkFontName as C = `Times New Roman`\\nDIM WatermarkFontSize as N = 172\\nDIM WatermarkRotation as N = 450\\nDIM WatermarkColorHex as C = `E8FED2`\\nDIM WatermarkHorizPos as N = 120\\nDIM WatermarkVertPos as N = -120\\nDIM WatermarkOnTop as L\\nDIM WatermarkPDF as C\\nDIM Encrypt as L\\nDIM OwnerPassword as C\\nDIM UserPassword as C\\nDIM CanPrint as L = .T.\\nDIM CanModifyDocument as L = .T.\\nDIM CanCopy as L = .T.\\nDIM CanAddNotes as L = .T.\\nDIM Use128BitKey as L = .T.\\nDIM JpegQuality as C = `Low`';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.reportIFrame = tbiObj._tbObj._panes[paneIndex]._id +'.PANE';\n\tro.afterExecuteJavascript = '';\n\t\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\t\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tA5.component.runReport(ro);\n\ttbiObj._tbObj._panes[paneIndex].type = 'report';\n\ttbiObj._tbObj._panes[paneIndex].data = ro;\n\t}\n}\n\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "CI - Action Details",
                         "actionType": "Report Layout",
                         "paneTitle": "CI - Action Details",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -1394,6 +1417,7 @@
                         },
                         "grid": {
                             "componentType": "Grid",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -1455,13 +1479,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -1477,18 +1495,8 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[Tabbed UI Button: CI - Action Details (Report Layout)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_da51fe5d_8351_4937_aa69_0ec9b701da9c(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >CI - Action Details</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_da51fe5d_8351_4937_aa69_0ec9b701da9c'] = function() {\n\t{tabbedUI.alias}Obj.add({title: 'CI - Action Details',  name: 'PANE_da51fe5d_8351_4937_aa69_0ec9b701da9c', type: 'url', url: '' , header: {\n\tclassName: '[theme:tabbedUI.base.footerClassName|{tabbedUI.style}FooterTD]',\n\tstyle: {\n\t\tborderTopStyle: 'none',\n\t\tborderBottomStyle: 'solid',\n\t\tborderBottomColor: '#ddd',\n\t\tborderBottomWidth: '1px',\n\t\tpadding: '0px'\n\t},\n\tshow: true,\n\thtml: '<div id=\"da51fe5d_8351_4937_aa69_0ec9b701da9c\"><div></div><div style=\"padding: 4px;\">[[computeAtRuntime:HTMLArgumentsForm:da51fe5d_8351_4937_aa69_0ec9b701da9c]]</div></div>'\n}, autoRefresh: false  , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}  });\n\t\n\n}\n\nwindow['showReport_{alias}_da51fe5d_8351_4937_aa69_0ec9b701da9c'] = function() {\nvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\n\n\nvar paneIndex = -1;\n\tfor (var i = 0; i < tbiObj._tbObj._panes.length; i++) {\n\t\tif(tbiObj._tbObj._panes[i].name == 'PANE_da51fe5d_8351_4937_aa69_0ec9b701da9c') {\n\t\t\tpaneIndex = i;\n\t\t\tbreak;\n\t\t}\n\t}\n\tif(paneIndex != -1) {\n\tvar ro = new Object();\n\tro.pageVars = new Array();\n\t\nro.pageVars.push(A5.ajax.buildURLParam('pageVar.IDNUMBER',$gvs('da51fe5d_8351_4937_aa69_0ec9b701da9c.PROMPT.IDNUMBER')));\n\n\n\tro.reportName = '1_SQL_CI_ACTION@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = 'CI_Plan.ID_CI = :IDNumber ';\n\tro.sqlOrder = '';\n\tro.arguments = 'IDNumber|Numeric|{<Prompt at Run-time>}';\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = 'DIM Concatenate as L\\nDIM HasWatermark as L\\nDIM MultilingualSupport as L = .T.\\nDIM EmbedFonts as L = .T.\\nDIM LinearizeForWeb as L\\nDIM Colors2GrayScale as L\\nDIM ConvertHyperlinks as L\\nDIM WatermarkType as C = `Text`\\nDIM WatermarkText as C = `D R A F T`\\nDIM WatermarkFontName as C = `Times New Roman`\\nDIM WatermarkFontSize as N = 172\\nDIM WatermarkRotation as N = 450\\nDIM WatermarkColorHex as C = `E8FED2`\\nDIM WatermarkHorizPos as N = 120\\nDIM WatermarkVertPos as N = -120\\nDIM WatermarkOnTop as L\\nDIM WatermarkPDF as C\\nDIM Encrypt as L\\nDIM OwnerPassword as C\\nDIM UserPassword as C\\nDIM CanPrint as L = .T.\\nDIM CanModifyDocument as L = .T.\\nDIM CanCopy as L = .T.\\nDIM CanAddNotes as L = .T.\\nDIM Use128BitKey as L = .T.\\nDIM JpegQuality as C = `Low`';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.reportIFrame = tbiObj._tbObj._panes[paneIndex]._id +'.PANE';\n\tro.afterExecuteJavascript = '';\n\t\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\t\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tA5.component.runReport(ro);\n\ttbiObj._tbObj._panes[paneIndex].type = 'report';\n\ttbiObj._tbObj._panes[paneIndex].data = ro;\n\t}\n}\n\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -1500,13 +1508,30 @@
                 "displayOD": "{B=White,Light Blue}{Data=8ded64ef_bc94_4682_aa47_a425658d53ce}{I:'$$control.html.advButton'} [Tabbed UI Button: CI - Action Plan (Report Layout)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=8ded64ef_bc94_4682_aa47_a425658d53ce}{I:'$$control.html.advButton'} [Tabbed UI Button: CI - Action Plan (Report Layout)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_8ded64ef_bc94_4682_aa47_a425658d53ce(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >CI - Action Plan</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_8ded64ef_bc94_4682_aa47_a425658d53ce'] = function(obj) {\n\tvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\t\n\tvar ro = new Object();\n\t\tro.hostComponentType = 'tabbedUI';\n\n\tro.reportName = '1_SQL_CI_ACTION@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = 'CI_Plan.Location = :Location';\n\tro.sqlOrder = '';\n\tro.arguments = 'Location|Character|session.Location';\n\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.afterExecuteJavascript = '';\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\t\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tro[n] = obj[n]\n\t\t}\n\t}\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title:'CI - Action Plan',  name:'PANE_8ded64ef_bc94_4682_aa47_a425658d53ce',  type:'report', data: ro , autoRefresh: false , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}\t});\n\t\n\t}\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "CI - Action Plan",
                         "actionType": "Report Layout",
                         "paneTitle": "CI - Action Plan",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -1527,6 +1552,7 @@
                         },
                         "grid": {
                             "componentType": "Grid",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -1587,13 +1613,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -1609,19 +1629,8 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[Tabbed UI Button: CI - Action Plan (Report Layout)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_8ded64ef_bc94_4682_aa47_a425658d53ce(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >CI - Action Plan</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_8ded64ef_bc94_4682_aa47_a425658d53ce'] = function(obj) {\n\tvar objOverrides = typeof arguments[0] != 'undefined' ? arguments[0] : {};\n\t\n\tvar ro = new Object();\n\t\tro.hostComponentType = 'tabbedUI';\n\n\tro.reportName = '1_SQL_CI_ACTION@ProjectReport';\n\tro.reportType = 'report';\n\tro.filter = '';\n\tro.order = '';\n\tro.sqlFilter = 'CI_Plan.Location = :Location';\n\tro.sqlOrder = '';\n\tro.arguments = 'Location|Character|session.Location';\n\n\tro.localArguments = '';\n\tro.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tro.workingMessage = 'Working...';\n\tro.width = '9in';\n\tro.height = '11.5in';\n\tro.pdfoptions = '';\n\tro.displayMode = '';\n\tro.saveAs = 'pdf';\n\tro.afterExecuteJavascript = '';\n\tro.beforeExecuteJavascript = ''\n\tif(ro.beforeExecuteJavascript != '') eval(ro.beforeExecuteJavascript);\n\tif(A5.__dtfmt) ro.__dtfmt = A5.__dtfmt;\n\t\n\tro.__flagIIS = false;\n\tif(A5.__flagIIS) ro.__flagIIS = A5.__flagIIS;\n\t\n\tro.htmlReporting = false;\n\n\tif(typeof objOverrides != 'undefined') {\n\t\t$u.o.assign(ro,objOverrides)\n\t}\n\t\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tro[n] = obj[n]\n\t\t}\n\t}\n\n\n\n\t\n\t{tabbedUI.alias}Obj.add({title:'CI - Action Plan',  name:'PANE_8ded64ef_bc94_4682_aa47_a425658d53ce',  type:'report', data: ro , autoRefresh: false , onBeforeRemove: function(paneObj) {  var ele = $(paneObj._id + '.PANE'); if(ele) ele.src = 'about:blank'; return true;}\t});\n\t\n\t}\n"
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "layout_directive_TabControlEnd",
@@ -1632,6 +1641,13 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=a2e88a59-6b93-4f1f-9150-071c64ae6b92}{I:'vertLineCap'} [Tab Control End - TAB_1] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=a2e88a59-6b93-4f1f-9150-071c64ae6b92}{I:'vertLineCap'} [Tab Control End - TAB_1] �",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "</div>\n</div>\n<!--TAGEND:ad577e3a-903e-440b-8dfb-c4fadd09b899-->\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 6,
                 "v": {
                     "TabControl": {
                         "BreakType": "After",
@@ -1639,14 +1655,7 @@
                         "breakHorizontalSpace": ".1in"
                     },
                     "_displayText": "[Tab Control End - TAB_1]"
-                },
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "</div>\n</div>\n<!--TAGEND:ad577e3a-903e-440b-8dfb-c4fadd09b899-->\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "containerStartIndex": 6
+                }
             },
             {
                 "controlType": "layout_directive_statictext",
@@ -1657,12 +1666,21 @@
                 "displayOD": "{B=White,Light Blue}{Data=3315452d-5b7f-42d5-af10-1ea5c1d573cc}{I:'$$format.text'} [Static Text: Facility & Regional ] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{Data=3315452d-5b7f-42d5-af10-1ea5c1d573cc}{I:'$$format.text'} [Static Text: Facility & Regional ] �",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_3\" title=\"\"  class=\"\" style=\"\"   >Facility & Regional Meetings</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
                     "StaticText": "Facility & Regional Meetings",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "Class": "<Default>",
                     "BreakType": "After",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
+                    "cssGridItemPropertiesJSON": "",
                     "id": "STATICTEXT_3",
                     "labelClass": "<Default>",
                     "labelPosition": "None",
@@ -1671,21 +1689,12 @@
                     "precalc": {
                         "javascriptAbstractSetupCode": ""
                     },
-                    "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[Static Text: Facility & Regional ]"
-                },
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_3\" title=\"\"  class=\"\" style=\"\"   >Facility & Regional Meetings</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
-                },
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "layout_directive_TabControl",
@@ -1697,7 +1706,16 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=d2965fb1-5d82-4eef-934d-367e7c09a955}{I:'$a5_control_tab'} [Tab Control: TAB_4]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=d2965fb1-5d82-4eef-934d-367e7c09a955}{I:'$a5_control_tab'} [Tab Control: TAB_4]",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<!--TAGSTART:d2965fb1-5d82-4eef-934d-367e7c09a955-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_4\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
+                    "controlJS": "window['{grid.componentName}.TAB_4Obj'] = new A5.Accordion('{grid.componentName}.TAB_4',[\n{ \thtml: 'Meetings', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_4Obj'].select(['1']);\n\n"
+                },
+                "childTabPanes": "21\n",
+                "errorInDefinition": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_4",
@@ -1725,8 +1743,6 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,e0e08ba834bc4a52b433593517bc884d,Quality,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator",
                     "showHideExpn": "",
@@ -1742,14 +1758,7 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_4]"
-                },
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<!--TAGSTART:d2965fb1-5d82-4eef-934d-367e7c09a955-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.3in\">\n\t<div id=\"{grid.componentname}.TAB_4\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n",
-                    "controlJS": "window['{grid.componentName}.TAB_4Obj'] = new A5.Accordion('{grid.componentName}.TAB_4',[\n{ \thtml: 'Meetings', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_4Obj'].select(['1']);\n\n"
-                },
-                "childTabPanes": "21\n",
-                "errorInDefinition": false
+                }
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -1761,18 +1770,6 @@
                 "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{Data=7f84b258-f8e9-4e8b-b851-b2c4ef17a312}{I:'$$control.tab.pane'} [TabPane: Meetings]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{B=White,#110+179+236}{F=+B}{Data=7f84b258-f8e9-4e8b-b851-b2c4ef17a312}{I:'$$control.tab.pane'} [TabPane: Meetings]",
-                "v": {
-                    "title": "Meetings",
-                    "tabPane": {
-                        "show": true
-                    },
-                    "javascript": {
-                        "renderChildren": ""
-                    },
-                    "localxbasic": "",
-                    "localjavascript": "",
-                    "_displayText": "[TabPane: Meetings]"
-                },
                 "indentTree": 1,
                 "precalc": {
                     "ControlHTML": "<a id=\"{grid.componentName}.TAB_4.0.TITLE\" class=\"\" href=\"#\">Meetings</a>\n<div id=\"{grid.componentName}.TAB_4.0.PANE\">\n",
@@ -1780,7 +1777,19 @@
                 },
                 "isCollapsed": false,
                 "parentTabIndex": 20,
-                "tabPaneNumber": 1
+                "tabPaneNumber": 1,
+                "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "title": "Meetings",
+                    "tabPane": {
+                        "show": true
+                    },
+                    "javascript": {
+                        "renderChildren": ""
+                    },
+                    "_displayText": "[TabPane: Meetings]"
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -1792,13 +1801,29 @@
                 "displayOD": "{B=White,Light Blue}{Data=cd659e71-f302-4946-a63e-5ad833c4857d}{I:'$$control.html.advButton'} [Tabbed UI Button: Add Meeting (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=cd659e71-f302-4946-a63e-5ad833c4857d}{I:'$$control.html.advButton'} [Tabbed UI Button: Add Meeting (UX Component)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_cd659e71_f302_4946_a63e_5ad833c4857d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add Meeting</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_cd659e71_f302_4946_a63e_5ad833c4857d'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_M_Meeting_Add';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_M_MEETI_11141JFJB';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_M_Meeting_Add', title: 'Add Meeting',  name :'{alias}_UX_M_MEETI_11141JFJB', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "Add Meeting",
                         "actionType": "Component",
                         "paneTitle": "Add Meeting",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -1821,6 +1846,7 @@
                             "gridName": "UX_M_Meeting_Add",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -1874,13 +1900,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -1896,8 +1916,6 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -1907,15 +1925,7 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: Add Meeting (UX Component)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_cd659e71_f302_4946_a63e_5ad833c4857d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add Meeting</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_cd659e71_f302_4946_a63e_5ad833c4857d'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'UX_M_Meeting_Add';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_UX_M_MEETI_152442ECDC';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender; if(flag) { {tabbedUI.alias}Obj.add({objectName: 'UX_M_Meeting_Add', title: 'Add Meeting',  name :'{alias}_UX_M_MEETI_152442ECDC', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "TabbedUIButton",
@@ -1927,13 +1937,29 @@
                 "displayOD": "{B=White,Light Blue}{Data=cc8b4118-4a1b-437d-bdba-24efa9228b53}{I:'$$control.html.advButton'} [Tabbed UI Button: View Meetings (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{Data=cc8b4118-4a1b-437d-bdba-24efa9228b53}{I:'$$control.html.advButton'} [Tabbed UI Button: View Meetings (UX Component)] �",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_cc8b4118_4a1b_437d_bdba_24efa9228b53(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View Meetings</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_cc8b4118_4a1b_437d_bdba_24efa9228b53'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'U_M_Grid';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_U_M_GRID_11141FHHI';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'U_M_Grid', title: 'View Meetings',  name :'{alias}_U_M_GRID_11141FHHI', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
                         "buttonType": "Button",
                         "buttonText": "View Meetings",
                         "actionType": "Component",
                         "paneTitle": "View Meetings",
                         "canClosePane": true,
+                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -1956,6 +1982,7 @@
                             "gridName": "U_M_Grid",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
                             "useMasterStyle": true,
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
                         },
@@ -2009,13 +2036,7 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        },
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
-                        "keyboardshortcutkey": ""
+                        }
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -2031,8 +2052,6 @@
                             "duration": 500
                         }
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -2042,15 +2061,7 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: View Meetings (UX Component)]"
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_cc8b4118_4a1b_437d_bdba_24efa9228b53(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View Meetings</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_cc8b4118_4a1b_437d_bdba_24efa9228b53'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'U_M_Grid';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_U_M_GRID_152442HCFF';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender; if(flag) { {tabbedUI.alias}Obj.add({objectName: 'U_M_Grid', title: 'View Meetings',  name :'{alias}_U_M_GRID_152442HCFF', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "layout_directive_TabControlEnd",
@@ -2061,6 +2072,12 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=642f9cf1-5bf4-4ad5-9173-b7fb961cee93}{I:'vertLineCap'} [Tab Control End - TAB_4] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=642f9cf1-5bf4-4ad5-9173-b7fb961cee93}{I:'vertLineCap'} [Tab Control End - TAB_4] �",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "</div>\n</div>\n<!--TAGEND:d2965fb1-5d82-4eef-934d-367e7c09a955-->\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "isCollapsed": false,
+                "containerStartIndex": 20,
                 "v": {
                     "TabControl": {
                         "BreakType": "After",
@@ -2068,13 +2085,7 @@
                         "breakHorizontalSpace": ".1in"
                     },
                     "_displayText": "[Tab Control End - TAB_4]"
-                },
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "</div>\n</div>\n<!--TAGEND:d2965fb1-5d82-4eef-934d-367e7c09a955-->\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
-                },
-                "isCollapsed": false,
-                "containerStartIndex": 20
+                }
             },
             {
                 "controlType": "layout_directive_FrameBegin",
@@ -2086,29 +2097,29 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=96766b34_26f1_4535_939c_39138792d6ea}{I:'$$control.group'} [Frame: <Links> - FRAME_1]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=96766b34_26f1_4535_939c_39138792d6ea}{I:'$$control.group'} [Frame: <Navigation> - FRAME_1]",
-                "v": {
-                    "FrameTitle": "Navigation",
-                    "Frame": {
-                        "ID": "FRAME_1",
-                        "type": "Simple",
-                        "initialState": "Shown",
-                        "nonFloating": false,
-                        "oneFrameOpenOnly": false
-                    },
-                    "precalc": {
-                        "javascriptAbstractSetupCode": ""
-                    },
-                    "localxbasic": "",
-                    "localjavascript": "",
-                    "cssGridItemPropertiesJSON": "",
-                    "_displayText": "[Frame: <Navigation> - FRAME_1]"
-                },
                 "indentTree": 0,
                 "precalc": {
                     "ControlHTML": "<div class=\"A5container\"      ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_1'-->\n\t<div>\n\t<fieldset id=\"{grid.componentname}FRAME_1\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Navigation</legend>"
                 },
                 "isCollapsed": false,
-                "parentIsCollapsed": false
+                "parentIsCollapsed": false,
+                "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "FrameTitle": "Navigation",
+                    "Frame": {
+                        "ID": "FRAME_1",
+                        "type": "Simple",
+                        "nonFloating": false,
+                        "initialState": "Shown",
+                        "oneFrameOpenOnly": false
+                    },
+                    "cssGridItemPropertiesJSON": "",
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "_displayText": "[Frame: <Navigation> - FRAME_1]"
+                }
             },
             {
                 "controlType": "layout_directive_hyperlink",
@@ -2119,31 +2130,6 @@
                 "displayOD": "{B=White,Light Blue}{Data=e5892003_477c_47b4_a5fb_ffa2bfc4e407}{I:'$$generic.link'} [Hyperlink: Incident / Risk Mgt ] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{Data=e5892003_477c_47b4_a5fb_ffa2bfc4e407}{I:'$$generic.link'} [Hyperlink: Home Page] �",
-                "v": {
-                    "hyperlinkText": "Home Page",
-                    "Class": "<Default>",
-                    "BreakType": "After",
-                    "hyperlinkTextClass": "<Default>",
-                    "href": "FrontPage.a5w",
-                    "id": "HYPERLINK_5",
-                    "precalc": {
-                        "javascriptAbstractSetupCode": ""
-                    },
-                    "labelClass": "<Default>",
-                    "labelPosition": "None",
-                    "labelWidth": "{Global.LabelWidth}",
-                    "labelAlignment": "Left",
-                    "breakHeight": ".1in",
-                    "breakHorizontalSpace": ".1in",
-                    "cssGridItemPropertiesJSON": "",
-                    "info": {
-                        "inRepeatingSection": false
-                    },
-                    "controlContainerStyle": "",
-                    "localxbasic": "",
-                    "localjavascript": "",
-                    "_displayText": "[Hyperlink: Home Page]"
-                },
                 "indentTree": 1,
                 "precalc": {
                     "ControlHTML": "<div class=\"A5container\">\n\t<a id=\"HYPERLINK_5\" title=\"\" href=\"FrontPage.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Home Page</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
@@ -2151,7 +2137,32 @@
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "inPanelCard": false,
-                "inTreeControl": false
+                "inTreeControl": false,
+                "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "hyperlinkText": "Home Page",
+                    "Class": "<Default>",
+                    "BreakType": "After",
+                    "hyperlinkTextClass": "<Default>",
+                    "href": "FrontPage.a5w",
+                    "id": "HYPERLINK_5",
+                    "cssGridItemPropertiesJSON": "",
+                    "labelClass": "<Default>",
+                    "labelPosition": "None",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "info": {
+                        "inRepeatingSection": false
+                    },
+                    "controlContainerStyle": "",
+                    "_displayText": "[Hyperlink: Home Page]"
+                }
             },
             {
                 "controlType": "layout_directive_hyperlink",
@@ -2162,31 +2173,6 @@
                 "displayOD": "{B=White,Light Blue}{Data=c2a1aff8_ad8e_4635_9a50_c6b11566e3a0}{I:'$$generic.link'} [Hyperlink: Incident / Gov / Adm] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{Data=c2a1aff8_ad8e_4635_9a50_c6b11566e3a0}{I:'$$generic.link'} [Hyperlink: Management] �",
-                "v": {
-                    "hyperlinkText": "Management",
-                    "Class": "<Default>",
-                    "BreakType": "After",
-                    "hyperlinkTextClass": "<Default>",
-                    "href": "Home_Page_Admin.a5w",
-                    "id": "HYPERLINK_6",
-                    "precalc": {
-                        "javascriptAbstractSetupCode": ""
-                    },
-                    "labelClass": "<Default>",
-                    "labelPosition": "None",
-                    "labelWidth": "{Global.LabelWidth}",
-                    "labelAlignment": "Left",
-                    "breakHeight": ".1in",
-                    "breakHorizontalSpace": ".1in",
-                    "cssGridItemPropertiesJSON": "",
-                    "info": {
-                        "inRepeatingSection": false
-                    },
-                    "controlContainerStyle": "",
-                    "localxbasic": "",
-                    "localjavascript": "",
-                    "_displayText": "[Hyperlink: Management]"
-                },
                 "indentTree": 1,
                 "precalc": {
                     "ControlHTML": "<div class=\"A5container\">\n\t<a id=\"HYPERLINK_6\" title=\"\" href=\"Home_Page_Admin.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Management</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
@@ -2194,7 +2180,32 @@
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "inPanelCard": false,
-                "inTreeControl": false
+                "inTreeControl": false,
+                "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "hyperlinkText": "Management",
+                    "Class": "<Default>",
+                    "BreakType": "After",
+                    "hyperlinkTextClass": "<Default>",
+                    "href": "Home_Page_Admin.a5w",
+                    "id": "HYPERLINK_6",
+                    "cssGridItemPropertiesJSON": "",
+                    "labelClass": "<Default>",
+                    "labelPosition": "None",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "info": {
+                        "inRepeatingSection": false
+                    },
+                    "controlContainerStyle": "",
+                    "_displayText": "[Hyperlink: Management]"
+                }
             },
             {
                 "controlType": "layout_directive_hyperlink",
@@ -2205,31 +2216,6 @@
                 "displayOD": "{B=White,Light Blue}{Data=b3b39f42_0c00_4a49_8684_398abea2ef6c}{I:'$$generic.link'} [Hyperlink: Log out] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{Data=b3b39f42_0c00_4a49_8684_398abea2ef6c}{I:'$$generic.link'} [Hyperlink: Log out] �",
-                "v": {
-                    "hyperlinkText": "Log out",
-                    "Class": "<Default>",
-                    "BreakType": "After",
-                    "hyperlinkTextClass": "<Default>",
-                    "href": "Logout.a5w",
-                    "id": "HYPERLINK_7",
-                    "precalc": {
-                        "javascriptAbstractSetupCode": ""
-                    },
-                    "labelClass": "<Default>",
-                    "labelPosition": "None",
-                    "labelWidth": "{Global.LabelWidth}",
-                    "labelAlignment": "Left",
-                    "breakHeight": ".1in",
-                    "breakHorizontalSpace": ".1in",
-                    "cssGridItemPropertiesJSON": "",
-                    "info": {
-                        "inRepeatingSection": false
-                    },
-                    "controlContainerStyle": "",
-                    "localxbasic": "",
-                    "localjavascript": "",
-                    "_displayText": "[Hyperlink: Log out]"
-                },
                 "indentTree": 1,
                 "precalc": {
                     "ControlHTML": "<div class=\"A5container\">\n\t<a id=\"HYPERLINK_7\" title=\"\" href=\"Logout.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"\"   >Log out</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
@@ -2237,7 +2223,32 @@
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "inPanelCard": false,
-                "inTreeControl": false
+                "inTreeControl": false,
+                "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "hyperlinkText": "Log out",
+                    "Class": "<Default>",
+                    "BreakType": "After",
+                    "hyperlinkTextClass": "<Default>",
+                    "href": "Logout.a5w",
+                    "id": "HYPERLINK_7",
+                    "cssGridItemPropertiesJSON": "",
+                    "labelClass": "<Default>",
+                    "labelPosition": "None",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "info": {
+                        "inRepeatingSection": false
+                    },
+                    "controlContainerStyle": "",
+                    "_displayText": "[Hyperlink: Log out]"
+                }
             },
             {
                 "controlType": "layout_directive_FrameEnd",
@@ -2248,6 +2259,13 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=648e5db6_2ebd_40cd_8c8d_7f4eb106cf17}{I:'vertLineCap'} [Frame End - FRAME_1] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=648e5db6_2ebd_40cd_8c8d_7f4eb106cf17}{I:'vertLineCap'} [Frame End - FRAME_1] �",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 25,
                 "v": {
                     "Frame": {
                         "BreakType": "After",
@@ -2255,14 +2273,7 @@
                         "breakHorizontalSpace": ".1in"
                     },
                     "_displayText": "[Frame End - FRAME_1]"
-                },
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "containerStartIndex": 25
+                }
             }
         ],
         "builderType": "TabbedUI",
@@ -2296,7 +2307,7 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "209",
+        "_buildCount": "210",
         "securityEnabled": true,
         "showHideIsUsed": true,
         "precalc": {
@@ -2316,7 +2327,7 @@
         "alias": "tbi",
         "flagForcerecalc": false,
         "linkedResources": "",
-        "A5SaveTimeStamp": "20240215154123535",
+        "A5SaveTimeStamp": "20240426135739272",
         "forceChromeControl": true,
         "flagOptimizedUXTree": false,
         "flagReanalyzeContainers": false,
