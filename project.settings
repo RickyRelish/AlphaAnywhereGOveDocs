@@ -36,7 +36,7 @@
 >
 <profiles<[1]<name="Development">
 <publishing_type="Publish to Alpha Cloud">
-<alphaCloud<settings="VXNlcgkNClBhc3N3b3JkCQ0KTWV0aG9kCUFkdmFuY2VkDQpDdXN0b21lck5hbWUJQ0lNIEFwcGxpY2F0aW9ucw0KU3Vic2NyaXB0aW9uTmFtZQlDSU0gQXBwbGljYXRpb25zDQpBY2NvdW50TmFtZQlQcmltYXJ5DQpBcHBsaWNhdGlvbk5hbWUJR09WX0RvY3VtZXRuX0FwcGxpY2F0aW9uDQpEZXBsb3lPblB1Ymxpc2gJVHJ1ZQ0KRGVwbG95bWVudE5hbWUJRGV2ZWxvcG1lbnQNClNlY3VyaXR5QXBwbGljYXRpb25OYW1lCQ0KV2ViU2l0ZU5hbWUJSU1TLUdPVkRPQ1MtREVWDQpVUkxBcHBsaWNhdGlvblBhdGgJLw0KU2VjdXJpdHlQdWJsaXNoT3B0aW9uCU1lcmdlDQpBcHBsaWNhdGlvbkxvZ2dpbmdPcHRpb24JQmFzaWMNCkFscGhhU2VydmVyQnVpbGRJZAljMjVkMjM3ZC1iZThhLTExZWQtYmQzYS0xMjM5YWU3ZDdjMzENCkxpdmVUZXN0VGltZUluSG91cnMJMg0K">
+<alphaCloud<settings="VXNlcgkNClBhc3N3b3JkCQ0KTWV0aG9kCUFkdmFuY2VkDQpDdXN0b21lck5hbWUJQ0lNIEFwcGxpY2F0aW9ucw0KU3Vic2NyaXB0aW9uTmFtZQlDSU0gQXBwbGljYXRpb25zDQpBY2NvdW50TmFtZQlQcmltYXJ5DQpBcHBsaWNhdGlvbk5hbWUJR09WX0RvY3VtZXRuX0FwcGxpY2F0aW9uDQpEZXBsb3lPblB1Ymxpc2gJVHJ1ZQ0KRGVwbG95bWVudE5hbWUJRGV2ZWxvcG1lbnQNClNlY3VyaXR5QXBwbGljYXRpb25OYW1lCQ0KV2ViU2l0ZU5hbWUJSU1TLUdPVkRPQ1MtREVWDQpVUkxBcHBsaWNhdGlvblBhdGgJLw0KU2VjdXJpdHlQdWJsaXNoT3B0aW9uCU1lcmdlDQpBcHBsaWNhdGlvbkxvZ2dpbmdPcHRpb24JQmFzaWMNCkFscGhhU2VydmVyQnVpbGRJZAk2OTA2MmVkMS1jNDJhLTExZWUtOTI5NS0xMjM5YWU3ZDdjMzENCkxpdmVUZXN0VGltZUluSG91cnMJMg0K">
 >
 <local<target_folder="">
 >
@@ -116,6 +116,8 @@
 <publishDifferentThanConfiguration=.F.>
 <version="2.0.0.0">
 <hashAlgorithm="SHA1">
+<providerClassParameters<[1]>
+>
 >
 <role<type="SameAsMembershipProvider">
 <connectionString="">
@@ -130,6 +132,8 @@
 <publishDataSource="SQLServer">
 <publishDifferentThanConfiguration=.F.>
 <version="">
+<providerClassParameters<[1]>
+>
 >
 <sessionState<type="LocalStateServer">
 <connectionString="">
@@ -148,6 +152,8 @@
 <storageConnectionString="">
 <version="">
 <storageScope="Only this application">
+<providerClassParameters<[1]>
+>
 >
 <profile<type="None">
 <connectionString="">
@@ -162,11 +168,15 @@
 <publishDataSource="SQLServer">
 <publishDifferentThanConfiguration=.F.>
 <version="">
+<providerClassParameters<[1]>
+>
 >
 >
 <stackOptions<enabled=.F.>
 <sizeInKb=8388>
 >
+<zeroDeployInited=.F.>
+<zeroDeployForLocalTesting=.F.>
 >
 <db<publish=.F.>
 <path="">
@@ -224,6 +234,12 @@
 >
 >
 %str%>
+<PublishLock as c="">
+<PublishLockPassword as c="">
+<securityStoreType="BuiltInSecurityTables">
+<ADOConnectionStrings="">
+<StorageConnectionStrings="">
+<websocket>
 <activeDirectory<name="">
 <serverName="">
 <userId="">
@@ -231,15 +247,10 @@
 <connectionString="">
 <useImpersonation=.F.>
 >
-<PublishLock as c="">
-<PublishLockPassword as c="">
-<securityStoreType="BuiltInSecurityTables">
-<ADOConnectionStrings="">
-<StorageConnectionStrings="">
 >
 <[2]<name="Production">
 <publishing_type="Publish to Alpha Cloud">
-<alphaCloud<settings="VXNlcgkNClBhc3N3b3JkCQ0KTWV0aG9kCUFkdmFuY2VkDQpDdXN0b21lck5hbWUJQ0lNIEFwcGxpY2F0aW9ucw0KU3Vic2NyaXB0aW9uTmFtZQlDSU0gQXBwbGljYXRpb25zDQpBY2NvdW50TmFtZQlQcmltYXJ5DQpBcHBsaWNhdGlvbk5hbWUJR09WX0RvY3VtZXRuX0FwcGxpY2F0aW9uDQpEZXBsb3lPblB1Ymxpc2gJVHJ1ZQ0KRGVwbG95bWVudE5hbWUJUHJvZHVjdGlvbg0KU2VjdXJpdHlBcHBsaWNhdGlvbk5hbWUJDQpXZWJTaXRlTmFtZQlJTVMtR09WRE9DUw0KVVJMQXBwbGljYXRpb25QYXRoCS8NClNlY3VyaXR5UHVibGlzaE9wdGlvbglQcmVzZXJ2ZQ0KQXBwbGljYXRpb25Mb2dnaW5nT3B0aW9uCUJhc2ljDQpBbHBoYVNlcnZlckJ1aWxkSWQJYzI1ZDIzN2QtYmU4YS0xMWVkLWJkM2EtMTIzOWFlN2Q3YzMxDQpMaXZlVGVzdFRpbWVJbkhvdXJzCTINCg==">
+<alphaCloud<settings="VXNlcgkNClBhc3N3b3JkCQ0KTWV0aG9kCUFkdmFuY2VkDQpDdXN0b21lck5hbWUJQ0lNIEFwcGxpY2F0aW9ucw0KU3Vic2NyaXB0aW9uTmFtZQlDSU0gQXBwbGljYXRpb25zDQpBY2NvdW50TmFtZQlQcmltYXJ5DQpBcHBsaWNhdGlvbk5hbWUJR09WX0RvY3VtZXRuX0FwcGxpY2F0aW9uDQpEZXBsb3lPblB1Ymxpc2gJVHJ1ZQ0KRGVwbG95bWVudE5hbWUJUHJvZHVjdGlvbg0KU2VjdXJpdHlBcHBsaWNhdGlvbk5hbWUJDQpXZWJTaXRlTmFtZQlJTVMtR09WRE9DUw0KVVJMQXBwbGljYXRpb25QYXRoCS8NClNlY3VyaXR5UHVibGlzaE9wdGlvbglQcmVzZXJ2ZQ0KQXBwbGljYXRpb25Mb2dnaW5nT3B0aW9uCUJhc2ljDQpBbHBoYVNlcnZlckJ1aWxkSWQJNjkwNjJlZDEtYzQyYS0xMWVlLTkyOTUtMTIzOWFlN2Q3YzMxDQpMaXZlVGVzdFRpbWVJbkhvdXJzCTINCg==">
 >
 <local<target_folder="">
 >
@@ -317,7 +328,10 @@
 <publishAlphaDAOConnectionString="">
 <publishDataSource="SQLServer">
 <publishDifferentThanConfiguration=.F.>
-<version="">
+<version="2.0.0.0">
+<providerClassParameters<[1]>
+>
+<hashAlgorithm="SHA1">
 >
 <role<type="SameAsMembershipProvider">
 <connectionString="">
@@ -331,6 +345,9 @@
 <publishAlphaDAOConnectionString="">
 <publishDataSource="SQLServer">
 <publishDifferentThanConfiguration=.F.>
+<providerClassParameters<[1]>
+>
+<version="">
 >
 <sessionState<type="LocalStateServer">
 <connectionString="">
@@ -347,6 +364,10 @@
 <jitLocking=.F.>
 <storageType="In Session Provider">
 <storageConnectionString="">
+<providerClassParameters<[1]>
+>
+<version="">
+<storageScope="Only this application">
 >
 <profile<type="None">
 <connectionString="">
@@ -360,11 +381,16 @@
 <publishAlphaDAOConnectionString="">
 <publishDataSource="SQLServer">
 <publishDifferentThanConfiguration=.F.>
+<providerClassParameters<[1]>
+>
+<version="">
 >
 >
 <stackOptions<enabled=.F.>
 <sizeInKb=8388>
 >
+<zeroDeployInited=.F.>
+<zeroDeployForLocalTesting=.F.>
 >
 <db<publish=.F.>
 <path="">
@@ -385,6 +411,7 @@
 <EnableServiceDiscoveryEndpoint=.F.>
 <DefaultLaunchBrowserAfterFilesArePublished=.F.>
 <DefaultValueCreateAEX=.F.>
+<DefaultValueCreateAEX as l=.F.>
 >
 <PublishLock="">
 <PublishLockPassword="">
@@ -394,17 +421,11 @@
 <PublishSelectedOnly=.F.>
 <UseInBuilders=.F.>
 <CreateAEX=.F.>
+<CreateAEX as  l=.F.>
 >
 <alphalaunch<url="">
 >
 <publishADConfiguration=.F.>
-<activeDirectory<name="">
-<serverName="">
-<userId="">
-<password="">
-<connectionString="">
-<useImpersonation=.F.>
->
 <securityStore<connectionString="">
 <connectionStringName="">
 <applicationName="/">
@@ -429,6 +450,18 @@
 %str%>
 <ADOConnectionStrings="">
 <StorageConnectionStrings="">
+<activeDirectory<name="">
+<serverName="">
+<userId="">
+<password="">
+<connectionString="">
+<useImpersonation=.F.>
+>
+<websocket>
+<PublishLock as c="">
+<PublishLockPassword as c="">
+<securityStoreType="BuiltInSecurityTables">
 >
 >
 <lastbutton="Cancel">
+<activeDirectory>
