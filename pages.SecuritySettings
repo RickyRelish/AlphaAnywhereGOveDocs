@@ -3261,6 +3261,31 @@
 		"groups": ""
 	},
 	{
+		"page": "1_SQL_IncidnetformComms.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_SQL_Securityform_Comms.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_SQL_SecurityStaff_Comms.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_SQL_Infection_Comms.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "1_SQL_Feedback_Comms.a5rpt",
+		"action": "allow",
+		"groups": ""
+	},
+	{
 		"page": "robots.txt",
 		"action": "allow",
 		"groups": ""
