@@ -39,6 +39,7 @@
             "onAjaxCallbackFailed": "",
             "onAjaxCallbackNotAvailable": "",
             "onAjaxCallbackNotAllowed": "",
+            "onBeforeCreate": "",
             "onServerSideEventHandlerError": "",
             "onFieldValidationError": "",
             "beforePrepare": "",
@@ -53,6 +54,7 @@
             "afterRptSectionRowDelete": "",
             "onStateChange": "",
             "onDataStateChange": "",
+            "afterControlBasedOnClientSideDataCacheRefreshed": "",
             "onControlFocus": "",
             "onRptSectionFocus": "",
             "onRptSectionRowChange": "",
@@ -62,6 +64,7 @@
             "afterRecordNavigate": "",
             "onSynchronizeDialog": "",
             "afterPopulateFromTable": "",
+            "afterPopulateNewRecord": "",
             "onRenderComplete": "",
             "onAndroidBackButton": "",
             "onPanelActivate": "",
@@ -81,6 +84,7 @@
             "beforeOnTimer": "",
             "canLogin": "",
             "afterLogin": "",
+            "afterCordovaLoginWithGoogle": "",
             "afterFailedLogin": "",
             "canLogout": "",
             "afterLogout": "",
@@ -96,6 +100,7 @@
             "appCache_obsolete": "",
             "appCache_progress": "",
             "appCache_updateready": "",
+            "onOAuthCompleted": "",
             "onControlBlur": "",
             "onControlChange": "",
             "onBeforePersistControlValuesToLocalStorage": "",
@@ -109,15 +114,10 @@
             "webSocketOnMessage": "",
             "webSocketServerClose": "",
             "webSocketSendMessageFail": "",
+            "onOAuthAuthorize": "",
             "afterGoogleAddressSelect": "",
             "onBeforeClientSideDataCacheRead": "",
             "afterClientSideDataCacheAjaxCallback": "",
-            "onBeforeCreate": "",
-            "afterControlBasedOnClientSideDataCacheRefreshed": "",
-            "afterPopulateNewRecord": "",
-            "afterCordovaLoginWithGoogle": "",
-            "onOAuthCompleted": "",
-            "onOAuthAuthorize": "",
             "onWatchEvent": "",
             "onWindowResize": "",
             "onPusherMessage": "",
@@ -173,6 +173,7 @@
             },
             "computeDataBindingEveryTimeComponentIsSaved": true,
             "flagBindToJSONForm": false,
+            "auto_define_jsonform": false,
             "tableType": "SQL",
             "connectionString": "::Name::Connection3",
             "tables": [
@@ -186,12 +187,12 @@
                     "primaryKeyFields": "ID",
                     "primaryKeyIsAutoIncrement": true,
                     "sequenceName": "",
-                    "tableInfo": "ID=N|T|T|Integer32|!!|ID\nFirst_name=C|F|T|NationalCharacter|!!|First_name\nSurname=C|F|T|NationalCharacter|!!|Surname\nDate=D|F|T|Date|!!|Date\nTime=T|F|T|SmallDateTime|!!|Time\nResident_Missing=L|F|T|Boolean|!!|Resident_Missing\nVehicle_Accident=L|F|T|Boolean|!!|Vehicle_Accident\nTheft=L|F|T|Boolean|!!|Theft\nBodily_Injury=L|F|T|Boolean|!!|Bodily_Injury\nFire=L|F|T|Boolean|!!|Fire\nProperty_Damage=L|F|T|Boolean|!!|Property_Damage\nBomb_Threat=L|F|T|Boolean|!!|Bomb_Threat\nUnexplained_Disruption=L|F|T|Boolean|!!|Unexplained_Disruption\nOther_Security=L|F|T|Boolean|!!|Other_Security\nPhysical_Assault=L|F|T|Boolean|!!|Physical_Assault\nUse_of_Weapon=L|F|T|Boolean|!!|Use_of_Weapon\nScratching_Pinching=L|F|T|Boolean|!!|Scratching_Pinching\nBiting=L|F|T|Boolean|!!|Biting\nOther_Violence=L|F|T|Boolean|!!|Other_Violence\nVerbal_Abuse=L|F|T|Boolean|!!|Verbal_Abuse\nIntimidating_Behavior=L|F|T|Boolean|!!|Intimidating_Behavior\nPhysical_Threatening=L|F|T|Boolean|!!|Physical_Threatening\nSexual_Harrassment=L|F|T|Boolean|!!|Sexual_Harrassment\nDiscrimination_Bullying=L|F|T|Boolean|!!|Discrimination_Bullying\nStalking=L|F|T|Boolean|!!|Stalking\nSPitting=L|F|T|Boolean|!!|SPitting\nOther_Aggression=L|F|T|Boolean|!!|Other_Aggression\nAgression_Details=C|F|T|VaryingCharacter|!!|Agression_Details\nInjury_to_Resident=C|F|T|VaryingCharacter|!!|Injury_to_Resident\nInjury_to_Staff=C|F|T|VaryingCharacter|!!|Injury_to_Staff\nLocation_Details=C|F|T|VaryingCharacter|!!|Location_Details\nDescription=C|F|F|VaryingCharacter|!!|Description\nReported_to_RN=L|F|T|Boolean|!!|Reported_to_RN\nReported_to_Police=L|F|T|Boolean|!!|Reported_to_Police\nPolice_Details=C|F|F|VaryingCharacter|!!|Police_Details\nImmediate_Action_Taken=C|F|F|VaryingCharacter|!!|Immediate_Action_Taken\nPerson_Completing_Name=C|F|T|VaryingCharacter|!!|Person_Completing_Name\nPerson_Completing_Surname=C|F|T|VaryingCharacter|!!|Person_Completing_Surname\nSIRS_Criteria=C|F|T|VaryingCharacter|!!|SIRS_Criteria\nSIRS_CAT=C|F|T|VaryingCharacter|!!|SIRS_CAT\nSIRS_Submitted=C|F|T|VaryingCharacter|!!|SIRS_Submitted\nAdditonal_Notes=L|F|T|Boolean|!!|Additonal_Notes\nLocation=C|F|T|Character|!!|Location\nAreaC=C|F|T|VaryingCharacter|!!|AreaC\nIncidentType=C|F|T|VaryingCharacter|!!|IncidentType\nType=C|F|T|VaryingCharacter|!!|Type\nRN_Name=C|F|T|VaryingCharacter|!!|RN_Name\nRN_Surname=C|F|T|VaryingCharacter|!!|RN_Surname\nEmail1=C|F|T|VaryingCharacter|!!|Email1\nEmial2=C|F|T|VaryingCharacter|!!|Emial2\nEmail3=C|F|T|VaryingCharacter|!!|Email3\nEmail4=C|F|T|VaryingCharacter|!!|Email4\nEmail5=C|F|T|VaryingCharacter|!!|Email5\nReviewer_Name=C|F|T|VaryingCharacter|!!|Reviewer_Name\nReviewer_Surname=C|F|T|VaryingCharacter|!!|Reviewer_Surname\nReview_Date=D|F|T|Date|!!|Review_Date\nISR_Degre=N|F|T|Number|!!|ISR_Degre\nISR_Care=N|F|T|Number|!!|ISR_Care\nISR_Treatment=N|F|T|Number|!!|ISR_Treatment\nISR_Severity_Score=N|F|T|Number|!!|ISR_Severity_Score\nOutcome=C|F|F|VaryingCharacter|!!|Outcome\nReoccurance=C|F|F|VaryingCharacter|!!|Reoccurance\nStatus=C|F|T|VaryingCharacter|!!|Status\nEmail_HR=C|F|T|VaryingCharacter|!!|Email_HR\nEmail_OP=C|F|T|VaryingCharacter|!!|Email_OP\nEmail_CEO=C|F|T|VaryingCharacter|!!|Email_CEO\nEmail_Risk=C|F|T|VaryingCharacter|!!|Email_Risk\nInvolves_Staff=L|F|T|Boolean|!!|Involves_Staff\nInvolves_Resident=L|F|T|Boolean|!!|Involves_Resident\nInvolves_Visitor=L|F|T|Boolean|!!|Involves_Visitor\nInvolves_Contractor=L|F|T|Boolean|!!|Involves_Contractor\nInvolves_Volunteer=L|F|T|Boolean|!!|Involves_Volunteer\nInvolves_Other=L|F|T|Boolean|!!|Involves_Other\nResident_to_Resident=L|F|T|Boolean|!!|Resident_to_Resident\nResident_to_Staff=L|F|T|Boolean|!!|Resident_to_Staff\nStaff_Only=L|F|T|Boolean|!!|Staff_Only\nResident_VIsitors=L|F|T|Boolean|!!|Resident_VIsitors\nInvolves_Others=L|F|T|Boolean|!!|Involves_Others\nStaff_to_Resident=L|F|T|Boolean|!!|Staff_to_Resident\nResident_Only=L|F|T|Boolean|!!|Resident_Only\nDeleted=L|F|T|Boolean|!!|Deleted\n",
-                    "UpdateWhereClause": "{ID}=ID = :old_ID\n{First_name}=(First_name = :old_First_name OR First_name IS NULL AND :old_First_name IS NULL)\n{Surname}=(Surname = :old_Surname OR Surname IS NULL AND :old_Surname IS NULL)\n{Date}=([Date] = :old_Date OR [Date] IS NULL AND :old_Date IS NULL)\n{Time}=([Time] = :old_Time OR [Time] IS NULL AND :old_Time IS NULL)\n{Resident_Missing}=(Resident_Missing = :old_Resident_Missing OR Resident_Missing IS NULL AND :old_Resident_Missing IS NULL)\n{Vehicle_Accident}=(Vehicle_Accident = :old_Vehicle_Accident OR Vehicle_Accident IS NULL AND :old_Vehicle_Accident IS NULL)\n{Theft}=(Theft = :old_Theft OR Theft IS NULL AND :old_Theft IS NULL)\n{Bodily_Injury}=(Bodily_Injury = :old_Bodily_Injury OR Bodily_Injury IS NULL AND :old_Bodily_Injury IS NULL)\n{Fire}=(Fire = :old_Fire OR Fire IS NULL AND :old_Fire IS NULL)\n{Property_Damage}=(Property_Damage = :old_Property_Damage OR Property_Damage IS NULL AND :old_Property_Damage IS NULL)\n{Bomb_Threat}=(Bomb_Threat = :old_Bomb_Threat OR Bomb_Threat IS NULL AND :old_Bomb_Threat IS NULL)\n{Unexplained_Disruption}=(Unexplained_Disruption = :old_Unexplained_Disruption OR Unexplained_Disruption IS NULL AND :old_Unexplained_Disruption IS NULL)\n{Other_Security}=(Other_Security = :old_Other_Security OR Other_Security IS NULL AND :old_Other_Security IS NULL)\n{Physical_Assault}=(Physical_Assault = :old_Physical_Assault OR Physical_Assault IS NULL AND :old_Physical_Assault IS NULL)\n{Use_of_Weapon}=(Use_of_Weapon = :old_Use_of_Weapon OR Use_of_Weapon IS NULL AND :old_Use_of_Weapon IS NULL)\n{Scratching_Pinching}=(Scratching_Pinching = :old_Scratching_Pinching OR Scratching_Pinching IS NULL AND :old_Scratching_Pinching IS NULL)\n{Biting}=(Biting = :old_Biting OR Biting IS NULL AND :old_Biting IS NULL)\n{Other_Violence}=(Other_Violence = :old_Other_Violence OR Other_Violence IS NULL AND :old_Other_Violence IS NULL)\n{Verbal_Abuse}=(Verbal_Abuse = :old_Verbal_Abuse OR Verbal_Abuse IS NULL AND :old_Verbal_Abuse IS NULL)\n{Intimidating_Behavior}=(Intimidating_Behavior = :old_Intimidating_Behavior OR Intimidating_Behavior IS NULL AND :old_Intimidating_Behavior IS NULL)\n{Physical_Threatening}=(Physical_Threatening = :old_Physical_Threatening OR Physical_Threatening IS NULL AND :old_Physical_Threatening IS NULL)\n{Sexual_Harrassment}=(Sexual_Harrassment = :old_Sexual_Harrassment OR Sexual_Harrassment IS NULL AND :old_Sexual_Harrassment IS NULL)\n{Discrimination_Bullying}=(Discrimination_Bullying = :old_Discrimination_Bullying OR Discrimination_Bullying IS NULL AND :old_Discrimination_Bullying IS NULL)\n{Stalking}=(Stalking = :old_Stalking OR Stalking IS NULL AND :old_Stalking IS NULL)\n{SPitting}=(SPitting = :old_SPitting OR SPitting IS NULL AND :old_SPitting IS NULL)\n{Other_Aggression}=(Other_Aggression = :old_Other_Aggression OR Other_Aggression IS NULL AND :old_Other_Aggression IS NULL)\n{Agression_Details}=(Agression_Details = :old_Agression_Details OR Agression_Details IS NULL AND :old_Agression_Details IS NULL)\n{Injury_to_Resident}=(Injury_to_Resident = :old_Injury_to_Resident OR Injury_to_Resident IS NULL AND :old_Injury_to_Resident IS NULL)\n{Injury_to_Staff}=(Injury_to_Staff = :old_Injury_to_Staff OR Injury_to_Staff IS NULL AND :old_Injury_to_Staff IS NULL)\n{Location_Details}=(Location_Details = :old_Location_Details OR Location_Details IS NULL AND :old_Location_Details IS NULL)\n{Description}=(Description = :old_Description OR Description IS NULL AND :old_Description IS NULL)\n{Reported_to_RN}=(Reported_to_RN = :old_Reported_to_RN OR Reported_to_RN IS NULL AND :old_Reported_to_RN IS NULL)\n{Reported_to_Police}=(Reported_to_Police = :old_Reported_to_Police OR Reported_to_Police IS NULL AND :old_Reported_to_Police IS NULL)\n{Police_Details}=(Police_Details = :old_Police_Details OR Police_Details IS NULL AND :old_Police_Details IS NULL)\n{Immediate_Action_Taken}=(Immediate_Action_Taken = :old_Immediate_Action_Taken OR Immediate_Action_Taken IS NULL AND :old_Immediate_Action_Taken IS NULL)\n{Person_Completing_Name}=(Person_Completing_Name = :old_Person_Completing_Name OR Person_Completing_Name IS NULL AND :old_Person_Completing_Name IS NULL)\n{Person_Completing_Surname}=(Person_Completing_Surname = :old_Person_Completing_Surname OR Person_Completing_Surname IS NULL AND :old_Person_Completing_Surname IS NULL)\n{SIRS_Criteria}=(SIRS_Criteria = :old_SIRS_Criteria OR SIRS_Criteria IS NULL AND :old_SIRS_Criteria IS NULL)\n{SIRS_CAT}=(SIRS_CAT = :old_SIRS_CAT OR SIRS_CAT IS NULL AND :old_SIRS_CAT IS NULL)\n{SIRS_Submitted}=(SIRS_Submitted = :old_SIRS_Submitted OR SIRS_Submitted IS NULL AND :old_SIRS_Submitted IS NULL)\n{Additonal_Notes}=(Additonal_Notes = :old_Additonal_Notes OR Additonal_Notes IS NULL AND :old_Additonal_Notes IS NULL)\n{Location}=(Location = :old_Location OR Location IS NULL AND :old_Location IS NULL)\n{AreaC}=(AreaC = :old_AreaC OR AreaC IS NULL AND :old_AreaC IS NULL)\n{IncidentType}=(IncidentType = :old_IncidentType OR IncidentType IS NULL AND :old_IncidentType IS NULL)\n{Type}=([Type] = :old_Type OR [Type] IS NULL AND :old_Type IS NULL)\n{RN_Name}=(RN_Name = :old_RN_Name OR RN_Name IS NULL AND :old_RN_Name IS NULL)\n{RN_Surname}=(RN_Surname = :old_RN_Surname OR RN_Surname IS NULL AND :old_RN_Surname IS NULL)\n{Email1}=(Email1 = :old_Email1 OR Email1 IS NULL AND :old_Email1 IS NULL)\n{Emial2}=(Emial2 = :old_Emial2 OR Emial2 IS NULL AND :old_Emial2 IS NULL)\n{Email3}=(Email3 = :old_Email3 OR Email3 IS NULL AND :old_Email3 IS NULL)\n{Email4}=(Email4 = :old_Email4 OR Email4 IS NULL AND :old_Email4 IS NULL)\n{Email5}=(Email5 = :old_Email5 OR Email5 IS NULL AND :old_Email5 IS NULL)\n{Reviewer_Name}=(Reviewer_Name = :old_Reviewer_Name OR Reviewer_Name IS NULL AND :old_Reviewer_Name IS NULL)\n{Reviewer_Surname}=(Reviewer_Surname = :old_Reviewer_Surname OR Reviewer_Surname IS NULL AND :old_Reviewer_Surname IS NULL)\n{Review_Date}=(Review_Date = :old_Review_Date OR Review_Date IS NULL AND :old_Review_Date IS NULL)\n{ISR_Degre}=(ISR_Degre = :old_ISR_Degre OR ISR_Degre IS NULL AND :old_ISR_Degre IS NULL)\n{ISR_Care}=(ISR_Care = :old_ISR_Care OR ISR_Care IS NULL AND :old_ISR_Care IS NULL)\n{ISR_Treatment}=(ISR_Treatment = :old_ISR_Treatment OR ISR_Treatment IS NULL AND :old_ISR_Treatment IS NULL)\n{ISR_Severity_Score}=(ISR_Severity_Score = :old_ISR_Severity_Score OR ISR_Severity_Score IS NULL AND :old_ISR_Severity_Score IS NULL)\n{Outcome}=(Outcome = :old_Outcome OR Outcome IS NULL AND :old_Outcome IS NULL)\n{Reoccurance}=(Reoccurance = :old_Reoccurance OR Reoccurance IS NULL AND :old_Reoccurance IS NULL)\n{Status}=(Status = :old_Status OR Status IS NULL AND :old_Status IS NULL)\n{Email_HR}=(Email_HR = :old_Email_HR OR Email_HR IS NULL AND :old_Email_HR IS NULL)\n{Email_OP}=(Email_OP = :old_Email_OP OR Email_OP IS NULL AND :old_Email_OP IS NULL)\n{Email_CEO}=(Email_CEO = :old_Email_CEO OR Email_CEO IS NULL AND :old_Email_CEO IS NULL)\n{Email_Risk}=(Email_Risk = :old_Email_Risk OR Email_Risk IS NULL AND :old_Email_Risk IS NULL)\n{Involves_Staff}=(Involves_Staff = :old_Involves_Staff OR Involves_Staff IS NULL AND :old_Involves_Staff IS NULL)\n{Involves_Resident}=(Involves_Resident = :old_Involves_Resident OR Involves_Resident IS NULL AND :old_Involves_Resident IS NULL)\n{Involves_Visitor}=(Involves_Visitor = :old_Involves_Visitor OR Involves_Visitor IS NULL AND :old_Involves_Visitor IS NULL)\n{Involves_Contractor}=(Involves_Contractor = :old_Involves_Contractor OR Involves_Contractor IS NULL AND :old_Involves_Contractor IS NULL)\n{Involves_Volunteer}=(Involves_Volunteer = :old_Involves_Volunteer OR Involves_Volunteer IS NULL AND :old_Involves_Volunteer IS NULL)\n{Involves_Other}=(Involves_Other = :old_Involves_Other OR Involves_Other IS NULL AND :old_Involves_Other IS NULL)\n{Resident_to_Resident}=(Resident_to_Resident = :old_Resident_to_Resident OR Resident_to_Resident IS NULL AND :old_Resident_to_Resident IS NULL)\n{Resident_to_Staff}=(Resident_to_Staff = :old_Resident_to_Staff OR Resident_to_Staff IS NULL AND :old_Resident_to_Staff IS NULL)\n{Staff_Only}=(Staff_Only = :old_Staff_Only OR Staff_Only IS NULL AND :old_Staff_Only IS NULL)\n{Resident_VIsitors}=(Resident_VIsitors = :old_Resident_VIsitors OR Resident_VIsitors IS NULL AND :old_Resident_VIsitors IS NULL)\n{Involves_Others}=(Involves_Others = :old_Involves_Others OR Involves_Others IS NULL AND :old_Involves_Others IS NULL)\n{Staff_to_Resident}=(Staff_to_Resident = :old_Staff_to_Resident OR Staff_to_Resident IS NULL AND :old_Staff_to_Resident IS NULL)\n{Resident_Only}=(Resident_Only = :old_Resident_Only OR Resident_Only IS NULL AND :old_Resident_Only IS NULL)\n{Deleted}=(Deleted = :old_Deleted OR Deleted IS NULL AND :old_Deleted IS NULL)\n",
+                    "tableInfo": "ID=N|T|T|Integer32|!!|ID\nFirst_name=C|F|T|VaryingCharacter|!!|First_name\nSurname=C|F|T|VaryingCharacter|!!|Surname\nDate=D|F|T|Date|!!|Date\nTime=T|F|T|SmallDateTime|!!|Time\nResident_Missing=L|F|T|Boolean|!!|Resident_Missing\nVehicle_Accident=L|F|T|Boolean|!!|Vehicle_Accident\nTheft=L|F|T|Boolean|!!|Theft\nBodily_Injury=L|F|T|Boolean|!!|Bodily_Injury\nFire=L|F|T|Boolean|!!|Fire\nProperty_Damage=L|F|T|Boolean|!!|Property_Damage\nBomb_Threat=L|F|T|Boolean|!!|Bomb_Threat\nUnexplained_Disruption=L|F|T|Boolean|!!|Unexplained_Disruption\nOther_Security=L|F|T|Boolean|!!|Other_Security\nPhysical_Assault=L|F|T|Boolean|!!|Physical_Assault\nUse_of_Weapon=L|F|T|Boolean|!!|Use_of_Weapon\nScratching_Pinching=L|F|T|Boolean|!!|Scratching_Pinching\nBiting=L|F|T|Boolean|!!|Biting\nOther_Violence=L|F|T|Boolean|!!|Other_Violence\nVerbal_Abuse=L|F|T|Boolean|!!|Verbal_Abuse\nIntimidating_Behavior=L|F|T|Boolean|!!|Intimidating_Behavior\nPhysical_Threatening=L|F|T|Boolean|!!|Physical_Threatening\nSexual_Harrassment=L|F|T|Boolean|!!|Sexual_Harrassment\nDiscrimination_Bullying=L|F|T|Boolean|!!|Discrimination_Bullying\nStalking=L|F|T|Boolean|!!|Stalking\nSPitting=L|F|T|Boolean|!!|SPitting\nOther_Aggression=L|F|T|Boolean|!!|Other_Aggression\nAgression_Details=C|F|T|VaryingCharacter|!!|Agression_Details\nInjury_to_Resident=C|F|T|VaryingCharacter|!!|Injury_to_Resident\nInjury_to_Staff=C|F|T|VaryingCharacter|!!|Injury_to_Staff\nLocation_Details=C|F|T|VaryingCharacter|!!|Location_Details\nDescription=C|F|F|VaryingCharacter|!!|Description\nReported_to_RN=L|F|T|Boolean|!!|Reported_to_RN\nReported_to_Police=L|F|T|Boolean|!!|Reported_to_Police\nPolice_Details=C|F|F|VaryingCharacter|!!|Police_Details\nImmediate_Action_Taken=C|F|F|VaryingCharacter|!!|Immediate_Action_Taken\nPerson_Completing_Name=C|F|T|VaryingCharacter|!!|Person_Completing_Name\nPerson_Completing_Surname=C|F|T|VaryingCharacter|!!|Person_Completing_Surname\nSIRS_Criteria=C|F|T|VaryingCharacter|!!|SIRS_Criteria\nSIRS_CAT=C|F|T|VaryingCharacter|!!|SIRS_CAT\nSIRS_Submitted=C|F|T|VaryingCharacter|!!|SIRS_Submitted\nAdditonal_Notes=L|F|T|Boolean|!!|Additonal_Notes\nLocation=C|F|T|VaryingCharacter|!!|Location\nAreaC=C|F|T|VaryingCharacter|!!|AreaC\nIncidentType=C|F|T|VaryingCharacter|!!|IncidentType\nType=C|F|T|VaryingCharacter|!!|Type\nRN_Name=C|F|T|VaryingCharacter|!!|RN_Name\nRN_Surname=C|F|T|VaryingCharacter|!!|RN_Surname\nEmail1=C|F|T|VaryingCharacter|!!|Email1\nEmial2=C|F|T|VaryingCharacter|!!|Emial2\nEmail3=C|F|T|VaryingCharacter|!!|Email3\nEmail4=C|F|T|VaryingCharacter|!!|Email4\nEmail5=C|F|T|VaryingCharacter|!!|Email5\nReviewer_Name=C|F|T|VaryingCharacter|!!|Reviewer_Name\nReviewer_Surname=C|F|T|VaryingCharacter|!!|Reviewer_Surname\nReview_Date=D|F|T|Date|!!|Review_Date\nISR_Degre=N|F|T|Number|!!|ISR_Degre\nISR_Care=N|F|T|Number|!!|ISR_Care\nISR_Treatment=N|F|T|Number|!!|ISR_Treatment\nISR_Severity_Score=N|F|T|Number|!!|ISR_Severity_Score\nOutcome=C|F|F|VaryingCharacter|!!|Outcome\nReoccurance=C|F|F|VaryingCharacter|!!|Reoccurance\nStatus=C|F|T|VaryingCharacter|!!|Status\nEmail_HR=C|F|T|VaryingCharacter|!!|Email_HR\nEmail_OP=C|F|T|VaryingCharacter|!!|Email_OP\nEmail_CEO=C|F|T|VaryingCharacter|!!|Email_CEO\nEmail_Risk=C|F|T|VaryingCharacter|!!|Email_Risk\nInvolves_Staff=L|F|T|Boolean|!!|Involves_Staff\nInvolves_Resident=L|F|T|Boolean|!!|Involves_Resident\nInvolves_Visitor=L|F|T|Boolean|!!|Involves_Visitor\nInvolves_Contractor=L|F|T|Boolean|!!|Involves_Contractor\nInvolves_Volunteer=L|F|T|Boolean|!!|Involves_Volunteer\nInvolves_Other=L|F|T|Boolean|!!|Involves_Other\nResident_to_Resident=L|F|T|Boolean|!!|Resident_to_Resident\nResident_to_Staff=L|F|T|Boolean|!!|Resident_to_Staff\nStaff_Only=L|F|T|Boolean|!!|Staff_Only\nResident_VIsitors=L|F|T|Boolean|!!|Resident_VIsitors\nInvolves_Others=L|F|T|Boolean|!!|Involves_Others\nStaff_to_Resident=L|F|T|Boolean|!!|Staff_to_Resident\nResident_Only=L|F|T|Boolean|!!|Resident_Only\nDeleted=L|F|T|Boolean|!!|Deleted\nTreatment_Type=C|F|T|VaryingCharacter|!!|Treatment_Type\nDegree_Type=C|F|T|VaryingCharacter|!!|Degree_Type\nCare_type=C|F|T|VaryingCharacter|!!|Care_type\nHour=C|F|T|VaryingCharacter|!!|Hour\nMin=C|F|T|VaryingCharacter|!!|Min\nDay=C|F|T|VaryingCharacter|!!|Day\nData_Breach=L|F|T|Boolean|!!|Data_Breach\n",
+                    "UpdateWhereClause": "{ID}=ID = :old_ID\n{First_name}=(First_name = :old_First_name OR First_name IS NULL AND :old_First_name IS NULL)\n{Surname}=(Surname = :old_Surname OR Surname IS NULL AND :old_Surname IS NULL)\n{Date}=([Date] = :old_Date OR [Date] IS NULL AND :old_Date IS NULL)\n{Time}=([Time] = :old_Time OR [Time] IS NULL AND :old_Time IS NULL)\n{Resident_Missing}=(Resident_Missing = :old_Resident_Missing OR Resident_Missing IS NULL AND :old_Resident_Missing IS NULL)\n{Vehicle_Accident}=(Vehicle_Accident = :old_Vehicle_Accident OR Vehicle_Accident IS NULL AND :old_Vehicle_Accident IS NULL)\n{Theft}=(Theft = :old_Theft OR Theft IS NULL AND :old_Theft IS NULL)\n{Bodily_Injury}=(Bodily_Injury = :old_Bodily_Injury OR Bodily_Injury IS NULL AND :old_Bodily_Injury IS NULL)\n{Fire}=(Fire = :old_Fire OR Fire IS NULL AND :old_Fire IS NULL)\n{Property_Damage}=(Property_Damage = :old_Property_Damage OR Property_Damage IS NULL AND :old_Property_Damage IS NULL)\n{Bomb_Threat}=(Bomb_Threat = :old_Bomb_Threat OR Bomb_Threat IS NULL AND :old_Bomb_Threat IS NULL)\n{Unexplained_Disruption}=(Unexplained_Disruption = :old_Unexplained_Disruption OR Unexplained_Disruption IS NULL AND :old_Unexplained_Disruption IS NULL)\n{Other_Security}=(Other_Security = :old_Other_Security OR Other_Security IS NULL AND :old_Other_Security IS NULL)\n{Physical_Assault}=(Physical_Assault = :old_Physical_Assault OR Physical_Assault IS NULL AND :old_Physical_Assault IS NULL)\n{Use_of_Weapon}=(Use_of_Weapon = :old_Use_of_Weapon OR Use_of_Weapon IS NULL AND :old_Use_of_Weapon IS NULL)\n{Scratching_Pinching}=(Scratching_Pinching = :old_Scratching_Pinching OR Scratching_Pinching IS NULL AND :old_Scratching_Pinching IS NULL)\n{Biting}=(Biting = :old_Biting OR Biting IS NULL AND :old_Biting IS NULL)\n{Other_Violence}=(Other_Violence = :old_Other_Violence OR Other_Violence IS NULL AND :old_Other_Violence IS NULL)\n{Verbal_Abuse}=(Verbal_Abuse = :old_Verbal_Abuse OR Verbal_Abuse IS NULL AND :old_Verbal_Abuse IS NULL)\n{Intimidating_Behavior}=(Intimidating_Behavior = :old_Intimidating_Behavior OR Intimidating_Behavior IS NULL AND :old_Intimidating_Behavior IS NULL)\n{Physical_Threatening}=(Physical_Threatening = :old_Physical_Threatening OR Physical_Threatening IS NULL AND :old_Physical_Threatening IS NULL)\n{Sexual_Harrassment}=(Sexual_Harrassment = :old_Sexual_Harrassment OR Sexual_Harrassment IS NULL AND :old_Sexual_Harrassment IS NULL)\n{Discrimination_Bullying}=(Discrimination_Bullying = :old_Discrimination_Bullying OR Discrimination_Bullying IS NULL AND :old_Discrimination_Bullying IS NULL)\n{Stalking}=(Stalking = :old_Stalking OR Stalking IS NULL AND :old_Stalking IS NULL)\n{SPitting}=(SPitting = :old_SPitting OR SPitting IS NULL AND :old_SPitting IS NULL)\n{Other_Aggression}=(Other_Aggression = :old_Other_Aggression OR Other_Aggression IS NULL AND :old_Other_Aggression IS NULL)\n{Agression_Details}=(Agression_Details = :old_Agression_Details OR Agression_Details IS NULL AND :old_Agression_Details IS NULL)\n{Injury_to_Resident}=(Injury_to_Resident = :old_Injury_to_Resident OR Injury_to_Resident IS NULL AND :old_Injury_to_Resident IS NULL)\n{Injury_to_Staff}=(Injury_to_Staff = :old_Injury_to_Staff OR Injury_to_Staff IS NULL AND :old_Injury_to_Staff IS NULL)\n{Location_Details}=(Location_Details = :old_Location_Details OR Location_Details IS NULL AND :old_Location_Details IS NULL)\n{Description}=(Description = :old_Description OR Description IS NULL AND :old_Description IS NULL)\n{Reported_to_RN}=(Reported_to_RN = :old_Reported_to_RN OR Reported_to_RN IS NULL AND :old_Reported_to_RN IS NULL)\n{Reported_to_Police}=(Reported_to_Police = :old_Reported_to_Police OR Reported_to_Police IS NULL AND :old_Reported_to_Police IS NULL)\n{Police_Details}=(Police_Details = :old_Police_Details OR Police_Details IS NULL AND :old_Police_Details IS NULL)\n{Immediate_Action_Taken}=(Immediate_Action_Taken = :old_Immediate_Action_Taken OR Immediate_Action_Taken IS NULL AND :old_Immediate_Action_Taken IS NULL)\n{Person_Completing_Name}=(Person_Completing_Name = :old_Person_Completing_Name OR Person_Completing_Name IS NULL AND :old_Person_Completing_Name IS NULL)\n{Person_Completing_Surname}=(Person_Completing_Surname = :old_Person_Completing_Surname OR Person_Completing_Surname IS NULL AND :old_Person_Completing_Surname IS NULL)\n{SIRS_Criteria}=(SIRS_Criteria = :old_SIRS_Criteria OR SIRS_Criteria IS NULL AND :old_SIRS_Criteria IS NULL)\n{SIRS_CAT}=(SIRS_CAT = :old_SIRS_CAT OR SIRS_CAT IS NULL AND :old_SIRS_CAT IS NULL)\n{SIRS_Submitted}=(SIRS_Submitted = :old_SIRS_Submitted OR SIRS_Submitted IS NULL AND :old_SIRS_Submitted IS NULL)\n{Additonal_Notes}=(Additonal_Notes = :old_Additonal_Notes OR Additonal_Notes IS NULL AND :old_Additonal_Notes IS NULL)\n{Location}=(Location = :old_Location OR Location IS NULL AND :old_Location IS NULL)\n{AreaC}=(AreaC = :old_AreaC OR AreaC IS NULL AND :old_AreaC IS NULL)\n{IncidentType}=(IncidentType = :old_IncidentType OR IncidentType IS NULL AND :old_IncidentType IS NULL)\n{Type}=([Type] = :old_Type OR [Type] IS NULL AND :old_Type IS NULL)\n{RN_Name}=(RN_Name = :old_RN_Name OR RN_Name IS NULL AND :old_RN_Name IS NULL)\n{RN_Surname}=(RN_Surname = :old_RN_Surname OR RN_Surname IS NULL AND :old_RN_Surname IS NULL)\n{Email1}=(Email1 = :old_Email1 OR Email1 IS NULL AND :old_Email1 IS NULL)\n{Emial2}=(Emial2 = :old_Emial2 OR Emial2 IS NULL AND :old_Emial2 IS NULL)\n{Email3}=(Email3 = :old_Email3 OR Email3 IS NULL AND :old_Email3 IS NULL)\n{Email4}=(Email4 = :old_Email4 OR Email4 IS NULL AND :old_Email4 IS NULL)\n{Email5}=(Email5 = :old_Email5 OR Email5 IS NULL AND :old_Email5 IS NULL)\n{Reviewer_Name}=(Reviewer_Name = :old_Reviewer_Name OR Reviewer_Name IS NULL AND :old_Reviewer_Name IS NULL)\n{Reviewer_Surname}=(Reviewer_Surname = :old_Reviewer_Surname OR Reviewer_Surname IS NULL AND :old_Reviewer_Surname IS NULL)\n{Review_Date}=(Review_Date = :old_Review_Date OR Review_Date IS NULL AND :old_Review_Date IS NULL)\n{ISR_Degre}=(ISR_Degre = :old_ISR_Degre OR ISR_Degre IS NULL AND :old_ISR_Degre IS NULL)\n{ISR_Care}=(ISR_Care = :old_ISR_Care OR ISR_Care IS NULL AND :old_ISR_Care IS NULL)\n{ISR_Treatment}=(ISR_Treatment = :old_ISR_Treatment OR ISR_Treatment IS NULL AND :old_ISR_Treatment IS NULL)\n{ISR_Severity_Score}=(ISR_Severity_Score = :old_ISR_Severity_Score OR ISR_Severity_Score IS NULL AND :old_ISR_Severity_Score IS NULL)\n{Outcome}=(Outcome = :old_Outcome OR Outcome IS NULL AND :old_Outcome IS NULL)\n{Reoccurance}=(Reoccurance = :old_Reoccurance OR Reoccurance IS NULL AND :old_Reoccurance IS NULL)\n{Status}=(Status = :old_Status OR Status IS NULL AND :old_Status IS NULL)\n{Email_HR}=(Email_HR = :old_Email_HR OR Email_HR IS NULL AND :old_Email_HR IS NULL)\n{Email_OP}=(Email_OP = :old_Email_OP OR Email_OP IS NULL AND :old_Email_OP IS NULL)\n{Email_CEO}=(Email_CEO = :old_Email_CEO OR Email_CEO IS NULL AND :old_Email_CEO IS NULL)\n{Email_Risk}=(Email_Risk = :old_Email_Risk OR Email_Risk IS NULL AND :old_Email_Risk IS NULL)\n{Involves_Staff}=(Involves_Staff = :old_Involves_Staff OR Involves_Staff IS NULL AND :old_Involves_Staff IS NULL)\n{Involves_Resident}=(Involves_Resident = :old_Involves_Resident OR Involves_Resident IS NULL AND :old_Involves_Resident IS NULL)\n{Involves_Visitor}=(Involves_Visitor = :old_Involves_Visitor OR Involves_Visitor IS NULL AND :old_Involves_Visitor IS NULL)\n{Involves_Contractor}=(Involves_Contractor = :old_Involves_Contractor OR Involves_Contractor IS NULL AND :old_Involves_Contractor IS NULL)\n{Involves_Volunteer}=(Involves_Volunteer = :old_Involves_Volunteer OR Involves_Volunteer IS NULL AND :old_Involves_Volunteer IS NULL)\n{Involves_Other}=(Involves_Other = :old_Involves_Other OR Involves_Other IS NULL AND :old_Involves_Other IS NULL)\n{Resident_to_Resident}=(Resident_to_Resident = :old_Resident_to_Resident OR Resident_to_Resident IS NULL AND :old_Resident_to_Resident IS NULL)\n{Resident_to_Staff}=(Resident_to_Staff = :old_Resident_to_Staff OR Resident_to_Staff IS NULL AND :old_Resident_to_Staff IS NULL)\n{Staff_Only}=(Staff_Only = :old_Staff_Only OR Staff_Only IS NULL AND :old_Staff_Only IS NULL)\n{Resident_VIsitors}=(Resident_VIsitors = :old_Resident_VIsitors OR Resident_VIsitors IS NULL AND :old_Resident_VIsitors IS NULL)\n{Involves_Others}=(Involves_Others = :old_Involves_Others OR Involves_Others IS NULL AND :old_Involves_Others IS NULL)\n{Staff_to_Resident}=(Staff_to_Resident = :old_Staff_to_Resident OR Staff_to_Resident IS NULL AND :old_Staff_to_Resident IS NULL)\n{Resident_Only}=(Resident_Only = :old_Resident_Only OR Resident_Only IS NULL AND :old_Resident_Only IS NULL)\n{Deleted}=(Deleted = :old_Deleted OR Deleted IS NULL AND :old_Deleted IS NULL)\n{Treatment_Type}=(Treatment_Type = :old_Treatment_Type OR Treatment_Type IS NULL AND :old_Treatment_Type IS NULL)\n{Degree_Type}=(Degree_Type = :old_Degree_Type OR Degree_Type IS NULL AND :old_Degree_Type IS NULL)\n{Care_type}=(Care_type = :old_Care_type OR Care_type IS NULL AND :old_Care_type IS NULL)\n{Hour}=([Hour] = :old_Hour OR [Hour] IS NULL AND :old_Hour IS NULL)\n{Min}=([Min] = :old_Min OR [Min] IS NULL AND :old_Min IS NULL)\n{Day}=([Day] = :old_Day OR [Day] IS NULL AND :old_Day IS NULL)\n{Data_Breach}=(Data_Breach = :old_Data_Breach OR Data_Breach IS NULL AND :old_Data_Breach IS NULL)\n",
                     "readonly": false,
-                    "tableInfoCRC": 4294951534,
+                    "tableInfoCRC": 4294939507,
                     "flagOverwriteExistingPrimaryKeySettings": false,
-                    "fieldList": "ID\nFirst_name\nSurname\nDate\nTime\nResident_Missing\nVehicle_Accident\nTheft\nBodily_Injury\nFire\nProperty_Damage\nBomb_Threat\nUnexplained_Disruption\nOther_Security\nPhysical_Assault\nUse_of_Weapon\nScratching_Pinching\nBiting\nOther_Violence\nVerbal_Abuse\nIntimidating_Behavior\nPhysical_Threatening\nSexual_Harrassment\nDiscrimination_Bullying\nStalking\nSPitting\nOther_Aggression\nAgression_Details\nInjury_to_Resident\nInjury_to_Staff\nLocation_Details\nDescription\nReported_to_RN\nReported_to_Police\nPolice_Details\nImmediate_Action_Taken\nPerson_Completing_Name\nPerson_Completing_Surname\nSIRS_Criteria\nSIRS_CAT\nSIRS_Submitted\nAdditonal_Notes\nLocation\nAreaC\nIncidentType\nType\nRN_Name\nRN_Surname\nEmail1\nEmial2\nEmail3\nEmail4\nEmail5\nReviewer_Name\nReviewer_Surname\nReview_Date\nISR_Degre\nISR_Care\nISR_Treatment\nISR_Severity_Score\nOutcome\nReoccurance\nStatus\nEmail_HR\nEmail_OP\nEmail_CEO\nEmail_Risk\nInvolves_Staff\nInvolves_Resident\nInvolves_Visitor\nInvolves_Contractor\nInvolves_Volunteer\nInvolves_Other\nResident_to_Resident\nResident_to_Staff\nStaff_Only\nResident_VIsitors\nInvolves_Others\nStaff_to_Resident\nResident_Only\nDeleted\n",
+                    "fieldList": "ID\nFirst_name\nSurname\nDate\nTime\nResident_Missing\nVehicle_Accident\nTheft\nBodily_Injury\nFire\nProperty_Damage\nBomb_Threat\nUnexplained_Disruption\nOther_Security\nPhysical_Assault\nUse_of_Weapon\nScratching_Pinching\nBiting\nOther_Violence\nVerbal_Abuse\nIntimidating_Behavior\nPhysical_Threatening\nSexual_Harrassment\nDiscrimination_Bullying\nStalking\nSPitting\nOther_Aggression\nAgression_Details\nInjury_to_Resident\nInjury_to_Staff\nLocation_Details\nDescription\nReported_to_RN\nReported_to_Police\nPolice_Details\nImmediate_Action_Taken\nPerson_Completing_Name\nPerson_Completing_Surname\nSIRS_Criteria\nSIRS_CAT\nSIRS_Submitted\nAdditonal_Notes\nLocation\nAreaC\nIncidentType\nType\nRN_Name\nRN_Surname\nEmail1\nEmial2\nEmail3\nEmail4\nEmail5\nReviewer_Name\nReviewer_Surname\nReview_Date\nISR_Degre\nISR_Care\nISR_Treatment\nISR_Severity_Score\nOutcome\nReoccurance\nStatus\nEmail_HR\nEmail_OP\nEmail_CEO\nEmail_Risk\nInvolves_Staff\nInvolves_Resident\nInvolves_Visitor\nInvolves_Contractor\nInvolves_Volunteer\nInvolves_Other\nResident_to_Resident\nResident_to_Staff\nStaff_Only\nResident_VIsitors\nInvolves_Others\nStaff_to_Resident\nResident_Only\nDeleted\nTreatment_Type\nDegree_Type\nCare_type\nHour\nMin\nDay\nData_Breach\n",
                     "flagExistingPrimaryKeyIsValid": true,
                     "badFields": ""
                 },
@@ -217,19 +218,18 @@
                     "order": "Date_Entered"
                 }
             ],
+            "jsonFormName": "",
             "boundTableAliases": "Incidents",
             "one2oneLinkingFields": "",
-            "tableFolder": "",
-            "auto_define_jsonform": false,
-            "jsonFormName": ""
+            "tableFolder": ""
         },
         "actionJavascriptDefined": true,
         "info": {
             "createdBy": "Ricky",
             "lastUpdatedBy": "Ricky",
             "dateCreated": "2022-11-3",
-            "dateLastEdited": "2023-7-19",
-            "revisionnumber": 362
+            "dateLastEdited": "2024-5-15",
+            "revisionnumber": 363
         },
         "flagShowCommentsInTree": true,
         "treeCommentOffset": "6",
@@ -381,6 +381,9 @@
                     },
                     "localxbasic": "",
                     "localjavascript": "",
+                    "javascript": {
+                        "renderChildren": ""
+                    },
                     "info": {
                         "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertline'}{Data=9db0c846-2db7-4fa7-8f20-bd2a3f166dbd}{I:'$$control.tab.pane'} [TabPane: Incident]",
                         "level": 1,
@@ -406,9 +409,6 @@
                         "parentPanelCardId": "",
                         "lastID": "1ad8d310-bbed-495b-b21f-73625b2638c9",
                         "break": false
-                    },
-                    "javascript": {
-                        "renderChildren": ""
                     }
                 },
                 "precalc": {
@@ -504,9 +504,9 @@
                         "editOptionsJSObject": "<watermark<text=\"Auto No:\">\n>\n",
                         "javascriptClientSideWatches": "{dialog.object}.dialogWatches['ENABLE_ID'] = {\n\t\twatch: [],\n\t\tvariables: [],\n\t\tonChange: function(data) {\n\t\n\tvar dialog = {};\n\tvar summary = {};var enable = (1 == 2);\n\tvar eles = $cetp($n('V.R' + data.rowNumber + '.ID'),$('{dialog.componentName}.R'+data.rowNumber));\n\tif(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('{grid.componentname}.'+'V.R' + data.rowNumber + '.ID')];\n\tvar pObj = {dialog.object}.getControl('ID'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }\n\tif(typeof {dialog.object}._buttons['ID'] != 'undefined') {\n\t{dialog.object}._buttons['ID'].setDisabled(!enable,eles)\n\t} else {\n\tfor(var i=0; i<eles.length;i++) eles[i].disabled = !enable;\n\t}\n\t;;\n\t{dialog.object}._executeEvent('onWatchEvent',{type: 'enable', control: 'ID', flag: enable});}\n}\n\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_ID_0ccd232478b34f508df8e4dc62ef793e(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('ID');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['ID']){dialog.componentName}_DlgObj.fieldHelpers['ID'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Auto No:'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_ID_0ccd232478b34f508df8e4dc62ef793e(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('ID');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -603,9 +603,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -629,7 +626,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=0ccd2324_78b3_4f50_8df8_e4dc62ef793e}{I:'$$control.edit'} [ID]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.ID\" for=\"{grid.componentname}.V.R{grid.rownumber}.ID\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; display: block; \">ID - Number</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.ID\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"text-align: center; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_ID_0ccd232478b34f508df8e4dc62ef793e.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.ID\"    value=\"\"    />\n<!--FldE-->\n</div>",
@@ -866,9 +866,9 @@
                     },
                     "precalc": {
                         "javascriptAbstractSetupCode": "$e.add('{grid.componentname}.V.R{grid.rownumber}.AREAC.BUTTON',A5.d.evnts.click,function(e) {  if($('{grid.componentname}.V.R{grid.rownumber}.AREAC').disabled) return false; {dialog.object}.openLookup('AREAC',this);return false; });",
+                        "_jsOnChangeFunction": "function onChange_AreaC_24897a5236ec442cb263a35eae24859f(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('AREAC');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['AREAC'] ){dialog.componentName}_DlgObj.fieldHelpers['AREAC'] = new A5.EditButtonGroup({\n\ttheme: '{dialog.style}'\n});",
                         "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_AreaC_24897a5236ec442cb263a35eae24859f(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('AREAC');};",
                         "lookupGridJSONProperties": "{\n\tfieldsToFillin: [\n\t'AREAC',\n\t'EMIAL1',\n\t'EMAIL2',\n\t'EMAIL3',\n\t'EMAIL4',\n\t'EMIAL5'],\n\tresetAfterFillin: true,\n\tworkingMessage: '<div style=\"width: 4in; height: 3in\"><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>'\n}",
                         "lookupGridJavascript": "window['{dialog.componentName}_LOOKUPGRID_AREAC'] = function(objEle) {\n\nvar windowName = '{dialog.componentname}.LOOKUP.AREAC';\nvar currWindow = {Grid.object}.getWindow(windowName);\nvar go = new Object();\n\nif(typeof {grid.object} != 'undefined' &&typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\n\nif(typeof {grid.object} != 'undefined' && typeof {grid.object}._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = {grid.object}._workingPreviewHost;\n}\n\nif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n}\n\n\n\n\n\n\ngo.objectId = objEle.id;\ngo.gridName = 'lookup_Areas';\ngo.alias = '{Grid.componentname}_lookup_Are_gcyc';\t\n\ngo.submitCurrentFieldValues = true;\ngo.sourceGridPart = 'O';\ngo.sourceGridRowNumber = '1';\ngo.userFilter = '';\ngo.baseFilter = 'DynamicFilter:Location_ID_Name (C)|Equals|Location';\ngo.arguments = 'Location_ID_Name|C|[[[data.Location]]]';\nif(typeof rowNum == 'undefined') rowNum = '';\ngo.linkDefinition = '';\ngo.placeHolderValues = 'Location =' +{Dialog.object}.getValueNOCRLF('LOCATION');\ngo.userOrder = '';\ngo._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.gridId != 'undefined') go._thisGridAlias = {grid.object}.gridId;\nif(typeof {grid.object}.dialogId != 'undefined') go._thisGridAlias = {grid.object}.dialogId;\n\n\ngo._thisGridGUID = {grid.object}.componentGUID;\n\ngo._gridCurrentFilter = {grid.object}._gridFilter;\ngo._gridCurrentOrder = {grid.object}._gridOrder;\ngo._gridCurrentArguments = {grid.object}._gridArguments;\ngo._gridCurrentDBType = {grid.object}._gridDBType;\n\ngo.overrideSettings = 'Style_name = `{Grid.style}`'+'||';\ngo.a5_default_path = '{grid.defaultPath}';\n\ngo.flagTimer = 'F';\ngo.flagQueryEcho = 'F';\ngo.flagDebugMode = 'F';\ngo.windowName = windowName;\n\ngo._parentAlias = {dialog.object}.dialogId;\ngo.isLookupGrid = true;\ngo.lookupFieldName = 'AreaC';\ngo.lookupFieldSection = 'Odialog2';\ngo.lookupReturnFields = 'LOCATION_AREA,LOC_AREA_EMAIL_CONTACT,LOC_AREA_EMAIL_CONTACT2,LOC_AREA_EMAIL_CONTACT3,LOC_AREA_EMAIL_CONTACT4,HSR_EMAIL';\ngo.lookupGridLinkLabel = 'Select';\ngo.lookupGridLinkLabelStyle = '';\ngo.workingMessage = '<div style=\"width: 4in; height: 3in\"><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>';\ngo.windowTitle = 'Area';\ngo.direction = 'ltr';\n\n\nif(typeof go.direction == 'undefined') go.direction = 'ltr';\n\n\ngo.__useCachedGrid = true;\n\ngo.showWindowParameters = '';\n\n\n\nvar runMethod = 'ajax';\n\nif(runMethod == 'ajax') {\ngo.ajaxFailedMessage = '';\ngo.ajaxCallbackTimeout = {dialog.object}.ajaxCallbackTimeout;\nif(typeof {dialog.object}._onlineStatus != 'undefined') { \n\tif({dialog.object}._onlineStatus == 'offline') { \n\t\t( function() {  }() );\n\t\t{dialog.object}._executeEvent('onAjaxCallbackNotAvailable', {xbasicFunctionName: '', ajaxEvent: 'OpenComponent'})\n\t\treturn false;\n\t}\n}\t\t\n\t\n};\n\n\nif(!currWindow) {\n\tcurrWindow = {Grid.object}.createWindow(windowName,'modeless-resizable',\n\t{\n\tbody: {\n\t\tcontent: {\n\t\t\ttype: 'blank',\n\t\t\telementId: '~'\n\t\t},\n\t\tstyle: 'direction:' + go.direction\n\t},\n\theight: '',\n\ttitle: {\n\t\thtml: 'Window',\n\t\tlocation: 'top',\n\t\tdirection: go.direction,\n\t\tshow: true\n\t},\n\tdisableMove: false,\n\ttheme: '{Grid.style}',\n\talias: '{Grid.componentname}_lookup_Are_gcyc'\n}\n\t);\t\t\n\tgo.gridDiv = currWindow.getWindowId('body');\n\t{grid.Object}.openChildGrid(go);\n\tcurrWindow.show('dropdown',objEle);;\n\tcurrWindow.setTitle(go.windowTitle)\n} else {\n\n\t\tvar ele = '{Grid.componentname}_lookup_Are_gcyc.GRID_PART.FORM_CONTAINER_DIV';\n\tvar pele = $(ele);\n\tif(pele) pele.innerHTML = '<img src=\\'css/A5System/Images/wait.gif\\' /> Working...';\n\tgo.gridDiv = currWindow.getWindowId('body');\n\tgo.parentGridId = '{grid.componentname}';\n\t\n\twindow['{GRID.COMPONENTNAME}_LOOKUP_ARE_GCYC_GridObj'].synchronizeGrid(go);\n\n\n\t\n\n\tcurrWindow.setTitle(go.windowTitle)\n};\n\n}\n"
                     },
@@ -1016,9 +1016,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -1042,7 +1039,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=24897a52_36ec_442c_b263_a35eae24859f}{I:'$$control.edit'} [AreaC]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.AREAC\" for=\"{grid.componentname}.V.R{grid.rownumber}.AREAC\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #3d1212; font-weight: bold; display: block; \">House/Area</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{grid.componentname}.V.R{grid.rownumber}.AREAC.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"{dialog.style}EditBG\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{grid.componentname}.V.R{grid.rownumber}.AREAC\" name=\"V.R{grid.rownumber}.AREAC\"  value=\"\"  onchange=\"var tfunc = function() {onChange_AreaC_24897a5236ec442cb263a35eae24859f.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   title=\"\" autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"{dialog.style}EditBGSeparator\" >&nbsp;</td>\n\t\t<td id=\"{grid.componentname}.V.R{grid.rownumber}.AREAC.BUTTON\" class=\"{dialog.style}EditBGButton\" style=\"width: 0%;\"><img src=\"images/$$edit.find.png.a5image\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>",
@@ -1134,9 +1134,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"Describe area as clear as possible.\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Area_Details_41f0f31565684998b90f5920be1c45a0(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('AREA_DETAILS');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['AREA_DETAILS']){dialog.componentName}_DlgObj.fieldHelpers['AREA_DETAILS'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Describe area as clear as possible.'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Area_Details_41f0f31565684998b90f5920be1c45a0(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('AREA_DETAILS');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -1700,9 +1700,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"Name\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Incidnet_Person_Name_bfc2a672528742f79d14ff98a6d8204c(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('INCIDNET_PERSON_NAME');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['INCIDNET_PERSON_NAME']){dialog.componentName}_DlgObj.fieldHelpers['INCIDNET_PERSON_NAME'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Name'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Incidnet_Person_Name_bfc2a672528742f79d14ff98a6d8204c(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('INCIDNET_PERSON_NAME');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -1809,9 +1809,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -1835,7 +1832,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=bfc2a672_5287_42f7_9d14_ff98a6d8204c}{I:'$$control.edit'} [Incidnet_Person_Name]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.INCIDNET_PERSON_NAME\" for=\"{grid.componentname}.V.R{grid.rownumber}.INCIDNET_PERSON_NAME\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #3d1212; font-weight: bold; display: block; \">Name</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.INCIDNET_PERSON_NAME\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_Incidnet_Person_Name_bfc2a672528742f79d14ff98a6d8204c.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.INCIDNET_PERSON_NAME\"    value=\"\"    />\n<!--FldE-->\n</div>",
@@ -1868,9 +1868,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"Surname\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Incidnet_person_Surmane_a37ff8944ff94880a889e79a7c2a23e4(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('INCIDNET_PERSON_SURMANE');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['INCIDNET_PERSON_SURMANE']){dialog.componentName}_DlgObj.fieldHelpers['INCIDNET_PERSON_SURMANE'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Surname'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Incidnet_person_Surmane_a37ff8944ff94880a889e79a7c2a23e4(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('INCIDNET_PERSON_SURMANE');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -1977,9 +1977,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -2003,7 +2000,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=a37ff894_4ff9_4880_a889_e79a7c2a23e4}{I:'$$control.edit'} [Incidnet_person_Surmane]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.INCIDNET_PERSON_SURMANE\" for=\"{grid.componentname}.V.R{grid.rownumber}.INCIDNET_PERSON_SURMANE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #3d1212; font-weight: bold; display: block; \">Surname</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.INCIDNET_PERSON_SURMANE\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_Incidnet_person_Surmane_a37ff8944ff94880a889e79a7c2a23e4.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.INCIDNET_PERSON_SURMANE\"    value=\"\"    />\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
@@ -2105,9 +2105,9 @@
                         },
                         "builder": "UX",
                         "data_value": {
-                            "expression_type": "Simple expression",
                             "equality": "Not equal to",
-                            "value": "Please select"
+                            "value": "Please select",
+                            "expression_type": "Simple expression"
                         }
                     },
                     "validationSettingsDefined": true,
@@ -2298,9 +2298,9 @@
                     },
                     "precalc": {
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Date_3cdf0623ddf8469a9be8e22daec5484c(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DATE');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['DATE']) {  {dialog.componentName}_DlgObj.fieldHelpers['DATE'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '<DefaultDateOnlyFormat>',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t},\n\t\t\twidth: '100%',\n\t\t\theight: ''\n\t\t},\n\t\tswitchYear: 30,\n\t\tcombinedContainer: {\n\t\t\tstyle: 'display:block'\n\t\t}\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t{\n\t\t\t\thtml: 'OK',\n\t\t\t\taction: 'commit'\n\t\t\t},\n\t\t\t{\n\t\t\t\thtml: 'Cancel',\n\t\t\t\taction: 'close'\n\t\t\t}]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
                         "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Date_3cdf0623ddf8469a9be8e22daec5484c(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DATE');};",
                         "javascriptDatePicker": ""
                     },
                     "lookup": {
@@ -2460,9 +2460,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -2486,7 +2483,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=3cdf0623_ddf8_469a_9be8_e22daec5484c}{I:'$$control.edit'} [Date]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 1.3in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.DATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.DATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #3d1212; font-weight: bold; display: block; \">Date</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE\" name=\"V.R{grid.rownumber}.DATE\"  value=\"\"  autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>",
@@ -2517,9 +2517,9 @@
                     },
                     "precalc": {
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Time_589876d154af4ced9c9b988a2988efd5(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('TIME');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['TIME']) {  {dialog.componentName}_DlgObj.fieldHelpers['TIME'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '0h:0m AM',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t},\n\t\t\twidth: '100%'\n\t\t},\n\t\tswitchYear: 20,\n\t\tcombinedContainer: {\n\t\t\tstyle: 'display:block'\n\t\t}\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t{\n\t\t\t\thtml: 'OK',\n\t\t\t\taction: 'commit'\n\t\t\t},\n\t\t\t{\n\t\t\t\thtml: 'Cancel',\n\t\t\t\taction: 'close'\n\t\t\t}]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
                         "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Time_589876d154af4ced9c9b988a2988efd5(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('TIME');};",
                         "javascriptDatePicker": ""
                     },
                     "lookup": {
@@ -2633,9 +2633,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -2659,7 +2656,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=589876d1_54af_4ced_9c9b_988a2988efd5}{I:'$$control.edit'} [Time]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 1.5in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.TIME\" for=\"{grid.componentname}.V.R{grid.rownumber}.TIME\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #3d1212; font-weight: bold; display: block; \">Time</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.TIME.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.TIME\" name=\"V.R{grid.rownumber}.TIME\"  value=\"\"  autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.TIME.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.timePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
@@ -2752,9 +2752,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"First Name\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Name1_88f18621fd9540cdb317a789632da072(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('NAME1');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['NAME1']){dialog.componentName}_DlgObj.fieldHelpers['NAME1'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'First Name'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Name1_88f18621fd9540cdb317a789632da072(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('NAME1');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -2863,9 +2863,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -2889,7 +2886,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=88f18621_fd95_40cd_b317_a789632da072}{I:'$$control.edit'} [Name1]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.NAME1\" for=\"{grid.componentname}.V.R{grid.rownumber}.NAME1\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #3d1212; font-weight: bold; display: block; \">Name</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.NAME1\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_Name1_88f18621fd9540cdb317a789632da072.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.NAME1\"    value=\"\"    />\n<!--FldE-->\n</div>",
@@ -2922,9 +2922,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"Surname\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Surname1_14d8f2e4904940f692a4116d51f76b0e(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('SURNAME1');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['SURNAME1']){dialog.componentName}_DlgObj.fieldHelpers['SURNAME1'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Surname'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Surname1_14d8f2e4904940f692a4116d51f76b0e(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('SURNAME1');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -3033,9 +3033,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -3059,7 +3056,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=14d8f2e4_9049_40f6_92a4_116d51f76b0e}{I:'$$control.edit'} [Surname1]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.SURNAME1\" for=\"{grid.componentname}.V.R{grid.rownumber}.SURNAME1\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #3d1212; font-weight: bold; display: block; \">Surname</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.SURNAME1\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_Surname1_14d8f2e4904940f692a4116d51f76b0e.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.SURNAME1\"    value=\"\"    />\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
@@ -8517,9 +8517,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"Details of the Incident / Event / Complaint etc.  (complete separate incident forms for others as necessary)\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Details_b61fa0c7a344471d8328e50007f20cbf(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DETAILS');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['DETAILS']){dialog.componentName}_DlgObj.fieldHelpers['DETAILS'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Details of the Incident / Event / Complaint etc.  (complete separate incident forms for others as necessary)'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Details_b61fa0c7a344471d8328e50007f20cbf(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DETAILS');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -8691,7 +8691,6 @@
                     "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
-                        "inRepeatingSection": false,
                         "level": 3,
                         "isContainerStart": false,
                         "isTabControlStart": false,
@@ -8701,6 +8700,7 @@
                         "lastItemInTabPane": false,
                         "inContainer": true,
                         "inCSSGridContainer": false,
+                        "inRepeatingSection": false,
                         "inTabPane": true,
                         "parentContainerID": "69448ad5-c200-4f82-8919-fd161d1c9461",
                         "repeatingSectionParentId": "",
@@ -10312,7 +10312,6 @@
                     "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
-                        "inRepeatingSection": false,
                         "level": 3,
                         "isContainerStart": false,
                         "isTabControlStart": false,
@@ -10322,6 +10321,7 @@
                         "lastItemInTabPane": false,
                         "inContainer": true,
                         "inCSSGridContainer": false,
+                        "inRepeatingSection": false,
                         "inTabPane": true,
                         "parentContainerID": "69448ad5-c200-4f82-8919-fd161d1c9461",
                         "repeatingSectionParentId": "",
@@ -12706,9 +12706,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"First Name\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_R_Name_dcbb47dcca47461a992c019bfda86c73(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('R_NAME');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['R_NAME']){dialog.componentName}_DlgObj.fieldHelpers['R_NAME'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'First Name'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_R_Name_dcbb47dcca47461a992c019bfda86c73(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('R_NAME');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -12795,9 +12795,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -12821,7 +12818,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=dcbb47dc_ca47_461a_992c_019bfda86c73}{I:'$$control.edit'} [R_Name]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.R_NAME\" for=\"{grid.componentname}.V.R{grid.rownumber}.R_NAME\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #125018; font-weight: bold; display: block; \">First Name</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.R_NAME\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_R_Name_dcbb47dcca47461a992c019bfda86c73.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.R_NAME\"    value=\"\"    />\n<!--FldE-->\n</div>",
@@ -12854,9 +12854,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"First Name\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_R_Surname_34faa8936cee4c888623ea5f8a9fbfdc(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('R_SURNAME');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['R_SURNAME']){dialog.componentName}_DlgObj.fieldHelpers['R_SURNAME'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'First Name'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_R_Surname_34faa8936cee4c888623ea5f8a9fbfdc(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('R_SURNAME');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -12943,9 +12943,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -12969,7 +12966,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=34faa893_6cee_4c88_8623_ea5f8a9fbfdc}{I:'$$control.edit'} [R_Surname]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.R_SURNAME\" for=\"{grid.componentname}.V.R{grid.rownumber}.R_SURNAME\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #125018; font-weight: bold; display: block; \">Surname</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.R_SURNAME\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_R_Surname_34faa8936cee4c888623ea5f8a9fbfdc.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.R_SURNAME\"    value=\"\"    />\n<!--FldE-->\n</div>",
@@ -13321,9 +13321,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"Officer Name & No, Date Reported, Record any Police response.\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Police_Details_033bf1fe861545f3a053254898f7c389(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('POLICE_DETAILS');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['POLICE_DETAILS']){dialog.componentName}_DlgObj.fieldHelpers['POLICE_DETAILS'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Officer Name & No, Date Reported, Record any Police response.'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Police_Details_033bf1fe861545f3a053254898f7c389(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('POLICE_DETAILS');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -13709,9 +13709,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -13735,7 +13732,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=a6beb553_f69e_44dc_a21b_d027df1b41a1}{I:'$$control.edit'} [Emial1]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.EMIAL1\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onchange=\"var tfunc = function() {onChange_Emial1_a6beb553f69e44dca21bd027df1b41a1.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.EMIAL1\"    value=\"\"    />\n</span>",
@@ -13873,9 +13873,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -13899,7 +13896,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=f68d0cfe_84c3_4683_b02c_9ca9a3a99185}{I:'$$control.edit'} [Email2]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.EMAIL2\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onchange=\"var tfunc = function() {onChange_Email2_f68d0cfe84c34683b02c9ca9a3a99185.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.EMAIL2\"    value=\"\"    />\n</span>",
@@ -14037,9 +14037,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -14063,7 +14060,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=be937be4_f617_4760_ab01_2b39230bd985}{I:'$$control.edit'} [Email3]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.EMAIL3\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onchange=\"var tfunc = function() {onChange_Email3_be937be4f6174760ab012b39230bd985.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.EMAIL3\"    value=\"\"    />\n</span>",
@@ -14201,9 +14201,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -14227,7 +14224,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=b518ec60_c2e1_4a62_a9b7_29fb10be58d4}{I:'$$control.edit'} [Email4]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.EMAIL4\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onchange=\"var tfunc = function() {onChange_Email4_b518ec60c2e14a62a9b729fb10be58d4.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.EMAIL4\"    value=\"\"    />\n</span>",
@@ -14367,9 +14367,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -14393,7 +14390,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=2055bea4_02d4_48ec_a4dc_aac9d8917dbb}{I:'$$control.edit'} [Emial5]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.EMIAL5\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onchange=\"var tfunc = function() {onChange_Emial5_2055bea402d448eca4dcaac9d8917dbb.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.EMIAL5\"    value=\"\"    />\n</span>",
@@ -14465,6 +14465,9 @@
                     },
                     "localxbasic": "",
                     "localjavascript": "",
+                    "javascript": {
+                        "renderChildren": ""
+                    },
                     "info": {
                         "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertline'}{Data=a04d0c55-453b-4190-8770-d1cf7a6e08b7}{I:'$$control.tab.pane'} [TabPane: Review/Outcome]",
                         "level": 1,
@@ -14490,9 +14493,6 @@
                         "parentPanelCardId": "",
                         "lastID": "16ac4399-68d8-45b0-9008-9ebd20685606",
                         "break": false
-                    },
-                    "javascript": {
-                        "renderChildren": ""
                     }
                 },
                 "precalc": {
@@ -14703,9 +14703,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"FIrst Name\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Reviewer_Name_679ed12b3d844d4687f6df7d7c7c9688(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('REVIEWER_NAME');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['REVIEWER_NAME']){dialog.componentName}_DlgObj.fieldHelpers['REVIEWER_NAME'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'FIrst Name'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Reviewer_Name_679ed12b3d844d4687f6df7d7c7c9688(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('REVIEWER_NAME');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -14817,9 +14817,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -14843,7 +14840,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=679ed12b_3d84_4d46_87f6_df7d7c7c9688}{I:'$$control.edit'} [Reviewer_Name]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.REVIEWER_NAME\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onclick=\"{dialog.object}.ajaxCallback('','{Grid.RowNumber}:all','serverside_5814f1f617e844eb9785f1eeedb07bf7','','_getData=true');\" onchange=\"var tfunc = function() {onChange_Reviewer_Name_679ed12b3d844d4687f6df7d7c7c9688.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.REVIEWER_NAME\"    value=\"\"    />\n<!--FldE-->\n</div>",
@@ -14876,9 +14876,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"Surname\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Reviewer_Surname_68c37d606a794f64aec0fa3e8555120e(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('REVIEWER_SURNAME');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['REVIEWER_SURNAME']){dialog.componentName}_DlgObj.fieldHelpers['REVIEWER_SURNAME'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Surname'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Reviewer_Surname_68c37d606a794f64aec0fa3e8555120e(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('REVIEWER_SURNAME');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -14984,9 +14984,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -15010,7 +15007,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=68c37d60_6a79_4f64_aec0_fa3e8555120e}{I:'$$control.edit'} [Reviewer_Surname]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.REVIEWER_SURNAME\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_Reviewer_Surname_68c37d606a794f64aec0fa3e8555120e.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.REVIEWER_SURNAME\"    value=\"\"    />\n<!--FldE-->\n</div>",
@@ -15041,9 +15041,9 @@
                     },
                     "precalc": {
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Review_Date_d8ca7dc9c2494012afb6e188e9508d96(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('REVIEW_DATE');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['REVIEW_DATE']) {  {dialog.componentName}_DlgObj.fieldHelpers['REVIEW_DATE'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '<DefaultDateOnlyFormat>',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t},\n\t\t\twidth: '100%',\n\t\t\theight: ''\n\t\t},\n\t\tswitchYear: 30,\n\t\tcombinedContainer: {\n\t\t\tstyle: 'display:block'\n\t\t}\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t{\n\t\t\t\thtml: 'OK',\n\t\t\t\taction: 'commit'\n\t\t\t},\n\t\t\t{\n\t\t\t\thtml: 'Cancel',\n\t\t\t\taction: 'close'\n\t\t\t}]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: true\n});}",
                         "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Review_Date_d8ca7dc9c2494012afb6e188e9508d96(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('REVIEW_DATE');};",
                         "javascriptDatePicker": ""
                     },
                     "lookup": {
@@ -15180,9 +15180,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -15206,7 +15203,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=d8ca7dc9_c249_4012_afb6_e188e9508d96}{I:'$$control.edit'} [Review_Date]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 3.0in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.REVIEW_DATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.REVIEW_DATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; float: left; width: __global.labelWidth__; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\">Review Date</label>\n<!--LblE--><!--FldS--><div style=\"margin-left: __global.labelWidth__ ;\"><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.REVIEW_DATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.REVIEW_DATE\" name=\"V.R{grid.rownumber}.REVIEW_DATE\"  value=\"\"  autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.REVIEW_DATE.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n</div><!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
@@ -15298,9 +15298,9 @@
                     "precalc": {
                         "controlJavascript": "\t\t$e.add('{dialog.componentname}.V.R{dialog.rownumber}.DEGREE_TYPE','focusin',function(e) { \n\t\t\tvar obj = {dialog.object}.getControl('Degree_Type');\n\t\t\tconsole.log('obj.selecting: ' + obj.selecting);\n\t\t\tvar id = '';\n\t\t\tvar ele = e.relatedTarget;\n\t\t\tif(ele != null) { \n\t\t\t\tid = ele.id\n\t\t\t}\n\t\t\t//console.log(id);\n\t\t\tif(id != obj._listbox.contId + '.FOCUSCATCHER' && !obj.selecting) { \n\t\t\t\tvar bEle = $(this.id + '.BUTTON');\n\t\t\t\t//bEle.click();\n\t\t\t\t$e.execute(bEle,A5.d.evnts.click);\n\t\t\t}\n\t\t});\n\n\t\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Degree_Type_01c65727d3434dfb80569c7db1c398f8(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DEGREE_TYPE');};",
                         "javascript_Lookupfields": "/* DIALOG2FieldHelperBegin:DEGREE_TYPE */\nif(!{dialog.componentName}_DlgObj.fieldHelpers['DEGREE_TYPE']){dialog.componentName}_DlgObj.fieldHelpers['DEGREE_TYPE'] = new A5.EditCombo({dialog.editcombochoices.DEGREE_TYPE},{\n\ttheme: '{dialog.style}:combo',\n\tonBind: function() {  } ,\n\twindow: {\n\t\theight: 'max: 3in',\n\t\tlocation: 'dropdown',\n\t\ttbar: {\n\t\t\tshow: true,\n\t\t\thtml: '\\r\\n<table>\\r\\n<tr>\\r\\n<td style=\"width: 3in; font-weight: bold;\">TYPE</td>\\r\\n</tr>\\r\\n</table>\\r\\n'\n\t\t}\n\t},\n\tbody: {\n\t\tstyle: 'overflow: auto;'\n\t},\n\tonSelect:  function(data,classInst) {\n\t{dialog.componentname}_DlgObj._batchChange = true;\n\tvar _data = data.SCORE; if(_data) {  _data = _data.split('{crlf}').join('\\n'); {dialog.componentname}_DlgObj.setValue('ISR_DEGRE',_data);}\n\n\t{dialog.componentname}_DlgObj._batchChange = false;\n\tsetTimeout(Function('$e.execute(\\''+this.id+'\\',\\'change\\');'),0);\n\t;\n\n{dialog.componentname}_DlgObj._isDataDirty = true;\n{dialog.componentname}_DlgObj._setRowState(1,true);\n\tclassInst.selecting = false;\n}\n,\n\tonBeforeSelect:  function(data,classInst) { \n\t\n\t//console.log('selecting: ' + JSON.stringify(data,'','\\t') )\n\tclassInst.selecting = true;\n\n}\n,\n\tlistbox: {\n\t\tonItemDraw: function(ele,data,indx) {},\n\t\titem: {\n\t\t\tcolumns: [\n\t\t\t{\n\t\t\t\tname: 'Type'\n\t\t\t}],\n\t\t\ttemplate: '<table>\\r\\n<tr>\\r\\n<td style=\"width: 3in;\">{TYPE}</td>\\r\\n</tr>\\r\\n</table>',\n\t\t\tcalculateValue: function(data) { \nreturn '' + data.TYPE;\n}\n\t\t}\n\t},\n\tselectionRequired: true,\n\tonNoSelect: function(ci) {\nif(ci._initValue != this.value) {\n\tif(ci.valueInList(this.value)) {\n\t\tvar data = ci._listbox.getData(this.value);\n\t\t\n\t\t{dialog.componentname}_DlgObj._batchChange = true;\n\t\tvar _data = data.SCORE; if(_data) {  _data = _data.split('{crlf}').join('\\n'); {dialog.componentname}_DlgObj.setValue('ISR_DEGRE',_data);}\n\n\t\t{dialog.componentname}_DlgObj._batchChange = false;\n\t\tsetTimeout(Function('$e.execute(\\''+this.id+'\\',\\'change\\');'),0);\n\t\t;\n\n{dialog.componentname}_DlgObj._isDataDirty = true;\n{dialog.componentname}_DlgObj._setRowState(1,true);\n\t}\n\t\n \t\n}\n},\n\tselectionRequiredFilterMode: 'default'\n});\n/* DIALOG2FieldHelperEnd:DEGREE_TYPE */",
-                        "xbasic_LookupfieldsPopulate": "dim listDef as p \ndim arrayIndex as n\narrayIndex =arrF.find(ut(\"DEGREE_TYPE\"),\"ut(v.variablename)\")\nif arrayIndex > 0 then\n\tproperty_recurse_assign(listDef,arrF[arrayIndex].v.lookup.editCombo)\n\tif eval_valid(\"arrF[\"+arrayIndex+\"].v.variableName\") then\n\t\trtc._varname = arrF[arrayIndex].v.variableName\n\tend if \n\tdialog.editcombochoices.DEGREE_TYPE = a5gridHelper_getList(rtc, rtc.a_listCache,listDef,rv,\"editCombo\", rtc.a_connCache, tmpl)\nelse\n\tdialog.editcombochoices.DEGREE_TYPE = \"ErrorComputingChoices\"\nend if",
-                        "_jsOnChangeFunction": "function onChange_Degree_Type_01c65727d3434dfb80569c7db1c398f8(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DEGREE_TYPE');};"
+                        "xbasic_LookupfieldsPopulate": "dim listDef as p \ndim arrayIndex as n\narrayIndex =arrF.find(ut(\"DEGREE_TYPE\"),\"ut(v.variablename)\")\nif arrayIndex > 0 then\n\tproperty_recurse_assign(listDef,arrF[arrayIndex].v.lookup.editCombo)\n\tif eval_valid(\"arrF[\"+arrayIndex+\"].v.variableName\") then\n\t\trtc._varname = arrF[arrayIndex].v.variableName\n\tend if \n\tdialog.editcombochoices.DEGREE_TYPE = a5gridHelper_getList(rtc, rtc.a_listCache,listDef,rv,\"editCombo\", rtc.a_connCache, tmpl)\nelse\n\tdialog.editcombochoices.DEGREE_TYPE = \"ErrorComputingChoices\"\nend if"
                     },
                     "hasLookup": true,
                     "lookup": {
@@ -15457,9 +15457,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -15483,7 +15480,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=01c65727_d343_4dfb_8056_9c7db1c398f8}{I:'$$control.edit'} [Degree_Type]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 3.0in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.DEGREE_TYPE\" for=\"{grid.componentname}.V.R{grid.rownumber}.DEGREE_TYPE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; display: block; \">Degree of Impact:</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.DEGREE_TYPE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.DEGREE_TYPE\" name=\"V.R{grid.rownumber}.DEGREE_TYPE\"  value=\"\"  autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"text-align: center; color: #123ce4; width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.DEGREE_TYPE.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"[theme:general.icons.edit.dropdown|{images.edit.dropdownArrow}]\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>",
@@ -15514,9 +15514,9 @@
                     },
                     "precalc": {
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Care_type_95800f8b4151402ba6a52e08f40abe2a(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('CARE_TYPE');};",
                         "javascript_Lookupfields": "/* DIALOG2FieldHelperBegin:CARE_TYPE */\nif(!{dialog.componentName}_DlgObj.fieldHelpers['CARE_TYPE']){dialog.componentName}_DlgObj.fieldHelpers['CARE_TYPE'] = new A5.EditCombo({dialog.editcombochoices.CARE_TYPE},{\n\ttheme: '{dialog.style}:combo',\n\tonBind: function() {  } ,\n\twindow: {\n\t\theight: 'max: 3in',\n\t\tlocation: 'dropdown',\n\t\ttbar: {\n\t\t\tshow: true,\n\t\t\thtml: '\\r\\n<table>\\r\\n<tr>\\r\\n<td style=\"width: 3in; font-weight: bold;\">TYPE</td>\\r\\n</tr>\\r\\n</table>\\r\\n'\n\t\t}\n\t},\n\tbody: {\n\t\tstyle: 'overflow: auto;'\n\t},\n\tonSelect:  function(data,classInst) {\n\t{dialog.componentname}_DlgObj._batchChange = true;\n\tvar _data = data.SCORE; if(_data) {  _data = _data.split('{crlf}').join('\\n'); {dialog.componentname}_DlgObj.setValue('ISR_CARE',_data);}\n\n\t{dialog.componentname}_DlgObj._batchChange = false;\n\tsetTimeout(Function('$e.execute(\\''+this.id+'\\',\\'change\\');'),0);\n\t;\n\n{dialog.componentname}_DlgObj._isDataDirty = true;\n{dialog.componentname}_DlgObj._setRowState(1,true);\n\tclassInst.selecting = false;\n}\n,\n\tonBeforeSelect:  function(data,classInst) { \n\t\n\t//console.log('selecting: ' + JSON.stringify(data,'','\\t') )\n\tclassInst.selecting = true;\n\n}\n,\n\tlistbox: {\n\t\tonItemDraw: function(ele,data,indx) {},\n\t\titem: {\n\t\t\tcolumns: [\n\t\t\t{\n\t\t\t\tname: 'Type'\n\t\t\t}],\n\t\t\ttemplate: '<table>\\r\\n<tr>\\r\\n<td style=\"width: 3in;\">{TYPE}</td>\\r\\n</tr>\\r\\n</table>',\n\t\t\tcalculateValue: function(data) { \nreturn '' + data.TYPE;\n}\n\t\t}\n\t},\n\tselectionRequired: true,\n\tonNoSelect: function(ci) {\nif(ci._initValue != this.value) {\n\tif(ci.valueInList(this.value)) {\n\t\tvar data = ci._listbox.getData(this.value);\n\t\t\n\t\t{dialog.componentname}_DlgObj._batchChange = true;\n\t\tvar _data = data.SCORE; if(_data) {  _data = _data.split('{crlf}').join('\\n'); {dialog.componentname}_DlgObj.setValue('ISR_CARE',_data);}\n\n\t\t{dialog.componentname}_DlgObj._batchChange = false;\n\t\tsetTimeout(Function('$e.execute(\\''+this.id+'\\',\\'change\\');'),0);\n\t\t;\n\n{dialog.componentname}_DlgObj._isDataDirty = true;\n{dialog.componentname}_DlgObj._setRowState(1,true);\n\t}\n\t\n \t\n}\n},\n\tselectionRequiredFilterMode: 'default'\n});\n/* DIALOG2FieldHelperEnd:CARE_TYPE */",
-                        "xbasic_LookupfieldsPopulate": "dim listDef as p \ndim arrayIndex as n\narrayIndex =arrF.find(ut(\"CARE_TYPE\"),\"ut(v.variablename)\")\nif arrayIndex > 0 then\n\tproperty_recurse_assign(listDef,arrF[arrayIndex].v.lookup.editCombo)\n\tif eval_valid(\"arrF[\"+arrayIndex+\"].v.variableName\") then\n\t\trtc._varname = arrF[arrayIndex].v.variableName\n\tend if \n\tdialog.editcombochoices.CARE_TYPE = a5gridHelper_getList(rtc, rtc.a_listCache,listDef,rv,\"editCombo\", rtc.a_connCache, tmpl)\nelse\n\tdialog.editcombochoices.CARE_TYPE = \"ErrorComputingChoices\"\nend if",
-                        "_jsOnChangeFunction": "function onChange_Care_type_95800f8b4151402ba6a52e08f40abe2a(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('CARE_TYPE');};"
+                        "xbasic_LookupfieldsPopulate": "dim listDef as p \ndim arrayIndex as n\narrayIndex =arrF.find(ut(\"CARE_TYPE\"),\"ut(v.variablename)\")\nif arrayIndex > 0 then\n\tproperty_recurse_assign(listDef,arrF[arrayIndex].v.lookup.editCombo)\n\tif eval_valid(\"arrF[\"+arrayIndex+\"].v.variableName\") then\n\t\trtc._varname = arrF[arrayIndex].v.variableName\n\tend if \n\tdialog.editcombochoices.CARE_TYPE = a5gridHelper_getList(rtc, rtc.a_listCache,listDef,rv,\"editCombo\", rtc.a_connCache, tmpl)\nelse\n\tdialog.editcombochoices.CARE_TYPE = \"ErrorComputingChoices\"\nend if"
                     },
                     "hasLookup": true,
                     "lookup": {
@@ -15673,9 +15673,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "{\n\t\"choicetype\": \"Dynamic\",\n\t\"staticchoices\": \"\",\n\t\"dynamicType\": \"SQL\",\n\t\"xbasicfunction\": \"\",\n\t\"connectionString\": \"::Name::Connection3\",\n\t\"sqltablename\": \"ISR_LevelofCare\",\n\t\"displayFieldNames\": \"Type\",\n\t\"returnExpression\": \"Type\",\n\t\"staticfilter\": \"\",\n\t\"order\": \"Score\",\n\t\"hasDynamicFilter\": false,\n\t\"dynamicfilter\": \"\",\n\t\"LoadDataMethod\": \"AtRenderTime\",\n\t\"allowDataCaching\": true,\n\t\"userMustMakeSelectionFromList\": false,\n\t\"openLookupOnFocus\": false,\n\t\"menu\": {\n\t\t\"className\": \"\",\n\t\t\"style\": \"\"\n\t},\n\t\"window\": {\n\t\t\"animation\": {\n\t\t\t\"hasAnimation\": true,\n\t\t\t\"show\": {\n\t\t\t\t\"method\": \"Slide\",\n\t\t\t\t\"speed\": \"Fast\"\n\t\t\t},\n\t\t\t\"hide\": {\n\t\t\t\t\"method\": \"None\",\n\t\t\t\t\"speed\": \"Fast\"\n\t\t\t}\n\t\t},\n\t\t\"pointer\": {\n\t\t\t\"has\": false,\n\t\t\t\"location\": \"Auto\"\n\t\t}\n\t},\n\t\"ajaxWindowPositionAttribute\": \"\",\n\t\"ajaxWindowPositionAttributeEnglish\": \"\",\n\t\"iconColumnWidth\": \"3.0in\",\n\t\"menuHeight\": \"\",\n\t\"menuWidth\": \"\",\n\t\"controltofocusafterselection\": \"\"\n}",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -15699,7 +15696,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=95800f8b_4151_402b_a6a5_2e08f40abe2a}{I:'$$control.edit'} [Care_type]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": "{\n\t\"choicetype\": \"Dynamic\",\n\t\"staticchoices\": \"\",\n\t\"dynamicType\": \"SQL\",\n\t\"xbasicfunction\": \"\",\n\t\"connectionString\": \"::Name::Connection3\",\n\t\"sqltablename\": \"ISR_LevelofCare\",\n\t\"displayFieldNames\": \"Type\",\n\t\"returnExpression\": \"Type\",\n\t\"staticfilter\": \"\",\n\t\"order\": \"Score\",\n\t\"hasDynamicFilter\": false,\n\t\"dynamicfilter\": \"\",\n\t\"LoadDataMethod\": \"AtRenderTime\",\n\t\"allowDataCaching\": true,\n\t\"userMustMakeSelectionFromList\": false,\n\t\"openLookupOnFocus\": false,\n\t\"menu\": {\n\t\t\"className\": \"\",\n\t\t\"style\": \"\"\n\t},\n\t\"window\": {\n\t\t\"animation\": {\n\t\t\t\"hasAnimation\": true,\n\t\t\t\"show\": {\n\t\t\t\t\"method\": \"Slide\",\n\t\t\t\t\"speed\": \"Fast\"\n\t\t\t},\n\t\t\t\"hide\": {\n\t\t\t\t\"method\": \"None\",\n\t\t\t\t\"speed\": \"Fast\"\n\t\t\t}\n\t\t},\n\t\t\"pointer\": {\n\t\t\t\"has\": false,\n\t\t\t\"location\": \"Auto\"\n\t\t}\n\t},\n\t\"ajaxWindowPositionAttribute\": \"\",\n\t\"ajaxWindowPositionAttributeEnglish\": \"\",\n\t\"iconColumnWidth\": \"3.0in\",\n\t\"menuHeight\": \"\",\n\t\"menuWidth\": \"\",\n\t\"controltofocusafterselection\": \"\"\n}"
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 3.0in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.CARE_TYPE\" for=\"{grid.componentname}.V.R{grid.rownumber}.CARE_TYPE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; display: block; \">Level of Care:</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.CARE_TYPE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.CARE_TYPE\" name=\"V.R{grid.rownumber}.CARE_TYPE\"  value=\"\"  autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"text-align: center; color: #123ce4; width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.CARE_TYPE.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"[theme:general.icons.edit.dropdown|{images.edit.dropdownArrow}]\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>",
@@ -15731,9 +15731,9 @@
                     "precalc": {
                         "controlJavascript": "\t\t$e.add('{dialog.componentname}.V.R{dialog.rownumber}.TREATMENT_TYPE','focusin',function(e) { \n\t\t\tvar obj = {dialog.object}.getControl('Treatment_Type');\n\t\t\tconsole.log('obj.selecting: ' + obj.selecting);\n\t\t\tvar id = '';\n\t\t\tvar ele = e.relatedTarget;\n\t\t\tif(ele != null) { \n\t\t\t\tid = ele.id\n\t\t\t}\n\t\t\t//console.log(id);\n\t\t\tif(id != obj._listbox.contId + '.FOCUSCATCHER' && !obj.selecting) { \n\t\t\t\tvar bEle = $(this.id + '.BUTTON');\n\t\t\t\t//bEle.click();\n\t\t\t\t$e.execute(bEle,A5.d.evnts.click);\n\t\t\t}\n\t\t});\n\n\t\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Treatment_Type_b60c3b437bd74520a5922b88e425e114(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('TREATMENT_TYPE');};",
                         "javascript_Lookupfields": "/* DIALOG2FieldHelperBegin:TREATMENT_TYPE */\nif(!{dialog.componentName}_DlgObj.fieldHelpers['TREATMENT_TYPE']){dialog.componentName}_DlgObj.fieldHelpers['TREATMENT_TYPE'] = new A5.EditCombo({dialog.editcombochoices.TREATMENT_TYPE},{\n\ttheme: '{dialog.style}:combo',\n\tonBind: function() {  } ,\n\twindow: {\n\t\theight: 'max: 3in',\n\t\tlocation: 'dropdown',\n\t\ttbar: {\n\t\t\tshow: true,\n\t\t\thtml: '\\r\\n<table>\\r\\n<tr>\\r\\n<td style=\"width: 3in; font-weight: bold;\">TYPE</td>\\r\\n</tr>\\r\\n</table>\\r\\n'\n\t\t}\n\t},\n\tbody: {\n\t\tstyle: 'overflow: auto;'\n\t},\n\tonSelect:  function(data,classInst) {\n\t{dialog.componentname}_DlgObj._batchChange = true;\n\tvar _data = data.SCORE; if(_data) {  _data = _data.split('{crlf}').join('\\n'); {dialog.componentname}_DlgObj.setValue('ISR_TREATMENT',_data);}\n\n\t{dialog.componentname}_DlgObj._batchChange = false;\n\tsetTimeout(Function('$e.execute(\\''+this.id+'\\',\\'change\\');'),0);\n\t;\n\n{dialog.componentname}_DlgObj._isDataDirty = true;\n{dialog.componentname}_DlgObj._setRowState(1,true);\n\tclassInst.selecting = false;\n}\n,\n\tonBeforeSelect:  function(data,classInst) { \n\t\n\t//console.log('selecting: ' + JSON.stringify(data,'','\\t') )\n\tclassInst.selecting = true;\n\n}\n,\n\tlistbox: {\n\t\tonItemDraw: function(ele,data,indx) {},\n\t\titem: {\n\t\t\tcolumns: [\n\t\t\t{\n\t\t\t\tname: 'Type'\n\t\t\t}],\n\t\t\ttemplate: '<table>\\r\\n<tr>\\r\\n<td style=\"width: 3in;\">{TYPE}</td>\\r\\n</tr>\\r\\n</table>',\n\t\t\tcalculateValue: function(data) { \nreturn '' + data.TYPE;\n}\n\t\t}\n\t},\n\tselectionRequired: true,\n\tonNoSelect: function(ci) {\nif(ci._initValue != this.value) {\n\tif(ci.valueInList(this.value)) {\n\t\tvar data = ci._listbox.getData(this.value);\n\t\t\n\t\t{dialog.componentname}_DlgObj._batchChange = true;\n\t\tvar _data = data.SCORE; if(_data) {  _data = _data.split('{crlf}').join('\\n'); {dialog.componentname}_DlgObj.setValue('ISR_TREATMENT',_data);}\n\n\t\t{dialog.componentname}_DlgObj._batchChange = false;\n\t\tsetTimeout(Function('$e.execute(\\''+this.id+'\\',\\'change\\');'),0);\n\t\t;\n\n{dialog.componentname}_DlgObj._isDataDirty = true;\n{dialog.componentname}_DlgObj._setRowState(1,true);\n\t}\n\t\n \t\n}\n},\n\tselectionRequiredFilterMode: 'default'\n});\n/* DIALOG2FieldHelperEnd:TREATMENT_TYPE */",
-                        "xbasic_LookupfieldsPopulate": "dim listDef as p \ndim arrayIndex as n\narrayIndex =arrF.find(ut(\"TREATMENT_TYPE\"),\"ut(v.variablename)\")\nif arrayIndex > 0 then\n\tproperty_recurse_assign(listDef,arrF[arrayIndex].v.lookup.editCombo)\n\tif eval_valid(\"arrF[\"+arrayIndex+\"].v.variableName\") then\n\t\trtc._varname = arrF[arrayIndex].v.variableName\n\tend if \n\tdialog.editcombochoices.TREATMENT_TYPE = a5gridHelper_getList(rtc, rtc.a_listCache,listDef,rv,\"editCombo\", rtc.a_connCache, tmpl)\nelse\n\tdialog.editcombochoices.TREATMENT_TYPE = \"ErrorComputingChoices\"\nend if",
-                        "_jsOnChangeFunction": "function onChange_Treatment_Type_b60c3b437bd74520a5922b88e425e114(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('TREATMENT_TYPE');};"
+                        "xbasic_LookupfieldsPopulate": "dim listDef as p \ndim arrayIndex as n\narrayIndex =arrF.find(ut(\"TREATMENT_TYPE\"),\"ut(v.variablename)\")\nif arrayIndex > 0 then\n\tproperty_recurse_assign(listDef,arrF[arrayIndex].v.lookup.editCombo)\n\tif eval_valid(\"arrF[\"+arrayIndex+\"].v.variableName\") then\n\t\trtc._varname = arrF[arrayIndex].v.variableName\n\tend if \n\tdialog.editcombochoices.TREATMENT_TYPE = a5gridHelper_getList(rtc, rtc.a_listCache,listDef,rv,\"editCombo\", rtc.a_connCache, tmpl)\nelse\n\tdialog.editcombochoices.TREATMENT_TYPE = \"ErrorComputingChoices\"\nend if"
                     },
                     "hasLookup": true,
                     "lookup": {
@@ -15890,9 +15890,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -15916,7 +15913,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=b60c3b43_7bd7_4520_a592_2b88e425e114}{I:'$$control.edit'} [Treatment_Type]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 3.0in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.TREATMENT_TYPE\" for=\"{grid.componentname}.V.R{grid.rownumber}.TREATMENT_TYPE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; display: block; \">Treatment Type</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.TREATMENT_TYPE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.TREATMENT_TYPE\" name=\"V.R{grid.rownumber}.TREATMENT_TYPE\"  value=\"\"  autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"text-align: center; color: #123ce4; width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.TREATMENT_TYPE.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"[theme:general.icons.edit.dropdown|{images.edit.dropdownArrow}]\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
@@ -15950,9 +15950,9 @@
                         "editOptionsJSObject": "<watermark<text=\"Select Here\">\n>\n",
                         "javascriptClientSideWatches": "{dialog.object}.dialogWatches['ENABLE_ISR_DEGRE'] = {\n\t\twatch: [],\n\t\tvariables: [],\n\t\tonChange: function(data) {\n\t\n\tvar dialog = {};\n\tvar summary = {};var enable = (1 == 2);\n\tvar eles = $cetp($n('V.R' + data.rowNumber + '.ISR_DEGRE'),$('{dialog.componentName}.R'+data.rowNumber));\n\tif(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('{grid.componentname}.'+'V.R' + data.rowNumber + '.ISR_DEGRE')];\n\tvar pObj = {dialog.object}.getControl('ISR_Degre'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }\n\tif(typeof {dialog.object}._buttons['ISR_Degre'] != 'undefined') {\n\t{dialog.object}._buttons['ISR_Degre'].setDisabled(!enable,eles)\n\t} else {\n\tfor(var i=0; i<eles.length;i++) eles[i].disabled = !enable;\n\t}\n\t;;\n\t{dialog.object}._executeEvent('onWatchEvent',{type: 'enable', control: 'ISR_Degre', flag: enable});}\n}\n\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_ISR_Degre_46db32e9f3cf4e9b9d293ccc2becb0b1(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('ISR_DEGRE');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['ISR_DEGRE']){dialog.componentName}_DlgObj.fieldHelpers['ISR_DEGRE'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Select Here'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_ISR_Degre_46db32e9f3cf4e9b9d293ccc2becb0b1(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('ISR_DEGRE');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "Type": "Grid Component",
@@ -16051,9 +16051,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -16077,7 +16074,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=46db32e9_f3cf_4e9b_9d29_3ccc2becb0b1}{I:'$$control.edit'} [ISR_Degre]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 3.0in\" >\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.ISR_DEGRE\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"text-align: center; color: #123ce4; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_ISR_Degre_46db32e9f3cf4e9b9d293ccc2becb0b1.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.ISR_DEGRE\"    value=\"\"    />\n<!--FldE-->\n</div>",
@@ -16111,9 +16111,9 @@
                         "editOptionsJSObject": "<watermark<text=\"Select Here\">\n>\n",
                         "javascriptClientSideWatches": "{dialog.object}.dialogWatches['ENABLE_ISR_CARE'] = {\n\t\twatch: [],\n\t\tvariables: [],\n\t\tonChange: function(data) {\n\t\n\tvar dialog = {};\n\tvar summary = {};var enable = (1 == 2);\n\tvar eles = $cetp($n('V.R' + data.rowNumber + '.ISR_CARE'),$('{dialog.componentName}.R'+data.rowNumber));\n\tif(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('{grid.componentname}.'+'V.R' + data.rowNumber + '.ISR_CARE')];\n\tvar pObj = {dialog.object}.getControl('ISR_Care'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }\n\tif(typeof {dialog.object}._buttons['ISR_Care'] != 'undefined') {\n\t{dialog.object}._buttons['ISR_Care'].setDisabled(!enable,eles)\n\t} else {\n\tfor(var i=0; i<eles.length;i++) eles[i].disabled = !enable;\n\t}\n\t;;\n\t{dialog.object}._executeEvent('onWatchEvent',{type: 'enable', control: 'ISR_Care', flag: enable});}\n}\n\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_ISR_Care_54a19b07ae3c45b68ba370a28eb9ab83(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('ISR_CARE');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['ISR_CARE']){dialog.componentName}_DlgObj.fieldHelpers['ISR_CARE'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Select Here'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_ISR_Care_54a19b07ae3c45b68ba370a28eb9ab83(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('ISR_CARE');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "Type": "Grid Component",
@@ -16212,9 +16212,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -16238,7 +16235,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=54a19b07_ae3c_45b6_8ba3_70a28eb9ab83}{I:'$$control.edit'} [ISR_Care]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 3.0in\" >\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.ISR_CARE\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"text-align: center; color: #123ce4; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_ISR_Care_54a19b07ae3c45b68ba370a28eb9ab83.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.ISR_CARE\"    value=\"\"    />\n<!--FldE-->\n</div>",
@@ -16272,9 +16272,9 @@
                         "editOptionsJSObject": "<watermark<text=\"Select Here\">\n>\n",
                         "javascriptClientSideWatches": "{dialog.object}.dialogWatches['ENABLE_ISR_TREATMENT'] = {\n\t\twatch: [],\n\t\tvariables: [],\n\t\tonChange: function(data) {\n\t\n\tvar dialog = {};\n\tvar summary = {};var enable = (1 == 2);\n\tvar eles = $cetp($n('V.R' + data.rowNumber + '.ISR_TREATMENT'),$('{dialog.componentName}.R'+data.rowNumber));\n\tif(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('{grid.componentname}.'+'V.R' + data.rowNumber + '.ISR_TREATMENT')];\n\tvar pObj = {dialog.object}.getControl('ISR_Treatment'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }\n\tif(typeof {dialog.object}._buttons['ISR_Treatment'] != 'undefined') {\n\t{dialog.object}._buttons['ISR_Treatment'].setDisabled(!enable,eles)\n\t} else {\n\tfor(var i=0; i<eles.length;i++) eles[i].disabled = !enable;\n\t}\n\t;;\n\t{dialog.object}._executeEvent('onWatchEvent',{type: 'enable', control: 'ISR_Treatment', flag: enable});}\n}\n\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_ISR_Treatment_787648686e7b4de5940819249e39f8ba(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('ISR_TREATMENT');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['ISR_TREATMENT']){dialog.componentName}_DlgObj.fieldHelpers['ISR_TREATMENT'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Select Here'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_ISR_Treatment_787648686e7b4de5940819249e39f8ba(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('ISR_TREATMENT');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "Type": "Grid Component",
@@ -16373,9 +16373,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -16399,7 +16396,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=78764868_6e7b_4de5_9408_19249e39f8ba}{I:'$$control.edit'} [ISR_Treatment]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 3.0in\" >\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.ISR_TREATMENT\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"text-align: center; color: #123ce4; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_ISR_Treatment_787648686e7b4de5940819249e39f8ba.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.ISR_TREATMENT\"    value=\"\"    />\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
@@ -16429,7 +16429,6 @@
                     "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
-                        "inRepeatingSection": false,
                         "level": 4,
                         "isContainerStart": false,
                         "isTabControlStart": false,
@@ -16439,6 +16438,7 @@
                         "lastItemInTabPane": false,
                         "inContainer": true,
                         "inCSSGridContainer": false,
+                        "inRepeatingSection": false,
                         "inTabPane": true,
                         "parentContainerID": "f5d50714-9343-437d-b220-622cc8f5b897",
                         "repeatingSectionParentId": "",
@@ -16485,9 +16485,9 @@
                         "editOptionsJSObject": "<format<type=\"number\">\n<number<blank=.T.>\n<blankValue=0>\n<hasMax=.F.>\n<max=100>\n<hasMin=.F.>\n<min=0>\n<decimal=\".\">\n>\n>\n",
                         "javascriptClientSideWatches": "{dialog.object}.dialogWatches['CALC_ISR_SEVERITY_SCORE'] = {\n\t\twatch: ['ISR_DEGRE','ISR_CARE','ISR_TREATMENT'],\n\t\tvariables: [],\n\t\tupdateColumn: 'ISR_SEVERITY_SCORE',\n\t\tonChange: function(data) {\n\t\n\tvar dialog = {};\n\tvar summary = {};var ISR_DEGRE = $u.s.toNum({dialog.object}.getValue('ISR_DEGRE',data.rowNumber));\n\tvar ISR_CARE = $u.s.toNum({dialog.object}.getValue('ISR_CARE',data.rowNumber));\n\tvar ISR_TREATMENT = $u.s.toNum({dialog.object}.getValue('ISR_TREATMENT',data.rowNumber));\n\t{dialog.object}.setValue('ISR_SEVERITY_SCORE','' +   ($u.n.toStr(((ISR_DEGRE+ISR_CARE)+ISR_TREATMENT))),!data.external);;\n\t{dialog.object}._executeEvent('onWatchEvent',{type: 'calculatedField', control: 'ISR_Severity_Score', flag: true});}\n}\n\n{dialog.object}.dialogWatches['ENABLE_ISR_SEVERITY_SCORE'] = {\n\t\twatch: [],\n\t\tvariables: [],\n\t\tonChange: function(data) {\n\t\n\tvar dialog = {};\n\tvar summary = {};var enable = (1 == 2);\n\tvar eles = $cetp($n('V.R' + data.rowNumber + '.ISR_SEVERITY_SCORE'),$('{dialog.componentName}.R'+data.rowNumber));\n\tif(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('{grid.componentname}.'+'V.R' + data.rowNumber + '.ISR_SEVERITY_SCORE')];\n\tvar pObj = {dialog.object}.getControl('ISR_Severity_Score'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }\n\tif(typeof {dialog.object}._buttons['ISR_Severity_Score'] != 'undefined') {\n\t{dialog.object}._buttons['ISR_Severity_Score'].setDisabled(!enable,eles)\n\t} else {\n\tfor(var i=0; i<eles.length;i++) eles[i].disabled = !enable;\n\t}\n\t;;\n\t{dialog.object}._executeEvent('onWatchEvent',{type: 'enable', control: 'ISR_Severity_Score', flag: enable});}\n}\n\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_ISR_Severity_Score_b8e8c79928de465193517d2ff6d9786f(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('ISR_SEVERITY_SCORE');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['ISR_SEVERITY_SCORE']){dialog.componentName}_DlgObj.fieldHelpers['ISR_SEVERITY_SCORE'] = new A5.Edit({\n\tformat: {\n\t\ttype: 'number',\n\t\tnumber: {\n\t\t\tblank: true,\n\t\t\tblankValue: 0,\n\t\t\thasMax: false,\n\t\t\tmax: 100,\n\t\t\thasMin: false,\n\t\t\tmin: 0,\n\t\t\tdecimal: '.'\n\t\t}\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_ISR_Severity_Score_b8e8c79928de465193517d2ff6d9786f(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('ISR_SEVERITY_SCORE');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -16587,9 +16587,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 4,
                         "isContainerStart": false,
@@ -16613,7 +16610,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=b8e8c799_28de_4651_9351_7d2ff6d9786f}{I:'$$control.edit'} [ISR_Severity_Score]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.ISR_SEVERITY_SCORE\" for=\"{grid.componentname}.V.R{grid.rownumber}.ISR_SEVERITY_SCORE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; color: #b71111; font-weight: bold; display: block; \">Total - ISR - Score</label>\n<!--LblE-->\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.ISR_SEVERITY_SCORE\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"text-align: center; color: #c21111; font-weight: bold; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onchange=\"var tfunc = function() {onChange_ISR_Severity_Score_b8e8c79928de465193517d2ff6d9786f.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.ISR_SEVERITY_SCORE\"    value=\"\"    />\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
@@ -17120,10 +17120,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "HYPERLINK",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Hyperlink]",
                     "controltype": "layout_directive_hyperlink",
-                    "icon": "$$generic.link",
-                    "lastbutton": "OK"
+                    "icon": "$$generic.link"
                 }
             },
             {
@@ -17237,10 +17237,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "CONTAINERBEGIN",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Container Begin]",
                     "controltype": "layout_directive_ContainerBegin",
-                    "icon": "$$format.border.style.dash",
-                    "lastbutton": "OK"
+                    "icon": "$$format.border.style.dash"
                 }
             },
             {
@@ -17307,10 +17307,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "FRAMEBEGIN",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Frame Begin]",
                     "controltype": "layout_directive_FrameBegin",
-                    "icon": "$$control.group",
-                    "lastbutton": "OK"
+                    "icon": "$$control.group"
                 }
             },
             {
@@ -17333,8 +17333,6 @@
                     "precalc": {
                         "javascriptAbstractSetupCode": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "wrapchildcontrolsindiv": true,
                     "info": {
                         "level": 6,
@@ -17359,7 +17357,9 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=0504c803_c72e_4a8c_beda_af9a5d2824b5}{I:'$$control.staticHTML'} [freeform: FREEFORM_1]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "localxbasic": "",
+                    "localjavascript": ""
                 },
                 "indentTree": 2,
                 "precalc": {
@@ -17373,10 +17373,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "FREEFORM",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Free-form Container]",
                     "controltype": "layout_directive_freeform",
-                    "icon": "$$control.staticHTML",
-                    "lastbutton": "OK"
+                    "icon": "$$control.staticHTML"
                 }
             },
             {
@@ -17431,10 +17431,10 @@
                 "containerStartIndex": 119,
                 "shortControlType": "FRAMEEND",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Frame End]",
                     "controltype": "layout_directive_FrameEnd",
-                    "icon": "$$control.group",
-                    "lastbutton": "OK"
+                    "icon": "$$control.group"
                 }
             },
             {
@@ -17487,14 +17487,14 @@
                 "isCollapsed": false,
                 "parentIsCollapsed": true,
                 "containerStartIndex": 118,
+                "__flagwrapcontentsindiv": false,
                 "shortControlType": "CONTAINEREND",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Container End]",
                     "controltype": "layout_directive_ContainerEnd",
-                    "icon": "$$format.border.style.dash",
-                    "lastbutton": "OK"
-                },
-                "__flagwrapcontentsindiv": false
+                    "icon": "$$format.border.style.dash"
+                }
             },
             {
                 "controlType": "layout_directive_FrameEnd",
@@ -17626,9 +17626,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"During the review, have any further actions/investigations been undertaken?\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Further_Actions_5907ca8b4e6748d8bcc982e9442bfbb9(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('FURTHER_ACTIONS');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['FURTHER_ACTIONS']){dialog.componentName}_DlgObj.fieldHelpers['FURTHER_ACTIONS'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'During the review, have any further actions/investigations been undertaken?'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Further_Actions_5907ca8b4e6748d8bcc982e9442bfbb9(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('FURTHER_ACTIONS');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -17882,9 +17882,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"What was the outcome?\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Outcome_7c18f8b054764857b2c297f5b96725db(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('OUTCOME');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['OUTCOME']){dialog.componentName}_DlgObj.fieldHelpers['OUTCOME'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'What was the outcome?'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Outcome_7c18f8b054764857b2c297f5b96725db(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('OUTCOME');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -18141,9 +18141,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"Have there been any further actions undertaken to prevent re-occurrences if necessary?\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Reoccurance_1013853d33b249a4b985ae5275b5b794(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('REOCCURANCE');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['REOCCURANCE']){dialog.componentName}_DlgObj.fieldHelpers['REOCCURANCE'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Have there been any further actions undertaken to prevent re-occurrences if necessary?'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Reoccurance_1013853d33b249a4b985ae5275b5b794(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('REOCCURANCE');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -18927,9 +18927,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 5,
                         "isContainerStart": false,
@@ -18953,7 +18950,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=aa566ce9_0470_45ec_89bc_906862958187}{I:'$$control.edit'} [IDNotes]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<!--CtrlS:aa566ce9_0470_45ec_89bc_906862958187--><span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.IDNOTES_A5INSTANCE[instanceNumber]\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onChange=\"var tfunc = function() {onChange_IDNotes_aa566ce9047045ec89bc906862958187.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.IDNOTES_A5INSTANCE[instanceNumber]\"    value=\"\"    />\n</span><!--CtrlE:aa566ce9_0470_45ec_89bc_906862958187-->",
@@ -18986,9 +18986,9 @@
                     },
                     "precalc": {
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Date_Entered_d70cc76129d244328c0e03a19d983837(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DATE_ENTERED');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['DATE_ENTERED']) {  {dialog.componentName}_DlgObj.fieldHelpers['DATE_ENTERED'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '<DefaultDateOnlyFormat>',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t},\n\t\t\twidth: '100%',\n\t\t\theight: ''\n\t\t},\n\t\tswitchYear: 30,\n\t\tcombinedContainer: {\n\t\t\tstyle: 'display:block'\n\t\t}\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t{\n\t\t\t\thtml: 'OK',\n\t\t\t\taction: 'commit'\n\t\t\t},\n\t\t\t{\n\t\t\t\thtml: 'Cancel',\n\t\t\t\taction: 'close'\n\t\t\t}]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
                         "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Date_Entered_d70cc76129d244328c0e03a19d983837(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('DATE_ENTERED');};",
                         "javascriptDatePicker": ""
                     },
                     "lookup": {
@@ -19124,9 +19124,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 5,
                         "isContainerStart": false,
@@ -19150,7 +19147,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=d70cc761_29d2_4432_8c0e_03a19d983837}{I:'$$control.edit'} [Date_Entered]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<!--CtrlS:d70cc761_29d2_4432_8c0e_03a19d983837--><div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE_ENTERED_A5INSTANCE[instanceNumber].CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE_ENTERED_A5INSTANCE[instanceNumber]\" name=\"V.R{grid.rownumber}.DATE_ENTERED_A5INSTANCE[instanceNumber]\"  value=\"\"    autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.DATE_ENTERED_A5INSTANCE[instanceNumber].BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div><!--CtrlE:d70cc761_29d2_4432_8c0e_03a19d983837-->",
@@ -19292,9 +19292,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 5,
                         "isContainerStart": false,
@@ -19318,7 +19315,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=c1879d96_4947_46dc_ac4a_912214b9ad9d}{I:'$$control.edit'} [Name]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<!--CtrlS:c1879d96_4947_46dc_ac4a_912214b9ad9d--><div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--FldS--><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.NAME_A5INSTANCE[instanceNumber]\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"  onChange=\"var tfunc = function() {onChange_Name_c1879d96494746dcac4a912214b9ad9d.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.NAME_A5INSTANCE[instanceNumber]\"    value=\"\"    />\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend--><!--CtrlE:c1879d96_4947_46dc_ac4a_912214b9ad9d-->",
@@ -19447,9 +19447,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 5,
                         "isContainerStart": false,
@@ -19473,7 +19470,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=2cea61a8_8df8_4b08_b9ec_8b153ccef141}{I:'$$control.edit'} [Incidnet_ID_Link]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<!--CtrlS:2cea61a8_8df8_4b08_b9ec_8b153ccef141--><span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.INCIDNET_ID_LINK_A5INSTANCE[instanceNumber]\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onChange=\"var tfunc = function() {onChange_Incidnet_ID_Link_2cea61a88df84b08b9ec8b153ccef141.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.INCIDNET_ID_LINK_A5INSTANCE[instanceNumber]\"    value=\"\"    />\n</span><!--CtrlE:2cea61a8_8df8_4b08_b9ec_8b153ccef141-->",
@@ -19508,9 +19508,9 @@
                     "precalc": {
                         "editOptionsJSObject": "<watermark<text=\"Add notes and communication here...\">\n>\n",
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Notes_32c07c0a93a94bd89d139a636ce07c1d(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('NOTES');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['NOTES']){dialog.componentName}_DlgObj.fieldHelpers['NOTES'] = new A5.Edit({\n\twatermark: {\n\t\ttext: 'Add notes and communication here...'\n\t}\n});",
-                        "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Notes_32c07c0a93a94bd89d139a636ce07c1d(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('NOTES');};"
+                        "xbasic_LookupfieldsPopulate": ""
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -20939,9 +20939,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -20965,7 +20962,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=87320332_69f3_4237_8588_65d1c80d50c3}{I:'$$control.edit'} [Email_HR]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.EMAIL_HR\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onchange=\"var tfunc = function() {onChange_Email_HR_8732033269f34237858865d1c80d50c3.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.EMAIL_HR\"    value=\"\"    />\n</span>",
@@ -21105,9 +21105,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -21131,7 +21128,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=75b82d84_2dec_491b_9b22_9f8c45a965f4}{I:'$$control.edit'} [Email_Risk]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.EMAIL_RISK\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onchange=\"var tfunc = function() {onChange_Email_Risk_75b82d842dec491b9b229f8c45a965f4.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.EMAIL_RISK\"    value=\"\"    />\n</span>",
@@ -21271,9 +21271,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -21297,7 +21294,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=0416c820_6cb2_483c_b965_6fe4ae2412fa}{I:'$$control.edit'} [Email_OP]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.EMAIL_OP\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onchange=\"var tfunc = function() {onChange_Email_OP_0416c8206cb2483cb9656fe4ae2412fa.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.EMAIL_OP\"    value=\"\"    />\n</span>",
@@ -21437,9 +21437,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 3,
                         "isContainerStart": false,
@@ -21463,7 +21460,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{I:'vertline'}{Data=b7c28765_86cd_4c1f_b69d_6c8838d99a65}{I:'$$control.edit'} [Email_CEO]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<span><input\ttype=\"text\" id=\"{grid.componentname}.V.R{grid.rownumber}.EMAIL_CEO\" title=\"\"     class=\"[theme:edit.base.className|class.dialogInput] \" style=\"\"  onchange=\"var tfunc = function() {onChange_Email_CEO_b7c2876586cd4c1fb69d6c8838d99a65.call(this,{dialog.object});;}; var tscope = this; setTimeout(function() { if(tscope) { tfunc.call(tscope);} delete tscope;},1 );\"   name=\"V.R{grid.rownumber}.EMAIL_CEO\"    value=\"\"    />\n</span>",
@@ -21637,6 +21637,7 @@
                     "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
+                        "inRepeatingSection": false,
                         "level": 0,
                         "isContainerStart": false,
                         "isTabControlStart": false,
@@ -21646,7 +21647,6 @@
                         "lastItemInTabPane": false,
                         "inContainer": false,
                         "inCSSGridContainer": false,
-                        "inRepeatingSection": false,
                         "inTabPane": false,
                         "parentContainerID": "",
                         "repeatingSectionParentId": "",
@@ -21789,6 +21789,7 @@
                     "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
+                        "inRepeatingSection": false,
                         "level": 0,
                         "isContainerStart": false,
                         "isTabControlStart": false,
@@ -21798,7 +21799,6 @@
                         "lastItemInTabPane": false,
                         "inContainer": false,
                         "inCSSGridContainer": false,
-                        "inRepeatingSection": false,
                         "inTabPane": false,
                         "parentContainerID": "",
                         "repeatingSectionParentId": "",
@@ -21857,9 +21857,9 @@
         "keyboardShortcutsJSON": "",
         "preRenderWarningMessageShow": false,
         "autoSetPreRenderOnForAllUX": true,
-        "selected": "",
+        "selected": "589876d1_54af_4ced_9c9b_988a2988efd5\n",
         "designPaneIndex": 1,
-        "masterPaneC": "EventsServerSide",
+        "masterPaneC": "controls",
         "serverSideEventIndex": 4,
         "clientSideEventIndex": 38,
         "clientSideEventIndexC": "38",
@@ -21872,12 +21872,12 @@
         "containerSubTypeOld": "",
         "flagDropdownCascadingChanged": false,
         "toolBox_value": "",
-        "addinBuildNumber": "5683",
-        "addinBuildNumberHighestUsed": "5683",
+        "addinBuildNumber": "5691",
+        "addinBuildNumberHighestUsed": "5691",
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "361",
+        "_buildCount": "362",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
@@ -22036,7 +22036,7 @@
         "sassProcessor": true,
         "debugMode": false,
         "__jsLibraries": "<script type=\"text/javascript\" src=\"javascript/a5.js\"></script>\n<script type=\"text/javascript\" src=\"javascript/a5_url.js\"></script>\n",
-        "A5SaveTimeStamp": "20230719101505019",
+        "A5SaveTimeStamp": "20240515200342643",
         "a_actionJavascript": [
             {
                 "actionGuid": "0b354214-667b-4bde-8558-4413affb4a70",
@@ -22081,14 +22081,12 @@
         "pusherConfigJSON": "",
         "pusherApp": false,
         "forceChromeControl": true,
-        "compressux": false,
         "_flagDoTreeview": true,
         "_move": {
             "index": 115,
             "targetIndex": 116,
             "count": 1
         },
-        "livePreview_permissions_friendly": "Add New Admin\nAdd_News\nAdmin_Staff\nAdministrators\nBoard\nCompliance\nDocument_Manager\nFinance\nGovernance\nHumanResource\nIncident1\nIncident2\nIncident3\nIncident4\nPrint\nReviewer\nSystem_Administrator\nUsers\n",
         "useCSSFlexForContainerAlignment": true,
         "customTabOrder": "",
         "friendlydatesCustomizationJSON": "",
@@ -22123,7 +22121,6 @@
             "pickers": true
         },
         "_flagUsesCharts": false,
-        "__isStaticHTML": false,
         "lockEventHandlers": true,
         "lockEventHandlersDuration": 300,
         "capturesqltracelog": false,
@@ -22143,16 +22140,20 @@
         "__embedLinkedFiles": false,
         "__embedLinkedJSFiles": false,
         "__allowCascadingRecalc": true,
+        "suppressJavascriptCodeWarning": false,
         "onConnectionLostBehavior": "Stop",
         "onConnectionLostExecutionDuration": "300",
-        "svgiconsdefaultsize": "15,15",
-        "corsAllowOrigins": "*",
-        "corsAllowPrivateNetwork": false,
-        "_style_name_beforeResolve": "<ProjectStyle>",
         "AllowSelectionOfText": false,
         "debugOnTemplateError": false,
+        "restorePanelSizes": true,
         "simulatedculture": "",
-        "favoriteControls": "",
+        "simulatedcultureNumber": "",
+        "svgiconsdefaultsize": "15,15",
+        "compressUX": false,
+        "corsAllowOrigins": "*",
+        "corsAllowPrivateNetwork": false,
+        "populateArgumentsFromQueryString": false,
+        "_style_name_beforeResolve": "<ProjectStyle>",
         "__idinternalCurrentControl": "f234d1bd_3bf9_4e98_bb19_b6b3306ee568",
         "__nameCurrentControl": "Status_Incidnet",
         "serverSideActionsArray": [
@@ -22169,11 +22170,7 @@
                 "builder": "sendEmail"
             }
         ],
-        "suppressJavascriptCodeWarning": false,
-        "restorePanelSizes": true,
-        "simulatedcultureNumber": "",
-        "populateArgumentsFromQueryString": false,
-        "_original_Style_name": "<ProjectStyle>",
+        "favoriteControls": "",
         "a_UnboundActionJavascript": [
             {
                 "idInternal": "569b80f7-551c-4ad5-ac23-d3c15976a4ad",
@@ -22200,6 +22197,10 @@
         ],
         "unboundActionShowOnNewActionMessage": true,
         "actionJavascriptUnboundLastEdited": "569b80f7-551c-4ad5-ac23-d3c15976a4ad",
-        "_flagForceRecalcChildren": true
+        "livePreview_permissions_friendly": "Add New Admin\nAdd_News\nAdmin_Staff\nAdministrators\nBoard\nCompliance\nDocument_Manager\nFinance\nGovernance\nHumanResource\nIncident1\nIncident2\nIncident3\nIncident4\nPrint\nReviewer\nSystem_Administrator\nUsers\n",
+        "_flagForceRecalcChildren": true,
+        "_original_Style_name": "<ProjectStyle>",
+        "_alphasoftwareBucketName": "",
+        "staticHTMLFileJSON": ""
     }
 }
