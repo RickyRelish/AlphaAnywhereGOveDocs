@@ -27,8 +27,8 @@
             "createdBy": "Ricky",
             "lastUpdatedBy": "Ricky",
             "dateCreated": "2022-11-11",
-            "dateLastEdited": "2024-5-13",
-            "revisionnumber": 328
+            "dateLastEdited": "2024-5-17",
+            "revisionnumber": 330
         },
         "checkSessionEvery": 1,
         "warningIntervalBeforeExpiration": 1,
@@ -146,17 +146,7 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=28eba11d-8ac2-4700-a99b-2f466bc1ecc5}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=28eba11d-8ac2-4700-a99b-2f466bc1ecc5}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: \">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
-                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'Staff Competency Add', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Resident Competency', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Competency  Register', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'DashBoard', \tvalue: '4', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Create a Competency', \tvalue: '5', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Reports', \tvalue: '6', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1','2']);\n\n"
-                },
-                "isCollapsed": false,
-                "childTabPanes": "3\n6\n9\n12\n14\n17\n",
-                "errorInDefinition": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "TabControl": {
                         "useModernTabs": true,
                         "ID": "TAB_1",
@@ -182,6 +172,8 @@
                             "progressBarPosition": "Bottom"
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "securityGroups": "",
                     "showHideExpn": "",
@@ -197,7 +189,15 @@
                         "javascriptClientSideWatches": ""
                     },
                     "_displayText": "[Tab Control: TAB_1]"
-                }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: \">\n\t<div id=\"{grid.componentname}.TAB_1\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">",
+                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Accordion('{grid.componentName}.TAB_1',[\n{ \thtml: 'Staff Competency Add', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Resident Competency', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Competency  Register', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'DashBoard', \tvalue: '4', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Create a Competency', \tvalue: '5', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Reports', \tvalue: '6', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tsingleBand: false,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select(['1','2']);\n\n"
+                },
+                "isCollapsed": false,
+                "childTabPanes": "3\n6\n9\n12\n14\n17\n",
+                "errorInDefinition": false
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -215,11 +215,11 @@
                         "show": true,
                         "id": "PANE_5"
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: Staff Competency Add]"
                 },
                 "indentTree": 1,
@@ -241,29 +241,13 @@
                 "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=1fe62818-36ca-42d4-bbc4-024890fbf601}{I:'$$control.html.advButton'} [Tabbed UI Button: Add a Staff Compliance (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=1fe62818-36ca-42d4-bbc4-024890fbf601}{I:'$$control.html.advButton'} [Tabbed UI Button: Add a Staff <Br>Record</Br> (UX Component)] �",
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_1fe62818_36ca_42d4_bbc4_024890fbf601(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add a Staff <Br>Record</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_1fe62818_36ca_42d4_bbc4_024890fbf601'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Staff_Add_Compliance';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STAFF_ADD__9852DAAF';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Staff_Add_Compliance', title: 'Add Competency',  name :'{alias}_STAFF_ADD__9852DAAF', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "tabbedUI": {
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
                         "buttonType": "Button",
                         "buttonText": "Add a Staff <Br>Record</Br>",
                         "actionType": "Component",
                         "paneTitle": "Add Competency",
                         "canClosePane": true,
-                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -286,9 +270,9 @@
                             "gridName": "Staff_Add_Compliance",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
-                            "useStaticHTML": false,
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
                         },
                         "report": {
                             "workingMessage": "Working...",
@@ -340,7 +324,13 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -356,6 +346,8 @@
                             "duration": 500
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -365,7 +357,15 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: Add a Staff <Br>Record</Br> (UX Component)]"
-                }
+                },
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_1fe62818_36ca_42d4_bbc4_024890fbf601(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add a Staff <Br>Record</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_1fe62818_36ca_42d4_bbc4_024890fbf601'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Staff_Add_Compliance';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STAFF_ADD__9852DAAF';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Staff_Add_Compliance', title: 'Add Competency',  name :'{alias}_STAFF_ADD__9852DAAF', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
             },
             {
                 "controlType": "TabbedUIButton",
@@ -519,11 +519,11 @@
                         "show": true,
                         "id": "PANE_8"
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: Resident Competency]"
                 },
                 "indentTree": 1,
@@ -545,29 +545,13 @@
                 "displayOD": "{Data=692170c1-2860-4f76-ae8c-fc2f99637b06}{I:'$$control.html.advButton'} [Tabbed UI Button: Add a Resident Compliance] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=692170c1-2860-4f76-ae8c-fc2f99637b06}{I:'$$control.html.advButton'} [Tabbed UI Button: Add a Resident <Br>Record</Br> (UX Component)] �",
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_692170c1_2860_4f76_ae8c_fc2f99637b06(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add a Resident <Br>Record</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_692170c1_2860_4f76_ae8c_fc2f99637b06'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Resident_Add_Compliance';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_RESIDENT_A_9915DFBJ';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Resident_Add_Compliance', title: 'Add a Resident Compliance',  name :'{alias}_RESIDENT_A_9915DFBJ', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "tabbedUI": {
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
                         "buttonType": "Button",
                         "buttonText": "Add a Resident <Br>Record</Br>",
                         "actionType": "Component",
                         "paneTitle": "Add a Resident Compliance",
                         "canClosePane": true,
-                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -590,9 +574,9 @@
                             "gridName": "Resident_Add_Compliance",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
-                            "useStaticHTML": false,
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
                         },
                         "report": {
                             "workingMessage": "Working...",
@@ -644,7 +628,13 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -660,6 +650,8 @@
                             "duration": 500
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -669,7 +661,15 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: Add a Resident <Br>Record</Br> (UX Component)]"
-                }
+                },
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_692170c1_2860_4f76_ae8c_fc2f99637b06(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add a Resident <Br>Record</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_692170c1_2860_4f76_ae8c_fc2f99637b06'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Resident_Add_Compliance';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_RESIDENT_A_9915DFBJ';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Resident_Add_Compliance', title: 'Add a Resident Compliance',  name :'{alias}_RESIDENT_A_9915DFBJ', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
             },
             {
                 "controlType": "TabbedUIButton",
@@ -822,11 +822,11 @@
                         "show": true,
                         "id": "PANE_6"
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: Competency  Register]"
                 },
                 "indentTree": 1,
@@ -848,29 +848,13 @@
                 "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{Data=e70a5f7f-2992-454f-a276-8eae79903c4e}{I:'$$control.html.advButton'} [Tabbed UI Button: Competency Register (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{Data=e70a5f7f-2992-454f-a276-8eae79903c4e}{I:'$$control.html.advButton'} [Tabbed UI Button: View Competency<br>Staff related</Br> (UX Component)] �",
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_e70a5f7f_2992_454f_a276_8eae79903c4e(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View Competency<br>Staff related</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_e70a5f7f_2992_454f_a276_8eae79903c4e'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Staff_Comp_GRID_Hold';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STAFF_COMP_91845ACGB';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Staff_Comp_GRID_Hold', title: 'Competency Register',  name :'{alias}_STAFF_COMP_91845ACGB', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "tabbedUI": {
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
                         "buttonType": "Button",
                         "buttonText": "View Competency<br>Staff related</Br>",
                         "actionType": "Component",
                         "paneTitle": "Competency Register",
                         "canClosePane": true,
-                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -893,9 +877,9 @@
                             "gridName": "Staff_Comp_GRID_Hold",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
-                            "useStaticHTML": false,
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
                         },
                         "report": {
                             "workingMessage": "Working...",
@@ -947,7 +931,13 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -963,6 +953,8 @@
                             "duration": 500
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -972,7 +964,15 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: View Competency<br>Staff related</Br> (UX Component)]"
-                }
+                },
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_e70a5f7f_2992_454f_a276_8eae79903c4e(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View Competency<br>Staff related</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_e70a5f7f_2992_454f_a276_8eae79903c4e'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Staff_Comp_GRID_Hold';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STAFF_COMP_91845ACGB';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Staff_Comp_GRID_Hold', title: 'Competency Register',  name :'{alias}_STAFF_COMP_91845ACGB', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
             },
             {
                 "controlType": "TabbedUIButton",
@@ -984,28 +984,13 @@
                 "displayOD": "{Data=22689d88-d15c-431c-b850-a4db2689b37e}{I:'$$control.html.advButton'} [Tabbed UI Button: Resident Competency Register] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=22689d88-d15c-431c-b850-a4db2689b37e}{I:'$$control.html.advButton'} [Tabbed UI Button: View Competency<br>Resident related</Br> (UX Component)] �",
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_22689d88_d15c_431c_b850_a4db2689b37e(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View Competency<br>Resident related</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_22689d88_d15c_431c_b850_a4db2689b37e'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Resident_Comp_GRID_Hold';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_RESIDENT_C_91859BFAH';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Resident_Comp_GRID_Hold', title: 'Resident Competency Register',  name :'{alias}_RESIDENT_C_91859BFAH', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "tabbedUI": {
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
                         "buttonType": "Button",
                         "buttonText": "View Competency<br>Resident related</Br>",
                         "actionType": "Component",
                         "paneTitle": "Resident Competency Register",
                         "canClosePane": true,
-                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -1028,9 +1013,9 @@
                             "gridName": "Resident_Comp_GRID_Hold",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
-                            "useStaticHTML": false,
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
                         },
                         "report": {
                             "workingMessage": "Working...",
@@ -1082,7 +1067,13 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -1098,6 +1089,8 @@
                             "duration": 500
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -1107,7 +1100,14 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: View Competency<br>Resident related</Br> (UX Component)]"
-                }
+                },
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_22689d88_d15c_431c_b850_a4db2689b37e(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >View Competency<br>Resident related</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_22689d88_d15c_431c_b850_a4db2689b37e'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Resident_Comp_GRID_Hold';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_RESIDENT_C_91859BFAH';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Resident_Comp_GRID_Hold', title: 'Resident Competency Register',  name :'{alias}_RESIDENT_C_91859BFAH', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -1124,11 +1124,11 @@
                     "tabPane": {
                         "show": true
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: DashBoard]"
                 },
                 "indentTree": 1,
@@ -1291,11 +1291,11 @@
                         "show": true,
                         "id": "PANE_7"
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: Create a Competency]"
                 },
                 "indentTree": 1,
@@ -1317,29 +1317,13 @@
                 "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=1c130c91-5898-473e-8f73-0d8a6caeb330}{I:'$$control.html.advButton'} [Tabbed UI Button: Add a New Competency (UX Component)] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=1c130c91-5898-473e-8f73-0d8a6caeb330}{I:'$$control.html.advButton'} [Tabbed UI Button: List Competency<br>Staff related</Br> (UX Component)] �",
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_1c130c91_5898_473e_8f73_0d8a6caeb330(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >List Competency<br>Staff related</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_1c130c91_5898_473e_8f73_0d8a6caeb330'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Staff_Comp_Select_Hold';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STAFF_COMP_91730IHHI';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Staff_Comp_Select_Hold', title: 'Add a New Competency',  name :'{alias}_STAFF_COMP_91730IHHI', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "isCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "tabbedUI": {
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
                         "buttonType": "Button",
                         "buttonText": "List Competency<br>Staff related</Br>",
                         "actionType": "Component",
                         "paneTitle": "Add a New Competency",
                         "canClosePane": true,
-                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -1362,9 +1346,9 @@
                             "gridName": "Staff_Comp_Select_Hold",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
-                            "useStaticHTML": false,
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
                         },
                         "report": {
                             "workingMessage": "Working...",
@@ -1416,7 +1400,13 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -1432,6 +1422,8 @@
                             "duration": 500
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -1441,7 +1433,15 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: List Competency<br>Staff related</Br> (UX Component)]"
-                }
+                },
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_1c130c91_5898_473e_8f73_0d8a6caeb330(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >List Competency<br>Staff related</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_1c130c91_5898_473e_8f73_0d8a6caeb330'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Staff_Comp_Select_Hold';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_STAFF_COMP_91730IHHI';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Staff_Comp_Select_Hold', title: 'Add a New Competency',  name :'{alias}_STAFF_COMP_91730IHHI', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
             },
             {
                 "controlType": "TabbedUIButton",
@@ -1453,28 +1453,13 @@
                 "displayOD": "{Data=b87208f8-9a48-45c3-b724-a13bf6162a85}{I:'$$control.html.advButton'} [Tabbed UI Button: Add a Resident New Competency] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=b87208f8-9a48-45c3-b724-a13bf6162a85}{I:'$$control.html.advButton'} [Tabbed UI Button: List Competency<br>Resident related</Br> (UX Component)] �",
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_b87208f8_9a48_45c3_b724_a13bf6162a85(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >List Competency<br>Resident related</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
-                    "tabbedUIButtonJavascript": "window['action_{alias}_b87208f8_9a48_45c3_b724_a13bf6162a85'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Resident_Comp_Select_Hold';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_RESIDENT_C_91746IJAF';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Resident_Comp_Select_Hold', title: 'Add a Resident New Competency',  name :'{alias}_RESIDENT_C_91746IJAF', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                },
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "tabbedUI": {
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
                         "buttonType": "Button",
                         "buttonText": "List Competency<br>Resident related</Br>",
                         "actionType": "Component",
                         "paneTitle": "Add a Resident New Competency",
                         "canClosePane": true,
-                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -1497,9 +1482,9 @@
                             "gridName": "Resident_Comp_Select_Hold",
                             "componentType": "UX",
                             "alias": "<DefaultAlias>",
-                            "useStaticHTML": false,
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
                         },
                         "report": {
                             "workingMessage": "Working...",
@@ -1551,7 +1536,13 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -1567,6 +1558,8 @@
                             "duration": 500
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -1576,7 +1569,14 @@
                         }
                     },
                     "_displayText": "[Tabbed UI Button: List Competency<br>Resident related</Br> (UX Component)]"
-                }
+                },
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_b87208f8_9a48_45c3_b724_a13bf6162a85(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >List Competency<br>Resident related</Br></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_b87208f8_9a48_45c3_b724_a13bf6162a85'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Resident_Comp_Select_Hold';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_RESIDENT_C_91746IJAF';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Resident_Comp_Select_Hold', title: 'Add a Resident New Competency',  name :'{alias}_RESIDENT_C_91746IJAF', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "inPanelCard": false,
+                "inTreeControl": false
             },
             {
                 "controlType": "layout_directive_TabPane",
@@ -1593,14 +1593,14 @@
                     "tabPane": {
                         "show": true
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
                     "info": {
                         "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{B=White,#110+179+236}{F=+B}{Data=2f1be3b7-287b-493b-9533-5daa1a2038d9}{I:'$$control.tab.pane'} [TabPane: Reports]"
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: Reports]"
                 },
                 "indentTree": 1,
@@ -1961,13 +1961,13 @@
                     "labelAlignment": "Left",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Hyperlink: Home Page]"
                 },
                 "indentTree": 1,
@@ -2004,13 +2004,13 @@
                     "labelAlignment": "Left",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Hyperlink: Management]"
                 },
                 "indentTree": 1,
@@ -2047,13 +2047,13 @@
                     "labelAlignment": "Left",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Hyperlink: Log out]"
                 },
                 "indentTree": 1,
@@ -2122,7 +2122,7 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "327",
+        "_buildCount": "329",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
@@ -2142,7 +2142,7 @@
         "alias": "tbi",
         "flagForcerecalc": false,
         "linkedResources": "",
-        "A5SaveTimeStamp": "20240513092227656",
+        "A5SaveTimeStamp": "20240517135453121",
         "minimumBuildNumber": "",
         "style_color_palette": "",
         "__LPhostName": "Chrome",
@@ -2167,8 +2167,8 @@
             "targetIndex": 6,
             "count": 1
         },
-        "livePreview_permissions_friendly": "Add New Admin\nAdd_News\nAdmin_Staff\nAdministrators\nBoard\nCIP\nCompliance\nDocument_Manager\nFinance\nGovernance\nHumanResource\nIncident1\nIncident2\nIncident4\nPrint\nReviewer\nSystem_Administrator\nUsers\n",
         "compressUX": false,
+        "livePreview_permissions_friendly": "Add New Admin\nAdd_News\nAdmin_Staff\nAdministrators\nBoard\nCIP\nCompliance\nDocument_Manager\nFinance\nGovernance\nHumanResource\nIncident1\nIncident2\nIncident4\nPrint\nReviewer\nSystem_Administrator\nUsers\n",
         "_flagForceRecalcChildren": true,
         "Livepreview_permissions": "",
         "storeSecurityGroupsInDatabase": false,

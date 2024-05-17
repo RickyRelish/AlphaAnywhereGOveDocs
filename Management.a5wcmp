@@ -26,8 +26,8 @@
         "info": {
             "createdBy": "Owner",
             "dateCreated": "2023-12-28",
-            "dateLastEdited": "2024-5-15",
-            "revisionnumber": 19
+            "dateLastEdited": "2024-5-17",
+            "revisionnumber": 22
         },
         "checkSessionEvery": 1,
         "warningIntervalBeforeExpiration": 1,
@@ -218,11 +218,11 @@
                         "show": true,
                         "id": "PANE_6"
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: Change Location]"
                 },
                 "indentTree": 1,
@@ -388,11 +388,11 @@
                         "paneWidth": "2.1in",
                         "show": true
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: Accounts]"
                 },
                 "indentTree": 1,
@@ -1011,11 +1011,11 @@
                         "paneWidth": "2.1in",
                         "show": true
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: App Settings]"
                 },
                 "indentTree": 1,
@@ -1071,33 +1071,22 @@
                 "inTreeControl": false
             },
             {
-                "controltype": "TabbedUIButton",
+                "controlType": "TabbedUIButton",
                 "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=25be551b-6b7f-4ff9-ae91-a9a4f0f87d92}{I:'$$control.html.advButton'} [Tabbed UI Button: Add Location (Grid Component)] �",
-                "displayODFlat": "{Data=25be551b-6b7f-4ff9-ae91-a9a4f0f87d92}{I:'$$control.html.advButton'} [Tabbed UI Button: Add Location]",
-                "displayOD": "{Data=25be551b-6b7f-4ff9-ae91-a9a4f0f87d92}{I:'$$control.html.advButton'} [Tabbed UI Button: Add Location]",
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=25be551b-6b7f-4ff9-ae91-a9a4f0f87d92}{I:'$$control.html.advButton'} [Tabbed UI Button: Add Location (Grid Component)] �",
+                "displayODFlat": "{Data=25be551b-6b7f-4ff9-ae91-a9a4f0f87d92}{I:'$$control.html.advButton'} [Tabbed UI Button: Add Location] �",
                 "idInternal": "25be551b-6b7f-4ff9-ae91-a9a4f0f87d92",
                 "parentContainer": 2,
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "parentTabPaneIndex": 11,
+                "displayOD": "{Data=25be551b-6b7f-4ff9-ae91-a9a4f0f87d92}{I:'$$control.html.advButton'} [Tabbed UI Button: Add Location] �",
                 "repeatingSectionParentId": -1,
-                "indentTree": 2,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=25be551b-6b7f-4ff9-ae91-a9a4f0f87d92}{I:'$$control.html.advButton'} [Tabbed UI Button: Add Location (Grid Component)] �",
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "tabbedUI": {
-                        "tab": {
-                            "className": "",
-                            "selectedClassName": "",
-                            "canBeFav": true
-                        },
                         "buttonType": "Button",
                         "buttonText": "Add Location",
                         "actionType": "Component",
                         "paneTitle": "Add Location",
                         "canClosePane": true,
-                        "keyboardshortcutkey": "",
                         "treeControl": {
                             "controlNesting": "SameLevelAsPrevious",
                             "outdentLevel": 1,
@@ -1120,9 +1109,9 @@
                             "gridName": "Add_NewLocations_Grid",
                             "componentType": "Grid",
                             "alias": "<DefaultAlias>",
-                            "useStaticHTML": false,
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
                         },
                         "report": {
                             "workingMessage": "Working...",
@@ -1174,7 +1163,13 @@
                                 },
                                 "bookMarkPanelSize": "3in"
                             }
-                        }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
                     },
                     "class": "<Default>",
                     "style": "width:2.0in;",
@@ -1190,6 +1185,8 @@
                             "duration": 500
                         }
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "pageLayoutPart": {
                         "grid": {
                             "onLoadCompleteJavascript": ""
@@ -1197,12 +1194,16 @@
                         "inPanelCard": {
                             "delayRenderTillVisible": false
                         }
-                    }
+                    },
+                    "_displayText": "[Tabbed UI Button: Add Location (Grid Component)]"
                 },
+                "indentTree": 2,
                 "precalc": {
                     "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_25be551b_6b7f_4ff9_ae91_a9a4f0f87d92(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add Location</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
                     "tabbedUIButtonJavascript": "window['action_{alias}_25be551b_6b7f_4ff9_ae91_a9a4f0f87d92'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\tgo.gridName = 'Add_NewLocations_Grid';\n\tgo.alias = '{alias}_ADD_NEWLOC_17635ECFD';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Add_NewLocations_Grid', title: 'Add Location',  name :'{alias}_ADD_NEWLOC_17635ECFD', type:'grid', data: go , autoRefresh: false   }); }\n\t\n}\n"
-                }
+                },
+                "inPanelCard": false,
+                "inTreeControl": false
             },
             {
                 "controlType": "TabbedUIButton",
@@ -1866,7 +1867,7 @@
                 "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=4d52af7f_cb9c_43e0_a275_cea492f74cef}{I:'$a5_control_tab'} [Tab Control: TAB_4]",
                 "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=4d52af7f_cb9c_43e0_a275_cea492f74cef}{I:'$a5_control_tab'} [Tab Control: TAB_4]",
                 "idInternal": "4d52af7f_cb9c_43e0_a275_cea492f74cef",
-                "lastIndex": 32,
+                "lastIndex": 33,
                 "parentContainer": -1,
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=4d52af7f_cb9c_43e0_a275_cea492f74cef}{I:'$a5_control_tab'} [Tab Control: TAB_4]",
                 "repeatingSectionParentId": -1,
@@ -1878,7 +1879,7 @@
                 },
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
-                "childTabPanes": "22\n29\n",
+                "childTabPanes": "22\n30\n",
                 "errorInDefinition": false,
                 "v": {
                     "localxbasic": "",
@@ -1931,7 +1932,7 @@
                 "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{B=White,#110+179+236}{F=+B}{Data=d4dc9705_623d_4340_bdb0_81ac615e90de}{I:'$$control.tab.pane'} [TabPane: System Administration]",
                 "displayODFlat": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{B=White,#110+179+236}{F=+B}{Data=d4dc9705_623d_4340_bdb0_81ac615e90de}{I:'$$control.tab.pane'} [TabPane: System Administration]",
                 "idInternal": "d4dc9705_623d_4340_bdb0_81ac615e90de",
-                "lastIndex": 28,
+                "lastIndex": 29,
                 "parentContainer": 21,
                 "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{B=White,#110+179+236}{F=+B}{Data=d4dc9705_623d_4340_bdb0_81ac615e90de}{I:'$$control.tab.pane'} [TabPane: System Administration]",
                 "repeatingSectionParentId": -1,
@@ -1942,11 +1943,11 @@
                         "paneWidth": "2.1in",
                         "show": true
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: System Administration]"
                 },
                 "indentTree": 1,
@@ -2768,11 +2769,145 @@
                 "inTreeControl": false
             },
             {
+                "controltype": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=36b431ef-1d89-48fa-bd75-ed3e694291a2}{I:'$$control.html.advButton'} [Tabbed UI Button: Competency Heading (Grid Component)] �",
+                "displayODFlat": "{Data=36b431ef-1d89-48fa-bd75-ed3e694291a2}{I:'$$control.html.advButton'} [Tabbed UI Button: Competency Heading]",
+                "displayOD": "{Data=36b431ef-1d89-48fa-bd75-ed3e694291a2}{I:'$$control.html.advButton'} [Tabbed UI Button: Competency Heading]",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=36b431ef-1d89-48fa-bd75-ed3e694291a2}{I:'$$control.html.advButton'} [Tabbed UI Button: Competency Heading (Grid Component)] �",
+                "idInternal": "36b431ef-1d89-48fa-bd75-ed3e694291a2",
+                "parentContainer": 21,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "parentTabPaneIndex": 22,
+                "repeatingSectionParentId": -1,
+                "indentTree": 2,
+                "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "tabbedUI": {
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "buttonType": "Button",
+                        "buttonText": "Competency Heading",
+                        "actionType": "Component",
+                        "paneTitle": "Competency Heading",
+                        "canClosePane": true,
+                        "keyboardshortcutkey": "",
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "Com_Headings_Admin",
+                            "componentType": "Grid",
+                            "alias": "<DefaultAlias>",
+                            "useStaticHTML": false,
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        }
+                    },
+                    "class": "<Default>",
+                    "style": "width:2.0in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "javascript": {
+                        "onclick": "action_{alias}_36b431ef_1d89_48fa_bd75_ed3e694291a2(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        },
+                        "inPanelCard": {
+                            "delayRenderTillVisible": false
+                        }
+                    }
+                },
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_36b431ef_1d89_48fa_bd75_ed3e694291a2(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Competency Heading</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_36b431ef_1d89_48fa_bd75_ed3e694291a2'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\tgo.gridName = 'Com_Headings_Admin';\n\tgo.alias = '{alias}_COM_HEADIN_124031CBEE';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Com_Headings_Admin', title: 'Competency Heading',  name :'{alias}_COM_HEADIN_124031CBEE', type:'grid', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                }
+            },
+            {
                 "controlType": "layout_directive_TabPane",
                 "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{B=White,#110+179+236}{F=+B}{Data=8ea1b82f_b92b_4cc1_9411_8b687419b46d}{I:'$$control.tab.pane'} [TabPane: User Information]",
                 "displayODFlat": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{B=White,#110+179+236}{F=+B}{Data=8ea1b82f_b92b_4cc1_9411_8b687419b46d}{I:'$$control.tab.pane'} [TabPane: User Information]",
                 "idInternal": "8ea1b82f_b92b_4cc1_9411_8b687419b46d",
-                "lastIndex": 31,
+                "lastIndex": 32,
                 "parentContainer": 21,
                 "displayOD": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{B=White,#110+179+236}{F=+B}{Data=8ea1b82f_b92b_4cc1_9411_8b687419b46d}{I:'$$control.tab.pane'} [TabPane: User Information]",
                 "repeatingSectionParentId": -1,
@@ -2783,11 +2918,11 @@
                         "paneWidth": "2.1in",
                         "show": true
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "javascript": {
                         "renderChildren": ""
                     },
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "_displayText": "[TabPane: User Information]"
                 },
                 "indentTree": 1,
@@ -2806,7 +2941,7 @@
                 "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=376d3d60_283d_4974_a8ef_3e1c8ae660e8}{I:'$$web.browser.preview'} [IFrame] �",
                 "idInternal": "376d3d60_283d_4974_a8ef_3e1c8ae660e8",
                 "parentContainer": 21,
-                "parentTabPaneIndex": 29,
+                "parentTabPaneIndex": 30,
                 "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=376d3d60_283d_4974_a8ef_3e1c8ae660e8}{I:'$$web.browser.preview'} [IFrame] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=376d3d60_283d_4974_a8ef_3e1c8ae660e8}{I:'$$web.browser.preview'} [IFrame] �",
@@ -2847,7 +2982,7 @@
                 "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=d7a2defb_e420_4e3e_a07a_3bb8fafa7a5b}{I:'$$format.border.style.dot'} [Spacer] �",
                 "idInternal": "d7a2defb_e420_4e3e_a07a_3bb8fafa7a5b",
                 "parentContainer": 21,
-                "parentTabPaneIndex": 29,
+                "parentTabPaneIndex": 30,
                 "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=d7a2defb_e420_4e3e_a07a_3bb8fafa7a5b}{I:'$$format.border.style.dot'} [Spacer] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=d7a2defb_e420_4e3e_a07a_3bb8fafa7a5b}{I:'$$format.border.style.dot'} [Spacer] �",
@@ -2907,7 +3042,7 @@
                 "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=b6ce27ac_6b70_47ec_8b36_b016258e2c8c}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
                 "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=b6ce27ac_6b70_47ec_8b36_b016258e2c8c}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
                 "idInternal": "b6ce27ac_6b70_47ec_8b36_b016258e2c8c",
-                "lastIndex": 37,
+                "lastIndex": 38,
                 "parentContainer": -1,
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=b6ce27ac_6b70_47ec_8b36_b016258e2c8c}{I:'$$control.group'} [Frame: <Navigation> - FRAME_2]",
                 "repeatingSectionParentId": -1,
@@ -2941,7 +3076,7 @@
                 "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=77ceda9e_8687_46d0_b3a6_46098f1a19dc}{I:'$$generic.link'} [Hyperlink: Home Page] �",
                 "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=77ceda9e_8687_46d0_b3a6_46098f1a19dc}{I:'$$generic.link'} [Hyperlink: Home Page] �",
                 "idInternal": "77ceda9e_8687_46d0_b3a6_46098f1a19dc",
-                "parentContainer": 33,
+                "parentContainer": 34,
                 "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=77ceda9e_8687_46d0_b3a6_46098f1a19dc}{I:'$$generic.link'} [Hyperlink: Home Page] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=77ceda9e_8687_46d0_b3a6_46098f1a19dc}{I:'$$generic.link'} [Hyperlink: Home Page] �",
@@ -2962,13 +3097,13 @@
                     "labelAlignment": "Left",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Hyperlink: Home Page]"
                 },
                 "indentTree": 1,
@@ -2985,7 +3120,7 @@
                 "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=eae5c3a7_871e_4009_a1dc_a4ffa1e07fe9}{I:'$$generic.link'} [Hyperlink: Management] �",
                 "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=eae5c3a7_871e_4009_a1dc_a4ffa1e07fe9}{I:'$$generic.link'} [Hyperlink: Management] �",
                 "idInternal": "eae5c3a7_871e_4009_a1dc_a4ffa1e07fe9",
-                "parentContainer": 33,
+                "parentContainer": 34,
                 "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=eae5c3a7_871e_4009_a1dc_a4ffa1e07fe9}{I:'$$generic.link'} [Hyperlink: Management] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=eae5c3a7_871e_4009_a1dc_a4ffa1e07fe9}{I:'$$generic.link'} [Hyperlink: Management] �",
@@ -3006,13 +3141,13 @@
                     "labelAlignment": "Left",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Hyperlink: Management]"
                 },
                 "indentTree": 1,
@@ -3029,7 +3164,7 @@
                 "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=7975bb6a_ad66_40f7_b457_fad4654f5b19}{I:'$$generic.link'} [Hyperlink: Log Out] �",
                 "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=7975bb6a_ad66_40f7_b457_fad4654f5b19}{I:'$$generic.link'} [Hyperlink: Log Out] �",
                 "idInternal": "7975bb6a_ad66_40f7_b457_fad4654f5b19",
-                "parentContainer": 33,
+                "parentContainer": 34,
                 "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=7975bb6a_ad66_40f7_b457_fad4654f5b19}{I:'$$generic.link'} [Hyperlink: Log Out] �",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=7975bb6a_ad66_40f7_b457_fad4654f5b19}{I:'$$generic.link'} [Hyperlink: Log Out] �",
@@ -3050,13 +3185,13 @@
                     "labelAlignment": "Left",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
                         "inRepeatingSection": false
                     },
                     "controlContainerStyle": "",
+                    "localxbasic": "",
+                    "localjavascript": "",
                     "_displayText": "[Hyperlink: Log Out]"
                 },
                 "indentTree": 1,
@@ -3091,7 +3226,7 @@
                 },
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
-                "containerStartIndex": 33
+                "containerStartIndex": 34
             }
         ],
         "builderType": "TabbedUI",
@@ -3107,7 +3242,7 @@
         "localsvg": "",
         "saveFileType": "Formatted JSON",
         "keyboardShortcutsJSON": "",
-        "selected": "25be551b-6b7f-4ff9-ae91-a9a4f0f87d92\n",
+        "selected": "36b431ef-1d89-48fa-bd75-ed3e694291a2\n",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "serverSideEventIndex": 1,
@@ -3124,13 +3259,13 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "18",
+        "_buildCount": "21",
         "securityEnabled": true,
         "showHideIsUsed": false,
         "precalc": {
             "usesSystemSVG": true,
             "buttonPanel": {
-                "HTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_3\" title=\"\"  class=\"\" style=\"\"   >Administration / Accounts - <%A5 ? Session.location%></div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<!--TAGSTART:98705f2b_55d5_4d74_9d03_8bdce83ebea8-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{tabbedUI.alias}.TAB_3\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_3.0.TITLE\" class=\"\" href=\"#\">Change Location</a>\n<div id=\"{tabbedUI.alias}.TAB_3.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_52905ce0_9887_4d91_851b_0168185ed437(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Edit - User Location</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_3.1.TITLE\" class=\"\" href=\"#\">Accounts</a>\n<div id=\"{tabbedUI.alias}.TAB_3.1.PANE\">\n<div class=\"A5container\">\n\t<div id=\"STATICTEXT_4\" title=\"\"  class=\"\" style=\"\"   >Incident Email Alerts</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_ee51ac94_a0c6_4fdb_8f41_3bea7749d094(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >User Security</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_5949e89a_0cd0_4188_b23d_232f03732e23(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Active Users</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_373b5a92_68fc_4e76_b335_680fb958396d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >New User</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_f8bb763e_f7af_4127_b3ea_e277a578b472(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Edit - User List</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_3.2.TITLE\" class=\"\" href=\"#\">App Settings</a>\n<div id=\"{tabbedUI.alias}.TAB_3.2.PANE\">\n<div class=\"A5container\">\n\t<div id=\"STATICTEXT_5\" title=\"\"  class=\"\" style=\"\"   >Incident Settings</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_25be551b_6b7f_4ff9_ae91_a9a4f0f87d92(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add Location</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_96fdc7f0_f6de_4d30_a5c2_7f04bd933e63(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >House Setup<br> Departments & Emails</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<div id=\"STATICTEXT_6\" title=\"\"  class=\"\" style=\"\"   >Meeting Settings</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_75b7a922_972a_4835_8af2_937b9c5fe1d1(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Meeting Headings</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<div id=\"STATICTEXT_7\" title=\"\"  class=\"\" style=\"\"   >Document Settings</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_4498e1aa_643a_4ff8_83ab_8a079dfb7344(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add/Edit Categories</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_43577d18_c2f8_4590_9aad_0a1f2aedf5b4(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add/Edit Sub Categories</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div>\n<!--TAGEND:98705f2b_55d5_4d74_9d03_8bdce83ebea8-->\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<!--TAGSTART:4d52af7f_cb9c_43e0_a275_cea492f74cef-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{tabbedUI.alias}.TAB_4\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_4.0.TITLE\" class=\"\" href=\"#\">System Administration</a>\n<div id=\"{tabbedUI.alias}.TAB_4.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_25beaceb_3b5b_4a29_bf1e_3181b01ee154(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Server Sessions</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_de40afd6_c96c_4f23_91e7_b95a1bc29074(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Sever Information</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_cf870953_656f_475f_b8e0_a88c0e2c2761(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Database Viewer</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_18ae8228_8c34_4216_a571_7ac871a90ca1(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >QR - Generator</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_a9de73cb_b43e_48e5_9cb6_12b21e98d007(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add/Edit Organisation</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_1e58f5d1_ec00_4a52_ba62_e51a758939d5(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add/Edit Locations</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_4.1.TITLE\" class=\"\" href=\"#\">User Information</a>\n<div id=\"{tabbedUI.alias}.TAB_4.1.PANE\">\n<div class=\"A5container\">\n\t<iframe id=\"IFRAME_1\" src=\"Variables2.a5w\" class=\"\"  scrollable=\"auto\" style=\"width: 2in; height: 3.5in;\"    ></iframe>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<div id=\"SPACER_1\" style=\"height: 1px;width: 0px;; font: 0pt Arial;\">&nbsp;</div>\n</div><br style=\"clear:both;\" />\n\t<div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div>\n<!--TAGEND:4d52af7f_cb9c_43e0_a275_cea492f74cef-->\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\"      ><!-- DIV Container for fieldset '{tabbedUI.alias}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{tabbedUI.alias}FRAME_2\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Navigation</legend>\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_9\" title=\"\" href=\"FrontPage.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"color: #1313c4;\"   >Home Page</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_10\" title=\"\" href=\"Home_Page_Admin.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"color: #1313c4;\"   >Management</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_11\" title=\"\" href=\"LogoutGovs.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"color: #1313c4;\"   >Log Out</a>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
+                "HTML": "<div class=\"A5container\">\n\t<div id=\"STATICTEXT_3\" title=\"\"  class=\"\" style=\"\"   >Administration / Accounts - <%A5 ? Session.location%></div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<!--TAGSTART:98705f2b_55d5_4d74_9d03_8bdce83ebea8-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{tabbedUI.alias}.TAB_3\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_3.0.TITLE\" class=\"\" href=\"#\">Change Location</a>\n<div id=\"{tabbedUI.alias}.TAB_3.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_52905ce0_9887_4d91_851b_0168185ed437(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Edit - User Location</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_3.1.TITLE\" class=\"\" href=\"#\">Accounts</a>\n<div id=\"{tabbedUI.alias}.TAB_3.1.PANE\">\n<div class=\"A5container\">\n\t<div id=\"STATICTEXT_4\" title=\"\"  class=\"\" style=\"\"   >Incident Email Alerts</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_ee51ac94_a0c6_4fdb_8f41_3bea7749d094(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >User Security</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_5949e89a_0cd0_4188_b23d_232f03732e23(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Active Users</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_373b5a92_68fc_4e76_b335_680fb958396d(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >New User</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_f8bb763e_f7af_4127_b3ea_e277a578b472(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Edit - User List</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_3.2.TITLE\" class=\"\" href=\"#\">App Settings</a>\n<div id=\"{tabbedUI.alias}.TAB_3.2.PANE\">\n<div class=\"A5container\">\n\t<div id=\"STATICTEXT_5\" title=\"\"  class=\"\" style=\"\"   >Incident Settings</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_25be551b_6b7f_4ff9_ae91_a9a4f0f87d92(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add Location</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_96fdc7f0_f6de_4d30_a5c2_7f04bd933e63(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >House Setup<br> Departments & Emails</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<div id=\"STATICTEXT_6\" title=\"\"  class=\"\" style=\"\"   >Meeting Settings</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_75b7a922_972a_4835_8af2_937b9c5fe1d1(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Meeting Headings</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<div id=\"STATICTEXT_7\" title=\"\"  class=\"\" style=\"\"   >Document Settings</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_4498e1aa_643a_4ff8_83ab_8a079dfb7344(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add/Edit Categories</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_43577d18_c2f8_4590_9aad_0a1f2aedf5b4(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add/Edit Sub Categories</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div>\n<!--TAGEND:98705f2b_55d5_4d74_9d03_8bdce83ebea8-->\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<!--TAGSTART:4d52af7f_cb9c_43e0_a275_cea492f74cef-->\n<div a5-containertype = \"accordion\" class=\"A5container\" style=\"width: 2.2in\">\n\t<div id=\"{tabbedUI.alias}.TAB_4\" class=\"[theme:accordion.base.className|{grid.style}Accordion]\">\n<a id=\"{tabbedUI.alias}.TAB_4.0.TITLE\" class=\"\" href=\"#\">System Administration</a>\n<div id=\"{tabbedUI.alias}.TAB_4.0.PANE\">\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_25beaceb_3b5b_4a29_bf1e_3181b01ee154(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Server Sessions</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_de40afd6_c96c_4f23_91e7_b95a1bc29074(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Sever Information</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_cf870953_656f_475f_b8e0_a88c0e2c2761(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Database Viewer</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_18ae8228_8c34_4216_a571_7ac871a90ca1(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >QR - Generator</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_a9de73cb_b43e_48e5_9cb6_12b21e98d007(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add/Edit Organisation</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_1e58f5d1_ec00_4a52_ba62_e51a758939d5(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Add/Edit Locations</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:2.0in;\" title=\"\"  onclick=\"action_{alias}_36b431ef_1d89_48fa_bd75_ed3e694291a2(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Competency Heading</button>\n</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<a id=\"{tabbedUI.alias}.TAB_4.1.TITLE\" class=\"\" href=\"#\">User Information</a>\n<div id=\"{tabbedUI.alias}.TAB_4.1.PANE\">\n<div class=\"A5container\">\n\t<iframe id=\"IFRAME_1\" src=\"Variables2.a5w\" class=\"\"  scrollable=\"auto\" style=\"width: 2in; height: 3.5in;\"    ></iframe>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<div id=\"SPACER_1\" style=\"height: 1px;width: 0px;; font: 0pt Arial;\">&nbsp;</div>\n</div><br style=\"clear:both;\" />\n\t<div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div>\n</div>\n<!--TAGEND:4d52af7f_cb9c_43e0_a275_cea492f74cef-->\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\"      ><!-- DIV Container for fieldset '{tabbedUI.alias}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{tabbedUI.alias}FRAME_2\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Navigation</legend>\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_9\" title=\"\" href=\"FrontPage.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"color: #1313c4;\"   >Home Page</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_10\" title=\"\" href=\"Home_Page_Admin.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"color: #1313c4;\"   >Management</a>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<a id=\"HYPERLINK_11\" title=\"\" href=\"LogoutGovs.a5w\"  class=\"[class.gridHyperlinkButton]\" style=\"color: #1313c4;\"   >Log Out</a>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
                 "JS": "window['{tabbedUI.alias}.TAB_3Obj'] = new A5.Accordion('{tabbedUI.alias}.TAB_3',[\n{ \thtml: 'Change Location', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false },\n{ \thtml: 'Accounts', \tvalue: '2', \tonDynamicLoadDelay: 0, \tpaneWidth: '2.1in', \tshow: true, \tdisabled: false },\n{ \thtml: 'App Settings', \tvalue: '3', \tonDynamicLoadDelay: 0, \tpaneWidth: '2.1in', \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: true,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);\n\twindow['{tabbedUI.alias}.TAB_3Obj'].select(['1']);\nwindow['{tabbedUI.alias}.TAB_4Obj'] = new A5.Accordion('{tabbedUI.alias}.TAB_4',[\n{ \thtml: 'System Administration', \tvalue: '1', \tonDynamicLoadDelay: 0, \tpaneWidth: '2.1in', \tshow: true, \tdisabled: false },\n{ \thtml: 'User Information', \tvalue: '2', \tonDynamicLoadDelay: 0, \tpaneWidth: '2.1in', \tshow: true, \tdisabled: false }\n],\n\t{\n\ttheme: '{grid.style}',\n\tpaneWidth: '100%',\n\tsingleBand: true,\n\tanimation: {\n\t\tshow: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t},\n\t\thide: {\n\t\t\ttype: 'slide',\n\t\t\tduration: 'slow'\n\t\t}\n\t}\n}\n);"
             },
             "treeControlJS": "",
@@ -3144,7 +3279,7 @@
         "alias": "tbi",
         "flagForcerecalc": false,
         "linkedResources": "",
-        "A5SaveTimeStamp": "20240515173524274",
+        "A5SaveTimeStamp": "20240517124514454",
         "minimumBuildNumber": "",
         "style_color_palette": "",
         "__LPhostName": "Chrome",
@@ -3169,8 +3304,8 @@
             "targetIndex": 1,
             "count": 1
         },
-        "livePreview_permissions_friendly": "Admin_Staff\nAdministrators\nBoard\nCompliance\nFinance\nGovernance\nIncident2\nMaintenance\nPrint\nQuality\nSystem_Administrator\nUsers\n",
         "compressUX": false,
+        "livePreview_permissions_friendly": "Admin_Staff\nAdministrators\nBoard\nCompliance\nFinance\nGovernance\nIncident2\nMaintenance\nPrint\nQuality\nSystem_Administrator\nUsers\n",
         "_flagForceRecalcChildren": true,
         "Livepreview_permissions": "31a3b286ef394725a3c4a38171848772,bba6d50a826847a99cf2d158f59c8e03,5f1c541f3c0b4dfeab7073ca57e5b621,04e6cabf50fb4daf84e2ca59511ab76c,5248c586e68849559db59a7847d3da6e,abd517f3a5d443c5934aa3f851684048,a3e92a7ec8004ee48636fec24f56bb68,2dddabbf5f3842f89229e45fe4466d11,fe468545b63f4f70a6e401ddd6e0c6ed,e0e08ba834bc4a52b433593517bc884d,aaf709d22b84457b9bfbb113b56d97eb,993b775034f140d193dfba83b11405d9",
         "storeSecurityGroupsInDatabase": false,

@@ -3291,6 +3291,16 @@
 		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
 	},
 	{
+		"page": "Staff_Compliance_Head_Admin.a5wcmp",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Com_Headings_Admin.a5wcmp",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
 		"page": "robots.txt",
 		"action": "allow",
 		"groups": ""
