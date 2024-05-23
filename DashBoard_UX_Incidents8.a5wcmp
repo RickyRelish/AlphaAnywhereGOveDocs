@@ -176,8 +176,8 @@
             "createdBy": "Ricky",
             "lastUpdatedBy": "Ricky",
             "dateCreated": "2022-12-9",
-            "dateLastEdited": "2023-11-21",
-            "revisionnumber": 229
+            "dateLastEdited": "2024-5-20",
+            "revisionnumber": 238
         },
         "flagShowCommentsInTree": true,
         "treeCommentOffset": "6",
@@ -339,10 +339,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "CONTAINERBEGIN",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Container Begin]",
                     "controltype": "layout_directive_ContainerBegin",
-                    "icon": "$$format.border.style.dash",
-                    "lastbutton": "OK"
+                    "icon": "$$format.border.style.dash"
                 }
             },
             {
@@ -408,10 +408,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "STATICTEXT",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Static Text]",
                     "controltype": "layout_directive_statictext",
-                    "icon": "$$format.text",
-                    "lastbutton": "OK"
+                    "icon": "$$format.text"
                 }
             },
             {
@@ -432,6 +432,7 @@
                     "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
+                        "inRepeatingSection": false,
                         "level": 1,
                         "isContainerStart": false,
                         "isTabControlStart": false,
@@ -441,7 +442,6 @@
                         "lastItemInTabPane": false,
                         "inContainer": true,
                         "inCSSGridContainer": false,
-                        "inRepeatingSection": false,
                         "inTabPane": false,
                         "parentContainerID": "340eed90-846c-4006-9de1-a629f495e99b",
                         "repeatingSectionParentId": "",
@@ -469,10 +469,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "SPACER",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Spacer]",
                     "controltype": "layout_directive_spacer",
-                    "icon": "$$format.border.style.dot",
-                    "lastbutton": "OK"
+                    "icon": "$$format.border.style.dot"
                 }
             },
             {
@@ -494,9 +494,9 @@
                     },
                     "precalc": {
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_Start_Date_8bc9ae0bd4a441f78a74f7fcb2fc6a1c(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('START_DATE');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['START_DATE']) {  {dialog.componentName}_DlgObj.fieldHelpers['START_DATE'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '<DefaultDateFormat>',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t},\n\t\t\twidth: '100%',\n\t\t\theight: ''\n\t\t},\n\t\tswitchYear: 30,\n\t\tcombinedContainer: {\n\t\t\tstyle: 'display:block'\n\t\t}\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t{\n\t\t\t\thtml: 'OK',\n\t\t\t\taction: 'commit'\n\t\t\t},\n\t\t\t{\n\t\t\t\thtml: 'Cancel',\n\t\t\t\taction: 'close'\n\t\t\t}]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
                         "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_Start_Date_8bc9ae0bd4a441f78a74f7fcb2fc6a1c(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('START_DATE');};",
                         "javascriptDatePicker": ""
                     },
                     "lookup": {
@@ -611,9 +611,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 1,
                         "isContainerStart": false,
@@ -637,7 +634,10 @@
                         "break": false,
                         "display": "{B=White,Light Blue}{I:'vertline'}{Data=8bc9ae0b-d4a4-41f7-8a74-f7fcb2fc6a1c}{I:'$$control.edit'} [Start_Date]",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 1.35in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.START_DATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.START_DATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; display: block; \">Start Date</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.START_DATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.START_DATE\" name=\"V.R{grid.rownumber}.START_DATE\"  value=\"\"  autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.START_DATE.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div>",
@@ -669,9 +669,9 @@
                     },
                     "precalc": {
                         "javascriptAbstractSetupCode": "",
+                        "_jsOnChangeFunction": "function onChange_ENd_Date_2f90d1da13c74cbe9a1c2968abca3274(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('END_DATE');};",
                         "javascript_Lookupfields": "if(!{dialog.componentName}_DlgObj.fieldHelpers['END_DATE']) {  {dialog.componentName}_DlgObj.fieldHelpers['END_DATE'] = new A5.EditDateTime({\n\ttheme: '{dialog.style}',\n\tdateTime: {\n\t\tformat: '<DefaultDateFormat>',\n\t\tdatePicker: {\n\t\t\tdays: {dialog.object}.datePickerDayNames,\n\t\t\tmonths: {dialog.object}.datePickerMonthNames,\n\t\t\tstartDay: {dialog.object}.datePickerFirstDayOfWeek-1,\n\t\t\tcalendar: {\n\t\t\t\tlockColumnWidth: false,\n\t\t\t\tdaysOfWeek: {\n\t\t\t\t\tshow: true\n\t\t\t\t},\n\t\t\t\tweeksOfYear: {\n\t\t\t\t\tshow: false\n\t\t\t\t}\n\t\t\t},\n\t\t\tnavigator: {\n\t\t\t\theader: {\n\t\t\t\t\ttodayButton: {\n\t\t\t\t\t\tshow: true,\n\t\t\t\t\t\thtml: {dialog.object}.datePickerTodayButton,\n\t\t\t\t\t\ttip: ''\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t},\n\t\t\tdisabledDates: {\n\t\t\t\tlow: '',\n\t\t\t\thigh: '',\n\t\t\t\tdays: []\n\t\t\t},\n\t\t\twidth: '100%',\n\t\t\theight: ''\n\t\t},\n\t\tswitchYear: 30,\n\t\tcombinedContainer: {\n\t\t\tstyle: 'display:block'\n\t\t}\n\t},\n\twindow: {\n\t\tautoGenerateButtons: false,\n\t\tbuttons: {\n\t\t\titems: [\n\t\t\t{\n\t\t\t\thtml: 'OK',\n\t\t\t\taction: 'commit'\n\t\t\t},\n\t\t\t{\n\t\t\t\thtml: 'Cancel',\n\t\t\t\taction: 'close'\n\t\t\t}]\n\t\t}\n\t},\n\tonSelect: function() {$e.execute(this,'change');} ,\n\tmultiple: {\n\t\tallow: false\n\t},\n\tselectionRequired: false\n});}",
                         "xbasic_LookupfieldsPopulate": "",
-                        "_jsOnChangeFunction": "function onChange_ENd_Date_2f90d1da13c74cbe9a1c2968abca3274(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('END_DATE');};",
                         "javascriptDatePicker": ""
                     },
                     "lookup": {
@@ -786,9 +786,6 @@
                     "localJavascript": "",
                     "controlContainerStyle": "",
                     "cssGridItemPropertiesJSON": "",
-                    "specialtype": "None",
-                    "specialtypeJSON": "",
-                    "lookupDefinitionJSON": "",
                     "info": {
                         "level": 1,
                         "isContainerStart": false,
@@ -812,7 +809,10 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{I:'vertline'}{Data=2f90d1da-13c7-4cbe-9a1c-2968abca3274}{I:'$$control.edit'} [ENd_Date]<<break>>",
                         "inCSSGridContainer": false
-                    }
+                    },
+                    "specialtype": "None",
+                    "specialtypeJSON": "",
+                    "lookupDefinitionJSON": ""
                 },
                 "precalc": {
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 1.35in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.END_DATE\" for=\"{grid.componentname}.V.R{grid.rownumber}.END_DATE\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; display: block; \">End Date</label>\n<!--LblE-->\n\t<!--FldS--><table id=\"{dialog.componentname}.V.R{dialog.rownumber}.END_DATE.CONTAINER\" cellspacing=\"0\" cellpadding=\"0\" class=\"[theme:editButtonGroup.base.container.className|{grid.style}EditBG]\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display: inline-table; white-space:normal; \">\n<tr>\n<td style=\"width:100%\">\n\t<input  \tid=\"{dialog.componentname}.V.R{dialog.rownumber}.END_DATE\" name=\"V.R{grid.rownumber}.END_DATE\"  value=\"\"  autocomplete=\"off\"   size=\"200\" class=\"[theme:editButtonGroup.base.container.editClassName|class.editButtonGroupEdit]\" style=\"width: 100%; ; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" />\n\t\n</td>\n\t\t<td class=\"[theme:editButtonGroup.base.container.separatorClassName|{grid.style}EditBGSeparator]\" >&nbsp;</td>\n\t\t<td id=\"{dialog.componentname}.V.R{dialog.rownumber}.END_DATE.BUTTON\" class=\"[theme:editButtonGroup.base.container.button.className|{grid.style}EditBGButton]\" style=\"width: 0%;\"><img src=\"{images.edit.datePicker}\" /></td>\n\t</tr>\n</table>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
@@ -844,6 +844,7 @@
                     "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
                     "info": {
+                        "inRepeatingSection": false,
                         "level": 1,
                         "isContainerStart": false,
                         "isTabControlStart": false,
@@ -853,7 +854,6 @@
                         "lastItemInTabPane": false,
                         "inContainer": true,
                         "inCSSGridContainer": false,
-                        "inRepeatingSection": false,
                         "inTabPane": false,
                         "parentContainerID": "340eed90-846c-4006-9de1-a629f495e99b",
                         "repeatingSectionParentId": "",
@@ -882,10 +882,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "SPACER",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Spacer]",
                     "controltype": "layout_directive_spacer",
-                    "icon": "$$format.border.style.dot",
-                    "lastbutton": "OK"
+                    "icon": "$$format.border.style.dot"
                 }
             },
             {
@@ -990,10 +990,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "BUTTON",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Button]",
                     "controltype": "layout_directive_button",
-                    "icon": "$$control.button",
-                    "lastbutton": "OK"
+                    "icon": "$$control.button"
                 }
             },
             {
@@ -1043,14 +1043,14 @@
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "containerStartIndex": 1,
-                "__flagwrapcontentsindiv": true,
                 "shortControlType": "CONTAINEREND",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Container End]",
                     "controltype": "layout_directive_ContainerEnd",
-                    "icon": "$$format.border.style.dash",
-                    "lastbutton": "OK"
-                }
+                    "icon": "$$format.border.style.dash"
+                },
+                "__flagwrapcontentsindiv": true
             },
             {
                 "controlType": "layout_directive_ContainerBegin",
@@ -1160,10 +1160,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "CONTAINERBEGIN",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Container Begin]",
                     "controltype": "layout_directive_ContainerBegin",
-                    "icon": "$$format.border.style.dash",
-                    "lastbutton": "OK"
+                    "icon": "$$format.border.style.dash"
                 }
             },
             {
@@ -1175,36 +1175,21 @@
                 "parentContainer": 9,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertline'}{Data=b14832c1-8afd-4cc3-83a3-cdae59df53a8}{I:'$$control.group'} [Frame: FRAME_1 (Total Clinical Incid...)  (Simple) ]",
                 "crc": "4294936194",
-                "indentTree": 1,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5CWLayout\"      style=\"width: ; \"  ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_1'-->\n\t<div>\n\t<fieldset id=\"{dialog.componentName}.V.R{dialog.rowNumber}.FRAME_1\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" >\n\t<legend class=\"\" style=\"\"  >Totall Incidents </legend>",
-                    "DesignViewHTML": ""
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "containerStartIndex": 0,
-                "shortControlType": "FRAMEBEGIN",
-                "p": {
-                    "control": "[Frame Begin]",
-                    "controltype": "layout_directive_FrameBegin",
-                    "icon": "$$control.group",
-                    "lastbutton": "OK"
-                },
                 "v": {
-                    "localxbasic": "",
-                    "localjavascript": "",
                     "FrameTitle": "Totall Incidents ",
                     "Frame": {
                         "ID": "FRAME_1",
                         "type": "Simple",
-                        "nonFloating": false,
                         "initialState": "Shown",
+                        "nonFloating": false,
                         "oneFrameOpenOnly": false
                     },
-                    "cssGridItemPropertiesJSON": "",
                     "precalc": {
                         "javascriptAbstractSetupCode": ""
                     },
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "cssGridItemPropertiesJSON": "",
                     "info": {
                         "level": 1,
                         "isContainerStart": true,
@@ -1230,6 +1215,21 @@
                         "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertline'}{Data=270a0a2e-684d-4d24-99eb-92b3baaa5e50}{I:'$$control.group'} [Frame: FRAME_1 (Totall Incidents )  (Simple) ]",
                         "inCSSGridContainer": false
                     }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\"      style=\"width: ; \"  ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_1'-->\n\t<div>\n\t<fieldset id=\"{dialog.componentName}.V.R{dialog.rowNumber}.FRAME_1\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" >\n\t<legend class=\"\" style=\"\"  >Totall Incidents </legend>",
+                    "DesignViewHTML": ""
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 0,
+                "shortControlType": "FRAMEBEGIN",
+                "p": {
+                    "lastbutton": "OK",
+                    "control": "[Frame Begin]",
+                    "controltype": "layout_directive_FrameBegin",
+                    "icon": "$$control.group"
                 }
             },
             {
@@ -1240,19 +1240,23 @@
                 "parentContainer": 10,
                 "displayOD": "{Data=c132660d_6fe5_4cfa_9389_94496cc34b40}",
                 "displayODtree": "{Data=c132660d_6fe5_4cfa_9389_94496cc34b40}",
-                "crc": "4294956389",
+                "crc": "4294959110",
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "containerStartIndex": 0,
                 "v": {
                     "controlType": "chart",
                     "variableName": "C2",
                     "type": "Character",
+                    "localXbasic": "",
+                    "localJavascript": "",
+                    "controlContainerStyle": "",
+                    "cssGridItemPropertiesJSON": "",
                     "maxLength": -1,
                     "watermark": {
                         "text": "<FieldLabel>"
-                    },
-                    "precalc": {
-                        "javascriptAbstractSetupCode": "",
-                        "_jsOnChangeFunction": "function onChange_C2_38daf4bc6361487ba17ecfdd14474d64(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('C2');};",
-                        "javascript_chart": "{dialog.object}._controls['C2'] = { type: 'custom', settings: { setValue: function() {}, refresh: function() { {dialog.object}._refreshChart('C2'); } } }"
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -1260,6 +1264,7 @@
                             "openLookupOnFocus": false
                         }
                     },
+                    "textboxSubTheme": "",
                     "textboxAutocorrect": true,
                     "textboxAutoCapitalize": true,
                     "class": "<Default>",
@@ -1282,6 +1287,8 @@
                         "separatorCharacter": ",",
                         "trimTrailingSeparatorOnBlur": false
                     },
+                    "getFunction": "",
+                    "setFunction": "",
                     "onChange_ValidationOption": "Client-side only",
                     "dataBinding": {
                         "updateable": true,
@@ -1298,9 +1305,27 @@
                         "encrypted": false,
                         "encryptionkey": ""
                     },
-                    "textboxSubTheme": "",
-                    "getFunction": "",
-                    "setFunction": "",
+                    "chart": {
+                        "width": "5in",
+                        "height": "4in",
+                        "definition": "<!--A5Chart::Chart:\nChartProvider = Native\nChartType = Bar Vertical Stacked\nChartEffect = None\nsourceType = Series\nDataExpression = Open.Incidents,Closed.Incidents,Under Review.Incidents\nDataLabelExpression = chart.data + \" - \" + chart.series\nDataLabelPlacement = Legend\ntitleExpression = Total_Incidents.Total_Incidents\nseriesType = Single\ndataFormat = alltrim(str( convert_type(<value>,\"N\") ,250,0,\"B\"))\nxAxisTitleExpression = \"Incidents\"\nyAxisTitleExpression = \"Total\"\nshowBreaks = True\n-->\n<!--A5ChartProp::styleSheet\nchart-data {\nfont:Ami R,10,b;\nfont-color:Black;\nalignment-vertical:top;\n}\nchart-data-1 {\nfill-style:Solid;\nfill-color:Light Blue;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-2 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-3 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-legend {\nalignment:right;\nalignment-vertical:center;\n}\nchart-series-1 {\nfill-style:Solid;\nfill-color:Bright Green;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-2 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-3 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-title {\nfont:Lucida Bright,15,;\nfont-color:Black;\nalignment-vertical:top;\n}\nchart-x-axis {\nfont:Tahoma,8,;\nfont-color:Black;\nalignment-vertical:top;\n}\nchart-x-axis-title {\nfont:Tahoma,8,;\nfont-color:Black;\nalignment-vertical:top;\n}\nchart-x-grid {\nline-style:none;\n alignment-vertical:top;\n}\nchart-y-axis {\nfont:Arial,10,;\nfont-color:Black;\nalignment-vertical:top;\n}\nchart-y-axis-title {\nfont:Tahoma,8,;\nfont-color:Black;\nalignment-vertical:top;\n}\n-->\n<!--A5Chart::EndChart:-->\n",
+                        "useBase64Encoding": false,
+                        "hasEvents": false,
+                        "javascript": {
+                            "OnBlur": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnDblClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnFocus": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyPress": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseMove": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseOut": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseOver": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n"
+                        }
+                    },
                     "datePicker": {
                         "displayTimePicker": false,
                         "openMethod": "ClickIcon",
@@ -1328,14 +1353,6 @@
                         "disabledDays": "",
                         "disabledDates": ""
                     },
-                    "displayAsSlider": false,
-                    "flags": {
-                        "clientSideDefinition": false
-                    },
-                    "localXbasic": "",
-                    "localJavascript": "",
-                    "controlContainerStyle": "",
-                    "cssGridItemPropertiesJSON": "",
                     "info": {
                         "level": 2,
                         "isContainerStart": false,
@@ -1360,38 +1377,21 @@
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=38daf4bc-6361-487b-a17e-cfdd14474d64}{I:'$$chart.line'} [C2]",
                         "inCSSGridContainer": false
                     },
-                    "chart": {
-                        "width": "5in",
-                        "height": "4in",
-                        "definition": "<!--A5Chart::Chart:\nChartProvider = Native\nChartType = Bar Vertical Stacked\nChartEffect = None\nsourceType = Series\nDataExpression = Open.Incidents,Closed.Incidents,Under Review.Incidents\nDataLabelExpression = chart.data + \" - \" + chart.series\nDataLabelPlacement = Legend\ntitleExpression = Total_Incidents.Total_Incidents\nseriesType = Single\ndataFormat = alltrim(str( convert_type(<value>,\"N\") ,250,0,\"B\"))\nshowBreaks = True\n-->\n<!--A5ChartProp::styleSheet\nchart-data {\nfont:Ami R,10,b;\nalignment-vertical:top;\n}\nchart-legend {\nalignment:right;\nalignment-vertical:center;\n}\nchart-series-1 {\nfill-style:Solid;\nfill-color:Bright Green;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-2 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-3 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-title {\nfont:Lucida Bright,15,;\nfont-color:#63,91,232;\nalignment-vertical:top;\n}\nchart-x-axis {\nfont:Tahoma,8,;\nfont-color:White;\nalignment-vertical:top;\n}\nchart-x-axis-title {\nfont:Tahoma,8,;\nfont-color:Dark Red;\nalignment-vertical:top;\n}\nchart-x-grid {\nline-style:none;\n alignment-vertical:top;\n}\nchart-y-axis-title {\nfont:Tahoma,8,;\nfont-color:Dark Red;\nalignment-vertical:top;\n}\n-->\n<!--A5Chart::EndChart:-->\n",
-                        "useBase64Encoding": false,
-                        "hasEvents": false,
-                        "javascript": {
-                            "OnBlur": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnDblClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnFocus": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyPress": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseMove": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseOut": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseOver": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n"
-                        }
+                    "displayAsSlider": false,
+                    "precalc": {
+                        "javascript_chart": "{dialog.object}._controls['C2'] = { type: 'custom', settings: { setValue: function() {}, refresh: function() { {dialog.object}._refreshChart('C2'); } } }",
+                        "_jsOnChangeFunction": "function onChange_C2_38daf4bc6361487ba17ecfdd14474d64(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('C2');};",
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "flags": {
+                        "clientSideDefinition": false
                     }
                 },
                 "precalc": {
+                    "columnInfo": "'C2': {info: {controlType: 'chart'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n",
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 5in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.C2\" for=\"{grid.componentname}.V.R{grid.rownumber}.C2\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; display: block; \">&nbsp;</label>\n<!--LblE-->\n\t<!--FldS--><img id=\"{dialog.componentname}.V.R{dialog.rownumber}.C2\" style=\"border-style: none; width: 100%; height: 4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" /><!--FldE-->\n</div>",
-                    "DesignViewHTML": "",
-                    "columnInfo": "'C2': {info: {controlType: 'chart'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false,
-                "containerStartIndex": 0
+                    "DesignViewHTML": ""
+                }
             },
             {
                 "controlType": "layout_directive_FrameEnd",
@@ -1443,10 +1443,10 @@
                 "containerStartIndex": 10,
                 "shortControlType": "FRAMEEND",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Frame End]",
                     "controltype": "layout_directive_FrameEnd",
-                    "icon": "$$control.group",
-                    "lastbutton": "OK"
+                    "icon": "$$control.group"
                 }
             },
             {
@@ -1509,10 +1509,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "FRAMEBEGIN",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Frame Begin]",
                     "controltype": "layout_directive_FrameBegin",
-                    "icon": "$$control.group",
-                    "lastbutton": "OK"
+                    "icon": "$$control.group"
                 }
             },
             {
@@ -1523,19 +1523,24 @@
                 "parentContainer": 13,
                 "displayOD": "{Data=b6add627_1059_481a_bdd1_7e1affa6b425}",
                 "displayODtree": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=b6add627_1059_481a_bdd1_7e1affa6b425}{I:'$$chart.line'} [C5] ¶",
-                "crc": "4294929920",
+                "crc": "4294943046",
+                "indentTree": 2,
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "containerStartIndex": 0,
                 "v": {
                     "controlType": "chart",
                     "variableName": "C5",
                     "type": "Character",
+                    "localXbasic": "",
+                    "localJavascript": "",
+                    "controlContainerStyle": "",
+                    "cssGridItemPropertiesJSON": "",
                     "maxLength": -1,
                     "watermark": {
                         "text": "<FieldLabel>"
-                    },
-                    "precalc": {
-                        "javascriptAbstractSetupCode": "",
-                        "_jsOnChangeFunction": "function onChange_C5_03f18967d78a45d4889db1048edb669c(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('C5');};",
-                        "javascript_chart": "{dialog.object}._controls['C5'] = { type: 'custom', settings: { setValue: function() {}, refresh: function() { {dialog.object}._refreshChart('C5'); } } }"
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -1543,6 +1548,7 @@
                             "openLookupOnFocus": false
                         }
                     },
+                    "textboxSubTheme": "",
                     "textboxAutocorrect": true,
                     "textboxAutoCapitalize": true,
                     "class": "<Default>",
@@ -1565,6 +1571,8 @@
                         "separatorCharacter": ",",
                         "trimTrailingSeparatorOnBlur": false
                     },
+                    "getFunction": "",
+                    "setFunction": "",
                     "onChange_ValidationOption": "Client-side only",
                     "dataBinding": {
                         "updateable": true,
@@ -1581,9 +1589,27 @@
                         "encrypted": false,
                         "encryptionkey": ""
                     },
-                    "textboxSubTheme": "",
-                    "getFunction": "",
-                    "setFunction": "",
+                    "chart": {
+                        "width": "5in",
+                        "height": "4in",
+                        "definition": "<!--A5Chart::Chart:\nChartProvider = Native\nChartType = Bar Vertical Stacked\nChartEffect = None\nsourceType = Series\nDataExpression = Compliments.Feedback,Complaint.Feedback,Suggestion.Feedback\nDataLabelExpression = chart.data + \" - \" + chart.series\nDataLabelPlacement = Legend\ntitleExpression = \"Total Incidents -  \"  + Total_Incidents.Total_Incidents\nseriesType = Single\ndataFormat = alltrim(str( convert_type(<value>,\"N\") ,250,0,\"B\"))\nxAxisTitleExpression = \"feedback\"\nyAxisTitleExpression = \"Total\"\nshowBreaks = True\nyInterval = 5\n-->\n<!--A5ChartProp::styleSheet\nchart-data-1 {\nfill-style:Solid;\nfill-color:Light Blue;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-2 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-3 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-legend {\nalignment:right;\nalignment-vertical:center;\n}\nchart-series-1 {\nfill-style:Solid;\nfill-color:Bright Green;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-2 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-3 {\nfill-style:Solid;\nfill-color:Gold;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-title {\nfont:Lucida Bright,15,;\nfont-color:#63,91,232;\nalignment-vertical:top;\n}\nchart-x-axis {\nfont:Tahoma,8,;\nfont-color:White;\nalignment-vertical:top;\n}\nchart-x-axis-title {\nfont:Tahoma,8,;\nfont-color:Black;\nalignment-vertical:top;\n}\nchart-x-grid {\nline-style:none;\n alignment-vertical:top;\n}\nchart-y-axis-title {\nfont:Tahoma,8,;\nfont-color:Black;\nalignment-vertical:top;\n}\n-->\n<!--A5Chart::EndChart:-->\n",
+                        "useBase64Encoding": false,
+                        "hasEvents": false,
+                        "javascript": {
+                            "OnBlur": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnDblClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnFocus": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyPress": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseMove": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseOut": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseOver": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n"
+                        }
+                    },
                     "datePicker": {
                         "displayTimePicker": false,
                         "openMethod": "ClickIcon",
@@ -1611,14 +1637,6 @@
                         "disabledDays": "",
                         "disabledDates": ""
                     },
-                    "displayAsSlider": false,
-                    "flags": {
-                        "clientSideDefinition": false
-                    },
-                    "localXbasic": "",
-                    "localJavascript": "",
-                    "controlContainerStyle": "",
-                    "cssGridItemPropertiesJSON": "",
                     "info": {
                         "level": 2,
                         "isContainerStart": false,
@@ -1643,39 +1661,21 @@
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=03f18967-d78a-45d4-889d-b1048edb669c}{I:'$$chart.line'} [C5]<<break>>",
                         "inCSSGridContainer": false
                     },
-                    "chart": {
-                        "width": "5in",
-                        "height": "4in",
-                        "definition": "<!--A5Chart::Chart:\nChartProvider = Native\nChartType = Bar Vertical Stacked\nChartEffect = None\nsourceType = Series\nDataExpression = Compliments.Feedback,Complaint.Feedback,Suggestion.Feedback\nDataLabelExpression = chart.data + \" - \" + chart.series\nDataLabelPlacement = Legend\ntitleExpression = \"Total Incidents -  \"  + Total_Incidents.Total_Incidents\nseriesType = Single\ndataFormat = alltrim(str( convert_type(<value>,\"N\") ,250,0,\"B\"))\nshowBreaks = True\nyInterval = 5\n-->\n<!--A5ChartProp::styleSheet\nchart-data-1 {\nfill-style:Solid;\nfill-color:Light Blue;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-2 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-3 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-legend {\nalignment:right;\nalignment-vertical:center;\n}\nchart-series-1 {\nfill-style:Solid;\nfill-color:Bright Green;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-2 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-3 {\nfill-style:Solid;\nfill-color:Gold;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-title {\nfont:Lucida Bright,15,;\nfont-color:#63,91,232;\nalignment-vertical:top;\n}\nchart-x-axis {\nfont:Tahoma,8,;\nfont-color:White;\nalignment-vertical:top;\n}\nchart-x-axis-title {\nfont:Tahoma,8,;\nfont-color:Dark Red;\nalignment-vertical:top;\n}\nchart-x-grid {\nline-style:none;\n alignment-vertical:top;\n}\nchart-y-axis-title {\nfont:Tahoma,8,;\nfont-color:Dark Red;\nalignment-vertical:top;\n}\n-->\n<!--A5Chart::EndChart:-->\n",
-                        "useBase64Encoding": false,
-                        "hasEvents": false,
-                        "javascript": {
-                            "OnBlur": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnDblClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnFocus": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyPress": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseMove": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseOut": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseOver": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n"
-                        }
+                    "displayAsSlider": false,
+                    "precalc": {
+                        "javascript_chart": "{dialog.object}._controls['C5'] = { type: 'custom', settings: { setValue: function() {}, refresh: function() { {dialog.object}._refreshChart('C5'); } } }",
+                        "_jsOnChangeFunction": "function onChange_C5_03f18967d78a45d4889db1048edb669c(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('C5');};",
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "flags": {
+                        "clientSideDefinition": false
                     }
                 },
-                "indentTree": 2,
                 "precalc": {
+                    "columnInfo": "'C5': {info: {controlType: 'chart'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n",
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 5in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.C5\" for=\"{grid.componentname}.V.R{grid.rownumber}.C5\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; display: block; \">&nbsp;</label>\n<!--LblE-->\n\t<!--FldS--><img id=\"{dialog.componentname}.V.R{dialog.rownumber}.C5\" style=\"border-style: none; width: 100%; height: 4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" /><!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
-                    "DesignViewHTML": "",
-                    "columnInfo": "'C5': {info: {controlType: 'chart'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false,
-                "containerStartIndex": 0
+                    "DesignViewHTML": ""
+                }
             },
             {
                 "controlType": "layout_directive_FrameEnd",
@@ -1727,10 +1727,10 @@
                 "containerStartIndex": 13,
                 "shortControlType": "FRAMEEND",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Frame End]",
                     "controltype": "layout_directive_FrameEnd",
-                    "icon": "$$control.group",
-                    "lastbutton": "OK"
+                    "icon": "$$control.group"
                 }
             },
             {
@@ -1793,10 +1793,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "FRAMEBEGIN",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Frame Begin]",
                     "controltype": "layout_directive_FrameBegin",
-                    "icon": "$$control.group",
-                    "lastbutton": "OK"
+                    "icon": "$$control.group"
                 }
             },
             {
@@ -1807,19 +1807,24 @@
                 "parentContainer": 16,
                 "displayOD": "{Data=ddfcc447_6681_4cb2_a43c_25f24c485d2e}",
                 "displayODtree": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=ddfcc447_6681_4cb2_a43c_25f24c485d2e}{I:'$$chart.line'} [C6]",
-                "crc": "4294903192",
+                "crc": "4294940656",
+                "indentTree": 2,
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "containerStartIndex": 0,
                 "v": {
                     "controlType": "chart",
                     "variableName": "C6",
                     "type": "Character",
+                    "localXbasic": "",
+                    "localJavascript": "",
+                    "controlContainerStyle": "",
+                    "cssGridItemPropertiesJSON": "",
                     "maxLength": -1,
                     "watermark": {
                         "text": "<FieldLabel>"
-                    },
-                    "precalc": {
-                        "javascriptAbstractSetupCode": "",
-                        "_jsOnChangeFunction": "function onChange_C6_ebafa9267cd347aa8ba77b8f10d75dae(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('C6');};",
-                        "javascript_chart": "{dialog.object}._controls['C6'] = { type: 'custom', settings: { setValue: function() {}, refresh: function() { {dialog.object}._refreshChart('C6'); } } }"
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -1827,6 +1832,7 @@
                             "openLookupOnFocus": false
                         }
                     },
+                    "textboxSubTheme": "",
                     "textboxAutocorrect": true,
                     "textboxAutoCapitalize": true,
                     "class": "<Default>",
@@ -1849,6 +1855,8 @@
                         "separatorCharacter": ",",
                         "trimTrailingSeparatorOnBlur": false
                     },
+                    "getFunction": "",
+                    "setFunction": "",
                     "onChange_ValidationOption": "Client-side only",
                     "dataBinding": {
                         "updateable": true,
@@ -1865,9 +1873,27 @@
                         "encrypted": false,
                         "encryptionkey": ""
                     },
-                    "textboxSubTheme": "",
-                    "getFunction": "",
-                    "setFunction": "",
+                    "chart": {
+                        "width": "5in",
+                        "height": "4in",
+                        "definition": "<!--A5Chart::Chart:\nChartProvider = Native\nChartType = Bar Vertical Stacked\nChartEffect = None\nsourceType = Series\nDataExpression = OHS Closed.Incidents,OHS Open.Incidents,OHS Under Review.Incidents\nDataLabelExpression = chart.data + \" - \" + chart.series\nDataLabelPlacement = Legend\ntitleExpression = \"Total Incidents -  \"  + Total_Incidents.Total_Incidents\nseriesType = Single\ndataFormat = alltrim(str( convert_type(<value>,\"N\") ,250,0,\"B\"))\nxAxisTitleExpression = \"OHS\"\nyAxisTitleExpression = \"Total\"\nshowBreaks = True\nyInterval = 5\n-->\n<!--A5ChartProp::styleSheet\nchart-data-1 {\nfill-style:Solid;\nfill-color:Light Blue;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-2 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-3 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-legend {\nalignment:right;\nalignment-vertical:center;\n}\nchart-series-1 {\nfill-style:Solid;\nfill-color:Bright Green;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-2 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-3 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-title {\nfont:Lucida Bright,15,;\nfont-color:#63,91,232;\nalignment-vertical:top;\n}\nchart-x-axis {\nfont:Tahoma,8,;\nfont-color:White;\nalignment-vertical:top;\n}\nchart-x-axis-title {\nfont:Tahoma,8,;\nfont-color:Black;\nalignment-vertical:top;\n}\nchart-x-grid {\nline-style:none;\n alignment-vertical:top;\n}\nchart-y-axis-title {\nfont:Tahoma,8,;\nfont-color:Black;\nalignment-vertical:top;\n}\n-->\n<!--A5Chart::EndChart:-->\n",
+                        "useBase64Encoding": false,
+                        "hasEvents": false,
+                        "javascript": {
+                            "OnBlur": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnDblClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnFocus": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyPress": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseMove": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseOut": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseOver": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n"
+                        }
+                    },
                     "datePicker": {
                         "displayTimePicker": false,
                         "openMethod": "ClickIcon",
@@ -1895,14 +1921,6 @@
                         "disabledDays": "",
                         "disabledDates": ""
                     },
-                    "displayAsSlider": false,
-                    "flags": {
-                        "clientSideDefinition": false
-                    },
-                    "localXbasic": "",
-                    "localJavascript": "",
-                    "controlContainerStyle": "",
-                    "cssGridItemPropertiesJSON": "",
                     "info": {
                         "level": 2,
                         "isContainerStart": false,
@@ -1927,39 +1945,21 @@
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=ebafa926-7cd3-47aa-8ba7-7b8f10d75dae}{I:'$$chart.line'} [C6]",
                         "inCSSGridContainer": false
                     },
-                    "chart": {
-                        "width": "5in",
-                        "height": "4in",
-                        "definition": "<!--A5Chart::Chart:\nChartProvider = Native\nChartType = Bar Vertical Stacked\nChartEffect = None\nsourceType = Series\nDataExpression = OHS Closed.Incidents,OHS Open.Incidents,OHS Under Review.Incidents\nDataLabelExpression = chart.data + \" - \" + chart.series\nDataLabelPlacement = Legend\ntitleExpression = \"Total Incidents -  \"  + Total_Incidents.Total_Incidents\nseriesType = Single\ndataFormat = alltrim(str( convert_type(<value>,\"N\") ,250,0,\"B\"))\nshowBreaks = True\nyInterval = 5\n-->\n<!--A5ChartProp::styleSheet\nchart-data-1 {\nfill-style:Solid;\nfill-color:Light Blue;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-2 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-3 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-legend {\nalignment:right;\nalignment-vertical:center;\n}\nchart-series-1 {\nfill-style:Solid;\nfill-color:Bright Green;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-2 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-3 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-title {\nfont:Lucida Bright,15,;\nfont-color:#63,91,232;\nalignment-vertical:top;\n}\nchart-x-axis {\nfont:Tahoma,8,;\nfont-color:White;\nalignment-vertical:top;\n}\nchart-x-axis-title {\nfont:Tahoma,8,;\nfont-color:Dark Red;\nalignment-vertical:top;\n}\nchart-x-grid {\nline-style:none;\n alignment-vertical:top;\n}\nchart-y-axis-title {\nfont:Tahoma,8,;\nfont-color:Dark Red;\nalignment-vertical:top;\n}\n-->\n<!--A5Chart::EndChart:-->\n",
-                        "useBase64Encoding": false,
-                        "hasEvents": false,
-                        "javascript": {
-                            "OnBlur": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnDblClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnFocus": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyPress": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseMove": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseOut": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseOver": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n"
-                        }
+                    "displayAsSlider": false,
+                    "precalc": {
+                        "javascript_chart": "{dialog.object}._controls['C6'] = { type: 'custom', settings: { setValue: function() {}, refresh: function() { {dialog.object}._refreshChart('C6'); } } }",
+                        "_jsOnChangeFunction": "function onChange_C6_ebafa9267cd347aa8ba77b8f10d75dae(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('C6');};",
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "flags": {
+                        "clientSideDefinition": false
                     }
                 },
-                "indentTree": 2,
                 "precalc": {
+                    "columnInfo": "'C6': {info: {controlType: 'chart'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n",
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 5in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.C6\" for=\"{grid.componentname}.V.R{grid.rownumber}.C6\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; display: block; \">&nbsp;</label>\n<!--LblE-->\n\t<!--FldS--><img id=\"{dialog.componentname}.V.R{dialog.rownumber}.C6\" style=\"border-style: none; width: 100%; height: 4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" /><!--FldE-->\n</div>",
-                    "DesignViewHTML": "",
-                    "columnInfo": "'C6': {info: {controlType: 'chart'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false,
-                "containerStartIndex": 0
+                    "DesignViewHTML": ""
+                }
             },
             {
                 "controlType": "layout_directive_FrameEnd",
@@ -2011,10 +2011,10 @@
                 "containerStartIndex": 16,
                 "shortControlType": "FRAMEEND",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Frame End]",
                     "controltype": "layout_directive_FrameEnd",
-                    "icon": "$$control.group",
-                    "lastbutton": "OK"
+                    "icon": "$$control.group"
                 }
             },
             {
@@ -2077,10 +2077,10 @@
                 "containerStartIndex": 0,
                 "shortControlType": "FRAMEBEGIN",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Frame Begin]",
                     "controltype": "layout_directive_FrameBegin",
-                    "icon": "$$control.group",
-                    "lastbutton": "OK"
+                    "icon": "$$control.group"
                 }
             },
             {
@@ -2091,19 +2091,24 @@
                 "parentContainer": 19,
                 "displayOD": "{Data=542be77a_41ab_447a_aa2a_454a10b8cfe3}",
                 "displayODtree": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=542be77a_41ab_447a_aa2a_454a10b8cfe3}{I:'$$chart.line'} [C7]",
-                "crc": "4294919407",
+                "crc": "4294921748",
+                "indentTree": 2,
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "containerStartIndex": 0,
                 "v": {
                     "controlType": "chart",
                     "variableName": "C7",
                     "type": "Character",
+                    "localXbasic": "",
+                    "localJavascript": "",
+                    "controlContainerStyle": "",
+                    "cssGridItemPropertiesJSON": "",
                     "maxLength": -1,
                     "watermark": {
                         "text": "<FieldLabel>"
-                    },
-                    "precalc": {
-                        "javascriptAbstractSetupCode": "",
-                        "_jsOnChangeFunction": "function onChange_C7_f996208489074fa9bed241fce38edc28(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('C7');};",
-                        "javascript_chart": "{dialog.object}._controls['C7'] = { type: 'custom', settings: { setValue: function() {}, refresh: function() { {dialog.object}._refreshChart('C7'); } } }"
                     },
                     "lookup": {
                         "flagIsdefined": false,
@@ -2111,6 +2116,7 @@
                             "openLookupOnFocus": false
                         }
                     },
+                    "textboxSubTheme": "",
                     "textboxAutocorrect": true,
                     "textboxAutoCapitalize": true,
                     "class": "<Default>",
@@ -2133,6 +2139,8 @@
                         "separatorCharacter": ",",
                         "trimTrailingSeparatorOnBlur": false
                     },
+                    "getFunction": "",
+                    "setFunction": "",
                     "onChange_ValidationOption": "Client-side only",
                     "dataBinding": {
                         "updateable": true,
@@ -2149,9 +2157,27 @@
                         "encrypted": false,
                         "encryptionkey": ""
                     },
-                    "textboxSubTheme": "",
-                    "getFunction": "",
-                    "setFunction": "",
+                    "chart": {
+                        "width": "5in",
+                        "height": "4in",
+                        "definition": "<!--A5Chart::Chart:\nChartProvider = Native\nChartType = Bar Vertical Stacked\nChartEffect = None\nsourceType = Series\nDataExpression = Infections Closed.Infections,Infections Open.Infections,Infections Under Review.Infections\nDataLabelExpression = chart.data + \" - \" + chart.series\nDataLabelPlacement = Legend\ntitleExpression = \"Total Incidents -  \"  + Total_Incidents.Total_Incidents\nseriesType = Single\ndataFormat = alltrim(str( convert_type(<value>,\"N\") ,250,0,\"B\"))\nxAxisTitleExpression = \"Infections\"\nyAxisTitleExpression = \"Total\"\nshowBreaks = True\nyInterval = 5\n-->\n<!--A5ChartProp::styleSheet\nchart-data-1 {\nfill-style:Solid;\nfill-color:Bright Green;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-2 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-3 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-legend {\nalignment:right;\nalignment-vertical:center;\n}\nchart-series-1 {\nfill-style:Solid;\nfill-color:Bright Green;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-2 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-3 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-title {\nfont:Lucida Bright,15,;\nfont-color:#63,91,232;\nalignment-vertical:top;\n}\nchart-x-axis {\nfont:Tahoma,8,;\nfont-color:White;\nalignment-vertical:top;\n}\nchart-x-axis-title {\nfont:Tahoma,8,;\nfont-color:Black;\nalignment-vertical:top;\n}\nchart-x-grid {\nline-style:none;\n alignment-vertical:top;\n}\nchart-y-axis-title {\nfont:Tahoma,8,;\nfont-color:Black;\nalignment-vertical:top;\n}\n-->\n<!--A5Chart::EndChart:-->\n",
+                        "useBase64Encoding": false,
+                        "hasEvents": false,
+                        "javascript": {
+                            "OnBlur": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnDblClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnFocus": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyPress": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnKeyUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseMove": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseOut": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseOver": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
+                            "OnMouseUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n"
+                        }
+                    },
                     "datePicker": {
                         "displayTimePicker": false,
                         "openMethod": "ClickIcon",
@@ -2179,14 +2205,6 @@
                         "disabledDays": "",
                         "disabledDates": ""
                     },
-                    "displayAsSlider": false,
-                    "flags": {
-                        "clientSideDefinition": false
-                    },
-                    "localXbasic": "",
-                    "localJavascript": "",
-                    "controlContainerStyle": "",
-                    "cssGridItemPropertiesJSON": "",
                     "info": {
                         "level": 2,
                         "isContainerStart": false,
@@ -2211,39 +2229,21 @@
                         "display": "{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=f9962084-8907-4fa9-bed2-41fce38edc28}{I:'$$chart.line'} [C7]",
                         "inCSSGridContainer": false
                     },
-                    "chart": {
-                        "width": "5in",
-                        "height": "4in",
-                        "definition": "<!--A5Chart::Chart:\nChartProvider = Native\nChartType = Bar Vertical Stacked\nChartEffect = None\nsourceType = Series\nDataExpression = Infections Closed.Infections,Infections Open.Infections,Infections Under Review.Infections\nDataLabelExpression = chart.data + \" - \" + chart.series\nDataLabelPlacement = Legend\ntitleExpression = \"Total Incidents -  \"  + Total_Incidents.Total_Incidents\nseriesType = Single\ndataFormat = alltrim(str( convert_type(<value>,\"N\") ,250,0,\"B\"))\nshowBreaks = True\nyInterval = 5\n-->\n<!--A5ChartProp::styleSheet\nchart-data-1 {\nfill-style:Solid;\nfill-color:Bright Green;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-2 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-data-3 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-legend {\nalignment:right;\nalignment-vertical:center;\n}\nchart-series-1 {\nfill-style:Solid;\nfill-color:Bright Green;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-2 {\nfill-style:Solid;\nfill-color:Red;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-series-3 {\nfill-style:Solid;\nfill-color:Light Orange;\nline-style:single;\nline-color:Black;\nalignment-vertical:top;\n}\nchart-title {\nfont:Lucida Bright,15,;\nfont-color:#63,91,232;\nalignment-vertical:top;\n}\nchart-x-axis {\nfont:Tahoma,8,;\nfont-color:White;\nalignment-vertical:top;\n}\nchart-x-axis-title {\nfont:Tahoma,8,;\nfont-color:Dark Red;\nalignment-vertical:top;\n}\nchart-x-grid {\nline-style:none;\n alignment-vertical:top;\n}\nchart-y-axis-title {\nfont:Tahoma,8,;\nfont-color:Dark Red;\nalignment-vertical:top;\n}\n-->\n<!--A5Chart::EndChart:-->\n",
-                        "useBase64Encoding": false,
-                        "hasEvents": false,
-                        "javascript": {
-                            "OnBlur": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnDblClick": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnFocus": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyPress": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnKeyUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseDown": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseMove": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseOut": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseOver": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n",
-                            "OnMouseUp": "/*\nYour Javascript code can reference these variables: \nchart.seriesNumber (0 based), \nchart.pointNumber (0 based point number in the series), \nchart.value (value for the point)\t\nchart.xvalue (value for the x-axis value (used in x-y and scatter charts)\nlegend.label (text label on the legend - if the chart has a legend)\npoint.label (text for point label)\n*/\n\n"
-                        }
+                    "displayAsSlider": false,
+                    "precalc": {
+                        "javascript_chart": "{dialog.object}._controls['C7'] = { type: 'custom', settings: { setValue: function() {}, refresh: function() { {dialog.object}._refreshChart('C7'); } } }",
+                        "_jsOnChangeFunction": "function onChange_C7_f996208489074fa9bed241fce38edc28(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('C7');};",
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "flags": {
+                        "clientSideDefinition": false
                     }
                 },
-                "indentTree": 2,
                 "precalc": {
+                    "columnInfo": "'C7': {info: {controlType: 'chart'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n",
                     "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 5in\" >\n\t<!--LblS--><label id=\"{grid.componentname}.LBL.R{grid.rownumber}.C7\" for=\"{grid.componentname}.V.R{grid.rownumber}.C7\" title=\"\" class=\"[class.dialogFieldLabel]\" style=\"text-align: Center; display: block; \">&nbsp;</label>\n<!--LblE-->\n\t<!--FldS--><img id=\"{dialog.componentname}.V.R{dialog.rownumber}.C7\" style=\"border-style: none; width: 100%; height: 4in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" /><!--FldE-->\n</div>",
-                    "DesignViewHTML": "",
-                    "columnInfo": "'C7': {info: {controlType: 'chart'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
-                },
-                "isCollapsed": false,
-                "parentIsCollapsed": false,
-                "inPanelCard": false,
-                "inTreeControl": false,
-                "containerStartIndex": 0
+                    "DesignViewHTML": ""
+                }
             },
             {
                 "controlType": "layout_directive_FrameEnd",
@@ -2295,10 +2295,10 @@
                 "containerStartIndex": 19,
                 "shortControlType": "FRAMEEND",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Frame End]",
                     "controltype": "layout_directive_FrameEnd",
-                    "icon": "$$control.group",
-                    "lastbutton": "OK"
+                    "icon": "$$control.group"
                 }
             },
             {
@@ -2348,14 +2348,14 @@
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "containerStartIndex": 9,
-                "__flagwrapcontentsindiv": true,
                 "shortControlType": "CONTAINEREND",
                 "p": {
+                    "lastbutton": "OK",
                     "control": "[Container End]",
                     "controltype": "layout_directive_ContainerEnd",
-                    "icon": "$$format.border.style.dash",
-                    "lastbutton": "OK"
-                }
+                    "icon": "$$format.border.style.dash"
+                },
+                "__flagwrapcontentsindiv": true
             }
         ],
         "builderType": "Dialog2",
@@ -2392,7 +2392,7 @@
         "keyboardShortcutsJSON": "",
         "preRenderWarningMessageShow": false,
         "autoSetPreRenderOnForAllUX": true,
-        "selected": "270a0a2e-684d-4d24-99eb-92b3baaa5e50\n",
+        "selected": "38daf4bc-6361-487b-a17e-cfdd14474d64\n",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "serverSideEventIndex": 1,
@@ -2412,7 +2412,7 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "228",
+        "_buildCount": "237",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
@@ -2510,7 +2510,7 @@
                 "includeJSONPath": false
             },
             "hasIndexedDBJS": false,
-            "_jsOnChangeFunctions": "function onChange_C6_ebafa9267cd347aa8ba77b8f10d75dae(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('C6');};",
+            "_jsOnChangeFunctions": "function onChange_C2_38daf4bc6361487ba17ecfdd14474d64(_dlgObj){if(_dlgObj.executeWatchEventForControl) _dlgObj.executeWatchEventForControl('C2');};",
             "_jsOnClickFunctions": ""
         },
         "FieldsInRepeatingSectionsDeletedBySecurity": "",
@@ -2571,7 +2571,7 @@
         "sassProcessor": true,
         "debugMode": false,
         "__jsLibraries": "<script type=\"text/javascript\" src=\"javascript/a5.js\"></script>\n<script type=\"text/javascript\" src=\"javascript/a5_url.js\"></script>\n",
-        "A5SaveTimeStamp": "20231121125202506",
+        "A5SaveTimeStamp": "20240520112745003",
         "a_actionJavascript": [
             {
                 "actionGuid": "8507af3c-2447-4a36-95a6-3c73c2c085c2",
@@ -2606,7 +2606,6 @@
             "targetIndex": 14,
             "count": 1
         },
-        "compressUX": false,
         "useCSSFlexForContainerAlignment": true,
         "customTabOrder": "",
         "friendlydatesCustomizationJSON": "",
@@ -2660,22 +2659,10 @@
         "__embedLinkedFiles": false,
         "__embedLinkedJSFiles": false,
         "__allowCascadingRecalc": true,
-        "onConnectionLostBehavior": "Stop",
-        "onConnectionLostExecutionDuration": "300",
-        "svgiconsdefaultsize": "15,15",
-        "corsAllowOrigins": "*",
-        "corsAllowPrivateNetwork": false,
-        "_style_name_beforeResolve": "<ProjectStyle>",
-        "AllowSelectionOfText": false,
-        "debugOnTemplateError": false,
-        "simulatedculture": "",
-        "suppressJavascriptCodeWarning": false,
-        "restorePanelSizes": true,
-        "simulatedcultureNumber": "",
-        "populateArgumentsFromQueryString": false,
+        "favoriteControls": "",
+        "__idinternalCurrentControl": "38daf4bc-6361-487b-a17e-cfdd14474d64",
+        "__nameCurrentControl": "C2",
         "_original_Style_name": "<ProjectStyle>",
-        "__idinternalCurrentControl": "ebafa926-7cd3-47aa-8ba7-7b8f10d75dae",
-        "__nameCurrentControl": "C6",
         "a_UnboundActionJavascript": [
             {
                 "idInternal": "85f2366a-46ba-4216-b336-7a8b3947fd4b",
@@ -2699,11 +2686,27 @@
                 "part": ""
             }
         ],
-        "actionJavascriptUnboundLastEdited": "85f2366a-46ba-4216-b336-7a8b3947fd4b",
-        "favoriteControls": "",
         "unboundActionShowOnNewActionMessage": true,
-        "_flagForceRecalcChildren": true,
+        "actionJavascriptUnboundLastEdited": "85f2366a-46ba-4216-b336-7a8b3947fd4b",
         "_flagCreateDialogUsingXbasic": true,
+        "suppressJavascriptCodeWarning": false,
+        "onConnectionLostBehavior": "Stop",
+        "onConnectionLostExecutionDuration": "300",
+        "AllowSelectionOfText": false,
+        "debugOnTemplateError": false,
+        "restorePanelSizes": true,
+        "simulatedculture": "",
+        "simulatedcultureNumber": "",
+        "svgiconsdefaultsize": "15,15",
+        "compressUX": false,
+        "corsAllowOrigins": "*",
+        "corsAllowPrivateNetwork": false,
+        "populateArgumentsFromQueryString": false,
+        "_flagForceRecalcChildren": true,
+        "_style_name_beforeResolve": "<ProjectStyle>",
+        "_alphasoftwareBucketName": "",
+        "staticHTMLFileJSON": "",
+        "__flagRecursive": false,
         "a_dataSources": [
             {
                 "listname": "Open",
@@ -3445,11 +3448,11 @@
                 "VariableScope": "Session Variable",
                 "VariableName": "Location",
                 "DefaultValue": "",
-                "runtimeValue": "",
-                "sr": "{LOCATION}=\"\"",
+                "Value": "",
                 "XbasicFunction": "",
                 "ArgumentDescription": "",
-                "value": ""
+                "runtimeValue": "",
+                "sr": "{LOCATION}=\"\""
             },
             {
                 "Name": "START",
@@ -3458,11 +3461,11 @@
                 "VariableScope": "",
                 "VariableName": "",
                 "DefaultValue": "{Start_Date}",
-                "runtimeValue": "  /  /    ",
-                "sr": "{START}=\"  /  /    \"",
+                "Value": "",
                 "XbasicFunction": "",
                 "ArgumentDescription": "",
-                "value": ""
+                "runtimeValue": "  /  /    ",
+                "sr": "{START}=\"  /  /    \""
             },
             {
                 "Name": "END",
@@ -3471,22 +3474,19 @@
                 "VariableScope": "",
                 "VariableName": "",
                 "DefaultValue": "{ENd_Date}",
-                "runtimeValue": "  /  /    ",
-                "sr": "{END}=\"  /  /    \"",
+                "Value": "",
                 "XbasicFunction": "",
                 "ArgumentDescription": "",
-                "value": ""
+                "runtimeValue": "  /  /    ",
+                "sr": "{END}=\"  /  /    \""
             }
         ],
-        "_alphasoftwareBucketName": "",
-        "staticHTMLFileJSON": "",
-        "__flagRecursive": false,
         "prerendered": {
             "_styledataVersion": 2,
             "output": {
                 "Head": {
                     "JavaScript": "*gzip:H4sIAAAAAAAAC5WMsQ6CQBAFexP/Aa/Hq+gOOjsqf2Cznq84PPGyuyD8vSQUFlaWM5NM0CipWGVrQesMi/mBZ96tq1Ri677Cc3Me1HXB79wdD+HfAU2Sfyanun/x/bIYZOTcp5uwJGi9NSJByRzBdp1GS08QRVW1NcPe4IcSfQAk7ywxxgAAAA==",
-                    "CSS_Link": "*gzip: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",
+                    "CSS_Link": "*gzip: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",
                     "title": "*gzip:H4sIAAAAAAAAC7MpySzJSbULjbDRh7AAiMez8hEAAAA="
                 },
                 "body": {
