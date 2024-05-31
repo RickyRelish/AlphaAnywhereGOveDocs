@@ -3321,6 +3321,36 @@
 		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
 	},
 	{
+		"page": "Preventative_Grid.a5wcmp",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,2dddabbf5f3842f89229e45fe4466d11,Maintenance"
+	},
+	{
+		"page": "Prevent_UX_Add.a5wcmp",
+		"action": "login",
+		"groups": "2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Prevnt_catgory_Grid.a5wcmp",
+		"action": "login",
+		"groups": "2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Prevent_UX_Edit.a5wcmp",
+		"action": "login",
+		"groups": "2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Prevent_Grid_Holder.a5wcmp",
+		"action": "login",
+		"groups": "2dddabbf5f3842f89229e45fe4466d11,Maintenance,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+	},
+	{
+		"page": "Prvent_grid_Cat.a5wcmp",
+		"action": "login",
+		"groups": "aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,2dddabbf5f3842f89229e45fe4466d11,Maintenance"
+	},
+	{
 		"page": "robots.txt",
 		"action": "allow",
 		"groups": ""

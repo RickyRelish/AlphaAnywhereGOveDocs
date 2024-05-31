@@ -173,8 +173,8 @@
             "createdBy": "Ricky",
             "lastUpdatedBy": "Ricky",
             "dateCreated": "2021-6-17",
-            "dateLastEdited": "2024-3-18",
-            "revisionnumber": 109
+            "dateLastEdited": "2024-5-29",
+            "revisionnumber": 110
         },
         "flagShowCommentsInTree": true,
         "treeCommentOffset": "6",
@@ -1025,14 +1025,14 @@
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "containerStartIndex": 7,
-                "__flagwrapcontentsindiv": true,
                 "shortControlType": "CONTAINEREND",
                 "p": {
                     "lastbutton": "OK",
                     "control": "[Container End]",
                     "controltype": "layout_directive_ContainerEnd",
                     "icon": "$$format.border.style.dash"
-                }
+                },
+                "__flagwrapcontentsindiv": true
             },
             {
                 "controlType": "layout_directive_spacer",
@@ -1049,6 +1049,7 @@
                     "localxbasic": "",
                     "localjavascript": "",
                     "cssGridItemPropertiesJSON": "",
+                    "labelposition": "",
                     "info": {
                         "inRepeatingSection": false,
                         "level": 0,
@@ -1073,7 +1074,6 @@
                         "break": true,
                         "display": "{B=White,Light Blue}{Data=a97a86f0-1b48-4ef9-8243-94e609c930bd}{I:'$$format.border.style.dot'} [Spacer]<<break>>"
                     },
-                    "labelposition": "",
                     "controlContainerStyle": ""
                 },
                 "precalc": {
@@ -1677,14 +1677,14 @@
                 "isCollapsed": false,
                 "parentIsCollapsed": false,
                 "containerStartIndex": 14,
-                "__flagwrapcontentsindiv": true,
                 "shortControlType": "CONTAINEREND",
                 "p": {
                     "lastbutton": "OK",
                     "control": "[Container End]",
                     "controltype": "layout_directive_ContainerEnd",
                     "icon": "$$format.border.style.dash"
-                }
+                },
+                "__flagwrapcontentsindiv": true
             }
         ],
         "builderType": "Dialog2",
@@ -1741,7 +1741,7 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "108",
+        "_buildCount": "109",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
@@ -1897,7 +1897,7 @@
         "sassProcessor": true,
         "debugMode": false,
         "__jsLibraries": "<script type=\"text/javascript\" src=\"javascript/a5.js\"></script>\n<script type=\"text/javascript\" src=\"javascript/a5_url.js\"></script>\n",
-        "A5SaveTimeStamp": "20240318121626864",
+        "A5SaveTimeStamp": "20240529121923456",
         "prerendered": {
             "_styledataVersion": 2,
             "output": {
@@ -1914,33 +1914,27 @@
             },
             "iconMap": ""
         },
-        "minimumBuildNumber": "",
-        "style_color_palette": "",
-        "__LPhostName": "Chrome",
-        "showPulseEffect": true,
-        "_style_isInherited": false,
+        "forceChromeControl": true,
         "flagOptimizedUXTree": true,
-        "cachecomponent": false,
-        "_treeErrors": "",
-        "_display": "",
-        "listofstyles": "",
-        "allowusertoswitchstylesatruntime": false,
         "flagReanalyzeContainers": false,
+        "minimumBuildNumber": "",
+        "_display": "",
         "flagShowDeleteConfirmation": false,
+        "showPulseEffect": true,
+        "cachecomponent": false,
+        "allowusertoswitchstylesatruntime": false,
+        "listofstyles": "",
         "templateforstyleselector": "",
         "baseURLForStyles": "",
         "pusherConfigJSON": "",
         "pusherApp": false,
-        "forceChromeControl": true,
-        "_flagDoTreeview": false,
-        "_move": {
-            "index": 3,
-            "targetIndex": 4,
-            "count": 1
-        },
-        "compressUX": false,
+        "__LPhostName": "Chrome",
+        "_style_isInherited": false,
+        "compressux": false,
+        "_flagForceRecalcChildren": true,
+        "_treeErrors": "",
+        "style_color_palette": "",
         "useCSSFlexForContainerAlignment": true,
-        "__allowCascadingRecalc": true,
         "customTabOrder": "",
         "friendlydatesCustomizationJSON": "",
         "captureJSErrorStackTrace": false,
@@ -1992,7 +1986,6 @@
         "_passwordReset": false,
         "__embedLinkedFiles": false,
         "__embedLinkedJSFiles": false,
-        "_flagCreateDialogUsingXbasic": true,
         "suppressJavascriptCodeWarning": false,
         "onConnectionLostBehavior": "Stop",
         "onConnectionLostExecutionDuration": "300",
@@ -2006,11 +1999,18 @@
         "corsAllowPrivateNetwork": false,
         "populateArgumentsFromQueryString": false,
         "_style_name_beforeResolve": "<ProjectStyle>",
-        "favoriteControls": "",
         "_alphasoftwareBucketName": "",
         "staticHTMLFileJSON": "",
         "__flagRecursive": false,
-        "_flagForceRecalcChildren": true,
-        "_original_Style_name": "<ProjectStyle>"
+        "_original_Style_name": "<ProjectStyle>",
+        "favoriteControls": "",
+        "_flagDoTreeview": false,
+        "_move": {
+            "index": 3,
+            "targetIndex": 4,
+            "count": 1
+        },
+        "__allowCascadingRecalc": true,
+        "_flagCreateDialogUsingXbasic": true
     }
 }
