@@ -240,3 +240,6 @@
 <responseHeaders<includeInsecureHeaders=.F.>
 <additionalHeaders="">
 >
+<application<onAppstart="">
+<library="">
+>
