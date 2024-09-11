@@ -112,17 +112,21 @@ if fileToDownload = "" then
 	end if
 end if
 
+dim filetodownloadAcp as c
+if *utf8_valid(filetodownload) then
+	filetodownloadAcp = convert_utf8_to_acp(filetodownload)
+else
+	filetodownloadAcp = fileToDownload
+end if
 
 if csfilename <> "" then 
 	if file.filename_parse(csfilename,"e") = "" then 
-		csfilename = csfilename + file.filename_parse(filetodownload,"e")
+		csfilename = csfilename + file.filename_parse(filetodownloadAcp,"e")
 	end if 
 end if 
 
-
-
-if left(filetodownload,2) <> chr(92) + chr(92) then
-	if file.filename_parse(fileToDownload,"d") = "" then
+if left(filetodownloadAcp,2) <> chr(92) + chr(92) then
+	if file.filename_parse(filetodownloadAcp,"d") = "" then
 		if folder <> "" then
 			if left(folder,2) <> chr(92) + chr(92) then
 				folder = alltrim(folder)
@@ -144,13 +148,13 @@ if left(filetodownload,2) <> chr(92) + chr(92) then
 				end if
 			end if
 			
-			dim file2 as c = fileToDownload
+			dim file2 as c = filetodownloadAcp
 			file2 = stritran(file2,"/",chr(92)) 
 
-			fileToDownload = a5_removetrailingbackslash(folder) + chr(92) + fileToDownload
+			filetodownloadAcp = a5_removetrailingbackslash(folder) + chr(92) + filetodownloadAcp
 			
-			if file.exists(filetodownload) = .f. then 
-				fileToDownload = Request.ApplicationRoot + file2
+			if file.exists(filetodownloadAcp) = .f. then 
+				filetodownloadAcp = Request.ApplicationRoot + file2
 			end if 
 		end if
 	end if
@@ -158,37 +162,26 @@ end if
 
 dim flagUsingA5SessionFile as l = .f.
 
-if atc("A5SessionFile__",fileToDownload) = 1 .or. atc("A5SessionFilePrefix__",fileToDownload) = 1  .or. atc("A5SessionFile/",filetodownload) = 1   then 
+if atc("A5SessionFile__",filetodownloadAcp) = 1 .or. atc("A5SessionFilePrefix__",filetodownloadAcp) = 1  .or. atc("A5SessionFile/",filetodownloadAcp) = 1   then 
 	flagUsingA5SessionFile = .t.
 	dim key as c 
-	key = fileToDownload
+	key = filetodownloadAcp
 	
-	if atc("A5SessionFilePrefix__",fileToDownload) = 1 then 
+	if atc("A5SessionFilePrefix__",filetodownloadAcp) = 1 then 
 		key = word(key,2,"A5SessionFilePrefix__")
 	end if 
 	
 	
-	if atc("A5SessionFile/",fileToDownload) = 1 then 
+	if atc("A5SessionFile/",filetodownloadAcp) = 1 then 
 		key = word(key,2,"A5SessionFile/")
 	end if 
 	
 	dim ext as c 
 	ext = file.filename_parse(key,"e")
 	dim fnTemp as c 
-	dim fnTempA as c
 	fnTemp = request.GetRequestTempFileName(ext)
-	fnTempA = convert_utf8_to_acp(fnTemp)
 	
-	'1/5/2015 - don't read the file into memory
-	'dim b as b 
-	'session.GetDataFromFile(b,key)
-	'if typeof(b) = "c" then 
-	'	file.from_string(fnTempA,b)
-	'else
-	'	file.from_blob(fnTempA,b)
-	'end if 
 	session.SaveSessionFileToFile(key,fnTemp)
-	
 	
 	'protect against bug on Android browsers which request the file twice
 	dim flagDeleteSessionFile as l = .t.
@@ -199,52 +192,48 @@ if atc("A5SessionFile__",fileToDownload) = 1 .or. atc("A5SessionFilePrefix__",fi
 	if flagDeleteSessionFile then 
 		session.DeleteSessionFile(key)
 	end if 
-	fileToDownload = fnTemp
+	filetodownloadAcp = fnTemp
 end if
-if atc("http://",fileToDownLoad) > 0 .or. atc("https://",filetodownload) > 0 then 
+if atc("http://",filetodownloadAcp) > 0 .or. atc("https://",filetodownloadAcp) > 0 then 
 	dim fn as c 
-	dim ext as c = file.filename_parse(filetodownload,"e")
+	dim ext as c = file.filename_parse(filetodownloadAcp,"e")
 	fn = a5_GetTempFilename(ext)
 	dim p as p
-	if atc("https://",filetodownload) > 0 then 
+	if atc("https://",filetodownloadAcp) > 0 then 
 		dim flag as l
-		flag =  curl_get_file(filetodownload,fn)
+		flag =  curl_get_file(filetodownloadAcp,fn)
 		if flag then 
-			filetodownload = fn 
+			filetodownloadAcp = fn 
 		end if 
 	else
-		p = http_get(filetodownload)
+		p = http_get(filetodownloadAcp)
 		if p.error_code = 0 then 
 			dim b as b 
 			b = p.body
 			file.from_blob(fn,b)
-			filetodownload = fn 
+			filetodownloadAcp = fn 
 		
 		end if 	
 	end if 
 	if eval_valid("csfilename") = .f. then 
-		csfilename = file.filename_parse(filetodownload,"ne")
+		csfilename = file.filename_parse(filetodownloadAcp,"ne")
 	else
 		if csfilename = "" then 
-			csfilename = file.filename_parse(filetodownload,"ne")
+			csfilename = file.filename_parse(filetodownloadAcp,"ne")
 		end if 
 	end if 
 end if 
 
 
-dim fileToDownloadACP as c 
-if file.exists(fileToDownload) then
+if file.exists(filetodownloadAcp) then
 	'get the fully qualifield filename
-	fileToDownload = file.fullname_get(fileToDownload)
-	fileToDownloadAcp = fileToDownload
-else	
-	fileToDownloadAcp = convert_utf8_to_acp(fileToDownload)
+	filetodownloadAcp = file.fullname_get(filetodownloadAcp)
 end if	
 
 if file.exists(fileToDownloadACP) then
-	if left(filetodownload,2) <> chr(92) + chr(92) then
-		if file.filename_parse(fileToDownload,"d") = "" then
-			fileToDownLoad = Request.ApplicationRoot + fileToDownload
+	if left(filetodownloadAcp,2) <> chr(92) + chr(92) then
+		if file.filename_parse(filetodownloadAcp,"d") = "" then
+			filetodownloadAcp = Request.ApplicationRoot + filetodownloadAcp
 		end if
 	end if
 end if
@@ -263,16 +252,15 @@ if .not. file.exists(fileToDownloadACP) then
 end if
 
 dim actualFilename as c
-actualFilename = fileToDownload
+actualFilename = filetodownloadAcp
 
 dim tempfile as c 
 'test if filename contains international characters
 if fileToDownloadACP <> filetodownload then 
 	dim format as c 
 	format = file.filename_parse(actualFilename,"e")
-	tempfile = convert_utf8_to_acp(request.GetRequestTempFileName(format))	
-	'file.copy( fileToDownloadACP, tempfile)
-	system::io::file::Copy(fileToDownload,tempfile,.t.)
+	tempfile = request.GetRequestTempFileName(format)
+	system::io::file::Copy(filetodownloadAcp,tempfile,.t.)
 	if csfilename = "" then 
 		csfilename = file.filename_parse(actualFilename,"ne")
 	end if 
@@ -311,7 +299,5 @@ end if
 
 end
 failed:
-
-
 
 %>

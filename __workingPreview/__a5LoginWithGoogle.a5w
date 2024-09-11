@@ -1,5 +1,7 @@
-
+ 
 <%A5
+'on error goto fail
+
 dim email as c = "nothing"
 dim errors as c = ""
 dim cf_1 as extension::CurlFile
@@ -22,7 +24,11 @@ end if
 
 dim pageName as c = word(request.script_name,-1,"/")
 
-posted_fields = "code="+request.variables.code+"&client_id="+clientid+"&client_secret="+secret+"&redirect_uri="+rtrim(session.hostNameCallback,"/") +"/"+pageName+"&grant_type=authorization_code"
+if eval_valid("request.variables.code") .and. eval_valid("session.hostNameCallback") then 
+	posted_fields = "code="+request.variables.code+"&client_id="+clientid+"&client_secret="+secret+"&redirect_uri="+rtrim(session.hostNameCallback,"/") +"/"+pageName+"&grant_type=authorization_code"
+else
+	posted_fields = ""
+end if 
 ce.setOpt("POSTFIELDS",posted_fields)
 ce.setOpt("POSTFIELDSIZE_LARGE", len(posted_fields) )
 ce.setOpt("USERAGENT","curl/7.55.1")
@@ -80,6 +86,7 @@ else
 	? "error: " + errors
 end if
 ce.close()
+
 %>
 <script>
 function redirectafterlogin() {

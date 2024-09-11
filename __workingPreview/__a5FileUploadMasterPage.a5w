@@ -127,18 +127,21 @@ dim __componentAlias as c = default ""
 dim harvestScript as c = ""
 if __componentType = "dialog2" .or. __componentType = "odialog2" then 
 	harvestScript = <<%txt%
-
 var otherData = window.parent.{__alias__}_DlgObj.harvest();
 $('OTHERVARIABLEVALUES').value = otherData;
 var stateInfo = JSON.stringify(window.parent.{__alias__}_DlgObj.stateInfo);
 $('STATEINFOVALUES').value = stateInfo;
-
-
-
-
 %txt%
 	
 	harvestScript = stritran(harvestScript,"{__alias__}",ut(__componentAlias))
+else
+	harvestScript = <<%txt%
+	var otherData = window.parent.{__alias__}_GridObj._getState();
+	$('OTHERVARIABLEVALUES').value = otherData;
+	$('STATEINFOVALUES').value = otherData;
+	%txt%
+	harvestScript = stritran(harvestScript,"{__alias__}",ut(__componentAlias))
+
 end if 
 
 
@@ -266,7 +269,7 @@ end if
 %>
 <html>
 <head>
-<meta name="generator" content="Alpha Five HTML Editor Version 12 Build 8867-5691">
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 9348-5713">
 <!-- must use in order to make XP Themes render -->
 <meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />

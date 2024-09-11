@@ -1,5 +1,12 @@
 <%a5
 'THIS IS A SYSTEM GENERATED PAGE - DO NOT MODIFY OR REMOVE.
+dim fastMode as l 
+if eval_valid("request.variables.__fastMode") then 
+	if request.variables.__fastMode = "yes" then 
+		fastMode = .t.
+	end if 
+end if 
+
 dim componentName as c = ""
 if eval_valid("request.variables.__AAComponentName") then 
 	componentName = request.variables.__AAComponentName
@@ -35,13 +42,17 @@ if file.exists(fn) = .f. then
 	</body>
 </html>
 	%html%
-	html = stritran(html,"__componentName__",componentname)
+	html = strtran(html,"__componentName__",componentname)
 	?html
 	end 
 end if 
 
 
 dim html as c = file.to_string(fn)
+html = strtran(html,"javascript/a5.js","javascript/a5.js?build_" + version("B")+a5_system_addin_version())
+
+
+
 dim parentAlias as c = ""
 if eval_valid("request.variables.__AAparentAlias") then 
 	parentAlias = request.variables.__AAparentAlias
@@ -50,13 +61,15 @@ end if
 if atc("<",alias) > 0 then 
 	alias = ""
 end if 
-html = a5DialogHelper_injectJSIntoStaticHTML(componentname,html,alias)
+
+html = a5DialogHelper_injectJSIntoStaticHTML(componentname,html,alias, .not. fastMode)
+
 
 if alias <> "" then 
 	html = strtran(html,"DLG1",ut(alias))
 	
 	if parentAlias <> "" then 
-		html = stritran(html,"__parentAliasNotDefined",parentAlias)
+		html = strtran(html,"__parentAliasNotDefined",parentAlias)
 	end if 
 	?html
 	end 

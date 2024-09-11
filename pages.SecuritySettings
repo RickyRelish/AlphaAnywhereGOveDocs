@@ -1718,7 +1718,7 @@
 	{
 		"page": "TabbedUI_CI_Tab.a5w",
 		"action": "login",
-		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator"
+		"groups": "31a3b286ef394725a3c4a38171848772,Admin_Staff,bba6d50a826847a99cf2d158f59c8e03,Administrators,aaf709d22b84457b9bfbb113b56d97eb,System_Administrator,e0e08ba834bc4a52b433593517bc884d,Quality"
 	},
 	{
 		"page": "UX_CI_1.a5wcmp",

@@ -61,9 +61,9 @@ loadConnectionStrings(gv, _SSRS_ConnectionStrings, "SSRS")
 
 Dim _AlphaDAO_ConnectionStrings as c 
 _AlphaDAO_ConnectionStrings = <<%txt%
-CONN|{A5API='SQLServer',A5DBVersion=2017,Server='govdocims.czpojh2ig2ah.ap-southeast-2.rds.amazonaws.com,1433',A5SSL=Y,A5TrustServerCertificate=Y,UserName='Raptors23',Password=':A5:B64:OTl0bUI1c2o=',Database='GOVDOCS_A'}
-Connection3|{A5API='SQLServer',A5DBVersion=2017,Server='govdocims.czpojh2ig2ah.ap-southeast-2.rds.amazonaws.com,1433',A5SSL=Y,A5TrustServerCertificate=Y,UserName='Raptors23',Password=':A5:B64:OTl0bUI1c2o=',Database='GOVDOCS_A'}
-Local|{A5API='SQLServer',A5DBVersion=2019,Server='CIMBUSSINES\SQLEXPRESS',Trusted_connection=yes,Database='GOVDOCS_1'}
+CONN|{A5API='SQLServer',A5DBVersion=2019,Server='DESKTOP-C852PDF\SQLEXPRESS',Trusted_connection=yes,Database='GOVDOCS_Home'}
+Connection3|{A5API='SQLServer',A5DBVersion=2019,Server='DESKTOP-C852PDF\SQLEXPRESS',Trusted_connection=yes,Database='GOVDOCS_Home'}
+Local|{A5API='SQLServer',A5DBVersion=2019,Server='DESKTOP-C852PDF\SQLEXPRESS',Trusted_connection=yes,Database='GOVDOCS_Home'}
 %txt%
 
 'Create a global collection called '_A5_AlphaDAO_ConnectionStrings'
@@ -330,7 +330,13 @@ DIM activeUsers.maxDays as N = 3
 DIM responseHeaders as P
 DIM responseHeaders.includeInsecureHeaders as L
 DIM responseHeaders.additionalHeaders as C
-DIM __token as C = "9f61799b68c5450e9cb43c44eafa1fd9"
+DIM application as P
+DIM application.onAppstart as C
+DIM application.library as C
+DIM publish as P
+DIM publish.onPublish as C
+DIM publish.library as C
+DIM __token as C = "c7ae3b561d654abbab7a489c2a9c6680"
 %txt%
 
 dim gv as p 
@@ -341,10 +347,10 @@ dim gv.__buildNumberExe__ as n
 dim gv.__buildNumberAddins__ as n 
 dim gv.__guid as c 
 dim gv.__A5PublishVersion as n 
-gv.__A5PublishTimestamp = 202440401114406983
-gv.__buildNumberExe__ = 8867
-gv.__buildNumberAddins__ = 5691
-gv.__guid = "d0a9835d-26e9-4233-8a5e-67a7b473039b"
+gv.__A5PublishTimestamp = 2024181806111816440
+gv.__buildNumberExe__ = 9348
+gv.__buildNumberAddins__ = 5713
+gv.__guid = "f771e66f-6a81-4167-92c5-cd4bb720d490"
 gv.__control = <<%txtcontrol%
 hV7+2zUTjP0=
 %txtcontrol%
