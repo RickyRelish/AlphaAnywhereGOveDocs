@@ -61,8 +61,8 @@ loadConnectionStrings(gv, _SSRS_ConnectionStrings, "SSRS")
 
 Dim _AlphaDAO_ConnectionStrings as c 
 _AlphaDAO_ConnectionStrings = <<%txt%
-CONN|{A5API='SQLServer',A5DBVersion=2019,Server='DESKTOP-C852PDF\SQLEXPRESS',Trusted_connection=yes,Database='GOVDOCS_Home'}
-Connection3|{A5API='SQLServer',A5DBVersion=2019,Server='DESKTOP-C852PDF\SQLEXPRESS',Trusted_connection=yes,Database='GOVDOCS_Home'}
+CONN|{A5API='SQLServer',A5DBVersion=2019,Server='database-1.c782u2ugeyxc.ap-southeast-2.rds.amazonaws.com',UserName='adminfossil',Password=':A5:B64:QXBwbGUyNjQxKkZvc3NpbA==',Database='CIM1'}
+Connection3|{A5API='SQLServer',A5DBVersion=2019,Server='database-1.c782u2ugeyxc.ap-southeast-2.rds.amazonaws.com',UserName='adminfossil',Password=':A5:B64:QXBwbGUyNjQxKkZvc3NpbA==',Database='CIM1'}
 Local|{A5API='SQLServer',A5DBVersion=2019,Server='DESKTOP-C852PDF\SQLEXPRESS',Trusted_connection=yes,Database='GOVDOCS_Home'}
 %txt%
 
@@ -336,7 +336,7 @@ DIM application.library as C
 DIM publish as P
 DIM publish.onPublish as C
 DIM publish.library as C
-DIM __token as C = "c7ae3b561d654abbab7a489c2a9c6680"
+DIM __token as C = "f32745af772d4cf6a85413348e53b4e7"
 %txt%
 
 dim gv as p 
@@ -347,10 +347,10 @@ dim gv.__buildNumberExe__ as n
 dim gv.__buildNumberAddins__ as n 
 dim gv.__guid as c 
 dim gv.__A5PublishVersion as n 
-gv.__A5PublishTimestamp = 2024181806111816440
+gv.__A5PublishTimestamp = 202451512312517734
 gv.__buildNumberExe__ = 9348
 gv.__buildNumberAddins__ = 5713
-gv.__guid = "f771e66f-6a81-4167-92c5-cd4bb720d490"
+gv.__guid = "2720da4a-57f4-4212-af21-9dbe132fdf85"
 gv.__control = <<%txtcontrol%
 hV7+2zUTjP0=
 %txtcontrol%

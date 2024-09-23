@@ -4,7 +4,7 @@
 <optimize=.T.>
 <pubALB=.T.>
 <pubSecurity=.F.>
-<default_page="Index.a5w">
+<default_page="">
 <open_in_browser=.T.>
 <pubSupport=.T.>
 <pubSelected=.F.>
